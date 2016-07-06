@@ -1,0 +1,9 @@
+.module-base {
+	padding: 20px;
+	background: red;
+	@extend %dark-module-base;
+}
+
+%dark-module-base {
+	background: green;
+}
