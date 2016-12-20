@@ -45,7 +45,9 @@ gulp.task('fileinclude', function() {
 
 gulp.task('sass', function() {
     return gulp.src(config.devDir + '/scss/**/*.scss')
+    .pipe(sourcemaps.init())  // Process the original sources
 		.pipe(sass())
+		.pipe(sourcemaps.write()) // Add the map to modified source.
     .pipe(gulp.dest(config.publicDir + '/css'));
 });
 
