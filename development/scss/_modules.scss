@@ -1,4 +1,50 @@
-.grid-small ul li { margin: 10px; }
+.grid-row {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.grid-square {
+	box-sizing: border-box;
+	display: inline-block;
+  position: relative;
+  width: 17%;
+  margin: 10px 1%;
+  padding: 1%;
+}
+
+.grid-square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.grid-square-content {
+  position: absolute;
+	top: 10%;
+	bottom: 10%;
+	left: 10%;
+	right: 10%;
+	margin: 0;
+	padding: 0;
+}
+
+.grid-square-content span {
+	display: block;
+	margin: 0;
+	padding: 0 0 5px;
+	width: 100%;
+	font-family: $antenna;
+	color: #ffffff;
+	font-size: .675em;
+	line-height: 1.35;
+	text-transform: uppercase;
+}
+
+.grid-square-content span:nth-child(2) { position: absolute; bottom: 0; left: 0; padding: 0; }
+
+.grid-square ul li { margin: 10px; }
 
 .module-base {
 	padding: 20px;

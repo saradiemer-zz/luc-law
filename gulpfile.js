@@ -57,7 +57,7 @@ gulp.task('fonts', function() {
 });
 
 gulp.task('useref', function() {
-  return gulp.src('./development/**/*.html')
+  return gulp.src('./development/index.html')
     .pipe(useref())
     .pipe(gulpIf('*.js', uglify()))
     .pipe(gulpIf('*.css', cssnano()))
@@ -65,10 +65,10 @@ gulp.task('useref', function() {
 });
 
 gulp.task('index', ['useref'], function () {
-  var target = gulp.src('./development/**/*.html'); 
+  var target = gulp.src('./development/index.html'); 
   var sources = gulp.src(['./public/js/**/*.js', './public/css/**/*.css'], {read: false});
  	return target.pipe(inject(sources, {ignorePath: 'public'}))
- 	.pipe(gulpIf('*.html', fileinclude({prefix: '@@', basepath: '@file'})))
+ 	.pipe(gulpIf('index.html', fileinclude({prefix: '@@', basepath: '@file'})))
 	.pipe(gulp.dest(config.publicDir));
 });
 

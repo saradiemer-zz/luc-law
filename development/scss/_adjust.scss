@@ -155,6 +155,9 @@ body { padding-top: 0; }
 
 body { background-color: #cccccc; }
 
+#wrapper { background-image: url('../images/bg-water.jpg');
+background-size: cover; }
+
 /*===============================================================
 HEADER
 ===============================================================*/
@@ -243,19 +246,6 @@ NAV-BOX - SUB-NAV - MEDIA QUERIES
 #nav-box.homenav, #nav-box.subnave { margin-top: 0px; }
 
 #nav-box.homenav a.btn.btn-navbar, #nav-box.subnave a.btn.btn-navbar { display: block; }
-
-}
-
-
-/*===============================================================
-FULLBLEED-WRAPPER
-===============================================================*/
-
-#fullbleed-wrapper { margin-top: 25px; height: 300px; background: red; }
-
-@media all and( max-width : 768px ) {
-
-#fullbleed-wrapper { margin-top: -32px; }
 
 }
 
@@ -707,7 +697,7 @@ footer#footer { display: none; }
 
 #footer-content #footer-address a.logo-tag { float: right; width: 85%; }
 
-#footer-address { padding: 20px 0 30px; }
+#footer-address { padding: 20px 0 30px; background-color: lighten( $gray, 35% ); }
 
 #footer-address .vcard { font-size: 13px; }
 
