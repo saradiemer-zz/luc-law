@@ -1,33 +1,22 @@
 var gulp = require('gulp');
 var replace = require('gulp-replace');
-var htmlreplace = require('gulp-html-replace');
 
 var config = {
     publicDir: './public',
-	T4Dir: './T4',
+		T4Dir: './T4',
 };
 
 gulp.task('t4_media', function() {
-      // place code for your default task here
-      console.log('[gulp]: T4');
-	  
-	
-	 
-    
-	
-	//gulp.src(config.publicDir + './css/*.css')
-   
-	//.pipe(replace(
-
+	// place code for your default task here
+	console.log('[gulp]: T4');
+	gulp.src(config.publicDir + './css/styles.css')
+	.pipe(replace(
 	//social-icons
 	'("http://www.luc.edu/media/home/images/social-icons-logos-33-070714.png")', '("<t4 type="media" id="233455" formatter="path/*"/>")',	
-
 	//background image
 	'("../images/bg-water.jpg")', '("<t4 type="media" id="372435" formatter="path/*"/>")',	
-
 	//semi-transparent-pixel
 	'("<t4 type="media" id="406288" formatter="path/*"/>")', '("<t4 type="media" id="406288" formatter="path/*"/>")',
-
 	//ANTENNA FONTS	
 	//antenna regular
 	'("antenna_regular/476def8b-6379-4133-9503-ca290c126397-4.svg")', '("<t4 type="media" id="309115" formatter="path/*"/>")',
@@ -53,22 +42,7 @@ gulp.task('t4_media', function() {
 	'("antenna_light/749b4993-dc71-4e94-aab9-74b89be2ca19-4.svg")', '("<t4 type="media" id="375116" formatter="path/*"/>")',
 	'("antenna_light/749b4993-dc71-4e94-aab9-74b89be2ca19-2.eot")', '("<t4 type="media" id="375114" formatter="path/*"/>")',
 	'("antenna_light/749b4993-dc71-4e94-aab9-74b89be2ca19-3.woff")', '("<t4 type="media" id="375115" formatter="path/*"/>")',
-	'("antenna_light/749b4993-dc71-4e94-aab9-74b89be2ca19-1.ttf")', '("<t4 type="media" id="375113" formatter="path/*"/>")',
-	
+	'("antenna_light/749b4993-dc71-4e94-aab9-74b89be2ca19-1.ttf")', '("<t4 type="media" id="375113" formatter="path/*"/>")'
 	))
-
-	//.pipe(gulp.dest(config.T4Dir));
-	
-	gulp.src(config.publicDir + '/*.html')
-    .pipe(htmlreplace({
-        'navbar': '<t4 type="navigation">',
-       
-    }, {
-  keepUnassigned: false,
-  keepBlockTags: true,
-  resolvePaths: false
-}))
-    .pipe(gulp.dest(config.T4Dir));
-	  
-      
-    });
+	.pipe(gulp.dest(config.t4Dir + './css'));
+});

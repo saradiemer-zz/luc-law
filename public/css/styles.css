@@ -2088,7 +2088,15 @@ MAIN-CONTENT-WRAPPER
 #main-content-wrapper {
   margin-top: 0;
   padding-top: 0;
-}
+  background-color: #cccccc;
+  background: url('<t4 type="media" id="372435" formatter="path/*"/>') no-repeat scroll 0 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 #main-content-wrapper.jumbotron {
   margin-bottom: 0;
