@@ -14,11 +14,19 @@ var uglify = require('gulp-uglify');
 var cssnano = require('gulp-cssnano');
 var gulpSequence = require('gulp-sequence');
 var browserSync = require('browser-sync');
+var htmlreplace = require('gulp-html-replace');
+var replace = require('gulp-replace');
+var requireDir = require('require-dir');
+
+requireDir('./gulp-tasks');
+
+// var t4media = require('t4media.json');
 
 var config = {
     bootstrapDir: './bower_components/bootstrap',
     devDir: './development',
     publicDir: './public',
+		T4Dir: './T4',
 };
 
 gulp.task('lint', function() {
@@ -38,7 +46,7 @@ gulp.task('minify', function(){
 });
 
 gulp.task('fileinclude', function() {
-  gulp.src(['./development/index.html'])
+  gulp.src(['./development/*.html'])
     .pipe(fileinclude())
     .pipe(gulp.dest('./public'));
 });
@@ -57,18 +65,18 @@ gulp.task('fonts', function() {
 });
 
 gulp.task('useref', function() {
-  return gulp.src('./development/index.html')
+  return gulp.src('./development/*.html')
     .pipe(useref())
     .pipe(gulpIf('*.js', uglify()))
     .pipe(gulpIf('*.css', cssnano()))
-	.pipe(gulp.dest(config.publicDir));
+		.pipe(gulp.dest(config.publicDir));
 });
 
 gulp.task('index', ['useref'], function () {
-  var target = gulp.src('./development/index.html'); 
+  var target = gulp.src('./development/*.html'); 
   var sources = gulp.src(['./public/js/**/*.js', './public/css/**/*.css'], {read: false});
  	return target.pipe(inject(sources, {ignorePath: 'public'}))
- 	.pipe(gulpIf('index.html', fileinclude({prefix: '@@', basepath: '@file'})))
+ 	.pipe(gulpIf('*.html', fileinclude({prefix: '@@', basepath: '@file'})))
 	.pipe(gulp.dest(config.publicDir));
 });
 
