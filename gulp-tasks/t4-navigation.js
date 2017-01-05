@@ -7,7 +7,7 @@ var config = {
 	T4Dir: './T4',
 };
 
-gulp.task('t4_media', function() {
+gulp.task('t4_navigation', function() {
       // place code for your default task here
       console.log('[gulp]: T4');
 	  

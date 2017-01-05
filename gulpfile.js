@@ -85,7 +85,7 @@ gulp.task('sass-watch', ['sass'], browserSync.reload);
 gulp.task('js-watch', ['minify'], browserSync.reload);
 
 
-gulp.task('serve', ['lint', 'sass', 'index'], function () {
+gulp.task('serve', ['lint', 'sass', 'index', 'minify'], function () {
     // Serve files from the root of this project
     browserSync.init({
         server: {
@@ -99,4 +99,4 @@ gulp.task('serve', ['lint', 'sass', 'index'], function () {
 		gulp.watch(config.devDir + '/js/**/*.js', ['js-watch']);
 });
 
-gulp.task('default', gulpSequence(['serve']));
+gulp.task('default', gulpSequence(['serve', 't4_media', 't4_navigation', 'reference-replace']));

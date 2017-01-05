@@ -1736,7 +1736,7 @@ p a.cta {
   margin-right: 0; }
 
 #social li a {
-  background: url("http://www.luc.edu/media/home/images/social-icons-logos-33-070714.png") no-repeat scroll 0 0 #525252;
+  background: url("<t4 type="media" id="233455" formatter="path/*"/>") no-repeat scroll 0 0 #525252;
   background-size: 28px;
   border-radius: 4px;
   display: block;
@@ -1977,7 +1977,7 @@ body {
   background-color: #cccccc; }
 
 #wrapper {
-  background-image: url("../images/bg-water.jpg");
+  background-image: url("<t4 type="media" id="372435" formatter="path/*"/>");
   background-size: cover; }
 
 /*===============================================================
@@ -4392,36 +4392,36 @@ questions: http://www.webtype.com
 */
 @font-face {
   font-family: "Antenna";
-  src: url("antenna_regular/476def8b-6379-4133-9503-ca290c126397-4.svg");
-  src: url("antenna_regular/476def8b-6379-4133-9503-ca290c126397-2.eot") format("embedded-opentype"), url("antenna_regular/476def8b-6379-4133-9503-ca290c126397-3.woff") format("woff"), url("antenna_regular/476def8b-6379-4133-9503-ca290c126397-1.ttf") format("truetype");
+  src: url("<t4 type="media" id="309115" formatter="path/*"/>");
+  src: url("<t4 type="media" id="309117" formatter="path/*"/>") format("embedded-opentype"), url("<t4 type="media" id="309116" formatter="path/*"/>") format("woff"), url("<t4 type="media" id="309118" formatter="path/*"/>") format("truetype");
   font-style: normal;
   font-weight: normal; }
 
 @font-face {
   font-family: "Antenna Bold";
-  src: url("antenna_bold/692e9d98-a1c5-4d26-9831-b7f258241cdf-4.svg");
-  src: url("antenna_bold/692e9d98-a1c5-4d26-9831-b7f258241cdf-2.eot") format("embedded-opentype"), url("antenna_bold/692e9d98-a1c5-4d26-9831-b7f258241cdf-3.woff") format("woff"), url("antenna_bold/692e9d98-a1c5-4d26-9831-b7f258241cdf-1.ttf") format("truetype");
+  src: url("<t4 type="media" id="375084" formatter="path/*"/>");
+  src: url("<t4 type="media" id="375082" formatter="path/*"/>") format("embedded-opentype"), url("<t4 type="media" id="375083" formatter="path/*"/>") format("woff"), url("<t4 type="media" id="375081" formatter="path/*"/>") format("truetype");
   font-style: normal;
   font-weight: bold; }
 
 @font-face {
   font-family: "Antenna Black";
-  src: url("antenna_black/6620971b-19a1-4157-9796-83671a1c7836-4.svg");
-  src: url("antenna_black/6620971b-19a1-4157-9796-83671a1c7836-2.eot") format("embedded-opentype"), url("antenna_black/6620971b-19a1-4157-9796-83671a1c7836-3.woff") format("woff"), url("antenna_black/6620971b-19a1-4157-9796-83671a1c7836-1.ttf") format("truetype");
+  src: url("<t4 type="media" id="309109" formatter="path/*"/>");
+  src: url("<t4 type="media" id="309111" formatter="path/*"/>") format("embedded-opentype"), url("<t4 type="media" id="309110" formatter="path/*"/>") format("woff"), url("<t4 type="media" id="309112" formatter="path/*"/>") format("truetype");
   font-style: normal;
   font-weight: normal; }
 
 @font-face {
   font-family: "Antenna Light";
-  src: url("antenna_light/749b4993-dc71-4e94-aab9-74b89be2ca19-4.svg");
-  src: url("antenna_light/749b4993-dc71-4e94-aab9-74b89be2ca19-2.eot") format("embedded-opentype"), url("antenna_light/749b4993-dc71-4e94-aab9-74b89be2ca19-3.woff") format("woff"), url("antenna_light/749b4993-dc71-4e94-aab9-74b89be2ca19-1.ttf") format("truetype");
+  src: url("<t4 type="media" id="375116" formatter="path/*"/>");
+  src: url("<t4 type="media" id="375114" formatter="path/*"/>") format("embedded-opentype"), url("<t4 type="media" id="375115" formatter="path/*"/>") format("woff"), url("<t4 type="media" id="375113" formatter="path/*"/>") format("truetype");
   font-style: normal;
   font-weight: normal; }
 
 @font-face {
   font-family: "Antenna Thin";
-  src: url("antenna_thin/eeb94438-f886-4973-b3fe-70d47d3d56e5-4.svg");
-  src: url("antenna_thin/eeb94438-f886-4973-b3fe-70d47d3d56e5-2.eot") format("embedded-opentype"), url("antenna_thin/eeb94438-f886-4973-b3fe-70d47d3d56e5-3.woff") format("woff"), url("antenna_thin/eeb94438-f886-4973-b3fe-70d47d3d56e5-1.ttf") format("truetype");
+  src: url("<t4 type="media" id="375089" formatter="path/*"/>");
+  src: url("<t4 type="media" id="375087" formatter="path/*"/>") format("embedded-opentype"), url("<t4 type="media" id="375088" formatter="path/*"/>") format("woff"), url("<t4 type="media" id="375086" formatter="path/*"/>") format("truetype");
   font-style: normal;
   font-weight: normal; }
 
