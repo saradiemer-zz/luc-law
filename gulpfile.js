@@ -98,6 +98,4 @@ gulp.task('serve', ['lint', 'sass', 'index', 'minify'], function () {
 		gulp.watch(config.devDir + '/js/**/*.js', ['js-watch']);
 });
 
-
-gulp.task('default', gulpSequence(['serve', 't4_media', 't4_navigation', 'reference-replace']));
-//gulp.task('default', gulpSequence(['serve',  't4_media'], 't4_nav'));
+gulp.task('default', gulpSequence(['serve',  't4_media'], 't4_nav'));

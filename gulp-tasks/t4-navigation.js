@@ -6,39 +6,11 @@ var config = {
     publicDir: './public',
 	T4Dir: './T4',
 };
-
-<<<<<<< HEAD
-gulp.task('t4_navigation', function() {
-      // place code for your default task here
-      console.log('[gulp]: T4');
-=======
 gulp.task('t4_nav', function() {
-      // place code for your default task here
-      console.log('[gulp]: T4 Navigation');
->>>>>>> John's-Branch
-	  
-	
-	 
-    
-<<<<<<< HEAD
-	
-=======
->>>>>>> John's-Branch
-	//gulp.src(config.publicDir + '/index.html')
-   
-	//.pipe(replace('University', 'UnivXXXXXXsdfsf'))
-	
-	
-    //.pipe(gulp.dest(config.T4Dir));
-	
-<<<<<<< HEAD
-	gulp.src(config.publicDir + '/*.html')
-    .pipe(htmlreplace({
-        'globalquicklinks': '<t4 type="media" id="77813" formatter="plain/text"/>',
-=======
-	
+	// place code for your default task here
+	console.log('[gulp]: T4 Navigation');
 	gulp.src(config.T4Dir + '/*.html')
-    .pipe(htmlreplace({
+		.pipe(htmlreplace({
 		'customjs': '<t4 type="navigation" id="406"/>',
 		'navtitle': '<title><t4 type="navigation" id="630"/><t4 type="title" append-content="true" append-element="Title" separator=": " />: <t4 type="navigation" id="77"/>: Loyola University Chicago</title>',
 		'pageid': '<meta name="PageID" content="<t4 type="navigation" id="462"/>" />',
@@ -51,15 +23,10 @@ gulp.task('t4_nav', function() {
 		'sitemenu': '<t4 type="navigation" id="251"/>',
 		'homefooter': '<t4 type="navigation" id="536"/>',
 		'globalquicklinks': '<t4 type="media" id="77813" formatter="plain/text"/>',
->>>>>>> John's-Branch
-		
-       
-    }, {
-  keepUnassigned: false,
-  keepBlockTags: true,
-  resolvePaths: false
+		}, {
+		keepUnassigned: false,
+		keepBlockTags: true,
+		resolvePaths: false
 }))
-    .pipe(gulp.dest(config.T4Dir));
-	  
-      
-    });
+	.pipe(gulp.dest(config.T4Dir));
+});

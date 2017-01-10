@@ -26,6 +26,7 @@
 <!-- Custom styles for this template -->
 	<link href="http://getbootstrap.com/examples/starter-template/starter-template.css" rel="stylesheet">
 	<!-- inject:css -->
+  <link rel="stylesheet" href="/css/styles.css">
   <!-- endinject -->
 <!-- Antenna / Receiver Fonts -->
 <!-- <link rel="stylesheet" type="text/css" media="" href="https://luc.edu/media/lucedu/fonts/antenna.css" /> -->
@@ -42,7 +43,6 @@
 </head>
 	<body>
 <section id="wrapper">	
-<<<<<<< Updated upstream
 	<div class="container-fluid" id="header">
 	<div class="container">
 		<div class="row">
@@ -180,6 +180,7 @@
 						<div class="collapse navbar-collapse" id="navbar-main">
 							<ul id="nav" class="nav navbar-nav" role="navigation">
 <!-- navigation object : University Menu -->
+<!-- build:universitymenu -->
 								<li><a href="/about_loyola.shtml">About</a> 
 								<ul class="multilevel-linkul-0">
 									<li><a href="/president/index.shtml">Office of the President</a></li>
@@ -264,6 +265,7 @@
 									<li><a href="http://www.luc.edu/archives/index.shtml">University Archives</a></li>
 								</ul>
 								</li>
+                                <!-- endbuild -->
 							</ul>
 <!-- #nav -->
 						</div>
@@ -286,6 +288,7 @@
 						<div class="nav-collapse collapse">
 							<ul class="nav">
 <!-- navigation object : Site Menu -->
+<!-- build:sitemenu -->
 								<ul id="main-nav" class="topmenugroup">
 									<li><a href="/patternlibrary/interior/">Interior</a></li>
 									<li><a href="/patternlibrary/modules/">Modules</a></li>
@@ -293,6 +296,7 @@
 									<li><a href="/patternlibrary/umcpattern/">UMC Pattern</a></li>
 									<li><a href="/patternlibrary/colorpalette/">Color Palette</a></li>
 								</ul>
+                                <!-- endbuild -->
 							</ul>
 						</div>
 <!-- .nav-collapse -->
@@ -306,9 +310,7 @@
 	</nav>
 <!-- fullbleed -->
 <!-- END HEADER -->
-
-</div>
-</div>						<!-- nav -->
+						<!-- nav -->
 	<!-- main-content -->
 	<div class="container" id="main-content">
 		<div class="row">
@@ -450,6 +452,7 @@
 					<div class="col-md-12" id="footer-links">
 						<ul id="nav" class="nav navbar-nav" role="navigation">
 <!-- navigation object : University Menu -->
+<!-- build:universitymenu -->
 							<li><a href="/about_loyola.shtml">About</a> 
 							<ul class="multilevel-linkul-0">
 								<li><a href="/president/index.shtml">Office of the President</a></li>
@@ -534,6 +537,7 @@
 								<li><a href="http://www.luc.edu/archives/index.shtml">University Archives</a></li>
 							</ul>
 							</li>
+                             <!-- endbuild -->
 						</ul>
 <!-- #nav -->
 					</div>
@@ -542,6 +546,7 @@
 					<div class="col-md-12" id="footer-links">
 						<ul id="nav" class="nav navbar-nav" role="navigation">
 <!-- navigation object : Home Menu -->
+<!-- build:sitemenu -->
 							<ul id="main-nav" class="topmenugroup">
 								<li><a href="http://www.luc.edu/patternlibrary/interior/">Interior</a></li>
 								<li><a href="http://www.luc.edu/patternlibrary/modules/">Modules</a></li>
@@ -549,12 +554,13 @@
 								<li><a href="http://www.luc.edu/patternlibrary/umcpattern/">UMC Pattern</a></li>
 								<li><a href="http://www.luc.edu/patternlibrary/colorpalette/">Color Palette</a></li>
 							</ul>
+                             <!-- endbuild -->
 						</ul>
 					</div>
 				</div>
 			</div>
 		</footer>
-</div>
+
 <!-- main-content-wrapper -->								<!-- footer -->
 	<!-- footer-address -->
 <div class="container-fluid bg-gray" id="footer-address">
@@ -562,10 +568,12 @@
 		<div class="row">
 			<div class="col-sm-9">
 				<div class="vcard">
-<!-- navigation object : Home Footer -->
+<!-- navigation object : Home Footer2 -->
+<!-- build:homefooter -->
 					<div class="footercard">
 						<span class="fn org"> Loyola University Chicago </span> &middot; <span class="adr"> <span class="street-address"> 1032 W. Sheridan Rd. </span>, <span class="locality"> Chicago </span>, <span class="region"> IL </span> <span class="postal-code"> 60660 </span> </span> &middot; <span class="tel"> 773.274.3000 </span> <a class="email" href="mailto:webmaster@luc.edu"> webmaster@luc.edu </a> 
 					</div>
+<!-- endbuild -->
 					<div>
 						<a href="http://www.luc.edu/info/copyright_disclaimer.shtml">© Copyright &amp; Disclaimer 2014</a> <img class="logo photo" src="http://www.luc.edu/media/home/images/luc-logo.png" style="visibility:hidden;width:0px;height:0px;"> 
 					</div>
@@ -612,24 +620,12 @@ $(window).on('scroll', function() {
 	}
 	);
 	}});
-<<<<<<< HEAD
-</script> <!-- footer-close -->
-=======
-	@@include('./partials/header.html')								<!-- header -->
-	@@include('./partials/header-masthead.html')			<!-- masthead -->
-	@@include('./partials/nav-fixed.html')						<!-- nav -->
-	@@include('./partials/main-content-modules.html')	<!-- content -->
-	@@include('./partials/footer-cta.html')						<!-- cta -->
-	@@include('./partials/footer.html')								<!-- footer -->
-	@@include('./partials/footer-address.html')				<!-- footer-address -->
-	@@include('./partials/footer-close.html')					<!-- footer-close -->
->>>>>>> Stashed changes
-=======
 </script>					<!-- footer-close -->
->>>>>>> parent of c676664... Merge pull request #2 from sravenscraft/b3-modules-development
 </section>
 	<!-- build:jsref -->
 	<!-- inject:js -->
+	<script src="/js/all.js"></script>
+	<script src="/js/all.min.js"></script>
 	<!-- endinject -->
 	<!-- endbuild -->
 	</body>
