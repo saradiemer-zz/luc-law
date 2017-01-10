@@ -45,10 +45,25 @@ gulp.task('t4_media', function() {
 	//send to t4Dir
 	.pipe(gulp.dest(config.T4Dir + '/css'));
 });
+
 gulp.task('reference-replace', function() {
 	gulp.src(config.T4Dir + '/*.html')
 	.pipe(htmlreplace({
 		'js-reference': '<!-- <script src="/js/all.js"></script> --> <script src="/js/all.min.js"></script>',
+	}, {
+	T4Dir: './T4',
+};
+
+gulp.task('t4_media', function() {
+      // place code for your default task here
+	console.log('[gulp]: T4 Media');
+	
+	gulp.src(config.publicDir + '/*.html')
+   
+	.pipe(replace('/css/styles.css', '<t4 type="media" id="444511" formatter="path/*"/>'))
+	.pipe(replace('/js/all.min.js', '<t4 type="media" id="444527" formatter="path/*"/>'))
+	.pipe(htmlreplace({
+		'globalquicklinks': '<t4 type="media" id="77813" formatter="plain/text"/>',       
 	}, {
   keepUnassigned: false,
   keepBlockTags: true,

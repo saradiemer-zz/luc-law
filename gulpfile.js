@@ -15,12 +15,11 @@ var cssnano = require('gulp-cssnano');
 var gulpSequence = require('gulp-sequence');
 var browserSync = require('browser-sync');
 var htmlreplace = require('gulp-html-replace');
+var jsonreplace = require('gulp-json-replace');
 var replace = require('gulp-replace');
 var requireDir = require('require-dir');
 
 requireDir('./gulp-tasks');
-
-// var t4media = require('t4media.json');
 
 var config = {
     bootstrapDir: './bower_components/bootstrap',
@@ -99,4 +98,6 @@ gulp.task('serve', ['lint', 'sass', 'index', 'minify'], function () {
 		gulp.watch(config.devDir + '/js/**/*.js', ['js-watch']);
 });
 
+
 gulp.task('default', gulpSequence(['serve', 't4_media', 't4_navigation', 'reference-replace']));
+//gulp.task('default', gulpSequence(['serve',  't4_media'], 't4_nav'));

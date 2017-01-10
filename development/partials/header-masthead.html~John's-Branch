@@ -1,0 +1,16 @@
+<!-- HEADER - MASTHEAD -->
+<div id="masthead" class="container-fluid bg-overlay-dark">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+<!-- <h5 class="fade label black">Loyola University Chicago</h5> -->
+<!-- navigation object : Link to Home Page -->
+				<!-- build:linkhome -->
+                <h2 class="label-chapter display">
+					<a id="subsite-heading-gtm" href="#####">Pattern Library</a> 
+				</h2>
+                <!-- endbuild -->
+			</div>
+		</div>
+	</div>
+</div>

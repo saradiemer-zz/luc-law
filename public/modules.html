@@ -26,7 +26,6 @@
 <!-- Custom styles for this template -->
 	<link href="http://getbootstrap.com/examples/starter-template/starter-template.css" rel="stylesheet">
 	<!-- inject:css -->
-  <link rel="stylesheet" href="/css/styles.css">
   <!-- endinject -->
 <!-- Antenna / Receiver Fonts -->
 <!-- <link rel="stylesheet" type="text/css" media="" href="https://luc.edu/media/lucedu/fonts/antenna.css" /> -->
@@ -43,6 +42,7 @@
 </head>
 	<body>
 <section id="wrapper">	
+<<<<<<< Updated upstream
 	<div class="container-fluid" id="header">
 	<div class="container">
 		<div class="row">
@@ -633,11 +633,19 @@ $(window).on('scroll', function() {
 	);
 	}});
 </script> <!-- footer-close -->
+=======
+	@@include('./partials/header.html')								<!-- header -->
+	@@include('./partials/header-masthead.html')			<!-- masthead -->
+	@@include('./partials/nav-fixed.html')						<!-- nav -->
+	@@include('./partials/main-content-modules.html')	<!-- content -->
+	@@include('./partials/footer-cta.html')						<!-- cta -->
+	@@include('./partials/footer.html')								<!-- footer -->
+	@@include('./partials/footer-address.html')				<!-- footer-address -->
+	@@include('./partials/footer-close.html')					<!-- footer-close -->
+>>>>>>> Stashed changes
 </section>
 	<!-- build:jsref -->
 	<!-- inject:js -->
-	<script src="/js/all.js"></script>
-	<script src="/js/all.min.js"></script>
 	<!-- endinject -->
 	<!-- endbuild -->
 	</body>
