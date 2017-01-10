@@ -46,70 +46,12 @@
 
 .grid-square ul li { margin: 10px; }
 
-
-/* MODULES - BEGIN */
-
-/* check hovers and create mixins for color variations */
-
 .module-base {
-	margin: 20px 0;
 	padding: 20px;
-	background: $white;
+	background: red;
 	@extend %dark-module-base;
 }
 
 %dark-module-base {
-	border: 4px solid darken($gray, 32%);
-	background: $white ;
-}
-
-.announcement {
-	color: $white;
-	border: none;
-	@include border-radius(6px);
-	background-color: darken( $maroon, 15% );
-	a {
-		margin: 0;
-		color: $gold;
-		background-color: none;
-		&:hover {
-			color: lighten($gold, 30%);
-		}
-	}
-	h4.subhead {
-		margin: 0;
-	}
-}
-
-.pano {
-	position: relative;
-	padding-bottom: 40.8333%;
-	padding-top: 30px;
-	height: 0;
-	overflow: hidden;
-	color: lighten( $gray, 30% );
-	a {
-		margin: 0;
-		color: $white;
-		background-color: none;
-		&:hover {
-			color: lighten( $gray, 41% );
-		}
-	}
-	h4.subhead {
-		a { color: $gold;
-			&:hover {
-				color: lighten($gold, 30%);
-			}
-		}
-	}
-}
-
-.pano .overlay {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		height: auto;
-		background-color: rgba( $bg-overlay, .8 );
+	background: green;
 }

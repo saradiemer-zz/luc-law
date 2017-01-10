@@ -1,17 +1,10 @@
-a {
-	-webkit-transition: color .2s, background-color .2s;
-	-moz-transition: color .2s, background-color .2s;
-	-o-transition: color .2s, background-color .2s;
-	transition: color .2s, background-color .2s;
-}
-
 .btn,
 .btn:hover,
 .btn:focus,
 .btn:active,
 .btn.active,
 .btn.disabled,
-.btn[disabled] { background-color: darken( $maroon, 15% ); color: #ffffff; }
+.btn[disabled] { background-color: #680013; color: #ffffff; }
 
 .btn-group > .btn, .btn-group > .dropdown-menu, .btn-group > .popover, .cta {
 	font-size: .825em;
@@ -20,13 +13,13 @@ a {
 .cta, a.btn.cta {
 	margin: 0 0 0 10px;
 	font-family: "Antenna Bold", "museo-sans", "Arial", sans-serif !important;
-	color: lighten( $gray, 30%);
+	color: #FFF;
 	text-align: left;
 	letter-spacing: 1px;
-	text-transform: uppercase;
+	text-transform: uppercase; color: #EEE;
 	text-decoration: none;
 	text-shadow: none;
-	background-color: darken( $maroon, 15% );
+	background-color: #680013;
 	background-image: none;
 	border-bottom-color: #272727;
 	-moz-transition: all 0.2s ease-in;
@@ -38,16 +31,7 @@ a {
 .cta:active, .btn-group .cta:active,
 .cta:visited, .btn-group .cta:visited {
 	color: #FFF;
-	background-color: darken( $maroon, 15% );
+	background-color: #5C131F;
 }
 
-a.cta-link {
-	color: darken( $maroon, 15% );
-	background-color: none;
-	&:hover, &:active, &:visited {
-		color: darken( $maroon, 15% );	
-		background-color: none;
-	}
-}
-
-p a.cta { background: none; color: darken( $maroon, 15% ); }
+p a.cta { background: none; color: #680013; }

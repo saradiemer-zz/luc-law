@@ -26,6 +26,7 @@
 <!-- Custom styles for this template -->
 	<link href="http://getbootstrap.com/examples/starter-template/starter-template.css" rel="stylesheet">
 	<!-- inject:css -->
+  <link rel="stylesheet" href="/css/styles.css">
   <!-- endinject -->
 <!-- Antenna / Receiver Fonts -->
 <!-- <link rel="stylesheet" type="text/css" media="" href="https://luc.edu/media/lucedu/fonts/antenna.css" /> -->
@@ -42,19 +43,16 @@
 </head>
 	<body>
 <section id="wrapper">	
-	@@include('./partials/header.html') <!-- header -->
-	@@include('./partials/header-masthead.html') <!-- masthead -->
-	@@include('./partials/nav-fixed.html') <!-- nav -->
-	@@include('./partials/main-content-modules.html') <!-- content -->
-	@@include('./partials/footer-cta.html') <!-- cta -->
-	@@include('./partials/footer.html') <!-- footer -->
-	@@include('./partials/footer-address.html') <!-- footer-address -->
-	@@include('./partials/footer-close.html') <!-- footer-close -->
-</section>
-	<!-- build:jsref -->
-	<!-- endbuild -->
-	</body>
-</html>="global" class="navbar navbar-inverse">
+	<div class="container-fluid" id="header">
+	<div class="container">
+		<div class="row">
+			<div id="wordmark-wrapper" class="col-sm-6">
+<!-- <h1 class="text-muted" style="display: none; position: fixed;">Loyola University Chicago</h1> -->
+				<a href="http://www.luc.edu"><img class="img-responsive" id="wordmark" src="http://www.luc.edu/media/home/images/luc-logo.png" /></a> 
+			</div>
+			<div id="global-form-wrapper" class="col-md-4 col-sm-6 col-md-offset-2">
+				<div class="row">
+					<nav id="global" class="navbar navbar-inverse">
 						<div id="navbar-global">
 							<ul class="nav navbar-nav" id="global-links" role="navigation">
 								<li><a href="http://www.luc.edu/a-z/index.html">A&ndash;Z</a></li>

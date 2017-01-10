@@ -1,15 +1,15 @@
 /* BACKGROUND GRAY */
 
-.bg-white { background-color: $white; }
-.bg-gray-dark { background-color: darken( $gray, 16% ); }
-.bg-gray-extra-dark { background-color: darken( $gray, 32% ); }
-.bg-gray-light { background-color: lighten( $gray, 30% ); }
-.bg-gray-extra-light { background-color: lighten( $gray, 41% ); }
+.bg-white							{ background-color: $white; }
+.bg-gray-dark 				{ background-color: darken( $gray, 16% ); }
+.bg-gray-extra-dark 	{ background-color: darken( $gray, 32% ); }
+.bg-gray-light 				{ background-color: lighten( $gray, 30% ); }
+.bg-gray-extra-light 	{ background-color: lighten( $gray, 41% ); }
 
 /* BACKGROUND GOLD */
 
-.bg-gold 					{ background-color: $gold; }
-.bg-gold-dark 			{ background-color: darken( $gold, 15% ); }
+.bg-gold 							{ background-color: $gold; }
+.bg-gold-dark 				{ background-color: darken( $gold, 15% ); }
 .bg.gold-extra-dark 	{ background-color: darken( $gold, 30% ); }
 
 /* BACKGROUND OVERLAY */
