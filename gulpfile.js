@@ -15,7 +15,6 @@ var cssnano = require('gulp-cssnano');
 var gulpSequence = require('gulp-sequence');
 var browserSync = require('browser-sync');
 var htmlreplace = require('gulp-html-replace');
-var jsonreplace = require('gulp-json-replace');
 var replace = require('gulp-replace');
 var requireDir = require('require-dir');
 

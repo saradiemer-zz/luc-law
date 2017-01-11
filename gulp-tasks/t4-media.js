@@ -9,7 +9,7 @@ var config = {
 
 gulp.task('t4_media', function() {
 	//get styles.css in publicDir
-	gulp.src(config.publicDir + '/css/styles.css')
+	gulp.src(config.publicDir)
 	//social-icons
 	.pipe(replace('("http://www.luc.edu/media/home/images/social-icons-logos-33-070714.png")', '("<t4 type="media" id="233455" formatter="path/*"/>")'))	
 	//background image
@@ -42,22 +42,7 @@ gulp.task('t4_media', function() {
 	.pipe(replace('("antenna_thin/eeb94438-f886-4973-b3fe-70d47d3d56e5-2.eot")', '("<t4 type="media" id="375087" formatter="path/*"/>")'))
 	.pipe(replace('("antenna_thin/eeb94438-f886-4973-b3fe-70d47d3d56e5-3.woff")', '("<t4 type="media" id="375088" formatter="path/*"/>")'))
 	.pipe(replace('("antenna_thin/eeb94438-f886-4973-b3fe-70d47d3d56e5-1.ttf")', '("<t4 type="media" id="375086" formatter="path/*"/>")'))
-	//send to t4Dir
-	.pipe(gulp.dest(config.T4Dir + '/css'));
-});
-
-gulp.task('reference-replace', function() {
-	gulp.src(config.T4Dir + '/*.html')
-	.pipe(htmlreplace({
-		'js-reference': '<!-- <script src="/js/all.js"></script> --> <script src="/js/all.min.js"></script>',
-	}))
-	.pipe(gulp.dest(config.T4Dir));
-});
-
-gulp.task('t4_media', function() {
-      // place code for your default task here
-	console.log('[gulp]: T4 Media');	
-	gulp.src(config.publicDir + '/*.html') 
+	//change references	in html
 	.pipe(replace('/css/styles.css', '<t4 type="media" id="444511" formatter="path/*"/>'))
 	.pipe(replace('/js/all.min.js', '<t4 type="media" id="444527" formatter="path/*"/>'))
 	.pipe(htmlreplace({
@@ -67,5 +52,14 @@ gulp.task('t4_media', function() {
   keepBlockTags: true,
   resolvePaths: false
 }))
+	//send to t4Dir
 	.pipe(gulp.dest(config.T4Dir));
 });
+
+//gulp.task('reference-replace', function() {
+//	gulp.src(config.T4Dir + '/*.html')
+//	.pipe(htmlreplace({
+//		'js-reference': '<!-- <script src="/js/all.js"></script> --> <script src="/js/all.min.js"></script>',
+//	}))
+//	.pipe(gulp.dest(config.T4Dir));
+//});
