@@ -58,7 +58,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('fonts', function() {
-    return gulp.src(config.dev/Dir + '/fonts/**/*')
+    return gulp.src(config.devDir + '/fonts/**/*')
     .pipe(gulp.dest(config.publicDir + '/fonts'));
 });
 
