@@ -58,7 +58,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('fonts', function() {
-    return gulp.src(config.bootstrapDir + '/assets/fonts/**/*')
+    return gulp.src(config.dev/Dir + '/fonts/**/*')
     .pipe(gulp.dest(config.publicDir + '/fonts'));
 });
 
@@ -97,6 +97,6 @@ gulp.task('serve', ['lint', 'sass', 'index', 'minify'], function () {
 		gulp.watch(config.devDir + '/js/**/*.js', ['js-watch']);
 });
 
-gulp.task('default', gulpSequence(['serve',  't4_css', 't4_media'], 't4_nav'));
+gulp.task('default', gulpSequence(['serve', 't4_media', 't4_css'], 't4_nav'));
 
 //END GULP.JS
