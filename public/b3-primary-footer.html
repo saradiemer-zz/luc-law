@@ -1,7 +1,7 @@
+<section id="footer-content" class="">
 <!-- BEGIN FOOTER -->
 <!-- footer-content -->
 <!-- footer-content cta -->
-	<section id="footer-content" class="">
 		<div class="container-fluid" id="cta">
 			<div class="container">
 				<div class="row">
@@ -83,6 +83,7 @@
 					<div class="col-md-12" id="footer-links">
 						<ul id="nav" class="nav navbar-nav" role="navigation">
 <!-- navigation object : University Menu -->
+<!-- build:universitymenu -->
 							<li><a href="/about_loyola.shtml">About</a> 
 							<ul class="multilevel-linkul-0">
 								<li><a href="/president/index.shtml">Office of the President</a></li>
@@ -167,6 +168,7 @@
 								<li><a href="http://www.luc.edu/archives/index.shtml">University Archives</a></li>
 							</ul>
 							</li>
+<!-- endbuild -->
 						</ul>
 <!-- #nav -->
 					</div>
@@ -175,6 +177,7 @@
 					<div class="col-md-12" id="footer-links">
 						<ul id="nav" class="nav navbar-nav" role="navigation">
 <!-- navigation object : Home Menu -->
+<!-- build:sitemenu -->
 							<ul id="main-nav" class="topmenugroup">
 								<li><a href="http://www.luc.edu/patternlibrary/interior/">Interior</a></li>
 								<li><a href="http://www.luc.edu/patternlibrary/modules/">Modules</a></li>
@@ -182,12 +185,13 @@
 								<li><a href="http://www.luc.edu/patternlibrary/umcpattern/">UMC Pattern</a></li>
 								<li><a href="http://www.luc.edu/patternlibrary/colorpalette/">Color Palette</a></li>
 							</ul>
+<!-- endbuild -->
 						</ul>
 					</div>
 				</div>
 			</div>
 		</footer>
-</div>
+
 <!-- main-content-wrapper --> <!-- footer --> 
 <!-- footer-address -->
 <div class="container-fluid bg-gray" id="footer-address">
@@ -209,17 +213,17 @@
 			</div>
 		</div>
 	</div>
-</div>
-</section> <!-- footer-address --> 
+</div> <!-- footer-address -->
+</section>
 <!-- Placed at the end of the document so the pages load faster -->
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
 </script>
 <!--Javascript file smooth-scroll.js -->
-<script type="text/javascript" src="http://www.luc.edu/media/b3/js/smooth-scroll.js">
+<script type="text/javascript" src="https://www.luc.edu/media/b3/js/smooth-scroll.js">
 </script>
 <!--Javascript file functions.js -->
-<script type="text/javascript" src="http://www.luc.edu/media/b3/js/functions.js">
+<script type="text/javascript" src="https://www.luc.edu/media/b3/js/functions.js">
 </script>
 <script>
 $(window).on('scroll', function() {
@@ -230,7 +234,6 @@ $(window).on('scroll', function() {
 	}
 	});
 </script>
-<!-- Custom JS files-->
 <!-- JS Name:grid-->
 <script>
 	$(function(){
@@ -245,7 +248,11 @@ $(window).on('scroll', function() {
 	}
 	);
 	}});
-</script> <!-- footer-close --> 
+</script>
+<!-- Custom JS files-->
+<!-- build:customjs -->
+<!-- endbuild --> <!-- footer-close -->
+</section>
 <!-- build:js-reference -->
 	<!-- inject:js -->
 	<script src="/js/all.js"></script>
