@@ -84,7 +84,7 @@
 .pano {
 	position: relative;
 	padding-bottom: 40.8333%;
-	padding-top: 30px;
+	padding-top: 0px;
 	height: 0;
 	overflow: hidden;
 	color: lighten( $gray, 30% );
@@ -94,22 +94,44 @@
 		background-color: none;
 		&:hover {
 			color: lighten( $gray, 41% );
-		}
+		} /* close hover */
+	} /* close a */
+	h1.display {
+		font-family: Antenna Bold;
+		line-height: 1;
 	}
 	h4.subhead {
-		a { color: $gold;
-			&:hover {
-				color: lighten($gold, 30%);
-			}
-		}
+		margin: 0;
+		font-family: Antenna Light !important;
+		line-height: 1.45;
+		a { 
+			width: 100%;
+			font-family: Antenna Bold;
+			font-size: 80%;
+			color: $gold;
+			text-transform: uppercase;
+				&:hover {
+					color: lighten($gold, 30%);
+			} /* close hover */
+		} /* close a */
+	}
+	h6.category {
+		position: absolute;
+		top: 0;
+		left: 0;
+		margin: 0;
+		padding: 5px 20px 5px 5px;
+		background-color: rgba( $bg-overlay, .8 );
 	}
 }
+
 
 .pano .overlay {
 		position: absolute;
 		bottom: 0;
 		left: 0;
 		right: 0;
+		padding: 15px;
 		height: auto;
 		background-color: rgba( $bg-overlay, .8 );
 }
