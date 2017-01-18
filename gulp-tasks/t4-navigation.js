@@ -10,7 +10,7 @@ var config = {
 gulp.task('t4_nav', function() {
 	// place code for your default task here
 	console.log('[gulp]: T4 Navigation');
-	gulp.src(config.T4Dir + '/*.html')
+	return gulp.src(config.T4Dir + '/*.html')
 		.pipe(htmlreplace({
 		'customjs': '<t4 type="navigation" id="406"/>',
 		'navtitle': '<title><t4 type="navigation" id="630"/><t4 type="title" append-content="true" append-element="Title" separator=": " />: <t4 type="navigation" id="77"/>: Loyola University Chicago</title>',
@@ -29,5 +29,5 @@ gulp.task('t4_nav', function() {
 		keepBlockTags: true,
 		resolvePaths: false
 }))
-	.pipe(gulp.dest(config.T4DeployDir));
+	.pipe(gulp.dest(config.T4Dir));
 });
