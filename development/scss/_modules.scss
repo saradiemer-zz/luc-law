@@ -1,3 +1,11 @@
+.module-base a {
+	text-decoration: none;
+	-webkit-transition: color .5s ease;
+	-moz-transition: color .5s ease;
+	-o-transition: color .5s ease;
+	transition: color .5s ease;
+}
+
 .grid-row {
 	box-sizing: border-box;
 	margin: 0;
@@ -98,11 +106,13 @@
 	} /* close a */
 	h1.display {
 		font-family: Antenna Bold;
+		font-size: 2em;
 		line-height: 1;
 	}
 	h4.subhead {
 		margin: 0;
 		font-family: Antenna Light !important;
+		font-size: 1em;
 		line-height: 1.45;
 		a { 
 			width: 100%;
@@ -115,16 +125,18 @@
 			} /* close hover */
 		} /* close a */
 	}
-	h6.category {
+	h6 {
 		position: absolute;
 		top: 0;
 		left: 0;
 		margin: 0;
 		padding: 5px 20px 5px 5px;
+		width: 150px;
+		height: 30px;
 		background-color: rgba( $bg-overlay, .8 );
 	}
+	h6.category { color: red; }
 }
-
 
 .pano .overlay {
 		position: absolute;
