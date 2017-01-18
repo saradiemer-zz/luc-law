@@ -5,7 +5,6 @@ var htmlreplace = require('gulp-html-replace');
 var config = {
 	publicDir: './public',
 	T4Dir: './T4',
-	T4DeployDir: './T4Deploy',
 };
 gulp.task('t4_nav', function() {
 	// place code for your default task here
