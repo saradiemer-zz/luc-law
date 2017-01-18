@@ -3,7 +3,7 @@ var replace = require('gulp-replace');
 
 var config = {
 	publicDir: './public',
-	T4DeployDir: './T4Deploy',
+	T4Dir: './T4',
 };
 
 gulp.task('t4_css', function() {
@@ -42,5 +42,5 @@ gulp.task('t4_css', function() {
 	.pipe(replace('("../fonts/antenna_thin/eeb94438-f886-4973-b3fe-70d47d3d56e5-3.woff")', '("<t4 type="media" id="375088" formatter="path/*"/>")'))
 	.pipe(replace('("../fonts/antenna_thin/eeb94438-f886-4973-b3fe-70d47d3d56e5-1.ttf")', '("<t4 type="media" id="375086" formatter="path/*"/>")'))
 	//send to /css/styles.css in T4Dir
-	.pipe(gulp.dest(config.T4DeployDir + '/css'));
+	.pipe(gulp.dest(config.T4Dir + '/css'));
 });
