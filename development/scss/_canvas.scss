@@ -1,0 +1,140 @@
+#main-content.canvas { margin: 0; width: 100%; }
+
+.canvas-base a {
+	text-decoration: none;
+	-webkit-transition: color .5s ease;
+	-moz-transition: color .5s ease;
+	-o-transition: color .5s ease;
+	transition: color .5s ease;
+}
+
+/* PANEL - BEGIN */
+
+/* check hovers and create mixins for color variations */
+
+.jumbotron.canvas-base {
+	border: 0 none;
+	border-radius: 0;
+}
+
+.canvas-base {
+	margin: 0;
+	padding: 10px 0;
+	background: $white;
+	border: 0 none;
+	border-radius: 0;
+	@include media-breakpoint-down(sm) {
+		padding: 30px 0;
+		h4 {
+			font-size: 24px;
+		}
+	}
+}
+
+.fullbleed {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	background: url("../images/canvas.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 0;
+	overflow: hidden;
+	@include media-breakpoint-down(md) { background-size: 100%; }
+	@include media-breakpoint-down(xs) { background-size: 200%; }
+}
+
+.fullbleed:before {
+	margin: 0;
+	padding: 0;
+	padding-top: 31.3888%;
+	content: "";
+	width: 100%;
+	@include media-breakpoint-down(md) { padding-top: 40.3888%; }
+	@include media-breakpoint-down(xs) { padding-top: 80.6%; }
+}
+
+.fullbleed .partial-overlay {
+	position: absolute;
+	margin-top: -31.3888%;
+	@include media-breakpoint-down(md) { margin-top: -40.3888%; }
+	@include media-breakpoint-down(xs) { margin-top: -80.6%; }
+	width: 100%;
+	height: auto;
+}
+
+.fullbleed .partial-overlay .container {
+	position: relative;
+	height: 500px;
+	@include media-breakpoint-down(sm) {
+		padding: 0;
+		width: 100%;
+		height: 400px
+	}
+}
+
+.fullbleed .partial-overlay .bg-overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	display: block;
+	@include media-breakpoint-down(sm) {
+		padding: 15px;
+	}
+}
+
+.fullbleed .partial-overlay .canvas-content {
+	@include media-breakpoint-down(md) {
+		padding: 0;
+		h3 {
+			margin-top: 5px;
+		}
+	}
+}
+
+.partial-overlay .bg-overlay.col-sm-4 {
+	@include media-breakpoint-down(sm) {
+		width: 100%;
+	}
+}
+
+.canvas-content {
+	padding: 20px 0;
+}
+
+%dark-canvas-base {
+	background: $gray ;
+}
+
+.bg-overlay {
+	@include media-breakpoint-up(lg) { display: block; }
+	@include media-breakpoint-down(lg) { display: none; }
+	color: lighten($gray, 20%); 
+		h1 {
+			margin: 0 0 5px 0;
+		}
+		a.cta {
+			color: lighten($gold, 5%);
+		}
+}
+
+.canvas-panel {
+	@include media-breakpoint-up(lg) { display: none; }
+	@include media-breakpoint-down(lg) { display: block; padding-left: 0; padding-right: 0; }
+	color: lighten($gray, 20%);
+	background: darken($gray, 32%);
+		h1 {
+			margin: 0 0 5px 0;
+		}
+		a.cta {
+			color: lighten($gold, 5%);
+		}
+}
+
+.bg-overlay h1.display, .canvas-panel h1.display, .canvas-content h1.display {
+	@include media-breakpoint-down(lg) {
+		font-size: 2em !important;
+	}
+}
+
+/* END */
