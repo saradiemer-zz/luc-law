@@ -4,16 +4,14 @@
 .bg-gray-dark 				{ background-color: darken( $gray, 16% ); }
 .bg-gray-extra-dark 	{ background-color: darken( $gray, 32% ); }
 .bg-gray-light 				{ background-color: lighten( $gray, 30% ); }
-.bg-gray-extra-light 	{ background-color: lighten( $gray, 41% ); }
+.bg-gray-extra-light 	{ background-color: lighten( $gray, 36% ); }
 
 /* BACKGROUND GOLD */
-
 .bg-gold 							{ background-color: $gold; }
 .bg-gold-dark 				{ background-color: darken( $gold, 15% ); }
 .bg.gold-extra-dark 	{ background-color: darken( $gold, 30% ); }
 
 /* BACKGROUND OVERLAY */
-
 .bg-overlay { background-color: $bg-overlay; }
 .bg-overlay-dark { background-color: rgba( $bg-overlay, .6 ); }
 .bg-overlay-extra-dark { background-color: rgba( $bg-overlay, .8 ); }
@@ -21,102 +19,52 @@
 .bg-overlay-extra-light { background-color: rgba( $bg-overlay, .2 ); }
 
 /* MAROON */
-
-li.maroon { background-color: lighten( $maroon, 3% ); }
-
-li.maroon-dark { background-color: darken( $maroon, 5% ); }
-
-li.maroon-extra-dark { background-color: darken( $maroon, 15% ); }
-
-li.maroon-light { background-color: lighten( $maroon, 20% ); }
-
-li.maroon-extra-light { background-color: lighten( $maroon, 35% ) }
-
+.maroon { background-color: lighten($maroon, 3%); }
+.maroon-dark { background-color: darken( $maroon, 5% ); }
+.maroon-extra-dark { background-color: darken( $maroon, 15% ); }
+.maroon-light { background-color: lighten( $maroon, 20% ); }
+.maroon-extra-light { background-color: lighten( $maroon, 35% ) }
 
 /* GOLD */
-
-li.gold { background-color: $gold; }
-
-li.gold-dark { background-color: darken( $gold, 15% ); }
-
-li.gold-extra-dark { background-color: darken( $gold, 30% ); }
-
+.gold { background-color: $gold; }
+.gold-dark { background-color: darken( $gold, 15% ); }
+.gold-extra-dark { background-color: darken( $gold, 30% ); }
+.gold-light { background-color: lighten( $gold, 20% ); }
 
 /* GRAY */
-
-li.gray { background-color: lighten( $gray, 5% ); }
-
-li.gray-dark { background-color: darken( $gray, 16% ); }
-
-li.gray-extra-dark { background-color: darken( $gray, 32% ); }
-
-li.gray-light { background-color: lighten( $gray, 30% ); }
-
-li.gray-extra-light { background-color: lighten( $gray, 41% ); }
-
+.gray { background-color: lighten( $gray, 5% ); }
+.gray-dark { background-color: darken( $gray, 16% ); }
+.gray-extra-dark { background-color: darken( $gray, 32% ); }
+.gray-light { background-color: lighten( $gray, 30% ); }
+.gray-extra-light { background-color: lighten( $gray, 36% ); }
 
 /* LAKE */
-
-li.lake { background-color: lighten( $lake, 4% ); }
-
-li.lake-dark { background-color: darken( $lake, 9% ); }
-
-li.lake-extra-dark { background-color: darken( $lake, 18% ); }
-
-li.lake-light { background-color: lighten( $lake, 48% ); }
-
-li.lake-extra-light { background-color: hsl(200deg, 70%, 94%); }
-
+.lake { background-color: lighten( $lake, 4% ); }
+.lake-dark { background-color: darken( $lake, 9% ); }
+.lake-extra-dark { background-color: darken( $lake, 18% ); }
+.lake-light { background-color: lighten( $lake, 48% ); }
+.lake-extra-light { background-color: hsl(200deg, 70%, 94%); }
 
 /* PATINA */
-
-li.patina { background-color: darken( $patina, 0% ); }
-
-li.patina-dark { background-color: darken( $patina, 15% ); }
-
-li.patina-extra-dark { background-color: darken( $patina, 30% ); }
-
-li.patina-light { background-color: lighten( $patina, 38% ); }
-
-li.patina-extra-light { background-color: hsl(177deg, 45%, 94%); }
-
+.patina { background-color: darken( $patina, 0% ); }
+.patina-dark { background-color: darken( $patina, 15% ); }
+.patina-extra-dark { background-color: darken( $patina, 30% ); }
+.patina-light { background-color: lighten( $patina, 38% ); }
+.patina-extra-light { background-color: hsl(177deg, 45%, 94%); }
 
 /* TERRACOTTA */
-
-li.terracotta { background-color: $terracotta; }
-
-li.terracotta-dark { background-color: darken( $terracotta, 20% ); }
-
-li.terracotta-extra-dark { background-color: darken( $terracotta, 35% ); }
-
-li.terracotta-light { background-color: lighten( $terracotta, 30% ); }
-
-li.terracotta-extra-light { background-color: lighten( $terracotta, 41.5% ); }
-
-li.terracotta-extra-light { background-color: hsl(31deg, 20%, 94%); }
-
+.terracotta { background-color: $terracotta; }
+.terracotta-dark { background-color: darken( $terracotta, 20% ); }
+.terracotta-extra-dark { background-color: darken( $terracotta, 35% ); }
+.terracotta-light { background-color: lighten( $terracotta, 30% ); }
+.terracotta-extra-light { background-color: lighten( $terracotta, 41.5% ); }
+.terracotta-extra-light { background-color: hsl(31deg, 20%, 94%); }
 
 /* TAUPE */
+.taupe { background-color: $taupe; }
+.taupe-dark { background-color: darken( $taupe, 20% ); }
+.taupe-extra-dark { background-color: darken( $taupe, 32% ); }
+.taupe-light { background-color: lighten( $taupe, 28% ); }
+.taupe-extra-light { background-color: hsl(55deg, 14%, 94%); }
 
-li.taupe { background-color: $taupe; }
-
-li.taupe-dark { background-color: darken( $taupe, 20% ); }
-
-li.taupe-extra-dark { background-color: darken( $taupe, 32% ); }
-
-li.taupe-light { background-color: lighten( $taupe, 28% ); }
-
-li.taupe-extra-light { background-color: hsl(55deg, 14%, 94%); }
-
-
-/* BACKGROUND OVERLAY */
-
-li.bg-overlay-base { background-color: $bg-overlay; }
-
-li.bg-overlay-dark { background-color: rgba( $bg-overlay, .6 ); }
-
-li.bg-overlay-extra-dark { background-color: rgba( $bg-overlay, .8 ); }
-
-li.bg-overlay-light { background-color: rgba( $bg-overlay, .3 ); }
-
-li.bg-overlay-extra-light { background-color: rgba( $bg-overlay, .2 ); }
+/* END - COLOR */

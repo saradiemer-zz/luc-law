@@ -1,9 +1,9 @@
 .module-base a {
 	text-decoration: none;
-	-webkit-transition: color .5s ease;
-	-moz-transition: color .5s ease;
-	-o-transition: color .5s ease;
-	transition: color .5s ease;
+	-webkit-transition: color 0.2s ease;
+	-moz-transition: color 0.2s ease;
+	-o-transition: color 0.2s ease;
+	transition: color 0.2s ease;
 }
 
 .grid-row {
@@ -44,7 +44,7 @@
 	padding: 0 0 5px;
 	width: 100%;
 	font-family: $antenna;
-	color: #ffffff;
+	color: $white;
 	font-size: .675em;
 	line-height: 1.35;
 	text-transform: uppercase;
@@ -75,7 +75,7 @@
 	color: $white;
 	border: none;
 	@include border-radius(6px);
-	background-color: darken( $maroon, 15% );
+	background-color: darken( $maroon, 5% );
 	a {
 		margin: 0;
 		color: $gold;
@@ -95,13 +95,13 @@
 	padding-top: 0px;
 	height: 0;
 	overflow: hidden;
-	color: lighten( $gray, 30% );
+	color: lighten($gray, 30%);
 	a {
 		margin: 0;
 		color: $white;
 		background-color: none;
 		&:hover {
-			color: lighten( $gray, 41% );
+			color: lighten($gray, 41%);
 		} /* close hover */
 	} /* close a */
 	h1.display {
@@ -133,7 +133,7 @@
 		padding: 5px 20px 5px 5px;
 		width: 150px;
 		height: 30px;
-		background-color: rgba( $bg-overlay, .8 );
+		background-color: rgba($bg-overlay, .8);
 	}
 	h6.category { color: red; }
 }
@@ -145,5 +145,7 @@
 		right: 0;
 		padding: 15px;
 		height: auto;
-		background-color: rgba( $bg-overlay, .8 );
+		background-color: rgba($bg-overlay, .8);
 }
+
+/* END - MODULES */

@@ -8,4 +8,54 @@ $taupe:				#c7a982;
 $white:				#ffffff;
 $bg-overlay:	rgba(0,0,0,.5);
 
+/* MAROON */
+$maroon: lighten($maroon, 3%);
+$maroon-dark: darken($maroon, 5%);
+$maroon-extra-dark: darken($maroon, 15%);
+$maroon-light: lighten($maroon, 20%);
+$maroon-extra-light: lighten($maroon, 35%);
+
+/* GOLD */
+$gold: lighten($gold, 1%);
+$gold-dark: darken($gold, 15%);
+$gold-extra-dark: darken($gold, 30%);
+$gold-light: lighten($gold, 20%);
+
+/* GRAY */
+$gray: lighten($gray, 5%);
+$gray-dark: darken($gray, 16%);
+$gray-extra-dark: darken($gray, 32%);
+$gray-light: lighten($gray, 30%);
+$gray-extra-light: lighten($gray, 36%);
+
+/* LAKE */
+$lake: lighten($lake, 4%);
+$lake-dark: darken($lake, 9%);
+$lake-extra-dark: darken($lake, 18%);
+$lake-light: lighten($lake, 48%);
+/* lake-extra-light use "lake-extra-light" class for background-color */
+
+/* PATINA */
+$patina: darken($patina, 0%);
+$patina-dark: darken($patina, 15%);
+$patina-extra-dark: darken($patina, 30%);
+$patina-light: lighten($patina, 38%);
+$patina-extra-light: lighten($patina, 45%);
+
+/* TERRACOTTA */
+$terracotta: $terracotta;
+$terracotta-dark: darken($terracotta, 20%);
+$terracotta-extra-dark: darken($terracotta, 35%);
+$terracotta-light: lighten($terracotta, 30%);
+$terracotta-extra-light: lighten($terracotta, 41.5%);
+$terracotta-extra-light: lighten($terracotta, 48%);
+
+/* TAUPE */
+$taupe: $taupe;
+$taupe-dark: darken($taupe, 20%);
+$taupe-extra-dark: darken( $taupe, 32% );
+$taupe-light: lighten( $taupe, 28% );
+$taupe-extra-light: lighten( $taupe, 36% );
+
+
 $antenna: 'Antenna', sans-serif;
