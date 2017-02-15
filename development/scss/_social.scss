@@ -32,7 +32,7 @@
 	margin: 0 10px 0 0;
 	overflow: hidden;
 	width: 28px;
-	background-color: #525252;
+	background-color: darken($gray, 16%);
 }
 #social li:first-child {
   margin-left: 0 !important;
@@ -70,7 +70,12 @@
 }
 #social li a:hover {
   transition: background-color 0.2s ease-in 0s, opacity 0.2s ease-in 0s;
-  background-color: #680013;
+	-webkit-transition: background-color 0.2s ease-in 0s, opacity 0.2s ease-in 0s;
+	-moz-transition: background-color 0.2s ease-in 0s, opacity 0.2s ease-in 0s;
+	-ms-transition: background-color 0.2s ease-in 0s, opacity 0.2s ease-in 0s; /* IE10 is actually unprefixed */
+	-o-transition: background-color 0.2s ease-in 0s, opacity 0.2s ease-in 0s;
+	transition: background-color 0.2s ease-in 0s, opacity 0.2s ease-in 0s;
+  background-color: lighten($maroon, 3%);
   opacity: 1;
 }
 #social li a.icon-fb {
@@ -127,3 +132,5 @@
 #social li a.icon-google:hover {
   background-position: 0 -252px;
 }
+
+/* END - SOCIAL */

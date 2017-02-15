@@ -5,6 +5,28 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
+.b3-grid-example {
+	padding: 20px 0;
+	border: solid 1px $white;
+	background: yellow;
+}
+
+.b3-grid-example.left-100 {
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+.b3-grid-example > div {
+	padding: 15px;
+	font-family: 'Antenna Bold', sans-serif;
+	font-size: .5em;
+	text-transform: uppercase;
+	border-width: 1px;
+	border-style: solid;
+	border-color: $white;
+	background: red;
+}
 
 /* GLOBAL FIX */
 
@@ -738,7 +760,7 @@ table {
 caption {
   padding-top: 8px;
   padding-bottom: 8px;
-  color: #777;
+  color: darken($gray, 16%);
   text-align: left;
 }
 th {
@@ -758,11 +780,11 @@ th {
   padding: 8px;
   line-height: 1.42857143;
   vertical-align: top;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid lighten($gray, 30%);
 }
 .table > thead > tr > th {
   vertical-align: bottom;
-  border-bottom: 2px solid #ddd;
+  border-bottom: 2px solid lighten($gray, 30%);
 }
 .table > caption + thead > tr:first-child > th,
 .table > colgroup + thead > tr:first-child > th,
@@ -773,10 +795,10 @@ th {
   border-top: 0;
 }
 .table > tbody + tbody {
-  border-top: 2px solid #ddd;
+  border-top: 2px solid lighten($gray, 30%);
 }
 .table .table {
-  background-color: #fff;
+  background-color: $white;
 }
 .table-condensed > thead > tr > th,
 .table-condensed > tbody > tr > th,
@@ -787,7 +809,7 @@ th {
   padding: 5px;
 }
 .table-bordered {
-  border: 1px solid #ddd;
+  border: 1px solid lighten($gray, 30%);
 }
 .table-bordered > thead > tr > th,
 .table-bordered > tbody > tr > th,
@@ -795,17 +817,17 @@ th {
 .table-bordered > thead > tr > td,
 .table-bordered > tbody > tr > td,
 .table-bordered > tfoot > tr > td {
-  border: 1px solid #ddd;
+  border: 1px solid lighten($gray, 30%);
 }
 .table-bordered > thead > tr > th,
 .table-bordered > thead > tr > td {
   border-bottom-width: 2px;
 }
 .table-striped > tbody > tr:nth-of-type(odd) {
-  background-color: #f9f9f9;
+  background-color: lighten($gray, 41%);
 }
 .table-hover > tbody > tr:hover {
-  background-color: #f5f5f5;
+  background-color: lighten($gray, 41%);
 }
 table col[class*="col-"] {
   position: static;
@@ -830,14 +852,14 @@ table th[class*="col-"] {
 .table > thead > tr.active > th,
 .table > tbody > tr.active > th,
 .table > tfoot > tr.active > th {
-  background-color: #f5f5f5;
+  background-color: lighten($gray, 41%);
 }
 .table-hover > tbody > tr > td.active:hover,
 .table-hover > tbody > tr > th.active:hover,
 .table-hover > tbody > tr.active:hover > td,
 .table-hover > tbody > tr:hover > .active,
 .table-hover > tbody > tr.active:hover > th {
-  background-color: #e8e8e8;
+  background-color: lighten($gray, 41%);
 }
 .table > thead > tr > td.success,
 .table > tbody > tr > td.success,
@@ -933,7 +955,7 @@ table th[class*="col-"] {
     margin-bottom: 15px;
     overflow-y: hidden;
     -ms-overflow-style: -ms-autohiding-scrollbar;
-    border: 1px solid #ddd;
+    border: 1px solid lighten($gray, 41%);
   }
   .table-responsive > .table {
     margin-bottom: 0;
@@ -988,9 +1010,9 @@ legend {
   margin-bottom: 20px;
   font-size: 21px;
   line-height: inherit;
-  color: #333;
+  color: darken($gray, 32%);
   border: 0;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid lighten($gray, 32%);
 }
 label {
   display: inline-block;
@@ -1033,7 +1055,7 @@ output {
   padding-top: 7px;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #555;
+  color: darken($gray, 16%);
 }
 .form-control {
   display: block;
@@ -1042,7 +1064,7 @@ output {
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #555;
+  color: darken($gray, 16%);
   background-color: #fff;
   background-image: none;
   border: 1px solid #ccc;
@@ -1060,14 +1082,14 @@ output {
           box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
 }
 .form-control::-moz-placeholder {
-  color: #999;
+  color: darken($gray, 16%);
   opacity: 1;
 }
 .form-control:-ms-input-placeholder {
-  color: #999;
+  color: darken($gray, 16%);
 }
 .form-control::-webkit-input-placeholder {
-  color: #999;
+  color: darken($gray, 16%);
 }
 .form-control::-ms-expand {
   background-color: transparent;
@@ -1076,7 +1098,7 @@ output {
 .form-control[disabled],
 .form-control[readonly],
 fieldset[disabled] .form-control {
-  background-color: #eee;
+  background-color: lighten($gray, 41%);
   opacity: 1;
 }
 .form-control[disabled],
@@ -1497,3 +1519,5 @@ select[multiple].input-lg {
     font-size: 12px;
   }
 }
+
+/* END - BOOTSTRAP */

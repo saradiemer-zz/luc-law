@@ -146,8 +146,8 @@ h1 {
 //
 
 mark {
-  background: #ff0;
-  color: #000;
+  background: lighten($gray, 41%);
+  color: darken($gray, 32%);
 }
 
 //
@@ -375,7 +375,7 @@ input[type="search"]::-webkit-search-decoration {
 //
 
 fieldset {
-  border: 1px solid #c0c0c0;
+  border: 1px solid lighten($gray, 30%);
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
@@ -423,3 +423,5 @@ td,
 th {
   padding: 0;
 }
+
+/* END - NORMALIZE */
