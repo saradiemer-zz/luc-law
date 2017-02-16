@@ -29,7 +29,7 @@
 		h1.display.number {
 			padding-top: 15px;
 			margin-top: 20px;
-			border-top: solid 1px lighten($gray, 30%);
+			border-top: solid 1px $gray-light;
 		}
 	}
 }

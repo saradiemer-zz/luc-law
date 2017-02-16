@@ -25,7 +25,7 @@
 	padding: 0;
 	width: 15px;
 	height: 100%;
-	border-right: solid 1px lighten($gray, 30%);
+	border-right: solid 1px $gray-light;
 	background: none;
 		@include media-breakpoint-down(md) { display: none; }
 }
@@ -76,7 +76,7 @@
 /*
 	font-family: 'Antenna Black', sans-serif !important;
 	font-size: 1.35em;
-	color: lighten($gray,16%);
+	color: $gray-light;
 */
 	@include media-breakpoint-down(md) {
 		margin-bottom: 0px;
@@ -109,7 +109,7 @@
 .canvas-base .container .divider {
 	margin: 0 15px;
 	height: 1px;
-	background: lighten( $gray, 30% );
+	background: $gray-light;
 	@include media-breakpoint-down(md) {
 		margin: 0;
 	}
@@ -207,27 +207,27 @@
 .bg-overlay {
 	@include media-breakpoint-up(lg) { display: block; }
 	@include media-breakpoint-down(lg) { display: none; }
-	color: lighten($gray, 30%); 
+	color: $gray-light; 
 		h1 {
 			margin: 0 0 5px 0;
 		}
 		a.cta {
-			color: lighten($gold, 5%);
+			color: $gold;
 		}
 }
 
 .canvas-panel {
 	@include media-breakpoint-up(lg) { display: none; }
 	@include media-breakpoint-down(lg) { display: block; padding-left: 0; padding-right: 0; }
-	color: lighten($gray, 20%);
-	background: darken($gray, 32%);
+	color: $gray-light;
+	background: $gray-extra-dark;
 		h1 {
 			margin: 0 0 5px 0;
 		}
 		a.cta {
-			color: lighten($gold, 5%);
+			color: $gold;
 			&:hover {
-				color: lighten($gold, 20%);
+				color: $gold-light;
 			}
 		}
 }

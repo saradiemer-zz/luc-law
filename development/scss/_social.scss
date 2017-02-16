@@ -32,7 +32,7 @@
 	margin: 0 10px 0 0;
 	overflow: hidden;
 	width: 28px;
-	background-color: darken($gray, 16%);
+	background-color: $gray-dark;
 }
 #social li:first-child {
   margin-left: 0 !important;
@@ -42,7 +42,7 @@
   margin-right: 0;
 }
 #social li a {
-  background: url("http://www.luc.edu/media/home/images/social-icons-logos-33-070714.png") no-repeat scroll 0 0 #525252;
+  background: url("http://www.luc.edu/media/home/images/social-icons-logos-33-070714.png") no-repeat scroll 0 0 $gray-dark;
 	background-size: 28px;
   border-radius: 4px;
   display: block;
@@ -75,7 +75,7 @@
 	-ms-transition: background-color 0.2s ease-in 0s, opacity 0.2s ease-in 0s; /* IE10 is actually unprefixed */
 	-o-transition: background-color 0.2s ease-in 0s, opacity 0.2s ease-in 0s;
 	transition: background-color 0.2s ease-in 0s, opacity 0.2s ease-in 0s;
-  background-color: lighten($maroon, 3%);
+  background-color: $maroon-dark;
   opacity: 1;
 }
 #social li a.icon-fb {
