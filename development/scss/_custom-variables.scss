@@ -45,21 +45,21 @@ $lake-extra-light: hsl(200, 70%, 94%);
 $patina: darken($patina, 0%);
 $patina-dark: darken($patina, 15%);
 $patina-extra-dark: darken($patina, 30%);
-$patina-light: lighten($patina, 38%);
+$patina-light: hsl(177, 55%, 86%);
 $patina-extra-light: hsl(177, 45%, 94%);
 
 /* TERRACOTTA */
 $terracotta: $terracotta;
 $terracotta-dark: darken($terracotta, 20%);
 $terracotta-extra-dark: darken($terracotta, 35%);
-$terracotta-light: lighten($terracotta, 30%);
+$terracotta-light: lighten($terracotta, 35%);
 $terracotta-extra-light: hsl(31, 20%, 94%);
 
 /* TAUPE */
 $taupe: $taupe;
 $taupe-dark: darken($taupe, 20%);
 $taupe-extra-dark: darken( $taupe, 32% );
-$taupe-light: lighten( $taupe, 28% );
+$taupe-light: lighten( $taupe, 25% );
 $taupe-extra-light: hsl(55, 14%, 94%);
 
 

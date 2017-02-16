@@ -62,9 +62,9 @@
 
 /* TAUPE */
 .taupe { background-color: $taupe; }
-.taupe-dark { background-color: darken($taupe, 20%); }
-.taupe-extra-dark { background-color: darken($taupe, 32%); }
-.taupe-light { background-color: lighten($taupe, 28%); }
-.taupe-extra-light { background-color: hsl(55deg, 14%, 94%); }
+.taupe-dark { background-color: $taupe-dark; }
+.taupe-extra-dark { background-color: $taupe-extra-dark; }
+.taupe-light { background-color: $taupe-light; }
+.taupe-extra-light { background-color: $taupe-extra-light; }
 
 /* END - COLOR */
