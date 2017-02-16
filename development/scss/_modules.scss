@@ -67,7 +67,7 @@
 }
 
 %dark-module-base {
-	border: 4px solid darken($gray, 32%);
+	border: 4px solid $gray-extra-dark;
 	background: $white ;
 }
 
@@ -75,13 +75,13 @@
 	color: $white;
 	border: none;
 	@include border-radius(6px);
-	background-color: darken( $maroon, 5% );
+	background-color: $maroon-dark;
 	a {
 		margin: 0;
 		color: $gold;
 		background-color: none;
 		&:hover {
-			color: lighten($gold, 30%);
+			color: $gold-light;
 		}
 	}
 	h4.subhead {
@@ -95,13 +95,13 @@
 	padding-top: 0px;
 	height: 0;
 	overflow: hidden;
-	color: lighten($gray, 30%);
+	color: $gray-light;
 	a {
 		margin: 0;
 		color: $white;
 		background-color: none;
 		&:hover {
-			color: lighten($gray, 41%);
+			color: $gray-extra-light;
 		} /* close hover */
 	} /* close a */
 	h1.display {
@@ -121,7 +121,7 @@
 			color: $gold;
 			text-transform: uppercase;
 				&:hover {
-					color: lighten($gold, 30%);
+					color: $gold-light;
 			} /* close hover */
 		} /* close a */
 	}

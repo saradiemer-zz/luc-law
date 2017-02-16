@@ -1,70 +1,70 @@
 /* BACKGROUND GRAY */
 
 .bg-white							{ background-color: $white; }
-.bg-gray-dark 				{ background-color: darken( $gray, 16% ); }
-.bg-gray-extra-dark 	{ background-color: darken( $gray, 32% ); }
-.bg-gray-light 				{ background-color: lighten( $gray, 30% ); }
-.bg-gray-extra-light 	{ background-color: lighten( $gray, 36% ); }
+.bg-gray-dark 				{ background-color: $gray-dark; }
+.bg-gray-extra-dark 	{ background-color: $gray-extra-dark; }
+.bg-gray-light 				{ background-color: $gray-light; }
+.bg-gray-extra-light 	{ background-color: $gray-extra-light; }
 
 /* BACKGROUND GOLD */
 .bg-gold 							{ background-color: $gold; }
-.bg-gold-dark 				{ background-color: darken( $gold, 15% ); }
-.bg.gold-extra-dark 	{ background-color: darken( $gold, 30% ); }
+.bg-gold-dark 				{ background-color: $gold-dark; }
+.bg.gold-extra-dark 	{ background-color: $gold-extra-dark; }
+.bg.gold-light 				{ background-color: $gold-light; }
 
 /* BACKGROUND OVERLAY */
 .bg-overlay { background-color: $bg-overlay; }
-.bg-overlay-dark { background-color: rgba( $bg-overlay, .6 ); }
-.bg-overlay-extra-dark { background-color: rgba( $bg-overlay, .8 ); }
-.bg-overlay-light { background-color: rgba( $bg-overlay, .3 ); }
-.bg-overlay-extra-light { background-color: rgba( $bg-overlay, .2 ); }
+.bg-overlay-dark { background-color: $bg-overlay-dark; }
+.bg-overlay-extra-dark { background-color: $bg-overlay-extra-dark; }
+.bg-overlay-light { background-color: $bg-overlay-light; }
+.bg-overlay-extra-light { background-color: $bg-overlay-extra-light; }
 
 /* MAROON */
-.maroon { background-color: lighten($maroon, 3%); }
-.maroon-dark { background-color: darken( $maroon, 5% ); }
-.maroon-extra-dark { background-color: darken( $maroon, 15% ); }
-.maroon-light { background-color: lighten( $maroon, 20% ); }
-.maroon-extra-light { background-color: lighten( $maroon, 35% ) }
+.maroon { background-color: $maroon; }
+.maroon-dark { background-color: $maroon-dark; }
+.maroon-extra-dark { background-color: $maroon-extra-dark; }
+.maroon-light { background-color: $maroon-light; }
+.maroon-extra-light { background-color: $maroon-extra-light; }
 
-/* GOLD */
-.gold { background-color: $gold; }
-.gold-dark { background-color: darken( $gold, 15% ); }
-.gold-extra-dark { background-color: darken( $gold, 30% ); }
-.gold-light { background-color: lighten( $gold, 20% ); }
+/* BACKGROUND GOLD */
+.gold	{ background-color: $gold; }
+.gold-dark	{ background-color: $gold-dark; }
+.gold-extra-dark	{ background-color: $gold-extra-dark; }
+.gold-light	{ background-color: $gold-light; }
 
 /* GRAY */
-.gray { background-color: lighten( $gray, 5% ); }
-.gray-dark { background-color: darken( $gray, 16% ); }
-.gray-extra-dark { background-color: darken( $gray, 32% ); }
-.gray-light { background-color: lighten( $gray, 30% ); }
-.gray-extra-light { background-color: lighten( $gray, 36% ); }
+.gray { background-color: $gray; }
+.gray-dark { background-color: $gray-dark; }
+.gray-extra-dark { background-color: $gray-extra-dark; }
+.gray-light { background-color: $gray-light; }
+.gray-extra-light { background-color: $gray-extra-light; }
 
 /* LAKE */
-.lake { background-color: lighten( $lake, 4% ); }
-.lake-dark { background-color: darken( $lake, 9% ); }
-.lake-extra-dark { background-color: darken( $lake, 18% ); }
-.lake-light { background-color: lighten( $lake, 48% ); }
-.lake-extra-light { background-color: hsl(200deg, 70%, 94%); }
+.lake { background-color: $lake; }
+.lake-dark { background-color: $lake-dark; }
+.lake-extra-dark { background-color: $lake-extra-dark; }
+.lake-light { background-color: $lake-light; }
+.lake-extra-light { background-color: $lake-extra-light }
 
 /* PATINA */
-.patina { background-color: darken( $patina, 0% ); }
-.patina-dark { background-color: darken( $patina, 15% ); }
-.patina-extra-dark { background-color: darken( $patina, 30% ); }
-.patina-light { background-color: lighten( $patina, 38% ); }
-.patina-extra-light { background-color: hsl(177deg, 45%, 94%); }
+.patina { background-color: $patina; }
+.patina-dark { background-color: $patina-dark; }
+.patina-extra-dark { background-color: $patina-extra-dark; }
+.patina-light { background-color: $patina-light; }
+.patina-extra-light { background-color: $patina-extra-light; }
 
 /* TERRACOTTA */
 .terracotta { background-color: $terracotta; }
-.terracotta-dark { background-color: darken( $terracotta, 20% ); }
-.terracotta-extra-dark { background-color: darken( $terracotta, 35% ); }
-.terracotta-light { background-color: lighten( $terracotta, 30% ); }
-.terracotta-extra-light { background-color: lighten( $terracotta, 41.5% ); }
-.terracotta-extra-light { background-color: hsl(31deg, 20%, 94%); }
+.terracotta-dark { background-color: $terracotta-dark; }
+.terracotta-extra-dark { background-color: $terracotta-extra-dark; }
+.terracotta-light { background-color: $terracotta-light; }
+.terracotta-extra-light { background-color: $terracotta-extra-light; }
 
 /* TAUPE */
 .taupe { background-color: $taupe; }
-.taupe-dark { background-color: darken( $taupe, 20% ); }
-.taupe-extra-dark { background-color: darken( $taupe, 32% ); }
-.taupe-light { background-color: lighten( $taupe, 28% ); }
+.taupe-dark { background-color: darken($taupe, 20%); }
+.taupe-extra-dark { background-color: darken($taupe, 32%); }
+.taupe-light { background-color: lighten($taupe, 28%); }
 .taupe-extra-light { background-color: hsl(55deg, 14%, 94%); }
 
 /* END - COLOR */
