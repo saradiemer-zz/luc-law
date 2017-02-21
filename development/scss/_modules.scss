@@ -13,7 +13,7 @@
 	width: 100%;
 }
 
-.grid-square {
+.grid-square, .grid-square-bg {
 	box-sizing: border-box;
 	display: inline-block;
   position: relative;
@@ -22,7 +22,12 @@
   padding: 1%;
 }
 
-.grid-square:after {
+.grid-square-bg.bg-overlay {
+	@include media-breakpoint-up(lg) { display: inline-block; }
+	@include media-breakpoint-down(lg) { display: inline-block; }
+}
+
+.grid-square:after, .grid-square-bg:after {
   content: "";
   display: block;
   padding-bottom: 100%;
