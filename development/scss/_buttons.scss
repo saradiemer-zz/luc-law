@@ -37,19 +37,25 @@
 
 p a.cta { background: none; color: $maroon-dark; }
 
-.buttons-inline { width: 100%; }
+.buttons-inline { padding: 0; width: 100%; }
 
-.buttons-inline > div { display: inline; float: left; margin: 10px; width: auto; }
-	@media (max-width: 991px) {
-		.buttons-inline > div {
-			margin: 10px 0;
-			width: 100%; } }
+.buttons-inline > div {
+	display: inline;
+	float: left;
+	margin: 10px;
+	width: auto;
+	@include media-breakpoint-down(md) {
+		margin: 5px 0;
+		width: 100%; } }
 
-.buttons-inline > div:first-of-type { margin: 10px 10px 10px 0; }
+.buttons-inline > div:first-of-type {
+	margin: 10px 10px 10px 0;
+	@include media-breakpoint-down(md) {
+		margin: 5px 0; } }
 
-.canvas-content .buttons-inline .btn.cta  { margin-top: 0; }
-	@media (max-width: 991px) {
-		.canvas-content .buttons-inline .btn.cta {
+.canvas-content .buttons-inline .btn.cta {
+	margin-top: 0;
+	@include media-breakpoint-down(md) {
 			width: 100%; } }
 
 /* END - BUTTONS */
