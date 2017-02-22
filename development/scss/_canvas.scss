@@ -13,6 +13,12 @@
 	display: table;
 }
 
+.table-content.width-100 {
+	position: relative;
+	display: table;
+	width: 100%;
+}
+
 .vertical-rule-left,
 .vertical-rule-right {
 	float: none;
@@ -58,6 +64,9 @@
 		padding: 10px 0;
 		h1, h2, h3, h4 {
 			font-size: 1.5em;
+			@include media-breakpoint-down(xs) {
+				font-size: 1.25em;
+			}
 		}
 	}
 }
@@ -66,6 +75,9 @@
 	margin-top: 0;
 	@include media-breakpoint-down(md) {
 		margin-top: 25px;
+	}
+	@include media-breakpoint-down(xs) {
+		margin-top: 5px;
 	}
 }
 
@@ -80,7 +92,16 @@
 */
 	@include media-breakpoint-down(md) {
 		margin-bottom: 0px;
-	}	
+	}
+	@include media-breakpoint-down(xs) {
+		font-size: .9em;
+	}
+}
+
+.canvas-content h5.label.black.m-b-20 {
+	@include media-breakpoint-down(md) {
+		margin-bottom: 20px;
+	}
 }
 
 .canvas-content p { margin-bottom: 0; }
@@ -112,6 +133,24 @@
 	background: $gray-light;
 	@include media-breakpoint-down(md) {
 		margin: 0;
+	}
+}
+
+.canvas-base .divider-mobile {
+	display: none;
+	@include media-breakpoint-down(md) {
+		display: block;
+		margin: 20px 0 0;
+		padding: 20px 0;
+	}
+	@include media-breakpoint-down(sm) {
+		margin: 10px 0;
+	}
+}
+
+.canvas-base .divider-mobile .container {
+	@include media-breakpoint-down(md) {
+		padding: 0;
 	}
 }
 
@@ -198,6 +237,15 @@
 
 .canvas-content {
 	padding: 20px 0;
+	@include media-breakpoint-down(xs) {
+		padding: 10px 0;
+	}
+}
+
+#lead-panel-mobile .canvas-content {
+	@include media-breakpoint-down(sm) {
+		padding: 30px 0;
+	}
 }
 
 %dark-canvas-base {
