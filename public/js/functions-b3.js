@@ -58,8 +58,8 @@ $(document).ready(function() {
         }
 
         function setGoToTopLinks() {
-            var goToTop1 = '<a style="position: absolute; top: 20px; left: 20px; font-size: 14px; font-weight: bold; text-align: left; text-transform: uppercase; color:#EEEEEE;" id="go-to-top-1" class="go-to-top" href="#">go to top</a>',
-                goToTop2 = '<a style="position: absolute; bottom: 20px; left: 20px; font-size: 14px; font-weight: bold; text-align: left; text-transform: uppercase; color:#EEEEEE; display: none;" id="go-to-top-2" class="go-to-top" href="#">go to top</a>',
+            var goToTop1 = '<a style="position: absolute; top: 20px; left: 20px; font-size: .85em; font-weight: bold; text-align: left; text-transform: uppercase; color:#EEEEEE;" id="go-to-top-1" class="go-to-top" href="#">go to top</a>',
+                goToTop2 = '<a style="position: absolute; bottom: 20px; left: 20px; font-size: .85em; font-weight: bold; text-align: left; text-transform: uppercase; color:#EEEEEE; display: none;" id="go-to-top-2" class="go-to-top" href="#">go to top</a>',
                 container = $('#footer');
             $(container).css('position', 'relative');
             $(container).prepend(goToTop1);
