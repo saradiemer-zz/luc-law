@@ -304,6 +304,7 @@ MAIN-CONTENT
 	background-color: rgba(0,0,0,0);
 }
 
+/*
 
 @media all and ( min-width: 981px ) and ( max-width: 1024px ) {
 
@@ -316,6 +317,8 @@ MAIN-CONTENT
 #main-content { display: block !important; margin-top: 150px; }
 
 }
+
+*/
 
 @media all and ( min-width : 300px ) and ( max-width : 767px ) {
 
@@ -397,6 +400,7 @@ nav#nav-box ul li ul.multilevel-linkul-0 li a,
 	text-transform: none;
 	border-left: 0 none;
 	border-bottom: solid 1px $gray-dark;
+	@include media-breakpoint-down(sm) { color: darken($gray-light, 20%); }
 }
 
 nav#nav-box ul li ul.multilevel-linkul-0 li a:hover { color: $white; }
