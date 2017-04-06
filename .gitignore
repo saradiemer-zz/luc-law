@@ -47,7 +47,6 @@ Thumbs.db
 # Dependency directories #
 ##########################
 node_modules/
-jspm_packages/
 
 # T4 directory #
 ################
