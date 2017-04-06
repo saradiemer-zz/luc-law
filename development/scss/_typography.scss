@@ -106,7 +106,7 @@ GLOBAL========================================= */
 
 .bg-info, .bg-success, .bg-warning, .bg-danger { background-color: rgba(0,0,0,.1); }
 
-h5.label.maroon { font-size: 2em; }
+h5.label.maroon { font-size: 2em; background: none; }
 
 
 /* ===============================================
@@ -1133,7 +1133,7 @@ button { margin: 0 0 10px 0; }
 }
 
 p a.cta { font-size: .75em;
-	@include media-breakpoint-down(md) { font-size: .95em; }
+	@include media-breakpoint-down(md) { font-size: .75em; }
 }
 
  p.small a.cta { font-size: .925em; }
