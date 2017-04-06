@@ -4,13 +4,8 @@ $gray:				#888888;
 $lake:				#056fa9;
 $patina:			#08bcc1;
 $terracotta:	#aa8761;
-<<<<<<< HEAD
-$taupe:				#8e8c75;
-=======
-$taupe:				#baad85;
->>>>>>> 88dc378538408294e77c309f88e7bba642abf60b
+$taupe:				#c7a982;
 $white:				#ffffff;
-$black:				#000000;
 $bg-overlay:	rgba(0,0,0,.5);
 
 $bg-overlay: $bg-overlay;
@@ -36,8 +31,8 @@ $gold-light: lighten($gold, 20%);
 $gray: lighten($gray, 5%);
 $gray-dark: darken($gray, 25%);
 $gray-extra-dark: darken($gray, 41%);
-$gray-light: lighten($gray, 22%);
-$gray-extra-light: lighten($gray, 34%);
+$gray-light: lighten($gray, 30%);
+$gray-extra-light: lighten($gray, 36%);
 
 /* LAKE */
 $lake: lighten($lake, 4%);
