@@ -44,13 +44,10 @@
 ehthumbs.db
 Thumbs.db
 
-<<<<<<< HEAD
 # Dependency directories #
 ##########################
 node_modules/
 
-=======
->>>>>>> f7fc4bde27d7def4278795cb0f3e39d0c3fff503
 # T4 directory #
 ################
 T4/
