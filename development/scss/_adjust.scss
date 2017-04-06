@@ -363,7 +363,7 @@ nav#nav-box a, #footer-links a {
   z-index: 20;
 }
 
-nav#nav-box a:hover, #footer-links a:hover { color: $white; background-color: $gray-extra-dark; }
+nav#nav-box a:hover, #footer-links a:hover { color: $white; background-color: #000000; }
 
 nav#nav-box ul li a, #footer-links ul li a { border-left: 1px solid $gray-dark; }
 
@@ -592,10 +592,10 @@ GLOBAL - FORM - DROPDOWN
 #global-form ul.dropdown-menu  li a, #global-dropdown-gray ul.dropdown-menu  li a { color: $gray-light; }
 
 #global-form .form-control, #footer-global-form .form-control {
-  font-size: 10px;
+  font-size: .725em;
   line-height: 1.42857;
-  padding: 6px 12px;
-  text-transform: uppercase;
+  padding: 4px 8px 6px;
+  text-transform: none;
   letter-spacing: .5px;
   border-radius: 0;
 }
