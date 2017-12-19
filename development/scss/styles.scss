@@ -20,4 +20,5 @@ $enable-grid-classes:       true;
 @import 'background-resize';
 @import 'spacing';
 @import 'storyforms';
-@import "mixins/breakpoints";
+@import 'storyforms-carousel';
+@import 'mixins/breakpoints';

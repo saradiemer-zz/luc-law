@@ -70,12 +70,12 @@ $(document).ready(function() {
         //for testing on desktop
         var mediaQuery = "(max-width: 768px)";
         //use this var if for mobile device only
-        //var mediaQuery = "(max-device-width: 480px)";		
+        //var mediaQuery = "(max-device-width: 480px)";
         if (!window.matchMedia(mediaQuery).matches) return;
 
         //for testing only on terminal four
         //var loc = window.location.pathname;
-        //if(loc.indexOf('/terminalfour/') < 0 )return;	
+        //if(loc.indexOf('/terminalfour/') < 0 )return;
 
         //for university home
         var nav = $('#footer-links #nav'),
@@ -153,7 +153,7 @@ $(document).ready(function() {
                 return false;
             });
 
-            //var nav = $('#footer-links #main-nav'), navChildren = $(nav).children('li'),			
+            //var nav = $('#footer-links #main-nav'), navChildren = $(nav).children('li'),
         });
 
 
@@ -247,12 +247,12 @@ $(document).ready(function() {
                 if (typeof imgLink == 'undefined') return;
                 if (imgLink.length > 0) $(this).backstretch(imgLink);
 
-                //var adjsize = $(this).attr('adjsize');			
+                //var adjsize = $(this).attr('adjsize');
                 //$(".backstretch").addClass(adjsize);
             });
         } else {
 
-            // DELETE BELOW TO REMOVE BACKSTRETCH ON MOBILE			
+            // DELETE BELOW TO REMOVE BACKSTRETCH ON MOBILE
 
             if (!$('body').hasClass('home'))
 
@@ -262,7 +262,7 @@ $(document).ready(function() {
                     if (typeof imgLink == 'undefined') return;
                     if (imgLink.length > 0) $(this).backstretch(imgLink);
 
-                    //var adjsize = $(this).attr('adjsize');			
+                    //var adjsize = $(this).attr('adjsize');
                     //$(".backstretch").addClass(adjsize);
                 });
             }
@@ -282,7 +282,7 @@ $(document).ready(function() {
                 if (typeof adjsize == 'undefined') return;
                 if (adjsize.length > 0) $("#page-top").addClass(adjsize);
 
-                //var adjsize = $(this).attr('adjsize');			
+                //var adjsize = $(this).attr('adjsize');
                 //$(".backstretch").addClass(adjsize);
             });
         }
