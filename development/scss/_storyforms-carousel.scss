@@ -6,55 +6,80 @@ STORY - CAROUSEL - 121017
 /* CSS Document */
 
 .carousel-inner > .item > img,
-.carousel-inner > .item > a > img { width: 120%; margin: auto; }
+.carousel-inner > .item > a > img { width: 100%; margin: 0; }
 
 /* this hides nav bullets and ol numbers */
 ol.carousel-indicators li { display:none !important; }
 
 /* this is the control arrows */
-.carousel a:link { color: $gray-extra-light; }
+.carousel a:link {
+  color: $gray-extra-light;
+}
 
 .carousel-control.left {
-  background-image: -webkit-gradient(linear,right top,left top,from(rgba(0,0,0,.0001)),to(rgba(0,0,0,.15)));
-  background-image: linear-gradient(to left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.15) 100%);
+  background-image: -webkit-gradient(linear,right top,left top,from(rgba(0,0,0,.0001)),to(rgba(0,0,0,.25)));
+  background-image: linear-gradient(to left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.25) 100%);
   opacity: 1;
 }
 
 .carousel-control.right {
-  background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.0001)),to(rgba(0,0,0,.15)));
-  background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.15) 100%);
+  background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.0001)),to(rgba(0,0,0,.25)));
+  background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.25) 100%);
   opacity: 1;
 }
 
 .carousel-control .glyphicon-chevron-left,
-.carousel-control .glyphicon-chevron-right { text-shadow: none; }
+.carousel-control .glyphicon-chevron-right {
+  text-shadow: none;
+}
+
+.glyphicon-chevron-left:before,
+.glyphicon-chevron-right:before {
+  font-size: 1.25em !important;
+}
 
 /* carousel-caption */
 .carousel-caption {
   position: relative;
+  left: 0px;
   right: 0px;
   bottom: 0px;
-  left: 0px;
+  top: 100%;
   height: auto;
   z-index: 10;
-  padding-top: 0;
-  padding-bottom: 0;
-	padding-left: 10px;
-	padding-right: 10px;
+  padding: 15px;
 	text-align: left;
   color: #fff;
   text-shadow: none;
 	background-color: $gray-light;
+  overflow: hidden;
 	p.caption {
 		margin: 0;
-    padding: 20px 10px;
+    padding: 0;
     width: 95%;
+    font-size: .925em;
+    line-height: 1.5;
 		color: $gray-dark;
 	}
 	p.caption a {
 		margin: 0 0 0 5px;
 		color: $patina;
 	}
+}
+
+.timestamp {
+  margin-right: 10px;
+  font-family: 'Antenna Bold', sans-serif;
+  font-size: 1em;
+  color: $gray-dark;
+}
+
+.credit {
+  margin-left: 10px;
+  font-family: 'Antenna', sans-serif;
+  font-size: .775em;
+  letter-spacing: .015em;
+  color: darken($gray,10%);
 }
 
 /* counter */

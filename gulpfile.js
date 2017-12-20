@@ -16,6 +16,7 @@ var gulpSequence = require('gulp-sequence');
 var browserSync = require('browser-sync');
 var htmlreplace = require('gulp-html-replace');
 var replace = require('gulp-replace');
+var imagemin = require('gulp-imagemin');
 var requireDir = require('require-dir');
 
 requireDir('./gulp-tasks');
@@ -71,11 +72,17 @@ gulp.task('useref', function() {
 });
 
 gulp.task('index', ['useref'], function () {
-  var target = gulp.src('./development/*.html'); 
+  var target = gulp.src('./development/*.html');
   var sources = gulp.src(['./public/js/**/*.js', './public/css/**/*.css'], {read: false});
  	return target.pipe(inject(sources, {ignorePath: 'public'}))
  	.pipe(gulpIf('*.html', fileinclude({prefix: '@@', basepath: '@file'})))
 	.pipe(gulp.dest(config.publicDir));
+});
+
+gulp.task('images', function(){
+  return gulp.src('development/images/**/*.+(png|jpg|gif|svg)')
+  .pipe(imagemin())
+  .pipe(gulp.dest('public/images'))
 });
 
 gulp.task('html-watch', ['index'], browserSync.reload);
