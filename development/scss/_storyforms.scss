@@ -20,10 +20,38 @@
   padding-left: 50px;
 }
 
+.rule-left-small {
+  padding-left: 15px;
+  border-left: solid 1px darken($gray-light, 5%);
+}
+
+.rule-left-small-spacing {
+  padding-right: 15px;
+}
+
+.rule-right-small {
+  padding-right: 15px;
+  border-right: solid 1px darken($gray-light, 5%);
+}
+
+.rule-right-small-spacing {
+  padding-left: 15px;
+}
+
 .rule-bottom {
   margin-bottom: 20px !important;
   padding-bottom: 25px;
   border-bottom: solid 1px darken($gray-light, 5%);
+}
+
+.equal-box-container {
+  display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.equal-box-container .equal-box {
+  height: 100%;
 }
 
 /* aside image */
