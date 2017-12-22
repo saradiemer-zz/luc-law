@@ -59,7 +59,7 @@ ol.carousel-indicators li { display:none !important; }
     width: 95%;
     font-size: .925em;
     line-height: 1.5;
-		color: $gray-dark;
+		color: $gray-extra-dark;
 	}
 	p.caption a {
 		margin: 0 0 0 5px;
@@ -67,11 +67,15 @@ ol.carousel-indicators li { display:none !important; }
 	}
 }
 
+.caption {
+  color: $gray-extra-dark;
+}
+
 .timestamp {
   margin-right: 10px;
   font-family: 'Antenna Bold', sans-serif;
   font-size: 1em;
-  color: $gray-dark;
+  color: $gray-extra-dark;
 }
 
 .credit {
@@ -79,7 +83,7 @@ ol.carousel-indicators li { display:none !important; }
   font-family: 'Antenna', sans-serif;
   font-size: .775em;
   letter-spacing: .015em;
-  color: darken($gray,10%);
+  color: $gray-extra-dark;
 }
 
 /* counter */
