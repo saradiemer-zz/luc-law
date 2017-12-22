@@ -42,7 +42,10 @@
 	<script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	<script src="http://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
-<!--Javascript file jquery-1.11.1.min.js --><script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script><!-- header -->
+<!--Javascript file jquery-1.11.1.min.js --><script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<!--Javascript file d3.min.js --><script src="js/d3.min.js"></script>
+<!--Javascript file c3.min.js --><script src="js/c3.min.js"></script>
+<!-- header -->
 <!-- inject:css -->
 <link rel="stylesheet" href="/css/styles.css">
 <!-- endinject -->
@@ -498,9 +501,9 @@ $('#myCarousel').on('slid.bs.carousel', function () {
     <p class="caption display medium m-b-0 p-b-0"><span class="leadin">Lorem ipsum dolor sit amet.</span> Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis. Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis.</p>
   </div>
 </div>
- <!-- story-text-display -->
+ <!-- story-image-text-display -->
 			<div class="container-fluid p-t-20 p-b-20" style="background: rgba(0,0,0,.9)">
-  <h6 class="category text-center" style="margin: 0; color: #666666;">Image and side caption</h6>
+  <h6 class="category text-center" style="margin: 0; color: #666666;">Image and display text</h6>
 </div>
 
 			<div class="container-fluid story-content-padding">
@@ -512,6 +515,102 @@ $('#myCarousel').on('slid.bs.carousel', function () {
  <!-- story-text-display -->
 			<div class="container-fluid p-t-20 p-b-20" style="background: rgba(0,0,0,.9)">
   <h6 class="category text-center" style="margin: 0; color: #666666;">Display text</h6>
+</div>
+
+			<div class="container-fluid story-content-padding equal-box-container">
+  <div class="col-md-12 p-0">
+    <div class="col-md-4 rule-left-small-spacing equal-box">
+      <h1 class="number m-b-0">00,000</h1>
+      <p class="caption display medium m-b-0 p-b-0"><span class="leadin">Lorem ipsum dolor sit amet.</span> Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit.</p>
+    </div>
+    <div class="col-md-4 p-0 rule-left-small rule-left-small-spacing equal-box">
+      <h1 class="number m-b-0">00,000</h1>
+      <p class="caption display medium m-b-0 p-b-0"><span class="leadin">Lorem ipsum dolor sit amet.</span> Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit.</p>
+    </div>
+    <div class="col-md-4 rule-left-small equal-box">
+      <h1 class="number m-b-0">00,000</h1>
+      <p class="caption display medium m-b-0 p-b-0"><span class="leadin">Lorem ipsum dolor sit amet.</span> Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit.</p>
+    </div>
+  </div>
+</div>
+ <!-- story-multi-text-display -->
+			<div class="container-fluid p-t-20 p-b-20" style="background: rgba(0,0,0,.9)">
+  <h6 class="category text-center" style="margin: 0; color: #666666;">Multiple text display</h6>
+</div>
+
+			<div class="container-fluid story-content-padding equal-box-container">
+  <div class="col-md-12 p-0">
+    <div class="col-md-6 rule-left-spacing equal-box">
+      <div id="chart1" class="chart-wrapper"></div>
+        <h4>Subhead herehere</h4>
+        <ul class="key">
+          <li class="category small"><span class="key-box one"></span>Tentatively agreed to sections</li>
+          <li class="category small"><span class="key-box two"></span>Initial Proposals Made</li>
+          <li class="category small"><span class="key-box three"></span>Sections Pending Union Counter</li>
+          <li class="category small"><span class="key-box four"></span>Sections Pending Management Counter</li>
+          <li class="category small"><span class="key-box five"></span>Proposals yet to be Discussed</li>
+        </ul>
+        <p class="body explainer small">As of December 19, 2017</p>
+      </div>
+    <div class="col-md-6 rule-left-spacing equal-box">
+    </div>
+  </div>
+</div>
+
+<script>
+
+//chart-01 ******************************
+
+var donut1 = c3.generate({
+        bindto: '#chart1',
+        interaction: {
+            enabled: false
+        },
+        legend: {
+            show: false
+        },
+        size: {
+            width: 285
+        },
+        padding: {
+            left: 0,
+            right: 0,
+            top: 0,
+            bottom: 0
+        },
+        data: {
+            columns: [
+                ['data1', 12],
+                ['data2', 11],
+                ['data3', 4],
+                ['data4', 4],
+                ['data5', 2],
+            ],
+        type : 'pie',
+        colors: {
+                data1: '#680013',
+                data2: '#272727',
+                data3: '#525252',
+                data4: '#888888',
+                data5: '#cccccc',
+            },
+            onclick: function (d, i) { console.log("onclick", d, i); },
+            onmouseover: function (d, i) { console.log("onmouseover", d, i); },
+            onmouseout: function (d, i) { console.log("onmouseout", d, i); }
+        },
+       pie: {
+            title: "chart1",
+            label: {
+                format: function (value, ratio, id) {
+                    return d3.format('#')(value);
+                }
+            }
+        }
+    });
+</script>
+ <!-- story-multi-text-display -->
+			<div class="container-fluid p-t-20 p-b-20" style="background: rgba(0,0,0,.9)">
+  <h6 class="category text-center" style="margin: 0; color: #666666;">Chart and text</h6>
 </div>
 
 		</div>
@@ -777,6 +876,8 @@ $(window).on('scroll', function() {
 	<!-- inject:js -->
 	<script src="/js/all.js"></script>
 	<script src="/js/all.min.js"></script>
+	<script src="/js/c3.min.js"></script>
+	<script src="/js/d3.min.js"></script>
 	<script src="/js/functions-b3.js"></script>
 	<!-- endinject -->
 </body>
