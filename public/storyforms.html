@@ -489,7 +489,7 @@ $('#myCarousel').on('slid.bs.carousel', function () {
 </div>
  <!-- story-image-side-caption -->
 			<div class="container-fluid p-t-20 p-b-20" style="background: rgba(0,0,0,.9)">
-  <h6 class="category text-center" style="margin: 0; color: #666666;">Multiple images with text</h6>
+  <h6 class="category text-center" style="margin: 0; color: #666666;">Images with text</h6>
 </div>
 
 			<div class="container-fluid p-0">
@@ -564,7 +564,7 @@ $('#myCarousel').on('slid.bs.carousel', function () {
 
 //chart-01 ******************************
 
-var pie01 = c3.generate({
+var storyChart01 = c3.generate({
         bindto: '#chart01',
         interaction: {
             enabled: false
@@ -659,7 +659,7 @@ var pie01 = c3.generate({
 
 <script>
   //chart-02 ******************************
-  var StoryChart02 = c3.generate({
+  var storyChart02 = c3.generate({
     bindto: '#chart02',
     interaction: {
       enabled: false
@@ -709,7 +709,7 @@ var pie01 = c3.generate({
     }
   });
   //chart-03 ******************************
-  var StoryChart03 = c3.generate({
+  var storyChart03 = c3.generate({
     bindto: '#chart03',
     interaction: {
       enabled: false
@@ -759,7 +759,7 @@ var pie01 = c3.generate({
     }
   });
   //chart-04 ******************************
-  var StoryChart04 = c3.generate({
+  var storyChart04 = c3.generate({
     bindto: '#chart04',
     interaction: {
       enabled: false
@@ -857,7 +857,7 @@ var pie01 = c3.generate({
 
 <script>
   //chart-05 ******************************
-  var StoryChart05 = c3.generate({
+  var storyChart05 = c3.generate({
     bindto: '#chart05',
     interaction: {
       enabled: false
@@ -871,6 +871,7 @@ var pie01 = c3.generate({
       top: 0,
       bottom: 0
     },
+    type: 'pie',
     data: {
       columns: [
         ['data1', 12],
@@ -907,7 +908,7 @@ var pie01 = c3.generate({
     }
   });
   //chart-06 ******************************
-  var StoryChart06 = c3.generate({
+  var storyChart06 = c3.generate({
     bindto: '#chart06',
     interaction: {
       enabled: false
@@ -921,15 +922,13 @@ var pie01 = c3.generate({
       top: 0,
       bottom: 0
     },
+    type: 'bar',
     data: {
       columns: [
-        ['data1', 12],
-        ['data2', 11],
-        ['data3', 4],
-        ['data4', 4],
-        ['data5', 2],
+        ['data1', 30, 200, 100, 400, 150, 250],
+        ['data2', 130, 100, 140, 200, 150, 50]
       ],
-      type: 'pie',
+      type: 'bar',
       colors: {
         data1: '#680013',
         data2: '#272727',
@@ -947,7 +946,7 @@ var pie01 = c3.generate({
         console.log("onmouseout", d, i);
       }
     },
-    pie: {
+    bar: {
       title: "chart06",
       label: {
         format: function(value, ratio, id) {
@@ -956,8 +955,8 @@ var pie01 = c3.generate({
       }
     }
   });
-  //chart-07 ******************************
-  var StoryChart07 = c3.generate({
+  //chart-06 ******************************
+  var storyChart07 = c3.generate({
     bindto: '#chart07',
     interaction: {
       enabled: false
@@ -973,20 +972,9 @@ var pie01 = c3.generate({
     },
     data: {
       columns: [
-        ['data1', 12],
-        ['data2', 11],
-        ['data3', 4],
-        ['data4', 4],
-        ['data5', 2],
+        ['data1', 30, 200, 100, 400, 150, 250],
+        ['data2', 130, 100, 140, 200, 150, 50]
       ],
-      type: 'pie',
-      colors: {
-        data1: '#680013',
-        data2: '#272727',
-        data3: '#525252',
-        data4: '#888888',
-        data5: '#cccccc',
-      },
       onclick: function(d, i) {
         console.log("onclick", d, i);
       },
@@ -997,14 +985,6 @@ var pie01 = c3.generate({
         console.log("onmouseout", d, i);
       }
     },
-    pie: {
-      title: "chart07",
-      label: {
-        format: function(value, ratio, id) {
-          return d3.format('#')(value);
-        }
-      }
-    }
   });
 </script>
  <!-- story-charts-types -->

@@ -41,7 +41,7 @@
 
 <script>
   //chart-05 ******************************
-  var StoryChart05 = c3.generate({
+  var storyChart05 = c3.generate({
     bindto: '#chart05',
     interaction: {
       enabled: false
@@ -55,6 +55,7 @@
       top: 0,
       bottom: 0
     },
+    type: 'pie',
     data: {
       columns: [
         ['data1', 12],
@@ -91,7 +92,7 @@
     }
   });
   //chart-06 ******************************
-  var StoryChart06 = c3.generate({
+  var storyChart06 = c3.generate({
     bindto: '#chart06',
     interaction: {
       enabled: false
@@ -105,15 +106,13 @@
       top: 0,
       bottom: 0
     },
+    type: 'bar',
     data: {
       columns: [
-        ['data1', 12],
-        ['data2', 11],
-        ['data3', 4],
-        ['data4', 4],
-        ['data5', 2],
+        ['data1', 30, 200, 100, 400, 150, 250],
+        ['data2', 130, 100, 140, 200, 150, 50]
       ],
-      type: 'pie',
+      type: 'bar',
       colors: {
         data1: '#680013',
         data2: '#272727',
@@ -131,7 +130,7 @@
         console.log("onmouseout", d, i);
       }
     },
-    pie: {
+    bar: {
       title: "chart06",
       label: {
         format: function(value, ratio, id) {
@@ -140,8 +139,8 @@
       }
     }
   });
-  //chart-07 ******************************
-  var StoryChart07 = c3.generate({
+  //chart-06 ******************************
+  var storyChart07 = c3.generate({
     bindto: '#chart07',
     interaction: {
       enabled: false
@@ -157,20 +156,9 @@
     },
     data: {
       columns: [
-        ['data1', 12],
-        ['data2', 11],
-        ['data3', 4],
-        ['data4', 4],
-        ['data5', 2],
+        ['data1', 30, 200, 100, 400, 150, 250],
+        ['data2', 130, 100, 140, 200, 150, 50]
       ],
-      type: 'pie',
-      colors: {
-        data1: '#680013',
-        data2: '#272727',
-        data3: '#525252',
-        data4: '#888888',
-        data5: '#cccccc',
-      },
       onclick: function(d, i) {
         console.log("onclick", d, i);
       },
@@ -181,13 +169,5 @@
         console.log("onmouseout", d, i);
       }
     },
-    pie: {
-      title: "chart07",
-      label: {
-        format: function(value, ratio, id) {
-          return d3.format('#')(value);
-        }
-      }
-    }
   });
 </script>
