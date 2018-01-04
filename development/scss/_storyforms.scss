@@ -85,13 +85,11 @@ cite.cite.small {
 
 /* charts */
 
-.chart-wrapper {
-  float: left;
-  margin: 0 auto 10px auto;
-  width: 100%;
-}
+.chart-wrapper {width: 100%;}
 
-[class*="chart"][style] { width: 100% !important; }
+.c3.element {
+  clip: rect(0px, 0px, 0px, 0px);
+}
 
 .c3-chart-arc text {
   font-family: 'Antenna Bold', sans-serif !important;

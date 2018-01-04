@@ -540,22 +540,22 @@ $('#myCarousel').on('slid.bs.carousel', function () {
 
 			<div class="container-fluid story-content-padding equal-box-container">
   <div class="col-md-12 p-0">
-    <div class="col-md-6 rule-right equal-box">
-      <div id="chart01" class="chart-wrapper"></div>
-        <h4 class="subhead m-t-0">Subhead herehere</h4>
-        <ul class="key">
-          <li class="category small"><span class="key-box one"></span>Key category one</li>
-          <li class="category small"><span class="key-box two"></span>Key category one</li>
-          <li class="category small"><span class="key-box three"></span>Key category three</li>
-          <li class="category small"><span class="key-box four"></span>Key category four</li>
-          <li class="category small"><span class="key-box five"></span>Key category five</li>
-        </ul>
-        <p class="body explainer small">As of Month 00, 0000</p>
-    </div>
-    <div class="col-md-6 rule-right-spacing equal-box">
+    <div class="col-md-4 rule-right equal-box">
       <h4 class="subhead m-t-0">Subhead here consectetur adipiscing elit ras vitae vulputate justo</h4>
       <p class="body">Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis, cursus leo at, auctor diam. Ut ut odio non massa consequat porta eget vel ligula. Cras vitae vulputate justo cursus leo at auctor.</p>
-      <p class="body">Dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis, cursus leo at, auctor diam. Ut ut odio non massa consequat porta eget vel ligula. Cras vitae vulputate justo cursus leo at auctor.</p>
+    </div>
+    <div class="col-md-4 equal-box">
+      <div id="chart01" class="chart-wrapper"></div>
+    </div>
+    <div class="col-md-4 equal-box m-t-30">
+      <ul class="key">
+        <li class="category small"><span class="key-box one"></span>Key category one</li>
+        <li class="category small"><span class="key-box two"></span>Key category one</li>
+        <li class="category small"><span class="key-box three"></span>Key category three</li>
+        <li class="category small"><span class="key-box four"></span>Key category four</li>
+        <li class="category small"><span class="key-box five"></span>Key category five</li>
+      </ul>
+      <p class="body explainer small">As of Month 00, 0000</p>
     </div>
   </div>
 </div>
@@ -619,7 +619,10 @@ var storyChart01 = c3.generate({
 			<div class="container-fluid story-content-padding equal-box-container">
   <div class="col-md-12 p-0">
     <div class="col-md-4 rule-right-small equal-box">
-      <div id="chart02" class="chart-wrapper chart" style="float: left;"></div>
+      <div class="chart-wrapper">
+        <div id="chart02"></div>
+      </div>
+      <div class="chart-content">
       <h4 class="subhead m-t-0">Subhead herehere</h4>
       <ul class="key">
         <li class="category small"><span class="key-box one"></span>Key category one</li>
@@ -630,8 +633,11 @@ var storyChart01 = c3.generate({
       </ul>
       <p class="body explainer small">As of Month 00, 0000</p>
     </div>
+    </div>
     <div class="col-md-4 rule-right-small rule-right-small-spacing equal-box">
-      <div id="chart03" class="chart-wrapper chart" style="float: left;"></div>
+      <div class="chart-wrapper">
+        <div id="chart03"></div>
+      </div>
       <h4 class="subhead m-t-0">Subhead herehere</h4>
       <ul class="key">
         <li class="category small"><span class="key-box one"></span>Key category one</li>
@@ -643,7 +649,9 @@ var storyChart01 = c3.generate({
       <p class="body explainer small">As of Month 00, 0000</p>
     </div>
     <div class="col-md-4 equal-box rule-right-small-spacing">
-      <div id="chart04" class="chart-wrapper chart" style="float: left;"></div>
+      <div class="chart-wrapper">
+        <div id="chart04"></div>
+      </div>
       <h4 class="subhead m-t-0">Subhead herehere</h4>
       <ul class="key">
         <li class="category small"><span class="key-box one"></span>Key category one</li>
@@ -817,7 +825,9 @@ var storyChart01 = c3.generate({
 			<div class="container-fluid story-content-padding equal-box-container">
   <div class="col-md-12 p-0">
     <div class="col-md-4 rule-right-small equal-box">
+      <div class="chart-wrapper-interior">
       <div id="chart05" class="chart-wrapper chart" style="float: left;"></div>
+      </div>
       <h4 class="subhead m-t-0">Subhead herehere</h4>
       <ul class="key">
         <li class="category small"><span class="key-box one"></span>Key category one</li>
@@ -955,7 +965,7 @@ var storyChart01 = c3.generate({
       }
     }
   });
-  //chart-06 ******************************
+  //chart-07 ******************************
   var storyChart07 = c3.generate({
     bindto: '#chart07',
     interaction: {
