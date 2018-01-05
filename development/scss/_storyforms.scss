@@ -52,6 +52,7 @@
 
 .equal-box-container .equal-box {
   height: 100%;
+  @include media-breakpoint-down(md) { height: auto; }
 }
 
 /* aside image */
@@ -85,7 +86,23 @@ cite.cite.small {
 
 /* charts */
 
-.chart-wrapper {width: 100%;}
+.chart-wrapper { width: 100%; }
+
+[class*="c3-line"] {
+  stroke-width: 5px !important;
+}
+
+.c3-ygrid-line line {
+    stroke: red;
+}
+
+.c3-circle {
+  width: 10px !important;
+  height: 10px !important;
+  fill: white !important;
+  stroke: currentColor !important;
+  stroke-width: 2px;
+}
 
 .c3.element {
   clip: rect(0px, 0px, 0px, 0px);
@@ -93,7 +110,7 @@ cite.cite.small {
 
 .c3-chart-arc text {
   font-family: 'Antenna Bold', sans-serif !important;
-  font-size: .9em;
+  font-size: 1.35em;
   font-weight: bold;
   letter-spacing: -.025em;
   fill: #fff;
