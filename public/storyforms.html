@@ -43,10 +43,12 @@
 	<script src="http://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 <!--Javascript file jquery-1.11.1.min.js --><script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<!--CSS file c3.min.css --><script src="css/c3.min.css"></script>
 <!--Javascript file d3.min.js --><script src="js/d3.min.js"></script>
 <!--Javascript file c3.min.js --><script src="js/c3.min.js"></script>
 <!-- header -->
 <!-- inject:css -->
+<link rel="stylesheet" href="/css/c3.min.css">
 <link rel="stylesheet" href="/css/styles.css">
 <!-- endinject -->
 <style>.subnave{display: none;}.homenav{display: block;}</style>
@@ -474,22 +476,22 @@ $('#myCarousel').on('slid.bs.carousel', function () {
 			<div class="container-fluid story-content-padding equal-box-container">
   <div class="col-md-12 p-0">
     <div class="col-md-4 rule-left-small-spacing equal-box">
-      <img class="float-left m-t-0 m-b-0" src="http://placehold.it/1000x560"/>
+      <img class="float-left m-t-0" src="http://placehold.it/1000x560"/>
       <p class="caption small m-b-0 p-b-0"><span class="leadin">Lorem ipsum dolor sit amet.</span> Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis.</p>
     </div>
     <div class="col-md-4 p-0 rule-left-small rule-left-small-spacing equal-box">
-      <img class="float-left m-t-0 m-b-0" src="http://placehold.it/1000x560"/>
+      <img class="float-left m-t-0" src="http://placehold.it/1000x560"/>
       <p class="caption small m-b-0 p-b-0"><span class="leadin">Lorem ipsum dolor sit amet.</span> Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis. Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit.</p>
     </div>
     <div class="col-md-4 rule-left-small equal-box">
-      <img class="float-left m-t-0 m-b-0" src="http://placehold.it/1000x560"/>
+      <img class="float-left m-t-0" src="http://placehold.it/1000x560"/>
       <p class="caption small m-b-0 p-b-0"><span class="leadin">Lorem ipsum dolor sit amet.</span> Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis.</p>
     </div>
   </div>
 </div>
  <!-- story-image-side-caption -->
 			<div class="container-fluid p-t-20 p-b-20" style="background: rgba(0,0,0,.9)">
-  <h6 class="category text-center" style="margin: 0; color: #666666;">Multiple images with text</h6>
+  <h6 class="category text-center" style="margin: 0; color: #666666;">Images with text</h6>
 </div>
 
 			<div class="container-fluid p-0">
@@ -520,39 +522,42 @@ $('#myCarousel').on('slid.bs.carousel', function () {
 			<div class="container-fluid story-content-padding equal-box-container">
   <div class="col-md-12 p-0">
     <div class="col-md-4 rule-left-small-spacing equal-box">
-      <h1 class="number m-b-0">00,000</h1>
+      <h1 class="number m-t-0 m-b-0">00,000</h1>
       <p class="caption display medium m-b-0 p-b-0"><span class="leadin">Lorem ipsum dolor sit amet.</span> Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit.</p>
     </div>
     <div class="col-md-4 p-0 rule-left-small rule-left-small-spacing equal-box">
-      <h1 class="number m-b-0">00,000</h1>
+      <h1 class="number m-t-0 m-b-0">00,000</h1>
       <p class="caption display medium m-b-0 p-b-0"><span class="leadin">Lorem ipsum dolor sit amet.</span> Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit.</p>
     </div>
     <div class="col-md-4 rule-left-small equal-box">
-      <h1 class="number m-b-0">00,000</h1>
+      <h1 class="number m-t-0 m-b-0">00,000</h1>
       <p class="caption display medium m-b-0 p-b-0"><span class="leadin">Lorem ipsum dolor sit amet.</span> Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit.</p>
     </div>
   </div>
 </div>
  <!-- story-multi-text-display -->
 			<div class="container-fluid p-t-20 p-b-20" style="background: rgba(0,0,0,.9)">
-  <h6 class="category text-center" style="margin: 0; color: #666666;">Multiple text display</h6>
+  <h6 class="category text-center" style="margin: 0; color: #666666;">Text display - Multiple</h6>
 </div>
 
 			<div class="container-fluid story-content-padding equal-box-container">
   <div class="col-md-12 p-0">
-    <div class="col-md-6 rule-left-spacing equal-box">
-      <div id="chart1" class="chart-wrapper"></div>
-        <h4>Subhead herehere</h4>
-        <ul class="key">
-          <li class="category small"><span class="key-box one"></span>Tentatively agreed to sections</li>
-          <li class="category small"><span class="key-box two"></span>Initial Proposals Made</li>
-          <li class="category small"><span class="key-box three"></span>Sections Pending Union Counter</li>
-          <li class="category small"><span class="key-box four"></span>Sections Pending Management Counter</li>
-          <li class="category small"><span class="key-box five"></span>Proposals yet to be Discussed</li>
-        </ul>
-        <p class="body explainer small">As of December 19, 2017</p>
-      </div>
-    <div class="col-md-6 rule-left-spacing equal-box">
+    <div class="col-md-4 rule-right equal-box">
+      <h4 class="subhead m-t-0">Subhead here consectetur adipiscing elit ras vitae vulputate justo</h4>
+      <p class="body">Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis, cursus leo at, auctor diam. Ut ut odio non massa consequat porta eget vel ligula. Cras vitae vulputate justo cursus leo at auctor.</p>
+    </div>
+    <div class="col-md-4 equal-box">
+      <div id="chart01" class="chart-wrapper"></div>
+    </div>
+    <div class="col-md-4 equal-box m-t-30">
+      <ul class="key">
+        <li class="category small"><span class="key-box one"></span>Key category one</li>
+        <li class="category small"><span class="key-box two"></span>Key category one</li>
+        <li class="category small"><span class="key-box three"></span>Key category three</li>
+        <li class="category small"><span class="key-box four"></span>Key category four</li>
+        <li class="category small"><span class="key-box five"></span>Key category five</li>
+      </ul>
+      <p class="body explainer small m-b-0">As of Month 00, 0000</p>
     </div>
   </div>
 </div>
@@ -561,8 +566,8 @@ $('#myCarousel').on('slid.bs.carousel', function () {
 
 //chart-01 ******************************
 
-var donut1 = c3.generate({
-        bindto: '#chart1',
+var storyChart01 = c3.generate({
+        bindto: '#chart01',
         interaction: {
             enabled: false
         },
@@ -599,7 +604,7 @@ var donut1 = c3.generate({
             onmouseout: function (d, i) { console.log("onmouseout", d, i); }
         },
        pie: {
-            title: "chart1",
+            title: "chart01",
             label: {
                 format: function (value, ratio, id) {
                     return d3.format('#')(value);
@@ -608,9 +613,449 @@ var donut1 = c3.generate({
         }
     });
 </script>
- <!-- story-multi-text-display -->
+ <!-- story-chart-text -->
 			<div class="container-fluid p-t-20 p-b-20" style="background: rgba(0,0,0,.9)">
   <h6 class="category text-center" style="margin: 0; color: #666666;">Chart and text</h6>
+</div>
+
+			<div class="container-fluid story-content-padding equal-box-container">
+  <div class="col-md-12 p-0">
+    <div class="col-md-4 rule-right-small equal-box">
+      <h4 class="subhead m-t-0 m-b-0">Subhead herehere</h4>
+      <p class="body explainer m-b-10">Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit.</p>
+      <div class="chart-wrapper">
+        <div id="chart02"></div>
+      </div>
+      <div class="chart-content">
+      <ul class="key">
+        <li class="category small"><span class="key-box one"></span>Key category one</li>
+        <li class="category small"><span class="key-box two"></span>Key category one</li>
+        <li class="category small"><span class="key-box three"></span>Key category three</li>
+        <li class="category small"><span class="key-box four"></span>Key category four</li>
+        <li class="category small"><span class="key-box five"></span>Key category five</li>
+      </ul>
+      <p class="body explainer small m-b-0">As of Month 00, 0000</p>
+    </div>
+    </div>
+    <div class="col-md-4 rule-right-small rule-right-small-spacing equal-box">
+      <h4 class="subhead m-t-0 m-b-0">Subhead herehere</h4>
+      <p class="body explainer m-b-10">Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit.</p>
+      <div class="chart-wrapper">
+        <div id="chart03"></div>
+      </div>
+      <ul class="key">
+        <li class="category small"><span class="key-box one"></span>Key category one</li>
+        <li class="category small"><span class="key-box two"></span>Key category one</li>
+        <li class="category small"><span class="key-box three"></span>Key category three</li>
+        <li class="category small"><span class="key-box four"></span>Key category four</li>
+        <li class="category small"><span class="key-box five"></span>Key category five</li>
+      </ul>
+      <p class="body explainer small m-b-0">As of Month 00, 0000</p>
+    </div>
+    <div class="col-md-4 equal-box rule-right-small-spacing">
+      <h4 class="subhead m-t-0 m-b-0">Subhead herehere</h4>
+      <p class="body explainer m-b-10">Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit.</p>
+      <div class="chart-wrapper">
+        <div id="chart04"></div>
+      </div>
+      <ul class="key">
+        <li class="category small"><span class="key-box one"></span>Key category one</li>
+        <li class="category small"><span class="key-box two"></span>Key category one</li>
+        <li class="category small"><span class="key-box three"></span>Key category three</li>
+        <li class="category small"><span class="key-box four"></span>Key category four</li>
+        <li class="category small"><span class="key-box five"></span>Key category five</li>
+      </ul>
+      <p class="body explainer small m-b-0">As of Month 00, 0000</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  //chart-02 ******************************
+  var storyChart02 = c3.generate({
+    bindto: '#chart02',
+    interaction: {
+      enabled: false
+    },
+    legend: {
+      show: false
+    },
+    padding: {
+      left: 0,
+      right: 0,
+      top: 0,
+      bottom: 0
+    },
+    data: {
+      columns: [
+        ['data1', 12],
+        ['data2', 11],
+        ['data3', 4],
+        ['data4', 4],
+        ['data5', 2],
+      ],
+      type: 'pie',
+      colors: {
+        data1: '#680013',
+        data2: '#272727',
+        data3: '#525252',
+        data4: '#888888',
+        data5: '#cccccc',
+      },
+      onclick: function(d, i) {
+        console.log("onclick", d, i);
+      },
+      onmouseover: function(d, i) {
+        console.log("onmouseover", d, i);
+      },
+      onmouseout: function(d, i) {
+        console.log("onmouseout", d, i);
+      }
+    },
+    pie: {
+      title: "chart02",
+      label: {
+        format: function(value, ratio, id) {
+          return d3.format('#')(value);
+        }
+      }
+    }
+  });
+  //chart-03 ******************************
+  var storyChart03 = c3.generate({
+    bindto: '#chart03',
+    interaction: {
+      enabled: false
+    },
+    legend: {
+      show: false
+    },
+    padding: {
+      left: 0,
+      right: 0,
+      top: 0,
+      bottom: 0
+    },
+    data: {
+      columns: [
+        ['data1', 12],
+        ['data2', 11],
+        ['data3', 4],
+        ['data4', 4],
+        ['data5', 2],
+      ],
+      type: 'pie',
+      colors: {
+        data1: '#680013',
+        data2: '#272727',
+        data3: '#525252',
+        data4: '#888888',
+        data5: '#cccccc',
+      },
+      onclick: function(d, i) {
+        console.log("onclick", d, i);
+      },
+      onmouseover: function(d, i) {
+        console.log("onmouseover", d, i);
+      },
+      onmouseout: function(d, i) {
+        console.log("onmouseout", d, i);
+      }
+    },
+    pie: {
+      title: "chart03",
+      label: {
+        format: function(value, ratio, id) {
+          return d3.format('#')(value);
+        }
+      }
+    }
+  });
+  //chart-04 ******************************
+  var storyChart04 = c3.generate({
+    bindto: '#chart04',
+    interaction: {
+      enabled: false
+    },
+    legend: {
+      show: false
+    },
+    padding: {
+      left: 0,
+      right: 0,
+      top: 0,
+      bottom: 0
+    },
+    data: {
+      columns: [
+        ['data1', 12],
+        ['data2', 11],
+        ['data3', 4],
+        ['data4', 4],
+        ['data5', 2],
+      ],
+      type: 'pie',
+      colors: {
+        data1: '#680013',
+        data2: '#272727',
+        data3: '#525252',
+        data4: '#888888',
+        data5: '#cccccc',
+      },
+      onclick: function(d, i) {
+        console.log("onclick", d, i);
+      },
+      onmouseover: function(d, i) {
+        console.log("onmouseover", d, i);
+      },
+      onmouseout: function(d, i) {
+        console.log("onmouseout", d, i);
+      }
+    },
+    pie: {
+      title: "chart04",
+      label: {
+        format: function(value, ratio, id) {
+          return d3.format('#')(value);
+        }
+      }
+    }
+  });
+</script>
+ <!-- story-chart-multi -->
+			<div class="container-fluid p-t-20 p-b-20" style="background: rgba(0,0,0,.9)">
+  <h6 class="category text-center" style="margin: 0; color: #666666;">Charts</h6>
+</div>
+
+			<div class="container-fluid story-content-padding">
+  <div class="col-md-12">
+      <h4 class="subhead m-t-0 m-b-0">Subhead herehere</h4>
+      <p class="body explainer m-b-10">Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit.</p>
+      <div class="chart-wrapper">
+        <div id="chart07"></div>
+      </div>
+      <ul class="key">
+        <li class="category small"><span class="key-box one"></span>Key category one</li>
+        <li class="category small"><span class="key-box two"></span>Key category two</li>
+      </ul>
+      <p class="body explainer small m-b-0">As of Month 00, 0000</p>
+  </div>
+</div>
+
+<script>
+  //chart-07 ******************************
+  var storyChart07 = c3.generate({
+    bindto: '#chart07',
+    legend: {
+      show: false
+    },
+    transition : {
+      duration: 2000
+    },
+    data: {
+        x: 'x',
+        columns: [
+            ['x', '2010-01-01', '2011-01-01', '2012-01-01', '2013-01-01', '2014-01-01', '2015-01-01'],
+            ['data1', 30, 200, 100, 400, 150, 250],
+            ['data2', 70, 250, 170, 470, 200, 320]
+        ]
+    },
+    color: {
+        pattern: ['#680013', '#888888', '#cccccc']
+    },
+    point: {
+      r: 3
+    },
+    axis : {
+        x : {
+            type : 'timeseries',
+            padding: {left:0, right:0},
+            label: {
+                text: 'X Label',
+                position: 'outer-center'
+            },
+            tick: {
+                format: function (x) { return x.getFullYear(); }
+              //format: '%Y' // format string is also available for timeseries data
+            }
+        },
+        y : {
+            max: 600,
+            min: -100,
+            padding: {top:100, bottom:30},
+            label: {
+                text: 'Y Label',
+                position: 'outer-middle'
+            },
+            tick: {
+                format: d3.format("$,")
+//                format: function (d) { return "$" + d; }
+            }
+        },
+    },
+    grid: {
+    y: {
+        lines: [
+            {value: 0, text: '', axis: 'y', position: 'middle'}
+        ]
+      }
+    },
+  });
+</script>
+ <!-- story-chart -->
+			<div class="container-fluid p-t-20 p-b-20" style="background: rgba(0,0,0,.9)">
+  <h6 class="category text-center" style="margin: 0; color: #666666;">Chart full width</h6>
+</div>
+
+			<div class="container-fluid story-content-padding equal-box-container">
+  <div class="col-md-6 rule-right-small equal-box">
+      <h4 class="subhead m-t-0 m-b-0">Subhead herehere</h4>
+      <p class="body explainer m-b-10">Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit.</p>
+      <div class="chart-wrapper">
+        <div id="chart05"></div>
+      </div>
+      <ul class="key">
+        <li class="category small"><span class="key-box one"></span>Key category one</li>
+        <li class="category small"><span class="key-box two"></span>Key category two</li>
+        <li class="category small"><span class="key-box three"></span>Key category three</li>
+      </ul>
+      <p class="body explainer small m-b-0">As of Month 00, 0000</p>
+    </div>
+    <div class="col-md-6 rule-right-small-spacing equal-box">
+      <h4 class="subhead m-t-0 m-b-0">Subhead herehere</h4>
+      <p class="body explainer m-b-10">Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit.</p>
+      <div class="chart-wrapper">
+        <div id="chart06"></div>
+      </div>
+      <ul class="key">
+        <li class="category small"><span class="key-box one"></span>Key category one</li>
+        <li class="category small"><span class="key-box two"></span>Key category two</li>
+      </ul>
+      <p class="body explainer small m-b-0">As of Month 00, 0000</p>
+    </div>
+</div>
+
+<script>
+//chart-05 ******************************
+var storyChart05 = c3.generate({
+  bindto: '#chart05',
+  interaction: {
+    enabled: true
+  },
+  legend: {
+    show: false
+  },
+  padding: {
+    left: 55,
+    right: 15
+  },
+  data: {
+      x: 'x',
+      columns: [
+          ['x', '2010-01-01', '2011-01-01', '2012-01-01', '2013-01-01', '2014-01-01', '2015-01-01'],
+          ['data1', 30, 200, 100, 400, 150, 250],
+          ['data2', 70, 250, 170, 470, 200, 320],
+          ['data3', 10, 20, -30, 50, 70, 30]
+      ]
+  },
+  color: {
+      pattern: ['#680013', '#888888', '#cccccc']
+  },
+  point: {
+    r: 3,
+    focus: {
+    expand: {
+      enabled: false
+      }
+    },
+  },
+  axis : {
+      x : {
+          type : 'timeseries',
+          padding: {left:30, right:30},
+          label: {
+              text: 'X Label',
+              position: 'outer-center'
+          },
+          tick: {
+              format: function (x) { return x.getFullYear(); }
+            //format: '%Y' // format string is also available for timeseries data
+          }
+      },
+      y : {
+          max: 600,
+          min: -100,
+          padding: {top:100, bottom:30},
+          label: {
+              text: 'Y Label',
+              position: 'outer-middle'
+          },
+          tick: {
+              format: d3.format("$,")
+//                format: function (d) { return "$" + d; }
+          }
+      },
+  },
+  grid: {
+  y: {
+      lines: [
+          {value: 0, text: '', axis: 'y', position: 'middle'}
+      ]
+    }
+  },
+});
+  //chart-06 ******************************
+  var storyChart06 = c3.generate({
+    bindto: '#chart06',
+    interaction: {
+      enabled: false
+    },
+    legend: {
+      show: false
+    },
+    padding: {
+      left: 0,
+      right: 0,
+      top: 0,
+      bottom: 0
+    },
+    type: 'bar',
+    data: {
+      columns: [
+        ['data1', 30, 200, 100, 400, 150, 250],
+        ['data2', 130, 100, 140, 200, 150, 50]
+      ],
+      type: 'bar',
+      colors: {
+        data1: '#680013',
+        data2: '#272727',
+        data3: '#525252',
+        data4: '#888888',
+        data5: '#cccccc',
+      },
+      onclick: function(d, i) {
+        console.log("onclick", d, i);
+      },
+      onmouseover: function(d, i) {
+        console.log("onmouseover", d, i);
+      },
+      onmouseout: function(d, i) {
+        console.log("onmouseout", d, i);
+      }
+    },
+    bar: {
+      title: "chart06",
+      label: {
+        format: function(value, ratio, id) {
+          return d3.format('#')(value);
+        }
+      }
+    }
+  });
+</script>
+ <!-- story-charts-types -->
+			<div class="container-fluid p-t-20 p-b-20" style="background: rgba(0,0,0,.9)">
+  <h6 class="category text-center" style="margin: 0; color: #666666;">Chart types</h6>
 </div>
 
 		</div>

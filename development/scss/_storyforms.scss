@@ -52,6 +52,7 @@
 
 .equal-box-container .equal-box {
   height: 100%;
+  @include media-breakpoint-down(md) { height: auto; }
 }
 
 /* aside image */
@@ -66,7 +67,7 @@ h4.subhead { margin: 20px 0 15px 0; line-height: 1.65; }
 
 p.intro { margin: 0 0 20px 0; line-height: 2; }
 
-p.body { line-height: 1.85; }
+p.body { line-height: 1.75; }
 
 .leadin {
   font-family: 'Antenna Bold', sans-serif;
@@ -85,23 +86,35 @@ cite.cite.small {
 
 /* charts */
 
-#chart1, #chart2, #chart3, #chart4 { height: 300px; }
+.chart-wrapper { width: 100%; }
 
-#chart1 .c3-chart-arc,
-#chart2 .c3-chart-arc,
-#chart3 .c3-chart-arc,
-#chart4 .c3-chart-arc {
-    font-family: 'Antenna Bold', sans-serif !important;
-    font-size: 1.125em;
-    font-weight: bold;
-    letter-spacing: -.025em;
-    text-shadow: 0px 0px 10px rgba(0,0,0,.25);
+[class*="c3-line"] {
+  stroke-width: 5px !important;
 }
 
-.chart-wrapper {
-    float: left;
-    margin: 0 auto 10px auto;
-    width: 100%;
+.c3-ygrid-line line {
+    stroke: red;
+}
+
+.c3-circle {
+  width: 10px !important;
+  height: 10px !important;
+  fill: white !important;
+  stroke: currentColor !important;
+  stroke-width: 2px;
+}
+
+.c3.element {
+  clip: rect(0px, 0px, 0px, 0px);
+}
+
+.c3-chart-arc text {
+  font-family: 'Antenna Bold', sans-serif !important;
+  font-size: 1.35em;
+  font-weight: bold;
+  letter-spacing: -.025em;
+  fill: #fff;
+  text-shadow: 0px 0px 10px rgba(0,0,0,.25);
 }
 
 ul.key {

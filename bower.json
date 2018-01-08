@@ -19,5 +19,27 @@
   "dependencies": {
     "jquery": ">= 1.9.0",
     "susy": "^2.2.12"
+  },
+  "devDependencies": {
+  "gulp": "latest",
+  "gulp-if": "latest",
+  "gulp-changed": "latest",
+  "gulp-jshint": "latest",
+  "gulp-file-include": "latest",
+  "gulp-minify-html": "latest",
+  "gulp-useref": "latest",
+  "gulp-sourcemaps": "latest",
+  "gulp-inject": "latest",
+  "gulp-sass": "latest",
+  "gulp-concat": "latest",
+  "gulp-rename": "latest",
+  "gulp-uglify": "latest",
+  "gulp-cssnano": "latest",
+  "gulp-sequence": "latest",
+  "browser-sync": "latest",
+  "gulp-html-replace": "latest",
+  "gulp-replace": "latest",
+  "gulp-imagemin": "latest",
+  "require-dir": "latest"
   }
 }
