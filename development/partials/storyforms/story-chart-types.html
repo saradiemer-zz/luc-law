@@ -1,7 +1,7 @@
 <div class="container-fluid story-content-padding equal-box-container">
   <div class="col-md-6 rule-right-small equal-box">
       <h4 class="subhead m-t-0 m-b-0">Subhead herehere</h4>
-      <p class="body explainer m-b-20">Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit.</p>
+      <p class="body explainer m-b-10">Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit.</p>
       <div class="chart-wrapper">
         <div id="chart05"></div>
       </div>
@@ -14,7 +14,7 @@
     </div>
     <div class="col-md-6 rule-right-small-spacing equal-box">
       <h4 class="subhead m-t-0 m-b-0">Subhead herehere</h4>
-      <p class="body explainer m-b-20">Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit.</p>
+      <p class="body explainer m-b-10">Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit.</p>
       <div class="chart-wrapper">
         <div id="chart06"></div>
       </div>
@@ -24,20 +24,6 @@
       </ul>
       <p class="body explainer small m-b-0">As of Month 00, 0000</p>
     </div>
-</div>
-<div class="container-fluid story-content-padding">
-  <div class="col-md-12">
-      <h4 class="subhead m-t-0 m-b-0">Subhead herehere</h4>
-      <p class="body explainer m-b-20">Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit.</p>
-      <div class="chart-wrapper">
-        <div id="chart07"></div>
-      </div>
-      <ul class="key">
-        <li class="category small"><span class="key-box one"></span>Key category one</li>
-        <li class="category small"><span class="key-box two"></span>Key category two</li>
-      </ul>
-      <p class="body explainer small m-b-0">As of Month 00, 0000</p>
-  </div>
 </div>
 
 <script>
@@ -156,63 +142,5 @@ var storyChart05 = c3.generate({
         }
       }
     }
-  });
-  //chart-07 ******************************
-  var storyChart07 = c3.generate({
-    bindto: '#chart07',
-    interaction: {
-      enabled: true
-    },
-    legend: {
-      show: false
-    },
-    data: {
-        x: 'x',
-        columns: [
-            ['x', '2010-01-01', '2011-01-01', '2012-01-01', '2013-01-01', '2014-01-01', '2015-01-01'],
-            ['data1', 30, 200, 100, 400, 150, 250],
-            ['data2', 70, 250, 170, 470, 200, 320]
-        ]
-    },
-    color: {
-        pattern: ['#680013', '#888888', '#cccccc']
-    },
-    point: {
-      r: 3
-    },
-    axis : {
-        x : {
-            type : 'timeseries',
-            padding: {left:0, right:0},
-            label: {
-                text: 'X Label',
-                position: 'outer-center'
-            },
-            tick: {
-                format: function (x) { return x.getFullYear(); }
-              //format: '%Y' // format string is also available for timeseries data
-            }
-        },
-        y : {
-            max: 600,
-            min: -100,
-            padding: {top:100, bottom:30},
-            label: {
-                text: 'Y Label',
-                position: 'outer-middle'
-            },
-            tick: {
-                format: d3.format("$,")
-//                format: function (d) { return "$" + d; }
-            }
-        },
-    },
-    grid: {
-    y: {
-        lines: [
-            {value: 0, text: '', axis: 'y', position: 'middle'}
-        ]
-      }
-    },
   });
 </script>
