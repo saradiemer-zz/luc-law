@@ -85,9 +85,9 @@ STORY - CAROUSEL - 121017
 	#carousel-example-generic .carousel-inner{
 		height: 727px;
 	}
-	#carousel-example-generic .circle {
-		margin-top: -68%;
-	}
+  #carousel-example-generic .circleleft{
+    margin-left: 60.9%;
+  }
 }
 
 /* Medium Devices, Desktops */
@@ -96,11 +96,11 @@ STORY - CAROUSEL - 121017
 	margin-top: 0px !important;
 	}
 	#carousel-example-generic .carousel-caption-split {
-    margin-top: 5%;
+    margin-top: 2%;
     text-align: left !important;
-	height: auto;
-	overflow-y: scroll;
-	padding-bottom: 10px;
+	  height: auto;
+	  overflow-y: scroll;
+	  padding-bottom: 10px;
 	}
 	#carousel-example-generic .vertical {
 	overflow-y: scroll;
@@ -114,8 +114,8 @@ STORY - CAROUSEL - 121017
 	overflow-y: scroll;
     }
 	#carousel-example-generic .circle {
-    margin-top: 2%;
-	   left: 83%;
+  margin-top: 109%;
+	  left: 83%;
 	}
 }
 
@@ -135,26 +135,13 @@ STORY - CAROUSEL - 121017
 	padding-bottom: 5%;
 	height:auto;
     }
-	#carousel-example-generic .circle {
-    margin-top: -4%;
-	}
-	#carousel-example-generic .carousel-control.left {
-	margin-left: 19%;
-	margin-top: 8%;
-	z-index: 10;
-	}
-	#carousel-example-generic .carousel-control.right {
-	margin-right: 59%;
-	margin-top: 8%;
-	z-index: 2;
-	}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 	#carousel-example-generic .carousel-caption-split .vertical {
-    margin-top: 5%;
-    padding-bottom: 5%;
+  margin-top: 5%;
+  padding-bottom: 5%;
 	height: 131px !important;
 	overflow-y: scroll;
 	}
@@ -162,22 +149,9 @@ STORY - CAROUSEL - 121017
 	padding-bottom: 20px;
 	}
 	#carousel-example-generic .carousel-caption-split {
-    margin-top: 5%;
-    padding-bottom: 5%;
+  margin-top: 5%;
+  padding-bottom: 5%;
 	height: 262px !important;
-	}
-	#carousel-example-generic .circle {
-    margin-top: -7%;
-	left: 80%;
-	}
-	#carousel-example-generic .carousel-control.left {
-	margin-left: 19%;
-	margin-top: 8px !important;
-	}
-	#carousel-example-generic .carousel-control.right {
-	margin-right: 59%;
-	margin-top: 8px !important;
-	z-index: 2;
 	}
 	#sub-header #masthead h2.label-chapter.display {
 	font-size: .95em;
