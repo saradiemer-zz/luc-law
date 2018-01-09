@@ -1,0 +1,104 @@
+<!-- story - carousel -->
+<div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel">
+<!-- Wrapper for slides -->
+<div class="carousel-inner">
+
+<div class="item active">
+  <div class="holder col-md-8 row">
+    <img src="http://placehold.it/400x450">
+  </div>
+  <div class="col-md-4">
+    <div class="carousel-caption-split">
+        <h5 class="label">LIBERIA FLOWERS</h5>
+<p class="explainer">Housing Opportunities for Women </p>
+
+<p>“I’m an ex-felon—two-time ex-felon—and on disability. I’ve been on disability since I was 17 and a half...I’ve seen how it be, how it is to be rock bottom, sleep on benches, hang out in hallways, be around the wrong folks and people, and be in and out of the jail."</p>
+
+<p>“...Right now, the program I’m in is Shelter Care Plus Permanent Housing... I’m going to Truman College for GED classes...I come to any class that will give me a certificate and that I feel like I accomplished something, because the majority of my life growing up, I come from a dysfunctional family to where, I always wanted to accomplish things [but] I never got a chance to achieve and here [at HOW] I’ve been achieving my goals."</p>
+
+<p>“Right now, all I can do in return [for those who have helped me] is to show faith and prove to society and the people who fund this program, that this is best program to ever happen to a woman, to a young lady. And I just give it all ‘ups,’ like Siskel and Ebert; I give it thumbs up.”</p>
+
+    </div>
+  </div>
+</div>
+
+<div class="item">
+ <div class="holder col-md-8 row">
+        <img src="http://placehold.it/400x450">
+  </div>
+  <div class="col-md-4">
+    <div class="carousel-caption-split">
+        <h5 class="label">ANDREA HALL</h5>
+       <p class="explainer">Staff member, Chicago Coalition for the Homeless</p>
+        <p>“A goal in my life is to let people know there are different faces of homelessness, and when they first meet me, people won’t think...that I was homeless.” </p>
+    </div>
+  </div>
+</div>
+
+<div class="item">
+  <div class="holder col-md-8 row">
+    <img src="http://placehold.it/400x450">
+  </div>
+  <div class="col-md-4">
+    <div class="carousel-caption-split">
+        <h5 class="label">CHARLES JENKINS</h5>
+<p class="explainer">Volunteer, Chicago Coalition for the Homeless </p>
+
+<p>“About 1990, I got involved in Chicago Coalition for the Homeless. It inspired me. It woke up something socially conscious and just in me. It inspired me to get my life in order. So I went into detox and got myself clean and joined the 12 step program. I’ve been an avid member since that time to this very day.</p>
+
+<p>“I’m not looking to do anything spectacular. Most of my life is behind [me] anyway, you know...Society will ultimately, hopefully, be able to encourage some of our public officials to be a bit people-concerned for a change. I don’t mean lobbyists or big industry you know, but grassroots, everyday people.”</p>
+
+    </div>
+  </div>
+</div>
+
+<div class="item">
+  <div class="holder col-md-8 row">
+  <img src="http://placehold.it/400x450">
+  </div>
+  <div class="col-md-4">
+    <div class="carousel-caption-split">
+        <h5 class="label">VALERIE GALVAN</h5>
+<p class="explainer">Housing Opportunities for Women </p>
+
+<p>“I’m working harder now to get my other children back home with me. Rebuilding my relationships with them and my family . . . from a life of darkness to a life of light. You have to stay focused, keep it positive all times, and don’t give up. That’s the main thing.</p>
+
+<p>“I can’t express myself to how grateful I am to be where I am at today, with all the opportunities that were given to me. I could have gotten worse. I could be dead or anything. Coming from the streets, I am doing real good compared to where I have been.”</p>
+
+    </div>
+  </div>
+</div>
+
+<div class="controllers col-xs-12 circle">
+<!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+
+</div>
+
+</div>
+</div>
+<script>
+$(function () {
+$('.carousel').carousel({
+    interval: false
+});
+});
+
+
+$(".carousel").swipe({
+
+  swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+
+    if (direction == 'left') $(this).carousel('next');
+    if (direction == 'right') $(this).carousel('prev');
+
+  },
+  allowPageScroll:"vertical"
+
+});
+</script>
