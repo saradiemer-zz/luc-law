@@ -1,3 +1,8 @@
+body {
+	background-color: #fff !important;
+	background: #fff !important;
+}
+
 .canvas-base.panel-dark {
 	color: $gray-light;
 	background: $bg-overlay-dark;
@@ -344,23 +349,6 @@
 	@include media-breakpoint-down(lg) {
 		font-size: 4em;
 	}
-}
-
-.ug-ies-key span.circle {
-	display: block;
-	margin: 0;
-	padding: 6px;
-	width: 30px;
-	height: 30px;
-	vertical-align: middle;
-	font-family: 'Antenna Black', sans-serif;
-	text-align: center;
-	content: "";
-	color: #f1f1f1;
-	background: #000;
-	border-radius: 50%;
-	float: left;
-	margin-right: 10px;
 }
 
 /* CAROUSEL ARROWS */
