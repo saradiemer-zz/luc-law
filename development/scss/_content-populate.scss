@@ -60,11 +60,16 @@
     background: rgba(0,0,0,.7);
 }
 
-a span {
-  cursor: pointer !important;
-}
+a span { cursor: pointer !important; }
 
 #content-populate {
 	display: inline-block;
 	width: 100%;
+	background: $gray-extra-light;
 }
+
+#hidden-details { padding: 20px; }
+
+#hidden-details img { margin: 0; }
+
+/* CSS - END */
