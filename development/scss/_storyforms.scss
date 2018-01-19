@@ -142,3 +142,30 @@ li span.key-box.two    { background-color: #272727; }
 li span.key-box.three { background-color: #525252; }
 li span.key-box.four   { background-color: #888888; }
 li span.key-box.five    { background-color: #cccccc; }
+
+/* TOOLTIPS - POPULATE */
+
+.tooltip-populate {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-populate .tooltip-content {
+  position: absolute;
+  left: 35px;
+  padding: 10px;
+  width: 300px;
+  color: $gray-extra-light;
+  border-radius: 3px;
+  background-color: $bg-overlay-extra-dark;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .5s ease-out;
+}
+
+.tooltip-populate:hover { z-index: 10000 !important; }
+
+.tooltip-populate:hover .tooltip-content {
+  visibility: visible;
+  opacity: 1;
+}
