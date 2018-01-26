@@ -409,15 +409,13 @@ $('#myCarousel').on('slid.bs.carousel', function () {
   <div class="holder col-md-8 row">
     <img src="http://placehold.it/400x450">
   </div>
-  <div class="col-md-4">
+  <div class="col-md-4 carousel-caption-wrapper">
+    <div class="carousel-caption-fade"></div>
     <div class="carousel-caption-split">
         <h5 class="label">LIBERIA FLOWERS</h5>
-<p class="explainer">Housing Opportunities for Women </p>
-
-<p>“I’m an ex-felon—two-time ex-felon—and on disability. I’ve been on disability since I was 17 and a half...I’ve seen how it be, how it is to be rock bottom, sleep on benches, hang out in hallways, be around the wrong folks and people, and be in and out of the jail."</p>
-
-<p>“...Right now, the program I’m in is Shelter Care Plus Permanent Housing... I’m going to Truman College for GED classes...I come to any class that will give me a certificate and that I feel like I accomplished something, because the majority of my life growing up, I come from a dysfunctional family to where, I always wanted to accomplish things [but] I never got a chance to achieve and here [at HOW] I’ve been achieving my goals."</p>
-
+        <p class="explainer">Housing Opportunities for Women </p>
+        <p>“I’m an ex-felon—two-time ex-felon—and on disability. I’ve been on disability since I was 17 and a half...I’ve seen how it be, how it is to be rock bottom, sleep on benches, hang out in hallways, be around the wrong folks and people, and be in and out of the jail."</p>
+        <p>“...Right now, the program I’m in is Shelter Care Plus Permanent Housing... I’m going to Truman College for GED classes...I come to any class that will give me a certificate and that I feel like I accomplished something, because the majority of my life growing up, I come from a dysfunctional family to where, I always wanted to accomplish things [but] I never got a chance to achieve and here [at HOW] I’ve been achieving my goals."</p>
     </div>
   </div>
 </div>
@@ -600,7 +598,7 @@ $(".carousel").swipe({
 </div>
  <!-- story-image-side-caption-dark -->
 			<div class="container-fluid p-t-20 p-b-20" style="background: rgba(0,0,0,.9)">
-  <h6 class="category text-center" style="margin: 0; color: #666666;">Image and side caption</h6>
+  <h6 class="category text-center" style="margin: 0; color: #666666;">Image and side caption dark</h6>
 </div>
 
 			<div class="container-fluid story-content-padding equal-box-container">
@@ -624,14 +622,18 @@ $(".carousel").swipe({
   <h6 class="category text-center" style="margin: 0; color: #666666;">Images with text</h6>
 </div>
 
-			<div class="container-fluid p-0">
-  <div class="col-md-6 p-0">
-    <img class="float-left m-t-0 m-b-0" src="http://placehold.it/1000x1000"/>
-  </div>
-  <div class="col-md-6 story-content-padding">
-    <h1 class="number display m-b-0">00,000</h1>
-    <p class="caption display medium m-b-0 p-b-0"><span class="leadin">Lorem ipsum dolor sit amet.</span> Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis. Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis.</p>
-  </div>
+			<div class="container-fluid p-0 equal-box-container">
+    <div class="col-md-12 p-0">
+        <div class="col-md-6 p-0 equal-box">
+            <img  class="float-left m-t-0 m-b-0 image-object-cover" src="http://placehold.it/1000x1000">
+        </div>
+        <div class="col-md-6 p-0 equal-box">
+            <div class="story-content-padding">
+              <h1 class="number display m-b-0">00,000</h1>
+              <p class="caption display medium m-b-0 p-b-0"><span class="leadin">Lorem ipsum dolor sit amet.</span> Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis. Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis.</p>
+            </div>
+        </div>
+    </div>
 </div>
  <!-- story-image-text-display -->
 			<div class="container-fluid p-t-20 p-b-20" style="background: rgba(0,0,0,.9)">

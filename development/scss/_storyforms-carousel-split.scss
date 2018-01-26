@@ -5,23 +5,27 @@ STORY - CAROUSEL - 121017
 @charset "UTF-8";
 /* CSS Document */
 #carousel-example-generic .carousel {
-    position: relative;
+  position: relative;
 }
 
 #carousel-example-generic .controllers {
-    top: 0px;
+  top: 0px;
 }
 
 #carousel-example-generic .carousel-control.left,
 #carousel-example-generic.carousel-control.right {
-    background-image: none;
+  background-image: none;
 	font-size: 40px;
 }
 
+#carousel-example-generic .glyphicon-chevron-left:before,
+#carousel-example-generic .glyphicon-chevron-right:before {
+  font-size: .825em !important;
+}
+
 #carousel-example-generic .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
-	font-size: 20px;
 	text-align: center;
-	margin-top: -14.5px;
+	margin-top: -18px;
 	width: 2px;
   margin-left: -19px;
   margin-right: -14px;
@@ -52,12 +56,32 @@ STORY - CAROUSEL - 121017
 }
 
 #carousel-example-generic .carousel-caption-split {
+  position: relative;
 	margin-top: 50%;
 	padding-right: 30px;
 	padding-left: 30px;
-	overflow-y: scroll;
+  padding-bottom: 80px;
+	overflow: auto;
 	text-align: left !important;
 	height: 450px;
+  max-height: 450px;
+}
+
+.carousel-caption-wrapper { position: relative; }
+
+.carousel-caption-fade {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 90%;
+  height: 100px;
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(225, 225, 225, 1) 100%);
+  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(225, 225, 225, 1) 100%);
+  background-image: -o-linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(225, 225, 225, 1) 100%);
+  background-image: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(225, 225, 225, 1) 100%);
+  background-image: -ms-linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(225, 225, 225, 1) 100%);
+  z-index: 10000;
 }
 
 #carousel-example-generic .holder {
@@ -74,6 +98,9 @@ STORY - CAROUSEL - 121017
 
 #carousel-example-generic img {
   margin-top: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 #carousel-example-generic .carousel-control.right {
@@ -92,8 +119,9 @@ STORY - CAROUSEL - 121017
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-	#magazine-story img.horizontal {
-	margin-top: 0px !important;
+
+  #magazine-story img.horizontal {
+    margin-top: 0px !important;
 	}
 	#carousel-example-generic .carousel-caption-split {
     margin-top: 2%;
@@ -103,18 +131,18 @@ STORY - CAROUSEL - 121017
 	  padding-bottom: 10px;
 	}
 	#carousel-example-generic .vertical {
-	overflow-y: scroll;
+	  overflow-y: scroll;
 	}
 	#carousel-example-generic .holder {
-	height:auto;
+	  height:auto;
 	}
 	#carousel-example-generic .carousel-inner {
-	padding-bottom: 5%;
-	height: 1100px;
-	overflow-y: scroll;
-    }
+	  padding-bottom: 5%;
+	  height: 1100px;
+	  overflow-y: scroll;
+  }
 	#carousel-example-generic .circle {
-  margin-top: 109%;
+    margin-top: 109%;
 	  left: 83%;
 	}
 }
@@ -129,31 +157,31 @@ STORY - CAROUSEL - 121017
     margin-top: 5%;
 	}
 	#carousel-example-generic .holder {
-	height:auto;
+	  height:auto;
 	}
 	#carousel-example-generic .carousel-inner {
-	padding-bottom: 5%;
-	height:auto;
-    }
+	  padding-bottom: 5%;
+	  height:auto;
+  }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 	#carousel-example-generic .carousel-caption-split .vertical {
-  margin-top: 5%;
-  padding-bottom: 5%;
-	height: 131px !important;
-	overflow-y: scroll;
+    margin-top: 5%;
+    padding-bottom: 5%;
+	  height: 131px !important;
+	  overflow-y: scroll;
 	}
 	#carousel-example-generic .vertical {
-	padding-bottom: 20px;
+	  padding-bottom: 20px;
 	}
 	#carousel-example-generic .carousel-caption-split {
-  margin-top: 5%;
-  padding-bottom: 5%;
-	height: 262px !important;
+    margin-top: 5%;
+    padding-bottom: 5%;
+	  height: 262px !important;
 	}
 	#sub-header #masthead h2.label-chapter.display {
-	font-size: .95em;
-}
+	   font-size: .95em;
+  }
 }
