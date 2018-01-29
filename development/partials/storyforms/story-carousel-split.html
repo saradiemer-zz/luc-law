@@ -9,7 +9,7 @@
   </div>
   <div class="col-md-4 carousel-caption-wrapper">
     <div class="carousel-caption-fade"></div>
-    <div class="carousel-caption-split">
+    <div class="carousel-caption-split scrollable">
         <h5 class="label">LIBERIA FLOWERS</h5>
         <p class="explainer">Housing Opportunities for Women </p>
         <p>“I’m an ex-felon—two-time ex-felon—and on disability. I’ve been on disability since I was 17 and a half...I’ve seen how it be, how it is to be rock bottom, sleep on benches, hang out in hallways, be around the wrong folks and people, and be in and out of the jail."</p>
@@ -22,7 +22,8 @@
  <div class="holder col-md-8 row">
         <img src="http://placehold.it/400x450">
   </div>
-  <div class="col-md-4">
+  <div class="col-md-4 carousel-caption-wrapper">
+    <div class="carousel-caption-fade"></div>
     <div class="carousel-caption-split">
         <h5 class="label">ANDREA HALL</h5>
        <p class="explainer">Staff member, Chicago Coalition for the Homeless</p>
@@ -35,7 +36,8 @@
   <div class="holder col-md-8 row">
     <img src="http://placehold.it/400x450">
   </div>
-  <div class="col-md-4">
+  <div class="col-md-4 carousel-caption-wrapper">
+    <div class="carousel-caption-fade"></div>
     <div class="carousel-caption-split">
         <h5 class="label">CHARLES JENKINS</h5>
 <p class="explainer">Volunteer, Chicago Coalition for the Homeless </p>
@@ -52,7 +54,8 @@
   <div class="holder col-md-8 row">
   <img src="http://placehold.it/400x450">
   </div>
-  <div class="col-md-4">
+  <div class="col-md-4 carousel-caption-wrapper">
+    <div class="carousel-caption-fade"></div>
     <div class="carousel-caption-split">
         <h5 class="label">VALERIE GALVAN</h5>
 <p class="explainer">Housing Opportunities for Women </p>
@@ -85,16 +88,12 @@ $('.carousel').carousel({
 });
 });
 
-
 $(".carousel").swipe({
-
   swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-
     if (direction == 'left') $(this).carousel('next');
     if (direction == 'right') $(this).carousel('prev');
-
   },
   allowPageScroll:"vertical"
-
 });
+
 </script>
