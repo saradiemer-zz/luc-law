@@ -16,6 +16,17 @@ $(".grid-square").each(function() {
   $("#rightColumn").css("display","none");
   $("#centerColumn").removeClass("col-md-6").addClass("col-md-9");
 })();
+var $document = $(document),
+    $body = $('body'),
+    $scrolable = $('.scrollable');
+$scrolable.on({
+  'mouseenter': function () {
+    $body.addClass('noscroll');
+  },
+  'mouseleave': function () {
+    $body.removeClass('noscroll');
+  }
+});
 /**
  * stacktable.js
  * Author & copyright (c) 2012: John Polacek
