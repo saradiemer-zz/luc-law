@@ -43,9 +43,9 @@ ol.carousel-indicators li { display:none !important; }
   }
 }
 
-.glyphicon-chevron-left:before,
-.glyphicon-chevron-right:before {
-  font-size: 1.25em !important;
+#story-full-carousel .glyphicon-chevron-left:before,
+#story-full-carousel .glyphicon-chevron-right:before {
+  font-size: 1.25em;
 }
 
 /* carousel-caption */
