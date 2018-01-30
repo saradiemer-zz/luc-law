@@ -399,7 +399,7 @@ nav#nav-box ul li ul.multilevel-linkul-0 li a,
 	color: $gray-light;
 	text-transform: none;
 	border-left: 0 none;
-	border-bottom: solid 1px $gray-dark;
+/*border-bottom: solid 1px $gray-dark; */
 	@include media-breakpoint-down(sm) { color: darken($gray-light, 20%); }
 }
 

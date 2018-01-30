@@ -328,11 +328,11 @@
 	<div id="main-content" class="container">
 		<div id="story-wrapper" class="col-md-12 p-l-0 p-r-0 bg-white">
 			<!-- story - carousel -->
-<div id="myCarousel" class="container-fluid p-0 carousel slide carousel-fade" data-interval="false">
+<div id="story-full-carousel" class="container-fluid p-0 carousel slide carousel-fade" data-interval="false">
 	<ol class="carousel-indicators">
-		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-		<li data-target="#myCarousel" data-slide-to="1"></li>
-		<li data-target="#myCarousel" data-slide-to="2"></li>
+		<li data-target="#" data-slide-to="0" class="active"></li>
+		<li data-target="#story-full-carousel" data-slide-to="1"></li>
+		<li data-target="#story-full-carousel" data-slide-to="2"></li>
 	</ol>
 	<div class="carousel-inner" role="listbox">
 		<div class="item active">
@@ -361,11 +361,11 @@
 		</div>
 	</div>
 	<!-- Left and right controls -->
-	<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+	<a class="left carousel-control" href="#story-full-carousel" role="button" data-slide="prev">
 		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 		<span class="sr-only">Previous</span>
 	</a>
-	<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+	<a class="right carousel-control" href="#story-full-carousel" role="button" data-slide="next">
 		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 		<span class="sr-only">Next</span>
 	</a>
@@ -376,7 +376,7 @@
 var totalItems = $('.item').length;
 var currentIndex = $('div.active').index() + 1;
 $('.counter').html(''+currentIndex+'/'+totalItems+'');
-$('#myCarousel').on('slid.bs.carousel', function () {
+$('#story-full-carousel').on('slid.bs.carousel', function () {
 	currentIndex = $('div.active').index() + 1;
 	$('.counter').html(''+currentIndex+'/'+totalItems+'');
 });
@@ -401,7 +401,7 @@ $('#myCarousel').on('slid.bs.carousel', function () {
 </div>
 
 			<!-- story - carousel -->
-<div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel">
+<div id="story-half-carousel" class="carousel slide carousel-fade" data-ride="carousel">
 <!-- Wrapper for slides -->
 <div class="carousel-inner">
 
@@ -472,10 +472,10 @@ $('#myCarousel').on('slid.bs.carousel', function () {
 
 <div class="controllers col-xs-12 circle">
 <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+  <a class="left carousel-control" href="#story-half-carousel" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left"></span>
   </a>
-  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+  <a class="right carousel-control" href="#story-half-carousel" data-slide="next">
     <span class="glyphicon glyphicon-chevron-right"></span>
   </a>
 
@@ -569,9 +569,11 @@ $(".carousel").swipe({
         </div>
         <div class="col-md-6 p-0 equal-box">
             <div class="story-content-padding">
-              <h4 class="subhead">Subhead here consectetur adipiscing elit ras vitae vulputate justo</h4>
-              <p class="body">Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis, cursus leo at, auctor diam. Ut ut odio non massa consequat porta eget vel ligula. Cras vitae vulputate justo cursus leo at auctor.</p>
-              <p class="body">Dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis, cursus leo at, auctor diam. Ut ut odio non massa consequat porta eget vel ligula. Cras vitae vulputate justo cursus leo at auctor.</p>
+              <div class="col-md-12">
+                <h4 class="subhead">Subhead here consectetur adipiscing elit ras vitae vulputate justo</h4>
+                <p class="body">Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis, cursus leo at, auctor diam. Ut ut odio non massa consequat porta eget vel ligula. Cras vitae vulputate justo cursus leo at auctor.</p>
+                <p class="body">Dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis, cursus leo at, auctor diam. Ut ut odio non massa consequat porta eget vel ligula. Cras vitae vulputate justo cursus leo at auctor.</p>
+              </div>
             </div>
         </div>
     </div>
@@ -588,9 +590,11 @@ $(".carousel").swipe({
         </div>
         <div class="col-md-6 p-0 equal-box bg-gray-extra-dark">
             <div class="story-content-padding">
-              <h4 class="subhead">Subhead here consectetur adipiscing elit ras vitae vulputate justo</h4>
-              <p class="body">Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis, cursus leo at, auctor diam. Ut ut odio non massa consequat porta eget vel ligula. Cras vitae vulputate justo cursus leo at auctor.</p>
-              <p class="body">Dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis, cursus leo at, auctor diam. Ut ut odio non massa consequat porta eget vel ligula. Cras vitae vulputate justo cursus leo at auctor.</p>
+              <div class="col-md-12">
+                <h4 class="subhead">Subhead here consectetur adipiscing elit ras vitae vulputate justo</h4>
+                <p class="body">Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis, cursus leo at, auctor diam. Ut ut odio non massa consequat porta eget vel ligula. Cras vitae vulputate justo cursus leo at auctor.</p>
+                <p class="body">Dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis, cursus leo at, auctor diam. Ut ut odio non massa consequat porta eget vel ligula. Cras vitae vulputate justo cursus leo at auctor.</p>
+              </div>
             </div>
         </div>
     </div>
@@ -628,8 +632,10 @@ $(".carousel").swipe({
         </div>
         <div class="col-md-6 p-0 equal-box">
             <div class="story-content-padding">
-              <h1 class="number display m-b-0">00,000</h1>
-              <p class="caption display medium m-b-0 p-b-0"><span class="leadin">Lorem ipsum dolor sit amet.</span> Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis. Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis.</p>
+              <div class="col-md-12">
+                <h1 class="number display m-b-0">00,000</h1>
+                <p class="caption display medium m-b-0 p-b-0"><span class="leadin">Lorem ipsum dolor sit amet.</span> Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis. Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis.</p>
+              </div>
             </div>
         </div>
     </div>
@@ -637,6 +643,26 @@ $(".carousel").swipe({
  <!-- story-image-text-display -->
 			<div class="container-fluid p-t-20 p-b-20" style="background: rgba(0,0,0,.9)">
   <h6 class="category text-center" style="margin: 0; color: #666666;">Image and display text</h6>
+</div>
+
+			<div class="container-fluid p-0 equal-box-container">
+    <div class="col-md-12 p-0">
+        <div class="col-md-6 p-0 equal-box">
+            <img  class="float-left m-t-0 m-b-0 image-object-cover" src="http://placehold.it/1000x1000">
+        </div>
+        <div class="col-md-6 p-0 equal-box bg-gray-extra-dark">
+            <div class="story-content-padding">
+              <div class="col-md-12">
+                <h1 class="number display m-b-0">00,000</h1>
+                <p class="caption display medium m-b-0 p-b-0"><span class="leadin">Lorem ipsum dolor sit amet.</span> Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis. Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis.</p>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+ <!-- story-text-display-dark -->
+			<div class="container-fluid p-t-20 p-b-20" style="background: rgba(0,0,0,.9)">
+  <h6 class="category text-center" style="margin: 0; color: #666666;">Image and display text dark</h6>
 </div>
 
 			<div class="container-fluid story-content-padding">
@@ -1039,31 +1065,31 @@ var storyChart01 = c3.generate({
 </div>
 
 			<div class="container-fluid story-content-padding equal-box-container">
-  <div class="col-md-6 rule-right-small equal-box">
-      <h4 class="subhead m-t-0 m-b-0">Subhead herehere</h4>
-      <p class="body explainer m-b-10">Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit.</p>
-      <div class="chart-wrapper">
-        <div id="chart05"></div>
-      </div>
-      <ul class="key">
-        <li class="category small"><span class="key-box one"></span>Key category one</li>
-        <li class="category small"><span class="key-box two"></span>Key category two</li>
-        <li class="category small"><span class="key-box three"></span>Key category three</li>
-      </ul>
-      <p class="body explainer small m-b-0">As of Month 00, 0000</p>
+  <div class="col-md-6 col-xs-12 rule-right-small equal-box">
+    <h4 class="subhead m-t-0 m-b-0">Subhead herehere</h4>
+    <p class="body explainer m-b-10">Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit.</p>
+    <div class="chart-wrapper">
+      <div id="chart05"></div>
     </div>
-    <div class="col-md-6 rule-right-small-spacing equal-box">
-      <h4 class="subhead m-t-0 m-b-0">Subhead herehere</h4>
-      <p class="body explainer m-b-10">Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit.</p>
-      <div class="chart-wrapper">
-        <div id="chart06"></div>
-      </div>
-      <ul class="key">
-        <li class="category small"><span class="key-box one"></span>Key category one</li>
-        <li class="category small"><span class="key-box two"></span>Key category two</li>
-      </ul>
-      <p class="body explainer small m-b-0">As of Month 00, 0000</p>
+    <ul class="key">
+      <li class="category small"><span class="key-box one"></span>Key category one</li>
+      <li class="category small"><span class="key-box two"></span>Key category two</li>
+      <li class="category small"><span class="key-box three"></span>Key category three</li>
+    </ul>
+    <p class="body explainer small m-b-0">As of Month 00, 0000</p>
+  </div>
+  <div class="col-md-6 col-xs-12 rule-right-small-spacing equal-box">
+    <h4 class="subhead m-t-0 m-b-0">Subhead herehere</h4>
+    <p class="body explainer m-b-10">Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit.</p>
+    <div class="chart-wrapper">
+      <div id="chart06"></div>
     </div>
+    <ul class="key">
+      <li class="category small"><span class="key-box one"></span>Key category one</li>
+      <li class="category small"><span class="key-box two"></span>Key category two</li>
+    </ul>
+    <p class="body explainer small m-b-0">As of Month 00, 0000</p>
+  </div>
 </div>
 
 <script>
