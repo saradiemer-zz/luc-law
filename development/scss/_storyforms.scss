@@ -46,10 +46,25 @@
   border-bottom: solid 1px darken($gray-light, 5%);
 }
 
+.rule-left,
+.rule-left-spacing,
+.rule-right,
+.rule-right-spacing,
+.rule-left-small,
+.rule-left-small-spacing,
+.rule-right-small,
+.rule-right-small-spacing {
+  @include media-breakpoint-down(xs) {
+    padding: 0;
+    border: 0;
+  }
+}
+
 .equal-box-container {
   display: -ms-flex;
 	display: -webkit-flex;
 	display: flex;
+  @include media-breakpoint-down(md) { display: block; }
 }
 
 .equal-box-container .equal-box {
@@ -179,4 +194,6 @@ li span.key-box.five    { background-color: #cccccc; }
 }
 
 .bg-gray-extra-dark h4,
-.bg-gray-extra-dark p { color: $gray; }
+.bg-gray-extra-dark p,
+.bg-gray-extra-dark .number,
+.bg-gray-extra-dark .leadin { color: $gray; }
