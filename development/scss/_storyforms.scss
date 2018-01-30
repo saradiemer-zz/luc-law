@@ -54,8 +54,8 @@
 .rule-left-small-spacing,
 .rule-right-small,
 .rule-right-small-spacing {
-  @include media-breakpoint-down(xs) {
-    padding: 0;
+  @include media-breakpoint-down(sm) {
+    padding: 0 20px;
     border: 0;
   }
 }
@@ -69,7 +69,15 @@
 
 .equal-box-container .equal-box {
   height: 100%;
-  @include media-breakpoint-down(md) { height: auto; }
+  @include media-breakpoint-down(md) {
+    height: auto;
+  }
+}
+
+.equal-box-container .rule-left-small.equal-box {
+  @include media-breakpoint-down(md) {
+    margin-top: 30px;
+  }
 }
 
 /* aside image */
