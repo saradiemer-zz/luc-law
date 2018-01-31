@@ -2,6 +2,11 @@
 @include media-breakpoint-down(sm) { padding: 20px; }
 }
 
+.story-content-padding.equal-box-container { padding: 100px 100px 100px 100px;
+@include media-breakpoint-down(sm) { padding: 35px 20px; }
+}
+
+
 /* border rule */
 
 .rule-left {
@@ -117,7 +122,26 @@ cite.cite.small {
   color: $gray-extra-dark;
 }
 
+#story-wrapper p.caption.display {
+  @include media-breakpoint-down(md) {
+    padding-bottom: 15px !important;
+  }
+}
+
 /* charts */
+
+.chart-col-wrapper {
+  margin: 0;
+  @include media-breakpoint-down(md) {
+    margin-bottom: 50px;
+  }
+}
+
+.chart-col-wrapper:last-of-type {
+  @include media-breakpoint-down(md) {
+    margin-bottom: 0;
+  }
+}
 
 .chart-wrapper { width: 100%; }
 
@@ -150,6 +174,8 @@ cite.cite.small {
   text-shadow: 0px 0px 10px rgba(0,0,0,.25);
 }
 
+.c3-xgrid-focus { display: none; }
+
 ul.key {
     float: left;
     margin: 0;
@@ -157,6 +183,10 @@ ul.key {
     li {
       list-style: none;
     }
+}
+
+ul.key .pull-right {
+
 }
 
 li span.key-box {
@@ -174,7 +204,9 @@ li span.key-box.three { background-color: #525252; }
 li span.key-box.four   { background-color: #888888; }
 li span.key-box.five    { background-color: #cccccc; }
 
-/* TOOLTIPS - POPULATE */
+.chart-date { margin-bottom: 0; }
+
+/* tooltips - populate */
 
 .tooltip-populate {
   position: relative;

@@ -16,17 +16,28 @@ $(".grid-square").each(function() {
   $("#rightColumn").css("display","none");
   $("#centerColumn").removeClass("col-md-6").addClass("col-md-9");
 })();
-var $document = $(document),
-    $body = $('body'),
-    $scrolable = $('.scrollable');
-$scrolable.on({
-  'mouseenter': function () {
-    $body.addClass('noscroll');
-  },
-  'mouseleave': function () {
-    $body.removeClass('noscroll');
-  }
-});
+$(window).resize(function() {
+  if ($(window).width() >= 991) {
+    var $body = $('body'),
+        $scrolable = $('.scrollable');
+    $scrolable.on({
+      'mouseenter': function() {
+        $body.addClass('noscroll');
+      }, // mouseenter
+      'mouseleave': function() {
+        $body.removeClass('noscroll');
+      }, // mouseleave
+    }); //$scrollable.on
+  } // if
+  else {
+    $scrolable.on({
+      'mouseenter': function() {
+        $body.addClass();
+      }, // mouseenter
+    }); //$scrollable.on
+  } // else
+}); // function
+
 /**
  * stacktable.js
  * Author & copyright (c) 2012: John Polacek
