@@ -54,7 +54,7 @@
 .rule-left-small-spacing,
 .rule-right-small,
 .rule-right-small-spacing {
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     padding: 0 20px;
     border: 0;
   }
