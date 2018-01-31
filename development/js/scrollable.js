@@ -14,7 +14,7 @@ $(window).resize(function() {
   else {
     $scrolable.on({
       'mouseenter': function() {
-        $body.addClass();
+        $body.addClass('noscroll');
       }, // mouseenter
     }); //$scrollable.on
   } // else
