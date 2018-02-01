@@ -16,27 +16,36 @@ $(".grid-square").each(function() {
   $("#rightColumn").css("display","none");
   $("#centerColumn").removeClass("col-md-6").addClass("col-md-9");
 })();
-$(window).resize(function() {
-  if ($(window).width() >= 991) {
+$(document).ready(function() {
+  function checkWidth() {
     var $body = $('body'),
-        $scrolable = $('.scrollable');
-    $scrolable.on({
-      'mouseenter': function() {
-        $body.addClass('noscroll');
-      }, // mouseenter
-      'mouseleave': function() {
-        $body.removeClass('noscroll');
-      }, // mouseleave
-    }); //$scrollable.on
-  } // if
-  else {
-    $scrolable.on({
-      'mouseenter': function() {
-        $body.addClass();
-      }, // mouseenter
-    }); //$scrollable.on
-  } // else
-}); // function
+      $scrolable = $('.scrollable'),
+      windowSize = $(window).width();
+
+    if (windowSize >= 991) {
+      console.log("screen width is greater than or equal to 991");
+      $scrolable.on({
+        'mouseenter': function() {
+          $body.addClass('noscroll');
+        }, // mouseenter
+        'mouseleave': function() {
+          $body.removeClass('noscroll');
+        }, // mouseleave
+      }); // $scrollable.on
+    } else if (windowSize <= 990) {
+      console.log("screen width is less than or equal to 990");
+      $scrolable.on({
+        'mouseenter': function() {
+          $body.removeClass('noscroll');
+        }, // mouseenter
+      }); // $scrollable.on
+    }
+  }
+  // Execute on load
+  checkWidth();
+  // Bind event listener
+  $(window).resize(checkWidth);
+});​
 
 /**
  * stacktable.js
