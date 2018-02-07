@@ -1,4 +1,8 @@
-.story-content-padding { padding: 80px 100px 80px 100px;
+.story-content-padding {
+  display: inline-block;
+  padding: 80px 100px 80px 100px;
+  min-height: 100%;
+  height: 100%;
 @include media-breakpoint-down(sm) { padding: 20px; }
 }
 
@@ -67,6 +71,7 @@
 
 .equal-box-container {
   display: -ms-flex;
+  display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
   @include media-breakpoint-down(md) { display: block; }
@@ -96,6 +101,26 @@
   height: 100%;
   object-fit: cover;
 }
+
+/* supports ie fix below */
+
+.ie-fix-table .equal-box.pull-right { float: right; }
+
+/* supports ie fix */
+
+.image-object-cover-ie {
+  position: absolute;
+  left: 0;
+  right: 50%;
+  top: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.image-object-cover-ie img { opacity: 0; }
 
 /* typography */
 
@@ -196,6 +221,9 @@ li span.key-box {
     width: 12px !important;
     height: 12px !important;
     background-color: red;
+    @include media-breakpoint-down(xs) {
+      margin: 3px 12px 8px 0;
+    }
 }
 
 li span.key-box.one    { background-color: #680013; }
