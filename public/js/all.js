@@ -47,6 +47,18 @@ $(document).ready(function() {
   $(window).resize(checkWidth);
 });​
 
+if ( ! Modernizr.objectfit ) {
+  $('.equal-box').each(function () {
+    var $container = $(this),
+        imgUrl = $container.find('img').prop('src');
+    if (imgUrl) {
+      $container
+        .css('backgroundImage', 'url(' + imgUrl + ')')
+        .addClass('image-object-cover-ie');
+    }
+  });
+}
+
 /**
  * stacktable.js
  * Author & copyright (c) 2012: John Polacek
