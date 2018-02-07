@@ -30,7 +30,7 @@ $(document).ready(function() {
 });​
 
 if ( ! Modernizr.objectfit ) {
-  $('.equal-box').each(function () {
+  $('.equal-box.ie-fix').each(function () {
     var $container = $(this),
         imgUrl = $container.find('img').prop('src');
     if (imgUrl) {
