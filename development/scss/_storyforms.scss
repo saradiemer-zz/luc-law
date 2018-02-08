@@ -194,31 +194,75 @@
 
 /* typography */
 
-blockquote.blockquote.display {
+/* blockquote - cite */
+
+blockquote.blockquote-overlay.display,
+blockquote.blockquote-standard.display {
   margin: 10px 0 !important;
   font-family: 'Antenna Black', sans-serif;
   font-size: 2.75em;
   line-height: 1.45;
 }
 
-blockquote.blockquote.display,
+blockquote.blockquote-overlay.display,
 body cite.cite-overlay,
-span.open-quote, span.close-quote {
-  width: 80%;
+blockquote.blockquote-overlay span.open-quote,
+blockquote.blockquote-overlay span.close-quote {
   color: darken($gray-light, 10%) !important;
-  text-shadow: 0 0 20px $bg-overlay;
+  text-shadow: 0 0 20px lighten($bg-overlay, 15%);
+  @include media-breakpoint-down(md) {
+    color: darken($gray-light, 35%) !important;
+  }
 }
 
-span.open-quote, span.close-quote {
+.container-fluid.story-content-padding.bg-gray-extra-dark {
+  background: $gray-extra-dark;
+}
+
+.bg-gray-extra-dark blockquote.blockquote-standard.display,
+.bg-gray-extra-dark cite.cite-standard,
+.bg-gray-extra-dark blockquote.blockquote-standard span.open-quote,
+.bg-gray-extra-dark blockquote.blockquote-standard span.close-quote {
+  color: darken($gray-light, 35%) !important;
+}
+
+body cite.cite-overlay,
+body cite.cite-standard {
+  font-family: 'Antenna Light', sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+body cite.cite-standard { font-size: .85em; }
+
+blockquote.blockquote-overlay span.open-quote,
+blockquote.blockquote-overlay span.close-quote,
+blockquote.blockquote-standard span.open-quote,
+blockquote.blockquote-standard span.close-quote {
   display: block;
   margin: 0 0 0 -7px;
   font-size: 3.25em;
   line-height: 0;
 }
 
-span.open-quote { margin-bottom: 15px; }
+blockquote.blockquote-standard span.open-quote,
+blockquote.blockquote-standard span.close-quote {
+  margin: 0 0 0 -3px;
+  font-size: 2.75em;
+}
 
-span.close-quote { margin-top: 60px; }
+blockquote.blockquote-overlay span.open-quote,
+blockquote.blockquote-standard span.open-quote { margin-top: 20px; margin-bottom: 15px; }
+
+blockquote.blockquote-overlay span.close-quote,
+blockquote.blockquote-standard span.close-quote { margin-top: 60px; }
+
+blockquote.blockquote-standard.display {
+  font-size: 2.25em;
+  line-height: 1.45;
+}
+
+/* general typography overrides */
 
 .medium { font-size: 1em; }
 
