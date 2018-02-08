@@ -50,6 +50,9 @@
     justify-content: flex-start;
     flex-direction: column;
     height: 100%;
+    @include media-breakpoint-down(md) {
+      margin: 15px;
+    }
 }
 
 .flex-center-vertically {
@@ -57,6 +60,9 @@
     justify-content: center;
     flex-direction: column;
     height: 100%;
+    @include media-breakpoint-down(md) {
+      margin: 15px;
+    }
 }
 
 .flex-bottom-vertically {
@@ -64,6 +70,9 @@
     justify-content: flex-end;
     flex-direction: column;
     height: 100%;
+    @include media-breakpoint-down(md) {
+      margin: 15px;
+    }
 }
 
 .overlay-20 { background: rgba(0,0,0,.2); }
@@ -194,7 +203,13 @@
 
 /* typography */
 
-/* blockquote - cite */
+.caption.small {
+  @include media-breakpoint-down(md) {
+    font-size: 100% !important;
+  }
+}
+
+/* blockquote */
 
 blockquote.blockquote-overlay.display,
 blockquote.blockquote-standard.display {
@@ -204,36 +219,47 @@ blockquote.blockquote-standard.display {
   line-height: 1.45;
 }
 
-blockquote.blockquote-overlay.display,
-body cite.cite-overlay,
-blockquote.blockquote-overlay span.open-quote,
-blockquote.blockquote-overlay span.close-quote {
-  color: darken($gray-light, 10%) !important;
-  text-shadow: 0 0 20px lighten($bg-overlay, 15%);
+blockquote.blockquote-overlay.display {
   @include media-breakpoint-down(md) {
-    color: darken($gray-light, 35%) !important;
+    font-size: 1.75em;
   }
 }
 
-.container-fluid.story-content-padding.bg-gray-extra-dark {
-  background: $gray-extra-dark;
+blockquote.blockquote-standard.display {
+  font-size: 2.25em;
+  line-height: 1.45;
+  @include media-breakpoint-down(md) {
+      font-size: 1.75em;
+  }
 }
 
-.bg-gray-extra-dark blockquote.blockquote-standard.display,
-.bg-gray-extra-dark cite.cite-standard,
-.bg-gray-extra-dark blockquote.blockquote-standard span.open-quote,
-.bg-gray-extra-dark blockquote.blockquote-standard span.close-quote {
-  color: darken($gray-light, 35%) !important;
+/* blockquote cite */
+
+body cite.cite-overlay {
+  @include media-breakpoint-down(md) {
+    font-size: .85em;
+    margin-bottom: 15px;
+  }
 }
 
 body cite.cite-overlay,
 body cite.cite-standard {
+  display: block;
+  width: 100%;
   font-family: 'Antenna Light', sans-serif;
   font-style: normal;
   text-transform: uppercase;
 }
 
-body cite.cite-standard { font-size: .85em; }
+body cite.cite-standard {
+  font-size: .85em;
+  @include media-breakpoint-down(md) {
+    font-size: .85em;
+    margin-bottom: 15px !important;
+  }
+}
+
+/* blockquote quote marks */
 
 blockquote.blockquote-overlay span.open-quote,
 blockquote.blockquote-overlay span.close-quote,
@@ -252,14 +278,40 @@ blockquote.blockquote-standard span.close-quote {
 }
 
 blockquote.blockquote-overlay span.open-quote,
-blockquote.blockquote-standard span.open-quote { margin-top: 20px; margin-bottom: 15px; }
+blockquote.blockquote-standard span.open-quote {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  @include media-breakpoint-down(md) {
+    margin-top: 30px;
+    margin-bottom: 12px;
+  }
+}
 
 blockquote.blockquote-overlay span.close-quote,
 blockquote.blockquote-standard span.close-quote { margin-top: 60px; }
 
-blockquote.blockquote-standard.display {
-  font-size: 2.25em;
-  line-height: 1.45;
+blockquote.blockquote-overlay.display,
+body cite.cite-overlay,
+blockquote.blockquote-overlay span.open-quote,
+blockquote.blockquote-overlay span.close-quote {
+  color: darken($gray-light, 10%) !important;
+  text-shadow: 0 0 20px lighten($bg-overlay, 15%);
+  @include media-breakpoint-down(md) {
+    color: darken($gray-light, 35%) !important;
+  }
+}
+
+/* blockquote colors */
+
+.container-fluid.story-content-padding.bg-gray-extra-dark {
+  background: $gray-extra-dark;
+}
+
+.bg-gray-extra-dark blockquote.blockquote-standard.display,
+.bg-gray-extra-dark cite.cite-standard,
+.bg-gray-extra-dark blockquote.blockquote-standard span.open-quote,
+.bg-gray-extra-dark blockquote.blockquote-standard span.close-quote {
+  color: darken($gray-light, 35%) !important;
 }
 
 /* general typography overrides */
@@ -301,6 +353,8 @@ cite.cite.small {
     margin-bottom: 50px;
   }
 }
+
+.chart-col-wrapper h4 { margin: 0 0 10px !important; }
 
 .chart-col-wrapper:last-of-type {
   @include media-breakpoint-down(md) {
