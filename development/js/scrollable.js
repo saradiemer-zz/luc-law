@@ -28,3 +28,15 @@ $(document).ready(function() {
   // Bind event listener
   $(window).resize(checkWidth);
 });​
+
+if ( ! Modernizr.objectfit ) {
+  $('.equal-box.ie-fix').each(function () {
+    var $container = $(this),
+        imgUrl = $container.find('img').prop('src');
+    if (imgUrl) {
+      $container
+        .css('backgroundImage', 'url(' + imgUrl + ')')
+        .addClass('image-object-cover-ie');
+    }
+  });
+}

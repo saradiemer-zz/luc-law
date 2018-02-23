@@ -74,7 +74,7 @@ gulp.task('useref', function() {
 gulp.task('index', ['useref'], function () {
   var target = gulp.src('./development/*.html');
   var sources = gulp.src(['./public/js/**/*.js', './public/css/**/*.css'], {read: false});
- 	return target.pipe(inject(sources, {ignorePath: 'public'}))
+ 	return target.pipe(inject(sources, {ignorePath: 'public/', addRootSlash: false}))
  	.pipe(gulpIf('*.html', fileinclude({prefix: '@@', basepath: '@file'})))
 	.pipe(gulp.dest(config.publicDir));
 });
@@ -89,14 +89,13 @@ gulp.task('html-watch', ['index'], browserSync.reload);
 gulp.task('sass-watch', ['sass'], browserSync.reload);
 gulp.task('js-watch', ['minify'], browserSync.reload);
 
-
 gulp.task('serve', ['lint', 'sass', 'index', 'minify'], function () {
     // Serve files from the root of this project
     browserSync.init({
         server: {
             baseDir: "./public"
         }
-    }  );
+    });
     // add browserSync.reload to the tasks array to make
     // all browsers reload after tasks are complete.
     gulp.watch('./development/**/*.html', ['html-watch']);

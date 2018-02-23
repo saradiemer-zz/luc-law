@@ -1,4 +1,14 @@
-.story-content-padding { padding: 80px 100px 80px 100px;
+/* spacing */
+
+#magazine-story {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.story-content-padding {
+  padding: 80px 100px 80px 100px;
+  min-height: 100%;
+  height: 100%;
 @include media-breakpoint-down(sm) { padding: 20px; }
 }
 
@@ -6,6 +16,79 @@
 @include media-breakpoint-down(sm) { padding: 35px 20px; }
 }
 
+/* background color */
+
+.container-fluid.story-content-padding,
+.equal-box .story-content-padding {
+  background-color: $white;
+}
+
+.equal-box.bg-gray-extra-dark .story-content-padding {
+  background-color: $gray-extra-dark;
+}
+
+/* image overlay */
+
+.overlay-relative {
+  position: relative;
+}
+
+.overlay-absolute {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  @include media-breakpoint-down(lg) {
+    position: relative;
+    background-color: $gray-extra-dark !important;
+  }
+}
+
+.flex-top-vertically {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 100%;
+    @include media-breakpoint-down(md) {
+      margin: 15px;
+    }
+}
+
+.flex-center-vertically {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    @include media-breakpoint-down(md) {
+      margin: 15px;
+    }
+}
+
+.flex-bottom-vertically {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 100%;
+    @include media-breakpoint-down(md) {
+      margin: 15px;
+    }
+}
+
+.overlay-20 { background: rgba(0,0,0,.2); }
+
+.overlay-40 { background: rgba(0,0,0,.4); }
+
+.overlay-60 { background: rgba(0,0,0,.6); }
+
+.overlay-80 { background: rgba(0,0,0,.8); }
+
+@include media-breakpoint-down(xs) {
+  .overlay-20,
+  .overlay-40,
+  .overlay-60,
+  .overlay-80 { background: #272727; }
+}
 
 /* border rule */
 
@@ -67,6 +150,7 @@
 
 .equal-box-container {
   display: -ms-flex;
+  display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
   @include media-breakpoint-down(md) { display: block; }
@@ -97,7 +181,140 @@
   object-fit: cover;
 }
 
+/* supports ie fix below */
+
+.ie-fix-table .equal-box.pull-right { float: right; }
+
+/* supports ie fix */
+
+.image-object-cover-ie {
+  position: absolute;
+  left: 0;
+  right: 50%;
+  top: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.image-object-cover-ie img { opacity: 0; }
+
 /* typography */
+
+.caption.small {
+  @include media-breakpoint-down(md) {
+    font-size: 100% !important;
+  }
+}
+
+/* blockquote */
+
+blockquote.blockquote-overlay.display,
+blockquote.blockquote-standard.display {
+  margin: 10px 0 !important;
+  font-family: 'Antenna Black', sans-serif;
+  font-size: 2.75em;
+  line-height: 1.45;
+}
+
+blockquote.blockquote-overlay.display {
+  @include media-breakpoint-down(md) {
+    font-size: 1.75em;
+  }
+}
+
+blockquote.blockquote-standard.display {
+  font-size: 2.25em;
+  line-height: 1.45;
+  @include media-breakpoint-down(md) {
+      font-size: 1.75em;
+  }
+}
+
+/* blockquote cite */
+
+body cite.cite-overlay {
+  @include media-breakpoint-down(md) {
+    font-size: .85em;
+    margin-bottom: 15px;
+  }
+}
+
+body cite.cite-overlay,
+body cite.cite-standard {
+  display: block;
+  width: 100%;
+  font-family: 'Antenna Light', sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+body cite.cite-standard {
+  font-size: .85em;
+  @include media-breakpoint-down(md) {
+    font-size: .85em;
+    margin-bottom: 15px !important;
+  }
+}
+
+/* blockquote quote marks */
+
+blockquote.blockquote-overlay span.open-quote,
+blockquote.blockquote-overlay span.close-quote,
+blockquote.blockquote-standard span.open-quote,
+blockquote.blockquote-standard span.close-quote {
+  display: block;
+  margin: 0 0 0 -7px;
+  font-size: 3.25em;
+  line-height: 0;
+}
+
+blockquote.blockquote-standard span.open-quote,
+blockquote.blockquote-standard span.close-quote {
+  margin: 0 0 0 -3px;
+  font-size: 2.75em;
+}
+
+blockquote.blockquote-overlay span.open-quote,
+blockquote.blockquote-standard span.open-quote {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  @include media-breakpoint-down(md) {
+    margin-top: 30px;
+    margin-bottom: 12px;
+  }
+}
+
+blockquote.blockquote-overlay span.close-quote,
+blockquote.blockquote-standard span.close-quote { margin-top: 60px; }
+
+blockquote.blockquote-overlay.display,
+body cite.cite-overlay,
+blockquote.blockquote-overlay span.open-quote,
+blockquote.blockquote-overlay span.close-quote {
+  color: darken($gray-light, 10%) !important;
+  text-shadow: 0 0 20px lighten($bg-overlay, 15%);
+  @include media-breakpoint-down(md) {
+    color: darken($gray-light, 35%) !important;
+  }
+}
+
+/* blockquote colors */
+
+.container-fluid.story-content-padding.bg-gray-extra-dark {
+  background: $gray-extra-dark;
+}
+
+.bg-gray-extra-dark blockquote.blockquote-standard.display,
+.bg-gray-extra-dark cite.cite-standard,
+.bg-gray-extra-dark blockquote.blockquote-standard span.open-quote,
+.bg-gray-extra-dark blockquote.blockquote-standard span.close-quote {
+  color: darken($gray-light, 35%) !important;
+}
+
+/* general typography overrides */
 
 .medium { font-size: 1em; }
 
@@ -136,6 +353,8 @@ cite.cite.small {
     margin-bottom: 50px;
   }
 }
+
+.chart-col-wrapper h4 { margin: 0 0 10px !important; }
 
 .chart-col-wrapper:last-of-type {
   @include media-breakpoint-down(md) {
@@ -196,6 +415,9 @@ li span.key-box {
     width: 12px !important;
     height: 12px !important;
     background-color: red;
+    @include media-breakpoint-down(xs) {
+      margin: 3px 12px 8px 0;
+    }
 }
 
 li span.key-box.one    { background-color: #680013; }
