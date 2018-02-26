@@ -26,7 +26,7 @@
     "gulp-jshint": "^2.0.4",
     "gulp-json-replace": "^1.0.9",
     "gulp-minify-html": "^1.0.5",
-    "gulp-renamenpm": "^1.2.2",
+    "gulp-rename": "^1.2.2",
     "gulp-replace": "^0.5.4",
     "gulp-sass": "^2.1.1",
     "gulp-sequence": "^0.4.6",
@@ -37,7 +37,8 @@
     "require-dir": "^0.3.2"
   },
   "dependencies": {
-    "gulp-install": "^1.1.0"
+    "gulp-install": "^1.1.0",
+    "module.js": "^2.2.4"
   },
   "description": "Bootstrap 3.0 luc.edu/undergrad interior gold development repository",
   "directories": {
