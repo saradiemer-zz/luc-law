@@ -1,5 +1,12 @@
 /* FRAMEWORK */
 
-body { padding-top: 0; background: rgba(0,0,0,0); }
+body {
+  padding-top: 0; background: rgba(0,0,0,0);
+  background: url("../images/bg-water.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 #main-content { margin: 50px auto; }
