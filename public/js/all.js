@@ -229,6 +229,17 @@ $( "#navbar-footer li:nth-child(2) a" ).html('Apply<span class="hidden-md"> Now<
 $( "#navbar-footer li:nth-child(3) a" ).html('<span class="hidden-md">Get </span>Info</a>');
 $( "#navbar-footer li:nth-child(4) a" ).html('<span class="hidden-md">Check </span>Status</a>');
 
+$('.carousel-container').each(function() {
+	var carouselSelect = $(this);
+	var totalItems = carouselSelect.find('.item').length;
+	var currentIndex = carouselSelect.find('div.active').index() + 1;
+	$('.counter').html(''+currentIndex+'/'+totalItems+'');
+	$('.carousel').on('slid.bs.carousel', function () {
+		currentIndex = $('div.active').index() + 1;
+	$('.counter').html(''+currentIndex+'/'+totalItems+'');
+});
+});
+
 function rgb2hex(orig){
  var rgb = orig.replace(/\s/g,'').match(/^rgba?\((\d+),(\d+),(\d+)/i);
  return (rgb && rgb.length === 4) ? "#" +

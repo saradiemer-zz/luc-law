@@ -69,6 +69,7 @@
 	<div id="main-content" class="container">
 		<div id="story-wrapper" class="col-md-12 p-l-0 p-r-0 bg-white">
 			<!-- story - carousel -->
+<div class="carousel-container">
 <div id="story-full-carousel" class="container-fluid p-0 carousel slide carousel-fade" data-interval="false">
 	<ol class="carousel-indicators">
 		<li data-target="#" data-slide-to="0" class="active"></li>
@@ -112,16 +113,7 @@
 	</a>
 	<div class="counter"></div>
 </div>
-
-<script>
-var totalItems = $('.item').length;
-var currentIndex = $('div.active').index() + 1;
-$('.counter').html(''+currentIndex+'/'+totalItems+'');
-$('#story-full-carousel').on('slid.bs.carousel', function () {
-	currentIndex = $('div.active').index() + 1;
-	$('.counter').html(''+currentIndex+'/'+totalItems+'');
-});
-</script>
+</div>
  <!-- story-carousel-counter -->
 			<div class="container-fluid p-t-20 p-b-20" style="background: rgba(0,0,0,.9)">
   <h6 class="category text-center" style="margin: 0; color: #666666;">Carousel and caption</h6>
@@ -158,12 +150,13 @@ $('#story-full-carousel').on('slid.bs.carousel', function () {
 </div>
 
 			<!-- story - carousel -->
+<div class="carousel-container">
 <div id="story-half-carousel" class="carousel slide carousel-fade" data-ride="carousel">
 <!-- Wrapper for slides -->
 <div class="carousel-inner">
 
 <div class="item active">
-  <div class="holder col-md-8 row">
+  <div class="holder col-md-8 p-0">
     <img src="http://placehold.it/400x450">
   </div>
   <div class="col-md-4 carousel-caption-wrapper">
@@ -178,7 +171,7 @@ $('#story-full-carousel').on('slid.bs.carousel', function () {
 </div>
 
 <div class="item">
- <div class="holder col-md-8 row">
+ <div class="holder col-md-8 p-0">
         <img src="http://placehold.it/400x450">
   </div>
   <div class="col-md-4 carousel-caption-wrapper">
@@ -192,7 +185,7 @@ $('#story-full-carousel').on('slid.bs.carousel', function () {
 </div>
 
 <div class="item">
-  <div class="holder col-md-8 row">
+  <div class="holder col-md-8 p-0">
     <img src="http://placehold.it/400x450">
   </div>
   <div class="col-md-4 carousel-caption-wrapper">
@@ -210,7 +203,7 @@ $('#story-full-carousel').on('slid.bs.carousel', function () {
 </div>
 
 <div class="item">
-  <div class="holder col-md-8 row">
+  <div class="holder col-md-8 p-0">
   <img src="http://placehold.it/400x450">
   </div>
   <div class="col-md-4 carousel-caption-wrapper">
@@ -227,19 +220,21 @@ $('#story-full-carousel').on('slid.bs.carousel', function () {
   </div>
 </div>
 
-<div class="controllers col-xs-12 circle">
 <!-- Controls -->
+<div class="controllers col-xs-12 circle">
   <a class="left carousel-control" href="#story-half-carousel" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left"></span>
   </a>
   <a class="right carousel-control" href="#story-half-carousel" data-slide="next">
     <span class="glyphicon glyphicon-chevron-right"></span>
   </a>
-
 </div>
 
+<div class="counter"></div>
 </div>
 </div>
+</div>
+
 <script>
 $(function () {
 $('.carousel').carousel({
@@ -255,39 +250,52 @@ $(".carousel").swipe({
   allowPageScroll:"vertical"
 });
 
+$('.carousel-split').each(function() {
+	var carouselSelect = $(this);
+	var totalItems = carouselSelect.find('.item').length;
+	var currentIndex = carouselSelect.find('div.active').index() + 1;
+	$('.counter').html(''+currentIndex+'/'+totalItems+'');
+	$('.carousel').on('slid.bs.carousel', function () {
+		currentIndex = $('div.active').index() + 1;
+	$('.counter').html(''+currentIndex+'/'+totalItems+'');
+});
+});
+
 </script>
  <!-- story-image-gallery-split -->
 			<div class="container-fluid p-t-20 p-b-20" style="background: rgba(0,0,0,.9)">
   <h6 class="category text-center" style="margin: 0; color: #666666;">Carousel and side caption</h6>
 </div>
 
-			<div class="container-fluid bg-white story-content-padding">
+			<div id="introduction" class="container-fluid bg-white story-content-padding">
   <div class="col-md-12">
     <h5 class="label">Label herehere <span style="font-family: 'Antenna Light', sans-serif;"> Label readout herehere</span></h5>
     <h1 class="display m-b-30">Headgline here here</h1>
   </div>
   <div class="col-md-9 rule-left-spacing">
     <p class="intro">
-      <span class="leadin">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> Curabitur blandit ligula a justo dignissim, in suscipit magna lobortis. Donec auctor iaculis maximus. Morbi nulla erat, lacinia ut lacus et, pulvinar cursus nunc. Proin id imperdiet velit, ac accumsan lacus. Mauris bibendum eget magna at tempor. Duis sed enim ac enim porttitor viverra eu id ligula. Suspendisse iaculis est sed dictum vehicula. Duis sed justo at nibh aliquam aliquam. Pellentesque eu mi eu enim dictum dictum. Nunc elementum fringilla nisi. Cras sapien urna, molestie ullamcorper imperdiet quis, vulputate ut metus.
+      <span class="leadin">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> Curabitur blandit ligula a justo dignissim, in suscipit magna lobortis. Donec auctor iaculis maximus. Morbi nulla erat, lacinia ut lacus et, pulvinar cursus nunc. Proin id imperdiet velit, ac accumsan lacus. Mauris bibendum eget magna at tempor. Duis sed enim ac enim porttitor viverra eu id ligula. Suspendisse iaculis est sed dictum vehicula. Duis sed justo at nibh aliquam aliquam. Pellentesque eu mi eu enim dictum dictum.
     </p>
     <p class="body">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit ligula a justo dignissim, in suscipit magna lobortis. Donec auctor iaculis maximus. Morbi nulla erat, lacinia ut lacus et, pulvinar cursus nunc. Proin id imperdiet velit, ac accumsan lacus. Mauris bibendum eget magna at tempor. Duis sed enim ac enim porttitor viverra eu id ligula. Suspendisse iaculis est sed dictum vehicula. Duis sed justo at nibh aliquam aliquam. Pellentesque eu mi eu enim dictum dictum. Nunc elementum fringilla nisi. Cras sapien urna, molestie ullamcorper imperdiet quis, vulputate ut metus.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit ligula a justo dignissim, in suscipit magna lobortis. Donec auctor iaculis maximus. Morbi nulla erat, lacinia ut lacus et, pulvinar cursus nunc. Proin id imperdiet velit, ac accumsan lacus. Mauris bibendum eget magna at tempor. Duis sed enim ac enim porttitor viverra eu id ligula. Suspendisse iaculis est sed dictum vehicula. Duis sed justo at nibh aliquam aliquam. Pellentesque eu mi eu enim dictum dictum. Nunc elementum fringilla nisi.
     </p>
-    <img src="http://placehold.it/1000x560"/>
-    <p class="caption small">
+    <img class="m-t-30" src="http://placehold.it/1000x560"/>
+    <p class="caption small m-b-30">
       <span class="category timestamp">00:00:00</span>Image 03 ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis, cursus leo at, auctor diam. Ut ut odio non massa consequat porta eget vel ligula. Cras vitae vulputate justo.<span class="credit">By Someone Herehere</span>
     </p>
+    <p class="body">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit ligula a justo dignissim, in suscipit magna lobortis. Donec auctor iaculis maximus. Morbi nulla erat, lacinia ut lacus et, pulvinar cursus nunc. Proin id imperdiet velit, ac accumsan lacus. Mauris bibendum eget magna at tempor. Duis sed enim ac enim porttitor viverra eu id ligula. Suspendisse iaculis est sed dictum vehicula.
+    </p>
   </div>
-  <div class="col-md-3 rule-left">
+  <div class="col-md-3 col-sm-6 rule-left">
     <h4 class="subhead m-t-0">Headgline here</h4>
     <img src="http://placehold.it/1000x1500">
-    <p class="body explainer small">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit ligula a justo dignissim, in suscipit magna lobortis. Donec auctor iaculis maximus.
-    </p>
     <p class="body small">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit ligula a justo dignissim, in suscipit magna lobortis. Donec auctor iaculis maximus.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit ligula a justo dignissim.
     </p>
-    <blockquote class="blockquote medium">
+  </div>
+  <div class="col-md-3 col-sm-6 rule-left">
+    <blockquote class="blockquote medium rule-top">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.<cite class="cite m-t-10 small">Someone Namehere</cite>
     </blockquote>
     <h1 class="number display large">000</h1>
@@ -345,6 +353,32 @@ $(".carousel").swipe({
   <h6 class="category text-center" style="margin: 0; color: #666666;">Text - blockquote - dark</h6>
 </div>
 
+			<div class="container-fluid story-content-padding">
+  <div class="col-md-12">
+    <div class="col-md-9 p-0">
+      <blockquote class="blockquote-standard display uppercase blockquote-sentence-case"><span class="open-quote">&lsquo;</span>Blockquote lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis, cursus leo at, auctor diam.</blockquote>
+      <cite class="cite-standard m-t-0 m-b-0">— Someone Namehere</cite>
+    </div>
+  </div>
+</div>
+ <!-- story-blockquote-dark -->
+			<div class="container-fluid p-t-20 p-b-20" style="background: rgba(0,0,0,.9)">
+  <h6 class="category text-center" style="margin: 0; color: #666666;">Text - blockquote - sentence</h6>
+</div>
+
+			<div class="container-fluid story-content-padding bg-gray-extra-dark">
+  <div class="col-md-12">
+    <div class="col-md-9 p-0">
+      <blockquote class="blockquote-standard display uppercase blockquote-sentence-case"><span class="open-quote">&lsquo;</span>Blockquote lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis, cursus leo at, auctor diam.</blockquote>
+      <cite class="cite-standard m-t-0 m-b-0">— Someone Namehere</cite>
+    </div>
+  </div>
+</div>
+ <!-- story-blockquote-dark -->
+			<div class="container-fluid p-t-20 p-b-20" style="background: rgba(0,0,0,.9)">
+  <h6 class="category text-center" style="margin: 0; color: #666666;">Text - blockquote - sentence - dark</h6>
+</div>
+
 			<div class="container-fluid p-0 equal-box-container">
     <div class="col-md-12 p-0 ie-fix-table">
         <div class="col-md-6 p-0 equal-box ie-fix">
@@ -355,7 +389,6 @@ $(".carousel").swipe({
               <div class="col-md-12">
                 <h4 class="subhead">Subhead here consectetur adipiscing elit ras vitae vulputate justo</h4>
                 <p class="body">Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis, cursus leo at, auctor diam. Ut ut odio non massa consequat porta eget vel ligula. Cras vitae vulputate justo cursus leo at auctor.</p>
-                <p class="body">Dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis, cursus leo at, auctor diam. Ut ut odio non massa consequat porta eget vel ligula. Cras vitae vulputate justo cursus leo at auctor.</p>
               </div>
             </div>
         </div>
@@ -366,7 +399,7 @@ $(".carousel").swipe({
   <h6 class="category text-center" style="margin: 0; color: #666666;">Image and side caption</h6>
 </div>
 
-			<div class="container-fluid p-0 equal-box-container">
+			<div class="container-fluid p-0 equal-box-container background-extra-dark">
     <div class="col-md-12 p-0 ie-fix-table">
         <div class="col-md-6 p-0 equal-box ie-fix">
             <img  class="float-left m-t-0 m-b-0 image-object-cover" src="http://placehold.it/1000x1000">
@@ -376,7 +409,6 @@ $(".carousel").swipe({
               <div class="col-md-12">
                 <h4 class="subhead">Subhead here consectetur adipiscing elit ras vitae vulputate justo</h4>
                 <p class="body">Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis, cursus leo at, auctor diam. Ut ut odio non massa consequat porta eget vel ligula. Cras vitae vulputate justo cursus leo at auctor.</p>
-                <p class="body">Dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis, cursus leo at, auctor diam. Ut ut odio non massa consequat porta eget vel ligula. Cras vitae vulputate justo cursus leo at auctor.</p>
               </div>
             </div>
         </div>
@@ -428,7 +460,7 @@ $(".carousel").swipe({
   <h6 class="category text-center" style="margin: 0; color: #666666;">Image and display text</h6>
 </div>
 
-			<div class="container-fluid p-0 equal-box-container">
+			<div class="container-fluid p-0 equal-box-container background-extra-dark">
     <div class="col-md-12 p-0 ie-fix-table">
         <div class="col-md-6 p-0 equal-box ie-fix">
             <img  class="float-left m-t-0 m-b-0 image-object-cover" src="http://placehold.it/1000x1000">
@@ -478,6 +510,22 @@ $(".carousel").swipe({
  <!-- story-multi-text-display -->
 			<div class="container-fluid p-t-20 p-b-20" style="background: rgba(0,0,0,.9)">
   <h6 class="category text-center" style="margin: 0; color: #666666;">Text display - Multiple</h6>
+</div>
+
+			<div id="refer-panel" class="container-fluid  equal-box-container p-0" style="background: #eeeeee;">
+  <div class="refer-image">
+    <img  class="m-t-0 m-b-0 image-object-cover" src="http://placehold.it/320x320">
+  </div>
+  <div class="refer-content equal-box" style="background: #eeeeee;">
+    <div class="story-content-padding-medium">
+      <p class="body m-b-0 refer-short"><span class="leadin">This is a bold lead-in to a paragraph</span> Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis, cursus leo at, auctor diam. Ut ut odio non massa consequat.<a class="cta maroon" href="https://luc.edu"> Read more</a></p>
+      <p class="body m-b-0 refer-long"><span class="leadin">This is a bold lead-in to a paragraph</span> Ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis, cursus leo at, auctor diam. Ut ut odio non massa consequat.  Aenean vitae feugiat velit. Aliquam ut nisi sagittis, cursus leo at, auctor diam. Ut massa consequat.<a class="cta maroon" href="https://luc.edu"> Read more</a></p>
+    </div>
+  </div>
+</div>
+ <!-- story-refer-image-side-caption -->
+			<div class="container-fluid p-t-20 p-b-20" style="background: rgba(0,0,0,.9)">
+  <h6 class="category text-center" style="margin: 0; color: #666666;">Refer - Image - Side caption</h6>
 </div>
 
 			<div class="container-fluid story-content-padding equal-box-container">

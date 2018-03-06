@@ -9,11 +9,13 @@
   padding: 80px 100px 80px 100px;
   min-height: 100%;
   height: 100%;
-@include media-breakpoint-down(sm) { padding: 20px; }
+  @include media-breakpoint-down(lg) { padding: 40px; }
+  @include media-breakpoint-down(md) { padding: 20px; }
 }
 
 .story-content-padding.equal-box-container { padding: 100px 100px 100px 100px;
-@include media-breakpoint-down(sm) { padding: 35px 20px; }
+  @include media-breakpoint-down(lg) { padding: 40px; }
+  @include media-breakpoint-down(sm) { padding: 35px 20px; }
 }
 
 /* background color */
@@ -39,9 +41,14 @@
   right: 0;
   top: 0;
   bottom: 0;
-  @include media-breakpoint-down(lg) {
+  @include media-breakpoint-down(md) {
     position: relative;
     background-color: $gray-extra-dark !important;
+  }
+  .equal-box {
+    @include media-breakpoint-down(md) {
+      background-color: $gray-extra-dark !important;
+    }
   }
 }
 
@@ -128,6 +135,15 @@
   padding-left: 15px;
 }
 
+.rule-top, #introduction .rule-top {
+  margin-top: 20px !important;
+  padding-top: 25px !important;
+  border-top: solid 1px darken($gray-light, 5%);
+  @include media-breakpoint-down(md) {
+    border-top: none;
+  }
+}
+
 .rule-bottom {
   margin-bottom: 20px !important;
   padding-bottom: 25px;
@@ -143,6 +159,7 @@
 .rule-right-small,
 .rule-right-small-spacing {
   @include media-breakpoint-down(md) {
+    float: left;
     padding: 0 20px;
     border: 0;
   }
@@ -156,16 +173,23 @@
   @include media-breakpoint-down(md) { display: block; }
 }
 
+.equal-box-container.background-extra-dark {
+  background: $gray-extra-dark;
+}
 .equal-box-container .equal-box {
   height: 100%;
   @include media-breakpoint-down(md) {
+    float: left;
+    width: 100%;
     height: auto;
   }
 }
 
 .equal-box-container .rule-left-small.equal-box {
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(sm) {
+    float: left;
     margin-top: 30px;
+    width: 100%;
   }
 }
 
@@ -230,6 +254,18 @@ blockquote.blockquote-standard.display {
   line-height: 1.45;
   @include media-breakpoint-down(md) {
       font-size: 1.75em;
+  }
+}
+
+blockquote.blockquote-standard.display.blockquote-sentence-case {
+  font-family: 'Antenna Bold', sans-serif;
+  font-size: 1.45em;
+  line-height: 1.65;
+  letter-spacing: .01em;
+  word-spacing: .125em;
+  text-transform: none;
+  @include media-breakpoint-down(xs) {
+    letter-spacing: 0;
   }
 }
 
@@ -312,6 +348,36 @@ blockquote.blockquote-overlay span.close-quote {
 .bg-gray-extra-dark blockquote.blockquote-standard span.open-quote,
 .bg-gray-extra-dark blockquote.blockquote-standard span.close-quote {
   color: darken($gray-light, 35%) !important;
+}
+
+/* story - refer */
+
+#refer-panel {
+  .refer-image {
+    float: left;
+    width: 25%;
+    @include media-breakpoint-down(sm) { width: 100%; min-width: 100%; }
+  }
+  .refer-image img {
+    margin: 0;
+  }
+  .refer-content {
+    float: left;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 75%;
+    @include media-breakpoint-down(md) { padding: 30px; }
+    @include media-breakpoint-down(sm) { width: 100%; min-width: 100%; }
+  }
+  .refer-long {
+    display: block;
+    width: 75%;
+    @include media-breakpoint-down(md) { display: none; }
+  }
+  .refer-short {
+    display: none;
+    @include media-breakpoint-down(md) { display: block; }
+  }
 }
 
 /* general typography overrides */
@@ -459,3 +525,5 @@ li span.key-box.five    { background-color: #cccccc; }
 .bg-gray-extra-dark p,
 .bg-gray-extra-dark .number,
 .bg-gray-extra-dark .leadin { color: $gray; }
+
+/* CSS - END */

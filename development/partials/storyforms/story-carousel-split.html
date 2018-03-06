@@ -1,10 +1,11 @@
 <!-- story - carousel -->
+<div class="carousel-container">
 <div id="story-half-carousel" class="carousel slide carousel-fade" data-ride="carousel">
 <!-- Wrapper for slides -->
 <div class="carousel-inner">
 
 <div class="item active">
-  <div class="holder col-md-8 row">
+  <div class="holder col-md-8 p-0">
     <img src="http://placehold.it/400x450">
   </div>
   <div class="col-md-4 carousel-caption-wrapper">
@@ -19,7 +20,7 @@
 </div>
 
 <div class="item">
- <div class="holder col-md-8 row">
+ <div class="holder col-md-8 p-0">
         <img src="http://placehold.it/400x450">
   </div>
   <div class="col-md-4 carousel-caption-wrapper">
@@ -33,7 +34,7 @@
 </div>
 
 <div class="item">
-  <div class="holder col-md-8 row">
+  <div class="holder col-md-8 p-0">
     <img src="http://placehold.it/400x450">
   </div>
   <div class="col-md-4 carousel-caption-wrapper">
@@ -51,7 +52,7 @@
 </div>
 
 <div class="item">
-  <div class="holder col-md-8 row">
+  <div class="holder col-md-8 p-0">
   <img src="http://placehold.it/400x450">
   </div>
   <div class="col-md-4 carousel-caption-wrapper">
@@ -68,19 +69,21 @@
   </div>
 </div>
 
-<div class="controllers col-xs-12 circle">
 <!-- Controls -->
+<div class="controllers col-xs-12 circle">
   <a class="left carousel-control" href="#story-half-carousel" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left"></span>
   </a>
   <a class="right carousel-control" href="#story-half-carousel" data-slide="next">
     <span class="glyphicon glyphicon-chevron-right"></span>
   </a>
-
 </div>
 
+<div class="counter"></div>
 </div>
 </div>
+</div>
+
 <script>
 $(function () {
 $('.carousel').carousel({
@@ -94,6 +97,17 @@ $(".carousel").swipe({
     if (direction == 'right') $(this).carousel('prev');
   },
   allowPageScroll:"vertical"
+});
+
+$('.carousel-split').each(function() {
+	var carouselSelect = $(this);
+	var totalItems = carouselSelect.find('.item').length;
+	var currentIndex = carouselSelect.find('div.active').index() + 1;
+	$('.counter').html(''+currentIndex+'/'+totalItems+'');
+	$('.carousel').on('slid.bs.carousel', function () {
+		currentIndex = $('div.active').index() + 1;
+	$('.counter').html(''+currentIndex+'/'+totalItems+'');
+});
 });
 
 </script>
