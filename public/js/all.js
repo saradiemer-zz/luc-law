@@ -254,10 +254,11 @@ $(".grid-square").each(function() {
 	var hexed = (rgb2hex(color))
   $(this).html("<p class='grid-square-content'><span class='color-name'>" + name + "</span><span class='hex'>" + hexed + "</span></p>");
 });
-(function() {
-  $("#rightColumn").css("display","none");
-  $("#centerColumn").removeClass("col-md-6").addClass("col-md-9");
-})();
+//(function() {
+//  $("#rightColumn").css("display","none");
+//  $("#centerColumn").removeClass("col-md-6").addClass("col-md-9");
+//})();
+
 /*!
  * modernizr v3.5.0
  * Build https://modernizr.com/download?-objectfit-dontmin
