@@ -47,6 +47,7 @@
 <!--Javascript file c3.min.js --><script src="js/c3.min.js"></script>
 <!-- header -->
 <!-- inject:css -->
+<link rel="stylesheet" href="css/audio-player.css">
 <link rel="stylesheet" href="css/c3.min.css">
 <link rel="stylesheet" href="css/styles.css">
 <!-- endinject -->
@@ -68,7 +69,21 @@
 	<!-- main-content -->
 	<div id="main-content" class="container ">
 		<div id="story-wrapper" class="col-md-12 p-r-0 p-l-0 bg-white container-fluid">
-			<div class="container-fluid story-content-padding p-b-0" style="background: #272727;">
+			<div>
+			<audio controls>
+				<source src="/audio/forensic-summary.ogg" type="audio/ogg">
+				<source src="/audio/forensic-summary.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+			</div>
+			<div>
+<audio controls>
+	<source src="/audio/forensic-summary.ogg" type="audio/ogg">
+	<source src="/audio/forensic-summary.mp3" type="audio/mpeg">
+	Your browser does not support the audio element.
+</audio>
+</div>
+<div class="container-fluid story-content-padding p-b-0" style="background: #272727;">
 	<h2 class="display m-0 p-l-15 p-r-15" style="font-family: 'Antenna', sans-serif; line-height: 1.75; color: #cccccc;"><span class="uppercase" style="font-family: 'Antenna Bold', sans-serif">Anatomy of a crime scene</span></h2>
 </div>
 <div id="introduction" class="container-fluid bg-white story-content-padding p-t-0" style="background: #272727;">
@@ -95,11 +110,6 @@
 			<div id="content-populate">
 	<div class="col-md-12 p-0">
 		<div class="repositioned-element-image">
-			<audio controls>
-  			<source src="forensic-summary.ogg" type="/audio/ogg">
-  			<source src="forensic-summary.mp3" type="/audio/mpeg">
-				Your browser does not support the audio element.
-			</audio>
 			<div id="bullet-two" class="tooltip-populate">
 				<a><span class="bullet-number display">+</span></a>
 				<span class="tooltip-content top-center">
@@ -371,6 +381,7 @@ $(window).on('scroll', function() {
 	<!-- inject:js -->
 	<script src="js/all.js"></script>
 	<script src="js/all.min.js"></script>
+	<script src="js/audio-player.js"></script>
 	<script src="js/c3.min.js"></script>
 	<script src="js/d3.min.js"></script>
 	<script src="js/functions-b3.js"></script>
