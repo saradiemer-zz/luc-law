@@ -31,7 +31,7 @@ ol.carousel-indicators li { display:none !important; }
 .carousel-control.left,
 .carousel-control.right {
   height: 100%;
-  @include media-breakpoint-down(xs) { height: 60%; }
+  @include media-breakpoint-down(xs) { height: 54%; }
 }
 
 .carousel-control .glyphicon-chevron-left,
@@ -75,6 +75,10 @@ ol.carousel-indicators li { display:none !important; }
 		margin: 0 0 0 5px;
 		color: $patina;
 	}
+  @include media-breakpoint-down(xs) {
+    min-height: 150px;
+    max-height: 150px;
+  }
 }
 
 .caption {
@@ -108,6 +112,9 @@ ol.carousel-indicators li { display:none !important; }
   letter-spacing: .05em;
   color: $gray-light;
   background: $gray-dark;
+  @include media-breakpoint-down(xs) {
+    padding: 5px;
+  }
 }
 
 /*fade effect on carousel*/

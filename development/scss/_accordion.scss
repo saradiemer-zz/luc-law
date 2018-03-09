@@ -24,7 +24,7 @@
 
 #accordion h4.subhead { margin: 0 !important; font-size: .925em; }
 
-#accordion h4.subhead a { width: 98%; color: $gray-extra-dark; }
+#accordion h4.subhead a { display: block; width: 98%; color: $gray-extra-dark; }
 
 #accordion .panel-body {
   float: left;
