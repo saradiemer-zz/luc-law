@@ -34,16 +34,37 @@
   box-shadow: none;
 }
 
-#main-content #accordion .panel-heading .accordion-toggle:before {
-  font-family: Glyphicons Halflings;
-  content: "\e114";
+#main-content #accordion .panel-heading .accordion-toggle span.accordion-icon {
   float: right;
-  color: #2c2c2c;
-  -webkit-transition: rotate .2s ease;
-  transition: rotate .2s ease;
+  display: block;
+  width: auto;
+  height: auto;
 }
 
-#main-content #accordion .panel-heading .accordion-toggle.collapsed:before {
-  -webkit-transform: rotate(-90deg);
-  transform: rotate(-90deg);
+#main-content #accordion .panel-heading .accordion-toggle.collapsed span.accordion-icon img {
+  margin: 0;
+  padding: 0;
+  width: 12px;
+  height: 16px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  transition-duration: .25s;
 }
+
+#main-content #accordion .panel-heading .accordion-toggle span.accordion-icon img {
+  margin: 0;
+  padding: 0;
+  width: 12px;
+  height: 16px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  transition-duration: .25s;
+}
+
+/* END - CSS */

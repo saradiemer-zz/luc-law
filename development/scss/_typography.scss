@@ -198,6 +198,8 @@ h5.label,
 h6.category.bold,
 h6.category.light { font-weight: normal; font-style: normal; }
 
+h6.category.bold.maroon { background: none; }
+
 h1.primary							{ font-size: 	2.25em; }
 h1.primary-alternate		{ font-size: 	2.75em; letter-spacing: -.01em; }
 h2.secondary-explainer	{ font-size: 	1.75em; }
@@ -233,7 +235,7 @@ HEADERS - DISPLAY ============================= */
 
 h1.display { font-size: 3.5em; letter-spacing: -.005em; }
 
-h1.minion.display { font-size: 3.5em; font-weight: lighter; letter-spacing: -.01em; text-transform: none; }
+h1.arnhem.display { font-size: 3.5em; font-weight: lighter; letter-spacing: -.0175em; text-transform: none; }
 
 .jumbotron.h1 { font-size: 3.25em; }
 
@@ -245,7 +247,7 @@ FONT FAMILY - STYLE =========================== */
 
 body { font-family: 'arial', san-serif; }
 
-.minion { font-family: 'minion-pro', serif !important; font-weight: 100; }
+.arnhem { font-family: 'Arnhem Blond', 'Georgia', serif !important; font-weight: 100; letter-spacing: -.0175em; }
 
 .italic, .explainer { font-style: italic; text-transform: none; }
 
@@ -344,7 +346,7 @@ p.body.intro span.dropcap		{ font-size: 5.2em; }
 
 p.body.explode span.dropcap	{ font-size: 3.5em; }
 
-.alternate { font-family: 'Georgia'; }
+.alternate { font-family: 'Arnhem Blond', 'Georgia', serif; }
 
 .body-group { margin: 0 0 25px 0; }
 
@@ -391,7 +393,7 @@ CREDITS ======================================= */
 
 .credit-personality, .credit-personality-title, .credit-personality-name { font-size: .85em; }
 
-.personality-info h6.category, .personality-info h6.category { margin: 5px 0 !important; }
+.personality-info h6.category, .personality-info h6.category, .personality-info h6.category.maroon { margin: 5px 0 !important; background: none; }
 
 .personality-info p.explainer { margin: 5px 0 0 0; vertical-align: baseline; }
 

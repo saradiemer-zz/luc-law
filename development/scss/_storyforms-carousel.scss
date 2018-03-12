@@ -67,6 +67,8 @@ ol.carousel-indicators li { display:none !important; }
 		margin: 0;
     padding: 0;
     width: 95%;
+    height: auto;
+    max-height: 80px;
     font-size: .925em;
     line-height: 1.5;
 		color: $gray-extra-dark;
