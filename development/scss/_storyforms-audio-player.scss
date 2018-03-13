@@ -1,0 +1,59 @@
+.playa input[type=range] {
+  -webkit-appearance: none;
+  -moz-apperance: none;
+  background-color: $gray-dark;
+	height: auto;
+	border-radius: 0;
+  width: 100%;
+	margin: -2px;
+	padding: 0 !important;
+	line-height: 0;
+}
+ input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-apperance: none;
+	z-index: 3;
+  padding: 3px 0;
+	height: 5px;
+	width: 1.5em;
+	border-radius: 1em;
+	border: none;
+}
+
+.playa, .playa .row {
+	padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.playa .btn-group {
+  width: 100%;
+  min-width: 100%;
+}
+
+.playa .thumbnail  {
+	width: 96%;
+	padding: 5px 1.5%;
+}
+
+#story-audio .well.playa button,
+.playa .btn,
+.playa .btn:focus,
+.playa .btn:active,
+.playa .btn.active,
+.playa .btn.disabled,
+.playa .btn[disabled],
+.playa .btn-group  {
+	text-align: center;
+  background-color: $gray;
+  border: solid 1px lighten($gray, 10%);
+}
+
+@media (min-width: 768px){
+	.playa .btn-group .btn {
+		padding: 4px 3px;
+		margin: auto;
+		display: inline-block;
+		float: none;
+	}
+}
