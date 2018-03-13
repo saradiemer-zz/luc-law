@@ -12,6 +12,7 @@
 .repositioned-element-image {
 	position: relative;
 	float: left;
+	width: 100%;
 }
 
 #story-wrapper .bullet-number.display {
@@ -45,8 +46,12 @@ a span { cursor: pointer !important; }
 	background: $gray-extra-light;
 }
 
+#content-populate img.graphic-main-image { display: cover; width: 100%; height: 100%; }
+
+#hidden-details { background: #cccccc; clear: both; }
+
 #hidden-details img { margin: 0; }
 
-#content-populate img.graphic-main-image { display: cover; width: 100%; height: 100%; }
+#hidden-details p.body { font-size: 1em; }
 
 /* CSS - END */
