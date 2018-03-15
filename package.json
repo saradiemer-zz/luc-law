@@ -38,8 +38,11 @@
     "require-dir": "^0.3.2"
   },
   "dependencies": {
+    "cache": "^2.1.0",
+    "clear": "^0.1.0",
     "gulp-install": "^1.1.0",
-    "module-js": "^2.2.4"
+    "module-js": "^2.2.4",
+    "sudo": "^1.0.3"
   },
   "description": "Bootstrap 3.0 luc.edu/undergrad interior gold development repository",
   "directories": {
