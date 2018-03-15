@@ -61,6 +61,8 @@
   outline: none;
 }
 
+#story-audio input[type=range].volume { width: 100%; min-width: 100%; }
+
 .playa .btn-group .btn { padding: 0 20px; margin: 0 20px; }
 
 #story-audio .well.playa button,
