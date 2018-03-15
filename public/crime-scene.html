@@ -51,7 +51,6 @@
 <link rel="stylesheet" href="css/styles.css">
 <!-- endinject -->
 <style>.subnave{display: none;}.homenav{display: block;}</style>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
 </head>
 <body>
 <section id="wrapper">
@@ -92,16 +91,6 @@
   }
 </style>
  <!-- story-introduction -->
-			<div id="story-audio" class="container-fluid story-content-padding">
-  <div class="col-md-12 p-0">
-    <audio controls>
-			<source src="audio/forensic-summary.ogg" type="audio/ogg" />
-			<source src="audio/forensic-summary.mp3" type="audio/mpeg" />
-			<a href="audio/forensic-summary.mp3">horse</a>
-		</audio>
-  </div>
-</div>
- <!-- story-content-populate -->
 			<div id="content-populate">
 	<div class="col-md-12 p-0">
 		<div class="repositioned-element-image">
@@ -165,8 +154,19 @@
 		</div>
 	</div>
  <!-- story-content-populate -->
-			<div id="hidden-details" class="col-md-12 story-content-padding" style="margin-bottom: -10px;">
-  <div id="content-one" style="display:block;">
+			<div id="story-audio" class="container-fluid story-content-padding p-b-20" style="display: block; width: 100%; clear: both; background: #cccccc;">
+  <div class="col-md-12">
+    <p class="body m-b-20"><span class="leadin">What did forensics investigators find at this crime scene?</span> Listen to [person name, ’00] break down the details.</p>
+    <audio controls>
+			<source src="audio/forensic-summary.ogg" type="audio/ogg" />
+			<source src="audio/forensic-summary.mp3" type="audio/mpeg" />
+			<a href="audio/forensic-summary.mp3">What did forensics investigators find at this crime scene? Listen to [person name] break down the details:</a>
+		</audio>
+  </div>
+</div>
+ <!-- story-content-populate -->
+			<div id="hidden-details" class="col-md-12 story-content-padding p-t-20" style="margin-bottom: -10px;">
+  <div id="content-one" style="display: block;">
     <div class="col-md-12">
       <p class="body"><span class="leadin">Clues and evidence at a crime scene are a key for investigators.</span> Law enforcement detectives are usually first on a scene. Then, evidence technicians come to collect any trace of evidence. This is sent to a crime lab, where each item is distributed to select areas within forensics. If there is a body, a medical examiner will perform an autopsy and could potentially consult with forensic anthropologist if they have unanswered questions.</p>
     </div>
@@ -287,7 +287,7 @@ $(document).ready(function() {
   });
 });
 </script>
- <!-- story-content-populate -->
+ <!-- story-content-populate-details -->
 			<div class="container-fluid story-content-padding p-b-0">
   <div class="col-md-12">
     <div class="col-md-4 p-0 p-r-20">
