@@ -1,0 +1,50 @@
+/* canvas-parallax */
+
+.canvas-parallax #main-content { margin: 0; }
+
+.canvas-parallax-panel-padding { padding-top: 80px; padding-bottom: 80px; }
+
+.canvas-parallax-panel h5.label, .canvas-parallax-panel h6.category {
+  font-family: "Antenna Light", sans-serif !important;
+}
+
+#slide1 { position: relative; }
+
+#overlay-headline-panel {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px 0;
+  height: auto;
+  background: $bg-overlay;
+}
+
+.overlay-headline {
+  float: left;
+  display: inline;
+  h1, h1 a, h1 span {
+    float: left;
+    display: inline;
+    color: $gray !important;
+  }
+}
+
+#overlay-headline-panel h1 span {
+  float: left;
+  display: inline;
+  color: $gray-dark !important;
+}
+
+ul#social {
+  float: left;
+  display: inline;
+  margin: 5px 0 0 20px;
+  list-style-type: none;
+  list-style-image: none;
+}
+
+ul#social li {
+  list-style-type: none;
+  list-style-image: none;
+}
