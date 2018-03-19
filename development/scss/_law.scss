@@ -2,18 +2,18 @@ body.law {
   background-image: none !important;
 }
 
-h1.display,
-h4.subhead {
+body.law h1.display,
+body.law h4.subhead {
   font-family: 'Arnhem Bold', 'Georgia', serif !important;
 }
 
-h2.secondary-explainer {
+body.law h2.secondary-explainer {
   font-family: 'Arnhem Blond', 'Georgia', serif !important;
   letter-spacing: -.0175em;
   font-weight: lighter;
   font-style: italic;
 }
 
-p {
+body.law p.body, body.law p.body.explainer {
   font-family: 'Arnhem Blond', 'Georgia', serif !important;
 }
