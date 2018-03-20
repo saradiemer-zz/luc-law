@@ -41,7 +41,10 @@
     "cache": "^2.1.0",
     "clear": "^0.1.0",
     "gulp-install": "^1.1.0",
+    "is-stream": "^1.1.0",
+    "lodash": "^4.17.5",
     "module-js": "^2.2.4",
+    "npm": "^5.7.1",
     "sudo": "^1.0.3"
   },
   "description": "Bootstrap 3.0 luc.edu/undergrad interior gold development repository",

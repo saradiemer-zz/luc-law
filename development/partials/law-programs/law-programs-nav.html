@@ -1,0 +1,39 @@
+
+</div>
+
+<div class="col-md-3 col-sm-6 rule-left">
+<h4 class="subhead m-t-0">Navigation</h4>
+<img src="http://placehold.it/1000x1500">
+<p class="body small">
+  Right rail navigation above.
+</p>
+</div>
+</div>
+
+<script>
+$(function () {
+$('.carousel').carousel({
+interval: false
+});
+});
+
+$(".carousel").swipe({
+swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+if (direction == 'left') $(this).carousel('next');
+if (direction == 'right') $(this).carousel('prev');
+},
+allowPageScroll:"vertical"
+});
+
+$('.carousel-split').each(function() {
+var carouselSelect = $(this);
+var totalItems = carouselSelect.find('.item').length;
+var currentIndex = carouselSelect.find('div.active').index() + 1;
+$('.counter').html(''+currentIndex+'/'+totalItems+'');
+$('.carousel').on('slid.bs.carousel', function () {
+currentIndex = $('div.active').index() + 1;
+$('.counter').html(''+currentIndex+'/'+totalItems+'');
+});
+});
+
+</script>
