@@ -18,6 +18,12 @@ body.law p.body, body.law p.body.explainer {
   font-family: 'Arnhem Blond', 'Georgia', serif !important;
 }
 
+h6.faq {
+  font-family: 'Arnhem Bold', 'Georgia', serif !important;
+  text-transform: none;
+  font-size: 100%;
+}
+
 .section-top {
   padding-top: 50px;
   border-top: 1px solid $gray
@@ -51,4 +57,5 @@ button.btn {
   font-family: "Antenna", sans-serif;
   text-transform: uppercase;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
