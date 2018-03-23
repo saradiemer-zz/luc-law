@@ -1,0 +1,15 @@
+.opacity-slider-wrapper { position: relative; }
+
+.opacity-slider-layer-01, .opacity-slider-layer-02 { width: 100%; max-width: 400px; height: 300px; }
+
+.opacity-slider-layer-01 { position: relative; top: 0; left: 0; background: blue; z-index: 10000; }
+
+.opacity-slider-layer-02 { position: absolute; top: 0; left: 0; background: red; }
+
+.opacity-slider-layer-01 img, .opacity-slider-layer-02 img { margin: 0; }
+
+.opacity-slider-layer-01 img { width: 100%; }
+
+.opacity-slider-layer-02 img { width: 100%; }
+
+#story-opacity-slider-control { width: 50%; }
