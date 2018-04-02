@@ -16,26 +16,33 @@
 }
 
 #story-wrapper .bullet-number.display {
-    margin: 0;
-    width: 40px;
-    height: 40px;
-    font-size: 1.5em;
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5em;
 }
 
 #story-wrapper .bullet-number {
-    float: left;
-    margin: 0;
-    padding: 1px 4px 4px 4px;
-    width: 30px;
-    height: 30px;
-    font-family: 'Antenna Bold', sans-serif;
-    font-size: 1.5em;
-    text-align: center;
-    color: #e2e2e2;
-    border: solid 2px #eeeeee;
-    border-radius: 50%;
-    background: rgba(0,0,0,.9);
-		box-shadow: 0 0 10px rgba(0,0,0,.75);
+  float: left;
+  margin: 0;
+  padding: 1px 4px 4px 4px;
+  width: 30px;
+  height: 30px;
+  font-family: 'Antenna Bold', sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  color: #e2e2e2;
+  border: solid 2px #eeeeee;
+  border-radius: 50%;
+  background: rgba(0,0,0,.9);
+	box-shadow: 0 0 10px rgba(0,0,0,.75);
+}
+
+#story-wrapper .bullet-number-graphic {
+	margin-top: 3px;
+	margin-right: 5px;
+	font-size: 1.3em;
+	box-shadow: none;
 }
 
 a span { cursor: pointer !important; }

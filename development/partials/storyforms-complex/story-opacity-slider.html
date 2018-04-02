@@ -1,17 +1,63 @@
 <div id="story-opacity-slider" class="container-fluid story-content-padding">
-  <div class="col-md-12 p-0">
-		<div class="col-md-6">
-			<div class="opacity-slider-wrapper">
-				<div class="opacity-slider-layer-01"></div>
-				<div class="opacity-slider-layer-02"></div>
-			</div>
-		</div>
-		<div class="col-md-6">
-			<form id="story-opacity-slider-control">
-				<label>Use the slider to learn more</label>
-				<input type="range" name="bgopacity" id="bgopacity" value="50" min="0" max="100" step="1" onchange="rangevalue.value=value">
-				<output id="rangevalue">50</output>
-			</form>
-		</div>
-	</div>
+  <div class="col-lg-12 col-md-12 p-0">
+    <h1 class="col-md-12 display m-b-10 p-0">Controlling the spread of Zika</h1>
+    <p class="body intro m-b-10">Zika’s emergence in the United States in 2016 caused public health officials to worry if cities were adequately prepared for a vector-borne disease outbreak. Using a grant from the Centers for Disease Control and Prevention, a consortium of universities
+      came together to research ways to prevent the spread of diseases carried by ticks and mosquitoes.</p>
+  </div>
+  <div class="col-lg-7 p-l-0">
+    <div class="col-lg-12 p-0">
+      <div class="opacity-slider-wrapper">
+        <div class="opacity-slider-layer-01 m-b-30"><img src="images/mosquito-diagram-body.png" />
+          <div id="mosquito-bullet-one" class="tooltip-populate">
+            <a><span class="bullet-number small">1</span></a>
+          </div>
+          <!-- bullet end -->
+        </div>
+        <!-- opacity-slider-layer-01 -->
+        <div class="opacity-slider-layer-02"><img src="images/mosquito-diagram-bloodstream.png" />
+          <div id="mosquito-bullet-one" class="tooltip-populate">
+            <a><span class="bullet-number small">1</span></a>
+          </div>
+          <!-- bullet end -->
+          <div id="mosquito-bullet-two" class="tooltip-populate">
+            <a><span class="bullet-number small">2</span></a>
+          </div>
+          <!-- bullet end -->
+          <div id="mosquito-bullet-three" class="tooltip-populate">
+            <a><span class="bullet-number small">3</span></a>
+          </div>
+          <!-- bullet end -->
+          <div id="mosquito-bullet-four" class="tooltip-populate">
+            <a><span class="bullet-number small">4</span></a>
+          </div>
+          <!-- bullet end -->
+        </div>
+        <!-- opacity-slider-layer-02 -->
+      </div>
+      <!-- opacity-slider-wrapper -->
+    </div>
+    <div class="col-lg-12 p-0 m-b-30">
+      <form id="story-opacity-slider-control">
+        <label>Use the slider to lorem ipsom unum hereum</label>
+        <input type="range" name="bgopacity" id="bgopacity" value="100" min="0" max="100" step="1" onchange="rangevalue.value=value">
+        <output id="rangevalue"></output>
+      </form>
+      <!-- opacity control -->
+    </div>
+  </div>
+  <!-- col-9 -->
+  <div class="col-lg-5 col-md-12">
+    <p class="number number-graphic extra-small m-t-0"><span class="bullet-number bullet-number-graphic">1</span>When a mosquito bites, blood is drawn through its ???? tube.</p>
+    <p class="number number-graphic extra-small"><span class="bullet-number bullet-number-graphic">2</span>The blood then travels into the gut of the mosquito. If a virus exists, it is most often digested.</p>
+    <p class="number number-graphic extra-small"><span class="bullet-number bullet-number-graphic">3</span>However, sometimes a virus can survive as it passes through the bloodstream.</p>
+    <p class="number number-graphic extra-small m-b-0"><span class="bullet-number bullet-number-graphic">4</span>If the virus survives through the bloodstream, it will be stored in the salivary glands of the mosquito. It can then be transmited into another human.</p>
+  </div>
 </div>
+<!-- #story-opacity-slider -->
+
+<style>
+  #mosquito-bullet-one { top: 50%; left: 80%; }
+  #mosquito-bullet-two { position: absolute; top: 28%; left: 55%; }
+  #mosquito-bullet-three { position: absolute; top: 38%; left: 30%; }
+  #mosquito-bullet-four { position: absolute; top: 89%; left: 88%; }
+</style>
