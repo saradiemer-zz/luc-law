@@ -15,14 +15,20 @@
 	width: 100%;
 }
 
+/* numbers on image - numbers with graphics text */
 #story-wrapper .bullet-number.display {
   margin: 0;
+	padding: 4px;
   width: 40px;
   height: 40px;
   font-size: 1.5em;
 }
 
-#story-wrapper .bullet-number {
+/* bullet-numbers - on image - with graphics text */
+#story-wrapper .bullet-number,
+#story-wrapper .graphic-number .bullet-number,
+#story-wrapper h6.category.graphic-text .bullet-number,
+#story-opacity-slider span.bullet-number {
   float: left;
   margin: 0;
   padding: 1px 4px 4px 4px;
@@ -31,6 +37,7 @@
   font-family: 'Antenna Bold', sans-serif;
   font-size: 1.5em;
   text-align: center;
+	line-height: 1.25;
   color: #e2e2e2;
   border: solid 2px #eeeeee;
   border-radius: 50%;
@@ -38,11 +45,26 @@
 	box-shadow: 0 0 10px rgba(0,0,0,.75);
 }
 
-#story-wrapper .bullet-number-graphic {
-	margin-top: 3px;
-	margin-right: 5px;
-	font-size: 1.3em;
+/* bullet-number - on graphics - with graphics text */
+#story-wrapper .graphic-number .bullet-number,
+#story-wrapper h6.category.graphic-text .bullet-number,
+#story-wrapper h6.category.graphic-number .bullet-number,
+#story-opacity-slider span.bullet-number {
+	margin-left: -40px;
+	margin-top: 6px;
+	padding: 3px 4px 3px 4px;
+	font-size: 1.35em;
 	box-shadow: none;
+}
+
+/* bullet-number - on graphics - with graphics text - small */
+#story-wrapper .graphic-number .bullet-number.small,
+#story-wrapper h6.category.graphic-text .bullet-number.small,
+#story-wrapper h6.category.graphic-number .bullet-number.small,
+#story-opacity-slider span.bullet-number.small {
+	margin-left: 0;
+	width: 26px;
+	height: 26px;
 }
 
 a span { cursor: pointer !important; }
