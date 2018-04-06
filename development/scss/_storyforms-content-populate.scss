@@ -67,6 +67,17 @@
 	height: 26px;
 }
 
+/* bullet-number - inline */
+#story-wrapper .bullet-number.bullet-number-inline, .inline {
+  float: none;
+  display: inline-block;
+  margin: 0 3px;
+  padding: 1px 0;
+	width: 26px;
+	height: 26px;
+  font-size: 1em;
+}
+
 a span { cursor: pointer !important; }
 
 #content-populate {
