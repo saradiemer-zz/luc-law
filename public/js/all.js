@@ -1159,6 +1159,12 @@ $(".grid-square").each(function() {
 ;
 
 })(window, document);
+$('#bgopacity').on('input', function (value) {
+  $('.opacity-slider-layer-01').css({
+    opacity: $(this).val() * '.01'
+  });
+});
+
 $(document).ready(function() {
   function checkWidth() {
     var $body = $('body'),

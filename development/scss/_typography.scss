@@ -210,6 +210,12 @@ h5.label								{ font-size: 	1.10em; font-family:"Antenna Black"; letter-spacin
 h6.category.bold				{ font-size: 	0.975em; letter-spacing: -.01em; }
 h6.category.light				{ font-size: 	0.975em; letter-spacing: -.02em; }
 
+h6.category.graphic-text {
+	margin: 20px 0 0 40px;
+	font-family: 'Antenna', sans-serif;
+	line-height: 1.85;
+}
+
 	@media (max-width: 414px) { h5.label { font-size: .975em; } }
 
 .label {

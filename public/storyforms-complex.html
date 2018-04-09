@@ -68,6 +68,74 @@
 	<!-- main-content -->
 	<div id="main-content" class="container ">
 		<div id="story-wrapper" class="col-md-12 p-r-0 p-l-0 bg-white container-fluid">
+			<div id="story-opacity-slider" class="container-fluid story-content-padding">
+  <div class="col-lg-12 col-md-12 p-0">
+    <h1 class="col-md-12 display m-b-10 p-0">Controlling the spread of Zika</h1>
+    <p class="body intro m-b-10">Zika’s emergence in the United States in 2016 caused public health officials to worry if cities were adequately prepared for a vector-borne disease outbreak. Using a grant from the Centers for Disease Control and Prevention, a consortium of universities
+      came together to research ways to prevent the spread of diseases carried by ticks and mosquitoes.</p>
+  </div>
+  <div class="col-lg-7 p-l-0">
+    <div class="col-lg-12 p-0">
+      <div class="opacity-slider-wrapper">
+        <div class="opacity-slider-layer-01 m-b-30"><img src="images/mosquito-diagram-body.png"/>
+          <div id="mosquito-bullet-one" class="graphic-number">
+            <a><span class="bullet-number small">1</span></a>
+          </div>
+          <!-- bullet end -->
+        </div>
+        <!-- opacity-slider-layer-01 -->
+        <div class="opacity-slider-layer-02"><img src="images/mosquito-diagram-bloodstream.png" />
+          <div id="mosquito-bullet-one" class="graphic-number">
+            <a><span class="bullet-number small">1</span></a>
+          </div>
+          <!-- bullet end -->
+          <div id="mosquito-bullet-two" class="graphic-number">
+            <a><span class="bullet-number small">2</span></a>
+          </div>
+          <!-- bullet end -->
+          <div id="mosquito-bullet-three" class="graphic-number">
+            <a><span class="bullet-number small">3</span></a>
+          </div>
+          <!-- bullet end -->
+          <div id="mosquito-bullet-four" class="graphic-number">
+            <a><span class="bullet-number small">4</span></a>
+          </div>
+          <!-- bullet end -->
+        </div>
+        <!-- opacity-slider-layer-02 -->
+      </div>
+      <!-- opacity-slider-wrapper -->
+    </div>
+    <div class="col-lg-12 p-0 m-b-30">
+      <form id="story-opacity-slider-control" class="m-t-20">
+        <input type="range" name="bgopacity" id="bgopacity" value="50" min="0" max="100" step="1" onchange="rangevalue.value=value">
+        <output id="rangevalue"></output>
+        <label class="m-t-20">Use the slider to lorem ipsom unum hereum</label>
+      </form>
+      <!-- opacity control -->
+    </div>
+  </div>
+  <!-- col-9 -->
+  <div class="col-lg-5 col-md-12">
+    <h6 class="category graphic-text"><span class="bullet-number">1</span><span>When a mosquito bites, blood is drawn through its ???? tube. When a mosquito bites, blood is drawn through its ???? tube. When a mosquito bites, blood is drawn through its ???? tube.</span></h6>
+    <h6 class="category graphic-text"><span class="bullet-number">2</span><span>The blood then travels into the gut of the mosquito. If a virus exists, it is most often digested.</span></h6>
+    <h6 class="category graphic-text"><span class="bullet-number">3</span><span>However, sometimes a virus can survive as it passes through the bloodstream.</span></h6>
+    <h6 class="category graphic-text"><span class="bullet-number">4</span><span>If the virus survives through the bloodstream, it will be stored in the salivary glands of the mosquito. It can then be transmited into another human.</span></h6>
+  </div>
+</div>
+<!-- #story-opacity-slider -->
+
+<style>
+  #mosquito-bullet-one { position: absolute; top: 85%; left: 76%; }
+  #mosquito-bullet-two { position: absolute; top: 27%; left: 55%; }
+  #mosquito-bullet-three { position: absolute; top: 43%; left: 32%; }
+  #mosquito-bullet-four { position: absolute; top: 85%; left: 88%; }
+</style>
+ <!-- story-opacity-slider -->
+			<div class="container-fluid p-t-20 p-b-20" style="background: rgba(0,0,0,.9)">
+  <h6 class="category text-center" style="margin: 0; color: #666666;">Opacity slider</h6>
+</div>
+
 			<div id="content-populate">
 	<div class="col-md-9">
 		<div class="repositioned-element-image row">
@@ -277,7 +345,7 @@ $(document).ready(function(){
 </div>
  <!-- story-image-grid-reveal -->
 			<div class="container-fluid p-t-20 p-b-20" style="background: rgba(0,0,0,.9)">
-  <h6 class="category text-center" style="margin: 0; color: #666666;">Overlayed images with a hover state</h6>
+  <h6 class="category text-center" style="margin: 0; color: #666666;">Image grid with hover overlay</h6>
 </div>
 
 			<div id="story-chart-text" class="container-fluid story-content-padding equal-box-container">
