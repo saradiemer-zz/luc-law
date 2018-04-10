@@ -10,7 +10,7 @@ body#crime-scene {
 
 .bullet-number.bullet-number-crime {
   color: #eeeeee !important;
-  background: $patina-dark !important;
+  background: teal !important;
   box-shadow: 0px 0px 5px rgba(0,0,0,.35) !important;
   transition: background .2s !important;
 }
@@ -27,5 +27,5 @@ body#crime-scene {
 }
 
 .bullet-number.bullet-number-crime:hover {
-  background: lighten($patina-dark, 10%) !important;
+  background: teal !important;
 }
