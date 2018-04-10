@@ -1,6 +1,7 @@
 $enable-flex:               true;
 $enable-grid-classes:       true;
 
+@import 'custom-variables';
 @import 'canvas';
 @import 'canvas-numbers';
 @import 'canvas-parallax';
