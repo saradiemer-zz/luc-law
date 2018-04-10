@@ -22,10 +22,10 @@ var requireDir = require('require-dir');
 requireDir('./gulp-tasks');
 
 var config = {
-    bootstrapDir: './bower_components/bootstrap',
-    devDir: './development',
-    publicDir: './public',
-		T4Dir: './T4',
+  bootstrapDir: './bower_components/bootstrap',
+  devDir: './development',
+  publicDir: './public',
+  T4Dir: './T4',
 };
 
 gulp.task('lint', function() {
@@ -35,7 +35,7 @@ gulp.task('lint', function() {
 });
 
 // Concat & Minify JS
-gulp.task('minify', function(){
+gulp.task('minify', function() {
   return gulp.src('./development/js/*.js')
     .pipe(concat('all.js'))
     .pipe(gulp.dest(config.publicDir + '/js'))
@@ -51,23 +51,23 @@ gulp.task('fileinclude', function() {
 });
 
 gulp.task('sass', function() {
-    return gulp.src(config.devDir + '/scss/**/*.scss')
-    .pipe(sourcemaps.init())  // Process the original sources
-		.pipe(sass())
-		.pipe(sourcemaps.write()) // Add the map to modified source.
+  return gulp.src(config.devDir + '/scss/**/*.scss')
+    .pipe(sourcemaps.init()) // Process the original sources
+    .pipe(sass())
+    .pipe(sourcemaps.write()) // Add the map to modified source.
     .pipe(gulp.dest(config.publicDir + '/css'));
 });
 
 gulp.task('sass-canvas', function() {
-    return gulp.src(config.devDir + '/scss-canvas/**/*.scss')
-    .pipe(sourcemaps.init())  // Process the original sources
-		.pipe(sass())
-		.pipe(sourcemaps.write()) // Add the map to modified source.
+  return gulp.src(config.devDir + '/scss-canvas/**/*.scss')
+    .pipe(sourcemaps.init()) // Process the original sources
+    .pipe(sass())
+    .pipe(sourcemaps.write()) // Add the map to modified source.
     .pipe(gulp.dest(config.publicDir + '/css-canvas'));
 });
 
 gulp.task('fonts', function() {
-    return gulp.src(config.devDir + '/fonts/**/*')
+  return gulp.src(config.devDir + '/fonts/**/*')
     .pipe(gulp.dest(config.publicDir + '/fonts'));
 });
 
@@ -76,21 +76,29 @@ gulp.task('useref', function() {
     .pipe(useref())
     .pipe(gulpIf('*.js', uglify()))
     .pipe(gulpIf('*.css', cssnano()))
-		.pipe(gulp.dest(config.publicDir));
+    .pipe(gulp.dest(config.publicDir));
 });
 
-gulp.task('index', ['useref'], function () {
+gulp.task('index', ['useref'], function() {
   var target = gulp.src('./development/*.html');
-  var sources = gulp.src(['./public/js/**/*.js', './public/css/**/*.css'], {read: false});
- 	return target.pipe(inject(sources, {ignorePath: 'public/', addRootSlash: false}))
- 	.pipe(gulpIf('*.html', fileinclude({prefix: '@@', basepath: '@file'})))
-	.pipe(gulp.dest(config.publicDir));
+  var sources = gulp.src(['./public/js/**/*.js', './public/css/**/*.css'], {
+    read: false
+  });
+  return target.pipe(inject(sources, {
+      ignorePath: 'public/',
+      addRootSlash: false
+    }))
+    .pipe(gulpIf('*.html', fileinclude({
+      prefix: '@@',
+      basepath: '@file'
+    })))
+    .pipe(gulp.dest(config.publicDir));
 });
 
-gulp.task('images', function(){
+gulp.task('images', function() {
   return gulp.src('development/images/**/*.+(png|jpg|gif|svg)')
-  .pipe(imagemin())
-  .pipe(gulp.dest('public/images'))
+    .pipe(imagemin())
+    .pipe(gulp.dest('public/images'))
 });
 
 gulp.task('html-watch', ['index'], browserSync.reload);
@@ -98,19 +106,19 @@ gulp.task('sass-watch', ['sass'], browserSync.reload);
 gulp.task('sass-canvas-watch', ['sass-canvas'], browserSync.reload);
 gulp.task('js-watch', ['minify'], browserSync.reload);
 
-gulp.task('serve', ['lint', 'sass', 'sass-canvas', 'index', 'minify'], function () {
-    // Serve files from the root of this project
-    browserSync.init({
-        server: {
-            baseDir: "./public"
-        }
-    });
-    // add browserSync.reload to the tasks array to make
-    // all browsers reload after tasks are complete.
-    gulp.watch('./development/**/*.html', ['html-watch']);
-		gulp.watch(config.devDir + '/scss/**/*.scss', ['sass-watch']);
-    gulp.watch(config.devDir + '/scss-canvas/**/*.scss', ['sass-canvas-watch']);
-		gulp.watch(config.devDir + '/js/**/*.js', ['js-watch']);
+gulp.task('serve', ['lint', 'sass', 'sass-canvas', 'index', 'minify'], function() {
+  // Serve files from the root of this project
+  browserSync.init({
+    server: {
+      baseDir: "./public"
+    }
+  });
+  // add browserSync.reload to the tasks array to make
+  // all browsers reload after tasks are complete.
+  gulp.watch('./development/**/*.html', ['html-watch']);
+  gulp.watch(config.devDir + '/scss/**/*.scss', ['sass-watch']);
+  gulp.watch(config.devDir + '/scss-canvas/**/*.scss', ['sass-canvas-watch']);
+  gulp.watch(config.devDir + '/js/**/*.js', ['js-watch']);
 });
 
 gulp.task('default', gulpSequence(['serve', 'fonts'], 't4_media', 't4_css', 't4_nav'));
