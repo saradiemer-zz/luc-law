@@ -1,7 +1,8 @@
 $enable-flex:               true;
 $enable-grid-classes:       true;
 
-@import 'custom-variables';
+@import '../scss/variables';
+@import '../scss/mixins';
 @import 'canvas';
 @import 'canvas-numbers';
 @import 'canvas-parallax';
