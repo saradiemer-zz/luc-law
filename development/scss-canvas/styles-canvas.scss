@@ -1,0 +1,10 @@
+$enable-flex:               true;
+$enable-grid-classes:       true;
+
+@import '../scss/variables';
+@import '../scss/mixins';
+@import 'canvas-custom-variables';
+@import 'canvas';
+@import 'canvas-numbers';
+@import 'canvas-parallax-slides';
+@import 'canvas-parallax';

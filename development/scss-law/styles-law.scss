@@ -1,0 +1,8 @@
+$enable-flex:               true;
+$enable-grid-classes:       true;
+
+@import '../scss/variables';
+@import '../scss/mixins';
+@import 'law-custom-variables';
+@import 'law';
+@import 'canvas-law';
