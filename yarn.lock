@@ -4153,6 +4153,12 @@ lru-queue@0.1:
   dependencies:
     es5-ext "~0.10.2"
 
+ls-stream@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/ls-stream/-/ls-stream-1.0.0.tgz#032edc02349d71d72c8b1fa70fb03334d43432b0"
+  dependencies:
+    through "~2.2.7"
+
 macaddress@^0.2.8:
   version "0.2.8"
   resolved "https://registry.yarnpkg.com/macaddress/-/macaddress-0.2.8.tgz#5904dc537c39ec6dbefeae902327135fa8511f12"
@@ -6936,6 +6942,10 @@ through2@^0.6.0, through2@^0.6.1:
 through@2, "through@>=2.2.7 <3", through@^2.3.6, through@~2.3, through@~2.3.1, through@~2.3.4:
   version "2.3.8"
   resolved "https://registry.yarnpkg.com/through/-/through-2.3.8.tgz#0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5"
+
+through@~2.2.7:
+  version "2.2.7"
+  resolved "https://registry.yarnpkg.com/through/-/through-2.2.7.tgz#6e8e21200191d4eb6a99f6f010df46aa1c6eb2bd"
 
 thunks@^4.5.1:
   version "4.9.2"
