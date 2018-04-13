@@ -8,10 +8,9 @@ body.law h4.subhead {
 }
 
 body.law h2.secondary-explainer {
-  font-family: 'Arnhem Blond', 'Georgia', serif !important;
-  letter-spacing: -.0175em;
-  font-weight: lighter;
-  font-style: italic;
+  font-family: 'Antenna Bold', sans-serif !important;
+  text-transform: uppercase;
+  color: red;
 }
 
 body.law p.body, body.law p.body.explainer {
@@ -26,7 +25,8 @@ h6.faq {
 
 .section-top {
   padding-top: 50px;
-  border-top: 1px solid $gray
+  margin-top: 50px;
+  border-top: 1px solid $gray-light;
 }
 
 #accordion h4.subhead a {
