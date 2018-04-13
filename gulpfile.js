@@ -58,6 +58,30 @@ gulp.task('sass', function() {
     .pipe(gulp.dest(config.publicDir + '/css'));
 });
 
+gulp.task('sass-storyform', function() {
+    return gulp.src(config.devDir + '/scss-storyform/**/*.scss')
+    .pipe(sourcemaps.init())  // Process the original sources
+		.pipe(sass())
+		.pipe(sourcemaps.write()) // Add the map to modified source.
+    .pipe(gulp.dest(config.publicDir + '/css-storyform'));
+});
+
+gulp.task('sass-canvas', function() {
+    return gulp.src(config.devDir + '/scss-canvas/**/*.scss')
+    .pipe(sourcemaps.init())  // Process the original sources
+		.pipe(sass())
+		.pipe(sourcemaps.write()) // Add the map to modified source.
+    .pipe(gulp.dest(config.publicDir + '/css-canvas'));
+});
+
+gulp.task('sass-law', function() {
+    return gulp.src(config.devDir + '/scss-law/**/*.scss')
+    .pipe(sourcemaps.init())  // Process the original sources
+		.pipe(sass())
+		.pipe(sourcemaps.write()) // Add the map to modified source.
+    .pipe(gulp.dest(config.publicDir + '/css-law'));
+});
+
 gulp.task('fonts', function() {
     return gulp.src(config.devDir + '/fonts/**/*')
     .pipe(gulp.dest(config.publicDir + '/fonts'));
@@ -87,9 +111,12 @@ gulp.task('images', function(){
 
 gulp.task('html-watch', ['index'], browserSync.reload);
 gulp.task('sass-watch', ['sass'], browserSync.reload);
+gulp.task('sass-storyform-watch', ['sass-storyform'], browserSync.reload);
+gulp.task('sass-canvas-watch', ['sass-canvas'], browserSync.reload);
+gulp.task('sass-law-watch', ['sass-law'], browserSync.reload);
 gulp.task('js-watch', ['minify'], browserSync.reload);
 
-gulp.task('serve', ['lint', 'sass', 'index', 'minify'], function () {
+gulp.task('serve', ['lint', 'sass', 'sass-storyform', 'sass-canvas', 'sass-law', 'index', 'minify'], function () {
     // Serve files from the root of this project
     browserSync.init({
         server: {
@@ -100,6 +127,9 @@ gulp.task('serve', ['lint', 'sass', 'index', 'minify'], function () {
     // all browsers reload after tasks are complete.
     gulp.watch('./development/**/*.html', ['html-watch']);
 		gulp.watch(config.devDir + '/scss/**/*.scss', ['sass-watch']);
+    gulp.watch(config.devDir + '/scss/**/*.scss', ['sass-storyform-watch']);
+    gulp.watch(config.devDir + '/scss/**/*.scss', ['sass-canvas-watch']);
+    gulp.watch(config.devDir + '/scss/**/*.scss', ['sass-law-watch']);
 		gulp.watch(config.devDir + '/js/**/*.js', ['js-watch']);
 });
 
