@@ -155,8 +155,10 @@ a:hover, article.content p a:hover, a.label:focus, a.label:hover { color: $maroo
 /* ===============================================
 HEADERS - ORGANIZING LABELS =================== */
 
-h1.pagelayout { font-size: 2.25em;
-text-transform:uppercase; }
+h1.pagelayout {
+	font-size: 2.25em;
+	text-transform: uppercase;
+}
 
 h1, h2, h3 {
 	margin: 10px 0;
@@ -166,6 +168,7 @@ h1, h2, h3 {
 	font-style: normal;
 	line-height: 1.25;
 	letter-spacing: .015em;
+	color: green !important;
 }
 
 h4, h5, h6 {
