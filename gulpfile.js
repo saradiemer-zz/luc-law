@@ -127,9 +127,9 @@ gulp.task('serve', ['lint', 'sass', 'sass-storyform', 'sass-canvas', 'sass-law',
     // all browsers reload after tasks are complete.
     gulp.watch('./development/**/*.html', ['html-watch']);
 		gulp.watch(config.devDir + '/scss/**/*.scss', ['sass-watch']);
-    gulp.watch(config.devDir + '/scss/**/*.scss', ['sass-storyform-watch']);
-    gulp.watch(config.devDir + '/scss/**/*.scss', ['sass-canvas-watch']);
-    gulp.watch(config.devDir + '/scss/**/*.scss', ['sass-law-watch']);
+    gulp.watch(config.devDir + '/scss-storyform/**/*.scss', ['sass-storyform-watch']);
+    gulp.watch(config.devDir + '/scss-canvas/**/*.scss', ['sass-canvas-watch']);
+    gulp.watch(config.devDir + '/scss-law/**/*.scss', ['sass-law-watch']);
 		gulp.watch(config.devDir + '/js/**/*.js', ['js-watch']);
 });
 
