@@ -10,7 +10,8 @@ body.law h4.subhead {
 body.law h2.secondary-explainer {
   font-family: 'Antenna Bold', sans-serif !important;
   text-transform: uppercase;
-  color: yellow;
+  font-size: 1.15em;
+  color: blue;
 }
 
 body.law p.body, body.law p.body.explainer {
@@ -24,8 +25,8 @@ h6.faq {
 }
 
 .section-top {
-  padding-top: 50px;
-  margin-top: 50px;
+  padding-top: 40px;
+  margin-top: 40px;
   border-top: 1px solid $gray-light;
 }
 
