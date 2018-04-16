@@ -13,7 +13,7 @@ var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
 var cssnano = require('gulp-cssnano');
 var gulpSequence = require('gulp-sequence');
-var browserSync = require('browser-sync');
+var browserSync = require('browser-sync').create();
 var htmlreplace = require('gulp-html-replace');
 var replace = require('gulp-replace');
 var imagemin = require('gulp-imagemin');
@@ -127,9 +127,9 @@ gulp.task('serve', ['lint', 'sass', 'sass-storyform', 'sass-canvas', 'sass-law',
     // all browsers reload after tasks are complete.
     gulp.watch('./development/**/*.html', ['html-watch']);
 		gulp.watch(config.devDir + '/scss/**/*.scss', ['sass-watch']);
-    gulp.watch(config.devDir + '/scss/**/*.scss', ['sass-storyform-watch']);
-    gulp.watch(config.devDir + '/scss/**/*.scss', ['sass-canvas-watch']);
-    gulp.watch(config.devDir + '/scss/**/*.scss', ['sass-law-watch']);
+    gulp.watch(config.devDir + '/scss-storyform/**/*.scss', ['sass-storyform-watch']);
+    gulp.watch(config.devDir + '/scss-canvas/**/*.scss', ['sass-canvas-watch']);
+    gulp.watch(config.devDir + '/scss-law/**/*.scss', ['sass-law-watch']);
 		gulp.watch(config.devDir + '/js/**/*.js', ['js-watch']);
 });
 
