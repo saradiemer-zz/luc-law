@@ -109,12 +109,28 @@ gulp.task('images', function(){
   .pipe(gulp.dest('public/images'))
 });
 
-gulp.task('html-watch', ['index'], browserSync.reload);
-gulp.task('sass-watch', ['sass'], browserSync.reload);
-gulp.task('sass-storyform-watch', ['sass-storyform'], browserSync.reload);
-gulp.task('sass-canvas-watch', ['sass-canvas'], browserSync.reload);
-gulp.task('sass-law-watch', ['sass-law'], browserSync.reload);
-gulp.task('js-watch', ['minify'], browserSync.reload);
+gulp.task('html-watch', ['index'], function() {
+    browserSync.reload();
+});
+gulp.task('sass-watch', ['sass'], function() {
+    browserSync.reload();
+});
+gulp.task('sass-storyform-watch', ['sass-storyform'], function() {
+    browserSync.reload();
+});
+gulp.task('sass-canvas-watch', ['sass-canvas'], function() {
+    browserSync.reload();
+});
+gulp.task('sass-law-watch', ['sass-law'], function() {
+    browserSync.reload();
+});
+gulp.task('js-watch', ['minify'], function() {
+    browserSync.reload();
+});
+gulp.task('sass-law-watch', ['sass-law'], function() {
+    browserSync.reload();
+});
+
 
 gulp.task('serve', ['lint', 'sass', 'sass-storyform', 'sass-canvas', 'sass-law', 'index', 'minify'], function () {
     // Serve files from the root of this project
@@ -134,5 +150,6 @@ gulp.task('serve', ['lint', 'sass', 'sass-storyform', 'sass-canvas', 'sass-law',
 });
 
 gulp.task('default', gulpSequence(['serve', 'fonts'], 't4_media', 't4_css', 't4_nav'));
+
 
 //END GULP.JS
