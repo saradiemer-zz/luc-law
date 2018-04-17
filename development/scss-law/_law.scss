@@ -11,7 +11,6 @@ body.law h2.secondary-explainer {
   font-family: 'Antenna Bold', sans-serif !important;
   text-transform: uppercase;
   font-size: 1.15em;
-  color: blue;
 }
 
 body.law p.body, body.law p.body.explainer {
@@ -19,7 +18,7 @@ body.law p.body, body.law p.body.explainer {
 }
 
 h6.faq {
-  font-family: 'Arnhem Bold', 'Georgia', serif !important;
+  font-family: 'Arnhem', 'Georgia', serif !important;
   text-transform: none !important;
   font-size: 100%;
 }
@@ -32,6 +31,10 @@ h6.faq {
 
 #accordion h4.subhead a {
   font-family: "Antenna", sans-serif;
+}
+
+#accordion.panel-group {
+  width: 100%;
 }
 
 .nested h4.subhead a {
