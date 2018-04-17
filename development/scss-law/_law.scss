@@ -2,23 +2,24 @@ body.law {
   background-image: none !important;
 }
 
+a { cursor:pointer; }
+
 body.law h1.display,
 body.law h4.subhead {
   font-family: 'Arnhem Bold', 'Georgia', serif !important;
+  font-size: 4em;
 }
 
 body.law h2.secondary-explainer {
   font-family: 'Antenna Bold', sans-serif !important;
   text-transform: uppercase;
-  font-size: 1.15em;
+  font-size: 1.45em;
 }
 
-body.law p.body, body.law p.body.explainer {
-  font-family: 'Arnhem Blond', 'Georgia', serif !important;
-}
+h5 { font-size: 1em; }
 
 h6.faq {
-  font-family: 'Arnhem', 'Georgia', serif !important;
+  font-family: 'Antenna Light', serif !important;
   text-transform: none !important;
   font-size: 100%;
 }
@@ -30,7 +31,7 @@ h6.faq {
 }
 
 #accordion h4.subhead a {
-  font-family: "Antenna", sans-serif;
+  font-family: "Antenna Bold", sans-serif;
 }
 
 #accordion.panel-group {
@@ -38,9 +39,9 @@ h6.faq {
 }
 
 .nested h4.subhead a {
-  font-family: 'Arnhem Bold', 'Georgia', serif !important;
-  text-transform: none;
-  font-size: 110%;
+  font-family: 'Antenna', sans-serif !important;
+  text-transform: uppercase;
+  font-size: .9em;
 }
 
 .nested .panel-body {
@@ -53,13 +54,17 @@ h6.faq {
 }
 
 button.btn {
-  border: 1px solid $maroon;
+  border: 1px solid $maroon-dark;
   background-color: white;
-  color: $maroon;
+  color: $maroon-dark;
   margin-right: 10px;
   border-radius: 40px;
   font-family: "Antenna", sans-serif;
   text-transform: uppercase;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+button.btn:hover {
+  background-color: $maroon-extra-dark;
 }
