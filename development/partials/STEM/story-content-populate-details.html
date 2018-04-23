@@ -1,0 +1,83 @@
+<div id="hidden-details" class="col-md-12 story-content-padding" style="margin-bottom: -10px;">
+  <div id="content-one" style="display:none;">
+    <div class="col-md-4 p-0">
+      <img src="images/crime-lab-anthropologists-skull.jpg">
+    </div>
+    <div class="col-md-8 p-0 p-l-20">
+      <p class="body"><span class="leadin">LAB: Bones</span> Forensic anthropologists will inspect the skeletal remains to find any patterns-holes, fractures, length/shape of bones-in the skull or body that will help create a timeline of any trauma.</p>
+      <p class="caption explainer">High school students view human skull bones to determine critical details such as gender or age.</p>
+    </div>
+  </div>
+  <div id="content-three" style="display:none;">
+    <div class="col-md-4 p-0">
+      <img src="images/crime-lab-patterns.jpg">
+    </div>
+    <div class="col-md-8 p-0 p-l-20">
+      <p class="body"><span class="leadin">LAB: The gun</span> A pattern evidence examiner could take photographs, dust, or use special lighting to reveal possible fingerprints on the gun. Prints would then be lifted in several possible ways, such as using tape. Special care must always be taken to preserve any prints.</p>
+      <p class="caption explainer">Students practice fingerprint techniques that help reveal fingerprints left on crime scene evidence.</p>
+    </div>
+  </div>
+  <div id="content-four" style="display:none;">
+    <div class="col-md-4 p-0">
+      <img src="images/crime-lab-analysts.jpg">
+    </div>
+    <div class="col-md-8 p-0 p-l-20">
+      <p class="body"><span class="leadin">LAB: Clothing</span> Forensic analysts will run any number of tests from clothing samples by using a number of various tests, including a dye test where a dye is applied to the fluid to indicate the presence of blood, semen, or saliva.</p>
+      <p class="caption explainer">Students watch as Loyola undergraduates conduct chemical tests on clothing.</p>
+    </div>
+  </div>
+  <div id="content-five" style="display:none;">
+    <div class="col-md-4 p-0">
+      <img src="images/crime-lab-substances.jpg">
+    </div>
+    <div class="col-md-8 p-0 p-l-20">
+      <p class="body"><span class="leadin">LAB: Substances</span> Forensic chemists and toxicologists will take a sample from the bag and conduct drug screening tests like one that uses antibodies to detect a reaction to specific substances. That reaction will determine if a sample is positive or negative for a drug.</p>
+      <p class="caption explainer">Students look on as Forensic Science program students test substances like poppy seeds to determine if they are substances found in street drugs.</p>
+    </div>
+  </div>
+  <div id="content-six" style="display:none;">
+    <div class="col-md-4 p-0">
+      <img class="" src="images/crime-lab-anthropologists-body.jpg">
+    </div>
+    <div class="col-md-8 p-0 p-l-20">
+      <p class="body"><span class="leadin">LAB: Bones</span> Forensic anthropologists will inspect the skeletal remains to find any patterns-holes, fractures, length/shape of bones-in the skull or body that will help create a timeline of any trauma.</p>
+      <p class="caption explainer">A portion of a skeleton bone used by Loyola undergraduates to demonstrate examinations.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+$(document).ready(function() {
+  $("#image-one").click(function() {
+    $('#content-one').show().siblings("div").hide();
+  });
+  $("#bullet-two").click(function() {
+    $('#content-two').show().siblings("div").hide();
+  });
+  $("#bullet-three").click(function() {
+    $('#content-three').show().siblings("div").hide();
+  });
+  $("#bullet-four").click(function() {
+    $('#content-four').show().siblings("div").hide();
+  });
+  $("#bullet-five").click(function() {
+    $('#content-five').show().siblings("div").hide();
+  });
+  $("#bullet-six").click(function() {
+    $('#content-six').show().siblings("div").hide();
+  });
+  $("#bullet-seven").click(function() {
+    $('#content-seven').show().siblings("div").hide();
+  });
+});
+
+/* Set the width of the side navigation to 250px */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
