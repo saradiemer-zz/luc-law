@@ -2,7 +2,7 @@
 
 #faq { margin: 15px 0 0; }
 
-#faq .panel-heading { padding: 6px 0 12px; }
+#faq .panel-heading { padding: 12px 0 10px; }
 
 #faq.panel-group { border: 0 none !important; box-shadow: none; width: 100%;}
 
@@ -22,9 +22,9 @@
   border: 0;
 }
 
-#faq h4.subhead { margin: 0 !important; font-size: .925em; }
+#faq h6{ margin: 0 !important; font-size: .925em; }
 
-#faq h4.subhead a { display: block; width: 98%; color: $gray-extra-dark; }
+#faq h6 a { display: block; width: 98%; color: $gray-extra-dark; }
 
 #faq .panel-body {
   float: left;
