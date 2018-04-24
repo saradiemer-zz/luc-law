@@ -10,12 +10,19 @@ body.law h4.subhead {
   font-size: 4em;
 }
 
+h1.number {
+  font-family: 'Arnhem Bold', 'Georgia', serif !important;
+  font-size: 5em;
+  letter-spacing: -0.015em;
+}
+
 body.law h2.secondary-explainer {
   font-family: 'Antenna Bold', sans-serif !important;
   text-transform: uppercase;
+  font-size: 1.4em;
 }
 
-h5 { font-size: 1em; }
+h5.subhead { font-size: .95em; font-family: "Antenna Bold", sans-serif; }
 
 h6.faq {
   font-family: 'Antenna Light', serif !important;
@@ -23,9 +30,40 @@ h6.faq {
   font-size: 100%;
 }
 
+p.number{
+  font-family: "Antenna Light", sans-serif;
+}
+
+p.name {
+  font-family: 'Arnhem Bold', 'Georgia', serif !important;
+  font-size: 1.1em;
+}
+
+blockquote.small {
+  font-family: "Myriad Pro", sans-serif;
+  font-weight: normal;
+  margin: 0 !important;
+}
+
+a.cta {
+  background-color: transparent;
+  color: $maroon-dark;
+  letter-spacing: 0;
+}
+
+a.cta.small {
+  font-size: .725em !important;
+}
+
+a.cta:hover {
+  background-color: transparent;
+  color: $maroon;
+  letter-spacing: 0;
+}
+
 .section-top {
-  padding-top: 40px;
-  margin-top: 40px;
+  padding-top: 35px;
+  margin-top: 35px;
   border-top: 1px solid $gray-light;
 }
 
@@ -36,6 +74,8 @@ h6.faq {
 #accordion.panel-group {
   width: 100%;
 }
+
+#accordion .panel-heading {padding: 15px 0 13px;}
 
 .nested h4.subhead a {
   font-family: 'Antenna', sans-serif !important;
