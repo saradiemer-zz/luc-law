@@ -25,9 +25,17 @@ body.law h2.secondary-explainer {
 h5.subhead { font-size: .95em; font-family: "Antenna Bold", sans-serif; }
 
 h6.faq {
-  font-family: 'Antenna Light', serif !important;
+  font-family: 'Antenna', serif !important;
   text-transform: none !important;
   font-size: 100%;
+}
+
+p.faq a  {
+  color:#272727 !important;
+}
+
+p.faq  {
+  margin: 0 !important;
 }
 
 p.number{
@@ -60,6 +68,17 @@ a.cta:hover {
   color: $maroon;
   letter-spacing: 0;
 }
+
+ul li {
+ list-style-position: outside;
+}
+
+li span.antenna {
+  font-family: "Antenna", sans-serif;
+  text-transform: uppercase;
+}
+
+.footnote { margin-top: 20px; border-top: 1px solid #e1e1e1;}
 
 .section-top {
   padding-top: 35px;
