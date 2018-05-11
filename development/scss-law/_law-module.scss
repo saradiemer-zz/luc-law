@@ -1,0 +1,35 @@
+.box {
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+.content {
+  padding: 10%;
+  border-radius: 0 0 3px 3px;
+}
+
+.box-image {
+  width: 100%;
+  overflow: hidden;
+  padding: 0 0 50%;
+  position: relative;
+  &::before {
+    left: 0;
+    bottom: 0;
+    content: '';
+    width: 32px;
+    position: absolute;
+    border-bottom: 12px solid #fff;
+    border-right: 12px solid transparent;
+  }
+  &::after {
+    bottom: 0;
+    left: 32px;
+    content: '';
+    width: 100%;
+    position: absolute;
+    border-bottom: 12px solid #fff;
+    border-left: 12px solid transparent;
+  }
+}

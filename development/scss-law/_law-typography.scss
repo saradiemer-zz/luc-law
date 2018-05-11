@@ -1,11 +1,11 @@
-body.law {
+body{
   background-image: none !important;
 }
 
 a { cursor:pointer; }
 
-body.law h1.display,
-body.law h4.subhead {
+h1.display,
+h4.subhead {
   font-family: 'Arnhem Bold', 'Georgia', serif !important;
   font-size: 4em;
 }
@@ -16,13 +16,18 @@ h1.number {
   letter-spacing: -0.015em;
 }
 
-body.law h2.secondary-explainer {
+h2.secondary-explainer {
   font-family: 'Antenna Bold', sans-serif !important;
   text-transform: uppercase;
   font-size: 1.4em;
 }
 
 h5.subhead { font-size: .95em; font-family: "Antenna Bold", sans-serif; }
+
+h5.light {
+  font-family: 'Antenna Light', serif !important;
+  opacity: 1 !important;
+}
 
 h6.faq {
   font-family: 'Antenna', serif !important;
