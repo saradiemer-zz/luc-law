@@ -5,83 +5,46 @@
       Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
       on it squid single-origin coffee nulla assumenda shoreditch et.
     </p>
-
-    <div class="panel-group accord-blk" id="accordion">
-
+    <div id="accordion" class="">
+      <h4 class="accordion">Headline accordion one anim pariatur cliche</h4>
       <div class="panel">
-        <div class="panel-heading">
-          <h4 class="subhead uppercase">
-            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-              Collapsible group with one-column body
-              <span class="accordion-icon"><img src="/images/luc-edu-accordion-arrow.png"></span>
-            </a>
-          </h4>
-        </div><!-- panel-heading -->
-        <div id="collapseOne" class="panel-collapse collapse">
-          <h3 class="standalone">Headgline here here here headline here</h3>
-          <div class="panel-body">
-            <p class="body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-            </p>
-          </div>
-        </div><!-- panel-collapse -->
-      </div><!-- panel -->
-
+        <p class="body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+        on it squid single-origin coffee nulla assumenda shoreditch et.
+        </p>
+      </div>
+      <h4 class="accordion">Headline accordion two anim pariatur cliche</h4>
       <div class="panel">
-        <div class="panel-heading">
-          <h4 class="subhead uppercase">
-            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-              Collapsible group with two-column body
-              <span class="accordion-icon"><img src="/images/luc-edu-accordion-arrow.png"></span>
-            </a>
-          </h4>
-        </div><!-- panel-heading -->
-        <div id="collapseTwo" class="panel-collapse collapse">
-          <div class="panel-body">
-            <div class="col-md-6">
-              <p class="body small">
-                <span class="leadin">Anim pariatur cliche reprehenderit</span> enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-              </p>
-            </div>
-            <div class="col-md-6">
-              <p class="body small">
-                <span class="leadin">Nihil anim keffiyeh helvetica</span> craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-              </p>
-            </div>
-          </div>
-        </div><!-- panel-collapse -->
-      </div><!-- panel -->
-
+        <p class="body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+        on it squid single-origin coffee nulla assumenda shoreditch et.</p>
+      </div>
+      <h4 class="accordion">Headline accordion three anim pariatur cliche</h4>
       <div class="panel">
-        <div class="panel-heading uppercase">
-          <h4 class="subhead display">
-            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-              Collapsible group with three-column body
-              <span class="accordion-icon"><img src="/images/luc-edu-accordion-arrow.png"></span>
-            </a>
-          </h4>
-        </div><!-- panel-heading -->
-        <div id="collapseThree" class="panel-collapse collapse">
-          <div class="panel-body">
-            <div class="col-md-4">
-              <p class="body small">
-                <span class="leadin">Anim pariatur cliche reprehen</span> enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-              </p>
-            </div>
-            <div class="col-md-4 rule-left-small">
-              <p class="body small">
-                <span class="leadin">Nihil anim keffiyeh helvetica</span> put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt.
-              </p>
-            </div>
-            <div class="col-md-4 rule-left-small">
-              <p class="body small">
-                <span class="leadin">Nihil anim keffiyeh helvetica</span> raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-              </p>
-            </div>
-          </div>
-        </div><!-- panel-collapse -->
-      </div><!-- panel -->
-
+        <p class="body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+        on it squid single-origin coffee nulla assumenda shoreditch et.</p>
+      </div>
     </div>
   </div>
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(event) {
+  var acc = document.getElementsByClassName("accordion");
+  var panel = document.getElementsByClassName('panel');
+  for (var i = 0; i < acc.length; i++) {
+    acc[i].onclick = function() {
+      var setClasses = !this.classList.contains('active');
+      setClass(acc, 'active', 'remove');
+      setClass(panel, 'show', 'remove');
+      if (setClasses) {
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+      }
+    }
+  }
+  function setClass(els, className, fnName) {
+    for (var i = 0; i < els.length; i++) {
+      els[i].classList[fnName](className);
+    }
+  }
+});
+</script>
