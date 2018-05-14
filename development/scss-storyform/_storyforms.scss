@@ -9,6 +9,7 @@
   background: $white;
 }
 
+.story-content-padding.bg-gray-extra-dark,
 #story-image-side-caption.background-extra-dark,
 #story-image-text-display.background-extra-dark {
   background: $gray-extra-dark;
@@ -549,6 +550,7 @@ li span.key-box.five    { background-color: #cccccc; }
   opacity: 1;
 }
 
+.bg-gray-extra-dark h3,
 .bg-gray-extra-dark h4,
 .bg-gray-extra-dark p,
 .bg-gray-extra-dark .number,

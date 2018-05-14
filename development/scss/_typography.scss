@@ -206,7 +206,7 @@ h1.primary							{ font-size: 	2.25em; }
 h1.primary-alternate		{ font-size: 	2.75em; letter-spacing: -.01em; }
 h2.secondary-explainer	{ font-size: 	1.75em; }
 h2.secondary-alternate	{ font-size: 	2.15em; letter-spacing: -.01em; }
-h3.standalone						{ font-size: 	1.45em; } .accordion h3.standalone { display: inline-block; }
+h3.standalone						{ font-size: 	1.45em; line-height: 1.5; } .accordion h3.standalone { display: inline-block; }
 h4.subhead							{ font-size: 	1.15em; letter-spacing: -.01em; }
 h5.label								{ font-size: 	1.10em; font-family:"Antenna Black"; letter-spacing: -.01em; color: $gray-extra-dark; }
 h6.category.bold				{ font-size: 	0.975em; letter-spacing: -.01em; }
