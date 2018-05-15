@@ -4,10 +4,11 @@ body{
 
 a { cursor:pointer; }
 
-h1.display,
+h1,
 h4.subhead {
   font-family: 'Arnhem Bold', 'Georgia', serif !important;
   font-size: 4em;
+  line-height: 1.1;
 }
 
 h1.number {
@@ -21,6 +22,8 @@ h2.secondary-explainer {
   text-transform: uppercase;
   font-size: 1.4em;
 }
+
+h4.module { font-size: 1.35em; line-height: 1.35; font-family: 'Arnhem Blond', 'Georgia', serif !important; margin-top:0px; }
 
 h5.subhead { font-size: .95em; font-family: "Antenna Bold", sans-serif; }
 
@@ -91,6 +94,12 @@ li span.antenna {
   border-top: 1px solid $gray-light;
 }
 
+.spacer-top {
+  padding-top: 35px;
+  margin-top: 35px;
+  border-top: 1px solid $white;
+}
+
 #accordion h4.subhead a {
   font-family: "Antenna Bold", sans-serif;
 }
@@ -130,4 +139,8 @@ button.btn {
 
 button.btn:hover {
   background-color: $maroon-extra-dark;
+}
+
+.lede-content {
+  background-color: #f1f1f1;
 }
