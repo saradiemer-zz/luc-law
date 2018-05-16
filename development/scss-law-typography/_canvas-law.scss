@@ -2,18 +2,18 @@
 
 #main-content .panel { background: none; }
 
-h1.display {
+.canvas-law h1.display {
 	font-size: 7em;
 }
 
 @include media-breakpoint-down(md) {
-		h1.display {
+		.canvas-law h1.display {
 			font-size: 5em;
 		}
 	}
 
 @include media-breakpoint-down(sm) {
-    h1.display {
+    .canvas-law h1.display {
     font-size: 4em;
   }
 }

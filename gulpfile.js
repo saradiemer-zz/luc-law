@@ -71,7 +71,7 @@ gulp.task('sass-law-typography', function() {
     .pipe(sourcemaps.init())  // Process the original sources
 		.pipe(sass())
 		.pipe(sourcemaps.write()) // Add the map to modified source.
-    .pipe(gulp.dest(config.publicDir + '/css-law'));
+    .pipe(gulp.dest(config.publicDir + '/css-law-typography'));
 });
 
 gulp.task('fonts', function() {
@@ -116,10 +116,6 @@ gulp.task('sass-law-watch', ['sass-law-typography'], function() {
 gulp.task('js-watch', ['minify'], function() {
     browserSync.reload();
 });
-gulp.task('sass-law-watch', ['sass-law'], function() {
-    browserSync.reload();
-});
-
 
 gulp.task('serve', ['lint', 'sass', 'sass-storyform', 'sass-law-typography', 'index', 'minify'], function () {
     // Serve files from the root of this project
