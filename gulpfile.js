@@ -66,14 +66,6 @@ gulp.task('sass-storyform', function() {
     .pipe(gulp.dest(config.publicDir + '/css-storyform'));
 });
 
-gulp.task('sass-canvas', function() {
-    return gulp.src(config.devDir + '/scss-canvas/**/*.scss')
-    .pipe(sourcemaps.init())  // Process the original sources
-		.pipe(sass())
-		.pipe(sourcemaps.write()) // Add the map to modified source.
-    .pipe(gulp.dest(config.publicDir + '/css-canvas'));
-});
-
 gulp.task('sass-law', function() {
     return gulp.src(config.devDir + '/scss-law/**/*.scss')
     .pipe(sourcemaps.init())  // Process the original sources
@@ -118,9 +110,6 @@ gulp.task('sass-watch', ['sass'], function() {
 gulp.task('sass-storyform-watch', ['sass-storyform'], function() {
     browserSync.reload();
 });
-gulp.task('sass-canvas-watch', ['sass-canvas'], function() {
-    browserSync.reload();
-});
 gulp.task('sass-law-watch', ['sass-law'], function() {
     browserSync.reload();
 });
@@ -132,7 +121,7 @@ gulp.task('sass-law-watch', ['sass-law'], function() {
 });
 
 
-gulp.task('serve', ['lint', 'sass', 'sass-storyform', 'sass-canvas', 'sass-law', 'index', 'minify'], function () {
+gulp.task('serve', ['lint', 'sass', 'sass-storyform', 'sass-law', 'index', 'minify'], function () {
     // Serve files from the root of this project
     browserSync.init({
         server: {

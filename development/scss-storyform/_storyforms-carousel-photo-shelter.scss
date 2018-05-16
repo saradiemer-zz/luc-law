@@ -1,0 +1,17 @@
+/* storyforms-carousel-photo-shelter */
+
+[data-ps-embed-type=slideshow] > iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: none;
+}
+
+.story-full-carousel-photo-shelter-wrapper {
+  position: relative;
+  height: 0 !important;
+  padding-bottom: 56.25% !important;
+  width: 100% !important;
+}
+
+/* END - CSS */
