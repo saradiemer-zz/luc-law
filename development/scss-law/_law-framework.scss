@@ -1,10 +1,23 @@
+/* header */
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  background-color: lighten($bg-overlay, 20%);
+  color: $gray;
+}
+
 #luc-header {
   margin: 0 0 40px 0;
   padding: 0;
   border: 0 none;
 }
 
-#navbar-header { width: 100%; }
+#navbar-header {
+  display: block;
+  width: 100%;
+  a {
+    font-family: 'Antenna Light', sans-serif;
+  }
+}
 
 #luc-header a.navbar-brand { padding: 0; img { margin: 0; height: 100%; } }
 
@@ -21,22 +34,13 @@
   }
 }
 
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-  background-color: lighten($bg-overlay, 20%);
-  color: $gray;
+#luc-cta { float: right; display: table; }
+
+#luc-cta.nav.navbar-nav li a {
+  padding: 15px 15px 15px;
+  text-transform: uppercase;
 }
 
-#luc-cta {
-  float: right;
-}
-
-#luc-information.nav.navbar-nav li, #luc-cta.nav.navbar-nav li {
-  height: 100%;
-  display: flex;
-}
-
-#luc-information.nav.navbar-nav li a, #luc-cta.nav.navbar-nav li a {
-  padding: 10px 10px;
-}
+/* footer */
 
 #luc-footer { margin: 40px 0 0 0; }
