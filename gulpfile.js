@@ -67,7 +67,7 @@ gulp.task('sass-storyform', function() {
 });
 
 gulp.task('sass-law-typography', function() {
-    return gulp.src(config.devDir + '/scss-law-typography/**/*.scss')
+    return gulp.src(config.devDir + '/sass-law-typography/**/*.scss')
     .pipe(sourcemaps.init())  // Process the original sources
 		.pipe(sass())
 		.pipe(sourcemaps.write()) // Add the map to modified source.
@@ -110,6 +110,9 @@ gulp.task('sass-watch', ['sass'], function() {
 gulp.task('sass-storyform-watch', ['sass-storyform'], function() {
     browserSync.reload();
 });
+gulp.task('sass-law-watch', ['sass'], function() {
+    browserSync.reload();
+});
 gulp.task('sass-law-watch', ['sass-law-typography'], function() {
     browserSync.reload();
 });
@@ -129,7 +132,6 @@ gulp.task('serve', ['lint', 'sass', 'sass-storyform', 'sass-law-typography', 'in
     gulp.watch('./development/**/*.html', ['html-watch']);
 		gulp.watch(config.devDir + '/scss/**/*.scss', ['sass-watch']);
     gulp.watch(config.devDir + '/scss-storyform/**/*.scss', ['sass-storyform-watch']);
-    gulp.watch(config.devDir + '/scss-canvas/**/*.scss', ['sass-canvas-watch']);
     gulp.watch(config.devDir + '/scss-law-typograpy/**/*.scss', ['sass-law-watch']);
 		gulp.watch(config.devDir + '/js/**/*.js', ['js-watch']);
 });
