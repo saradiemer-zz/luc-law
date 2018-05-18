@@ -57,7 +57,7 @@
 <body>
 <section id="wrapper">
 	<!-- HEADER -->
-<nav id="luc-header" class="navbar navbar-default">
+<nav id="luc-header" class="navbar navbar-default" style="position: fixed;">
   <div class="container-fluid bg-overlay-dark p-0">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div id="navbar-header">
@@ -83,7 +83,7 @@
         <li><a href="#">Visit</a></li>
 				<li><a href="#">Give</a></li>
         <li id="luc-information" class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">411</a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="information-ellipse">…</span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Navigation</a></li>
             <li><a href="#">Navigation</a></li>
@@ -94,18 +94,28 @@
             <li><a href="#">Navigation</a></li>
           </ul>
         </li>
-      </ul>
-    </div>
-	</div>
+        <li id="luc-search" class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-search"></span></a>
+          <ul id="drop" class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+            <form class="form-inline">
+              <div class="form-group">
+                <input type="search" class="form-control" id="searchLaw" placeholder="Search Law School">
+                <button type="submit" class="btn btn-default">Search</button>
+              </div>
+            </form>
+          </ul>
+        </li>
+      <ul>
+  </div>
+  </div>
 </nav>
  <!-- header-law -->
 	<!-- FOOTER - FPO -->
 <div id="luc-footer" class="container-fluid" style="height: 100px; background: rgba(0,0,0,.65);">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-			</div>
-		</div>
+	<div class="col-md-12">
+		<p class="body small reverse">Address here • </p>
+		<p class="body small explainer reverse">XXXXX Streetname • </p>
+		<p class="body small explainer reverse">City, State, 00000</p>
 	</div>
 </div>
  <!-- footer-law -->
