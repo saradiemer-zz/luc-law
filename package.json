@@ -47,7 +47,7 @@
     "npm": "^6.0.1",
     "sudo": "^1.0.3"
   },
-  "description": "Bootstrap 3.0 luc.edu/undergrad interior gold development repository",
+  "description": "Bootstrap 3.0 luc.edu/law development repository",
   "directories": {
     "doc": "docs"
   },
