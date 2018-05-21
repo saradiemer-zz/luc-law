@@ -1,3 +1,7 @@
+/* body */
+
+body { background: $gray-light; }
+
 /* header */
 
 #luc-header .navbar-default .navbar-nav>.active>a,
@@ -36,9 +40,6 @@
   display: none;
   @include media-breakpoint-down(md) { display: block; }
 }
-
-
-
 
 #luc-header .nav.navbar-nav {
   width: auto;
@@ -264,10 +265,14 @@
 /* footer */
 
 #luc-footer {
-  position: fixed; bottom: 0;
+  position: fixed;
+  display: block;
+  bottom: 0;
   margin: 40px 0 0 0;
-  padding: 40px 0;
+  padding: 15px 0;
   width: 100%;
+  height: auto;
+  background: $bg-overlay;
 }
 
 @media (max-width: 992px) {
