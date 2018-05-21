@@ -1,6 +1,23 @@
 /* body */
 
-body { background: $gray-light; }
+body { background: $gray-light; margin: 0; padding: 0; }
+
+#content-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0);
+  background: url('/images/bg-water.jpg') no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: -2;
+}
+
+#story-spacer-top { padding-top: 40px !important; }
 
 /* header */
 
@@ -16,7 +33,7 @@ body { background: $gray-light; }
   padding: 0;
   width: 100%;
   border: 0 none;
-  border-radius: 0;
+  border-radius: 0
 }
 
 #navbar-header {
@@ -39,6 +56,11 @@ body { background: $gray-light; }
 #luc-header a.navbar-brand-mobile {
   display: none;
   @include media-breakpoint-down(md) { display: block; }
+}
+
+#navbar-header > button {
+  background: $bg-overlay-dark;
+  border: none;
 }
 
 #luc-header .nav.navbar-nav {
