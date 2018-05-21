@@ -2,13 +2,13 @@
 
 body { background: $gray-light; margin: 0; padding: 0; }
 
-#content-wrapper {
+#wrapper {
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(0,0,0,0);
+  background: $gray;
   background: url('/images/bg-water.jpg') no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -16,6 +16,8 @@ body { background: $gray-light; margin: 0; padding: 0; }
   background-size: cover;
   z-index: -2;
 }
+
+#content-wrapper { position: relative; z-index: -2; }
 
 #story-spacer-top { padding-top: 40px !important; }
 
@@ -33,22 +35,27 @@ body { background: $gray-light; margin: 0; padding: 0; }
   padding: 0;
   width: 100%;
   border: 0 none;
-  border-radius: 0
+  border-radius: 0;
+  background: $bg-overlay;
 }
 
 #navbar-header {
   display: block;
   width: 100%;
   border-radius: 0%;
+  z-index: +2;
   a {
     font-family: 'Antenna', sans-serif;
   }
 }
 
 #luc-header a.navbar-brand {
-  padding: 0;
+  padding: 5px 15px;
+  width: auto;
   img {
     margin: 0;
+    float: left;
+    width: auto;
     height: 100%;
   }
 }
@@ -65,7 +72,11 @@ body { background: $gray-light; margin: 0; padding: 0; }
 
 #luc-header .nav.navbar-nav {
   width: auto;
-  background-color: lighten($bg-overlay, 30%);
+  background-color:  rgba(0,0,0,0);
+}
+
+#luc-header .navbar-collapse {
+  padding: 0 0 0 15px;
 }
 
 /* header navigation - first-level - general */
@@ -83,11 +94,11 @@ body { background: $gray-light; margin: 0; padding: 0; }
   a {
     padding: 25px 20px 5px;
     color: $gray-light;
-    background-color: lighten($bg-overlay, 40%);
+    background-color: rgba(0,0,0,0);
     transition: background-color .2s;
   }
   :hover {
-    background-color: lighten($bg-overlay, 20%);
+    background-color: darken($bg-overlay, 10%);
   }
 }
 
@@ -162,6 +173,12 @@ body { background: $gray-light; margin: 0; padding: 0; }
 
 /* header navigation - first-level - cta > search */
 
+#luc-search.dropdown.open ul#drop {
+  height: 100vh;
+  background: darken($bg-overlay-extra-dark, 10%);
+  z-index: 10000;
+}
+
 #luc-cta li#luc-search a {
   margin: 0;
   padding: 12px 0 0 0;
@@ -175,9 +192,42 @@ body { background: $gray-light; margin: 0; padding: 0; }
 
 #luc-search > a > span:hover { background: none; }
 
-#luc-search .form-control:focus {
+#luc-search #drop form .form-group:focus,
+#luc-search #drop form .form-group:active,
+#luc-search #drop form .form-group input {
+  background: none;
+  box-shadow: none;
+}
+
+#luc-search #drop form .form-control:focus {
     box-shadow: none;
     outline: 0 none;
+}
+
+#luc-search #drop form .form-group,
+#luc-search #drop form .form-group:hover {
+  background: $white;
+  box-shadow: 0px 3px 3px rgba(0,0,0,.5);
+}
+
+#luc-header li#luc-search button.btn {
+  color: $maroon-dark;
+  border-color: $maroon-dark;
+  background: lighten($bg-overlay, 90%);
+  transition: background .2s;
+}
+
+#luc-header li#luc-search button.btn:hover {
+  color: $maroon-dark;
+  border-color: $maroon-dark;
+  background-color: lighten($bg-overlay, 70%);
+}
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+  outline: 0 0 none !important;
+  outline: none !important;
+  outline-color: none !important;
+  box-shadow: none !important;
 }
 
 .dropdown-menu {
@@ -192,7 +242,7 @@ body { background: $gray-light; margin: 0; padding: 0; }
   font-size: 1em;
   text-align: left;
   list-style: none;
-  background-color: $bg-overlay;
+  background-color: $bg-overlay-extra-dark;
   border: none;
   border-radius: 0px;
   -webkit-box-shadow: 0 0 6px rgba(0,0,0,.15);
@@ -268,16 +318,16 @@ body { background: $gray-light; margin: 0; padding: 0; }
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: $gray-light !important;
+    color: darken($gray, 15%) !important;
     opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: $gray !important;
+    color: darken($gray, 15%) !important;
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
-    color: $gray !important;
+    color: darken($gray, 15%) !important;
 }
 
 #luc-search > ul.dropdown-menu .form-inline:hover,
