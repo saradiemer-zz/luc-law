@@ -32,9 +32,23 @@
   }
 }
 
+#luc-header a.navbar-brand-mobile {
+  display: none;
+  @include media-breakpoint-down(md) { display: block; }
+}
+
+
+
+
 #luc-header .nav.navbar-nav {
   width: auto;
   background-color: lighten($bg-overlay, 30%);
+}
+
+/* header navigation - first-level - general */
+
+#luc-navigation ul {
+  padding: 0 20px 2px;
 }
 
 #luc-header li {
@@ -54,6 +68,28 @@
   }
 }
 
+/* header navigation - first-level - cta > info + cta > search */
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover {
+  background: none;
+}
+
+/* header navigation - first-level - position */
+
+#luc-cta li#luc-information, #luc-cta li#luc-search {
+  position: relative;
+  padding: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 52px;
+  height: 50px;
+}
+
+/* header navigation - first-level - cta */
+
 #luc-cta { float: right; }
 
 #luc-cta li {
@@ -70,15 +106,7 @@
   }
 }
 
-#luc-cta li#luc-information, #luc-cta li#luc-search {
-  position: relative;
-  padding: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 52px;
-  height: 50px;
-}
+/* header navigation - first-level - cta > info */
 
 #luc-cta li#luc-information a {
   margin: 25%;
@@ -87,26 +115,11 @@
   height: 50%;
   border: solid 1.5px white;
   border-radius: 50%;
+  text-align: left;
+  text-transform: none;
   :hover {
     background: none;
   }
-}
-
-#luc-cta li#luc-search a {
-  margin: 0;
-  padding: 12px 0 0 0;
-  width: 100%;
-  height: 100%;
-  font-size: 2em;
-  -webkit-text-stroke: 2px lighten($bg-overlay, 48%);
-  line-height: 0;
-  color: $white;
-}
-
-.navbar-default .navbar-nav>.open>a,
-.navbar-default .navbar-nav>.open>a:focus,
-.navbar-default .navbar-nav>.open>a:hover {
-  background: none;
 }
 
 #luc-header li span.information-ellipse {
@@ -119,18 +132,40 @@
   font-size: 1.65em;
   line-height: 0;
   text-align: center;
+  :hover {
+    background: none;
+  }
+}
+
+/* header navigation - first-level - cta > search */
+
+#luc-cta li#luc-search a {
+  margin: 0;
+  padding: 12px 0 0 0;
+  width: 100%;
+  height: 100%;
+  font-size: 2em;
+  -webkit-text-stroke: 2px lighten($bg-overlay, 48%);
+  line-height: 0;
+  color: $white;
+}
+
+#luc-search > a > span:hover { background: none; }
+
+#luc-search .form-control:focus {
+    box-shadow: none;
+    outline: 0 none;
 }
 
 .dropdown-menu {
   position: absolute;
   top: 100%;
   left: 0;
-  z-index: 1000;
   display: none;
   float: left;
   min-width: 200px;
-  padding: 5px 0;
-  margin: 2px 0 0;
+  padding: 0;
+  margin: 0;
   font-size: 1em;
   text-align: left;
   list-style: none;
@@ -141,12 +176,14 @@
   box-shadow: 0 0 6px rgba(0,0,0,.15);
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  z-index: 1000;
   li.divider {
     padding: 0 !important;
     height: 1px !important;
   }
 }
 
+#luc-header ul#luc-navigation .dropdown-menu,
 #luc-header li#luc-information .dropdown-menu,
 #luc-header li#luc-search .dropdown-menu {
   margin: 0;
@@ -166,7 +203,7 @@
   }
   li a {
     margin: 0;
-    padding: 15px;
+    padding: 15px 20px;
     width: 100%;
     height: auto;
     line-height: none;
@@ -232,3 +269,24 @@
   padding: 40px 0;
   width: 100%;
 }
+
+@media (max-width: 992px) {
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+  .navbar-toggle {
+    display: block;
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+  }
+}
+
+/* makes drop down rollover active */
