@@ -37,6 +37,8 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 <!-- Custom styles for this template -->
 	<link href="https://getbootstrap.com/examples/starter-template/starter-template.css" rel="stylesheet">
+	<!-- Load font awesome icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
 	<script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -50,17 +52,26 @@
 <link rel="stylesheet" href="css/styles.css">
 <!-- endinject -->
 <style>.subnave{display: none;}.homenav{display: block;}</style>
+<link rel="stylesheet" href="/css/styles.css">
 <link rel="stylesheet" href="/css-storyform/styles-storyform.css">
 <link rel="stylesheet" href="/css-canvas/styles-canvas.css">
 <link rel="stylesheet" href="/css-law/styles-law.css">
 </head>
 <body>
-<section id="wrapper">
+<section id="wrapper" style="margin-top: 0; margin-bottom: 0;">
 	<!-- HEADER -->
 <nav id="luc-header" class="navbar navbar-default" style="position: fixed;">
+  <a class="navbar-brand navbar-brand-mobile" href="#"><img src="http://placehold.it/200x60"></a>
   <div class="container-fluid bg-overlay-dark p-0">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div id="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <nav class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" role="navigation">
 			<a class="navbar-brand" href="#"><img src="http://placehold.it/200x60"></a>
 			<ul id="luc-navigation" class="nav navbar-nav">
         <li class="active"><a href="#">Navigation <span class="sr-only">(current)</span></a></li>
@@ -106,12 +117,46 @@
           </ul>
         </li>
       <ul>
+  </nav>
   </div>
   </div>
 </nav>
  <!-- header-law -->
+	<!-- social media icon - share bar -->
+<div id="social-icon-bar">
+  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+<!--  <a href="#" class="google"><i class="fa fa-google"></i></a> -->
+  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+</div>
+ <!-- social-law -->
+	<div id="content-wrapper">
+  <div id="story-spacer-top" class="container-fluid p-t-30 p-b-30"></div>
+    <div class="container p-0">
+      <div class="col-md-9" style="padding: 40px; background: white;">
+      	<p class="body">
+  				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis, cursus leo at, auctor diam. Ut ut odio non massa consequat porta eget vel ligula. Cras vitae vulputate justo. In et orci justo. Donec vel nulla eu leo ultricies rhoncus non ultrices ante. Morbi blandit cursus ex, ac gravida purus venenatis et.
+  			</p>
+  			<p class="body">
+  				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis, cursus leo at, auctor diam. Ut ut odio non massa consequat porta eget vel ligula. Cras vitae vulputate justo. In et orci justo. Donec vel nulla eu leo ultricies rhoncus non ultrices ante. Morbi blandit cursus ex, ac gravida purus venenatis et.
+  			</p>
+  			<p class="body">
+  				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis, cursus leo at, auctor diam. Ut ut odio non massa consequat porta eget vel ligula. Cras vitae vulputate justo. In et orci justo. Donec vel nulla eu leo ultricies rhoncus non ultrices ante. Morbi blandit cursus ex, ac gravida purus venenatis et.
+  			</p>
+  			<p class="body">
+  				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis, cursus leo at, auctor diam. Ut ut odio non massa consequat porta eget vel ligula. Cras vitae vulputate justo. In et orci justo. Donec vel nulla eu leo ultricies rhoncus non ultrices ante. Morbi blandit cursus ex, ac gravida purus venenatis et.
+  			</p>
+  			<p class="body">
+  				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis, cursus leo at, auctor diam. Ut ut odio non massa consequat porta eget vel ligula. Cras vitae vulputate justo. In et orci justo. Donec vel nulla eu leo ultricies rhoncus non ultrices ante. Morbi blandit cursus ex, ac gravida purus venenatis et.
+  			</p>
+      </div>
+    </div>
+  <div id="story-spacer-bottom" class="container-fluid p-t-30 p-b-30"></div>
+</div>
+ <!-- main-content law -->
 	<!-- FOOTER - FPO -->
-<div id="luc-footer" class="container-fluid" style="height: 100px; background: rgba(0,0,0,.65);">
+<div id="luc-footer" class="container-fluid">
 	<div class="col-md-12">
 		<p class="body small reverse">Address here • </p>
 		<p class="body small explainer reverse">XXXXX Streetname • </p>
