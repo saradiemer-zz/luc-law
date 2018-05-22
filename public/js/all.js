@@ -1198,16 +1198,28 @@ if ( ! Modernizr.objectfit ) {
   });
 }
 
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+// function openNav() {
+//     document.getElementById("mySidenav").style.width = "250px";
+//     document.getElementById("wrapper").style.marginRight = "250px";
+//     document.body.style.backgroundColor = "rgba(0,0,0,0.6)";
+// }
+//
+// function closeNav() {
+//     document.getElementById("mySidenav").style.width = "0";
+//     document.getElementById("wrapper").style.marginRight= "0";
+//     document.body.style.backgroundColor = "white";
+// }
+
+function openNav(){
+    document.getElementById("profileContent").style.display = "block";
+    document.getElementById("mySidenav").style.width = "600px";
+    $('#profileContent01').load('test01.html');
 }
 
 function closeNav() {
+    document.getElementById("profileContent").style.display = "none";
     document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-    document.body.style.backgroundColor = "white";
+    document.getElementById("overlay").style.display = "none";
 }
 
 /**

@@ -58,6 +58,17 @@
 <link rel="stylesheet" href="/css-law/styles-law.css">
 </head>
 <body>
+	<div id="overlay"></div>
+	<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div id="profileContent01">
+  </div>
+  <div id="profileContent02">
+  </div>
+</div>
+<!-- Use any element to open the sidenav -->
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+ <!-- slide panel -->
 <section id="wrapper" style="margin-top: 0; margin-bottom: 0;">
 	<!-- HEADER -->
 <nav id="luc-header" class="navbar navbar-default" style="position: fixed;">
@@ -149,7 +160,12 @@
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">Donec vel nulla eu leo ultricies rhoncus non ultrices ante.</p>
-        <a href="#" class="btn btn-primary">Profile</a>
+        <a href="#" class="btn btn-primary" onclick="openNav()">Profile</a>
+        <div id="profileContent" style="display: none;">
+          <img src="http://via.placeholder.com/1000x560">
+          <h4 class="subhead">Label seven goes here</h4>
+          <p class="body small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -159,7 +175,7 @@
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">Donec vel nulla eu leo ultricies rhoncus non ultrices ante.</p>
-        <a href="#" class="btn btn-primary">Profile</a>
+        <a href="#" class="btn btn-primary" onclick="openNav()"&#9776;>Profile</a>
       </div>
     </div>
   </div>
@@ -169,24 +185,10 @@
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">Donec vel nulla eu leo ultricies rhoncus non ultrices ante.</p>
-        <a href="#" class="btn btn-primary">Profile</a>
+        <a href="#" class="btn btn-primary" onclick="openNav()"&#9776;>Profile</a>
       </div>
     </div>
   </div>
-</div>
- <!-- xxx -->
-      <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
-</div>
-<!-- Use any element to open the sidenav -->
-<span onclick="openNav()">open</span>
-<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-<div id="main">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis, cursus leo at, auctor diam. Ut ut odio non massa consequat porta eget vel ligula. Cras vitae vulputate justo. In et orci justo. Donec vel nulla eu leo ultricies rhoncus non ultrices ante. Morbi blandit cursus ex, ac gravida purus venenatis et.
 </div>
  <!-- xxx -->
     </div>
