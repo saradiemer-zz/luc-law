@@ -1213,6 +1213,7 @@ if ( ! Modernizr.objectfit ) {
 function openNav(){
     document.getElementById("profileContent").style.display = "block";
     document.getElementById("mySidenav").style.width = "600px";
+    document.getElementById("overlay").style.display = "block";
     $('#profileContent01').load('test01.html');
 }
 
