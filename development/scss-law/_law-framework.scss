@@ -19,6 +19,8 @@ body { background: $gray-light; margin: 0; padding: 0; }
   text-transform: uppercase;
 }
 
+/* CSS BEGINS */
+
 #wrapper {
   position: absolute;
   left: 0;
@@ -37,6 +39,20 @@ body { background: $gray-light; margin: 0; padding: 0; }
 #content-wrapper { position: relative; z-index: -2; }
 
 #story-spacer-top { padding-top: 40px !important; }
+
+/* global-header */
+
+#global-header {
+  padding: 20px 20px;
+  background: $white;
+}
+
+#global-header h1 {
+  margin: 0;
+  font-family: 'Arnhem Bold', 'Georgia', serif !important;
+  font-size: 3.25em;
+  line-height: 1;
+}
 
 /* header */
 
