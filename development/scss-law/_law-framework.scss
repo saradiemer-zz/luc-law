@@ -29,8 +29,7 @@ p { float: left; }
   right: 0;
   top: 0;
   bottom: 0;
-  background: $gray;
-  background: url('/images/bg-water.jpg') no-repeat;
+  background: $white;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -89,7 +88,7 @@ p { float: left; }
   display: block;
   width: 100%;
   border-radius: 0%;
-  z-index: +2;
+  z-index: 10;
   a {
     font-family: 'Antenna', sans-serif;
   }

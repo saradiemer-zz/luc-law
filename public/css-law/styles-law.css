@@ -6,14 +6,20 @@
 /* TERRACOTTA */
 /* TAUPE */
 body {
+  background: #ffffff !important;
   background-image: none !important; }
 
 a {
   cursor: pointer; }
 
 h1,
+h1.primary,
+h3.standalone,
 h4.subhead {
   font-family: 'Arnhem Bold', 'Georgia', serif !important;
+  text-transform: none; }
+
+h1.display {
   font-size: 4em;
   line-height: 1.1; }
 
@@ -22,10 +28,16 @@ h1.number {
   font-size: 5em;
   letter-spacing: -0.015em; }
 
+.number h1.display {
+  letter-spacing: -0.015em; }
+
 h2.secondary-explainer {
   font-family: 'Antenna Bold', sans-serif !important;
   text-transform: uppercase;
   font-size: 1.4em; }
+
+h3.standalone {
+  font-size: 1.3em; }
 
 h4.module {
   font-size: 1.35em;
@@ -40,6 +52,9 @@ h5.subhead {
 h5.light {
   font-family: 'Antenna Light', serif !important;
   opacity: 1 !important; }
+
+h6.category.light {
+  font-family: 'Antenna Light', serif !important; }
 
 h6.faq {
   font-family: 'Antenna', serif !important;
@@ -64,6 +79,12 @@ blockquote.small {
   font-weight: normal;
   margin: 0 !important; }
 
+blockquote p, blockquote {
+  font-family: 'Arnhem Bold', 'Georgia', serif !important; }
+
+blockquote p.light, blockquote {
+  font-family: 'Arnhem', 'Georgia', serif !important; }
+
 a.cta {
   background-color: transparent;
   color: #981e4d;
@@ -77,8 +98,8 @@ a.cta:hover {
   color: #ad2357;
   letter-spacing: 0; }
 
-ul li {
-  list-style-position: outside; }
+ul {
+  margin-bottom: 30px; }
 
 li span.antenna {
   font-family: "Antenna", sans-serif;
@@ -87,6 +108,9 @@ li span.antenna {
 .footnote {
   margin-top: 20px;
   border-top: 1px solid #e1e1e1; }
+
+.alternate {
+  font-family: 'Arnhem', 'Georgia', serif !important; }
 
 .section-top {
   padding-top: 35px;
@@ -98,43 +122,30 @@ li span.antenna {
   margin-top: 35px;
   border-top: 1px solid #ffffff; }
 
-#accordion h4.subhead a {
-  font-family: "Antenna Bold", sans-serif; }
-
-#accordion.panel-group {
-  width: 100%; }
-
-#accordion .panel-heading {
-  padding: 15px 0 13px; }
-
-.nested h4.subhead a {
-  font-family: 'Antenna', sans-serif !important;
-  text-transform: uppercase;
-  font-size: .9em; }
-
-.nested .panel-body {
-  padding: 0px 10px 0px 10px !important;
-  margin-top: 0px !important; }
-
-.nested .panel-heading {
-  padding: 10px !important; }
-
-button.btn {
+button.btn, button.btn.cta {
   border: 1px solid #981e4d;
   background-color: white;
   color: #981e4d;
   margin-right: 10px;
   border-radius: 40px;
   font-family: "Antenna", sans-serif;
-  text-transform: uppercase;
-  margin-top: 20px;
-  margin-bottom: 20px; }
+  text-transform: uppercase; }
 
-button.btn:hover {
+button.btn:hover, button.btn.cta:hover {
   background-color: #6d1637; }
 
 .lede-content {
   background-color: #f1f1f1; }
+
+td:nth-child(1) {
+  font-family: "Antenna Bold", sans-serif;
+  text-transform: uppercase; }
+
+td {
+  font-family: "Myriad", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  font-size: 1em; }
 
 /* faq */
 #faq {
@@ -382,6 +393,95 @@ h6.rule-top {
   background: #bb0000;
   color: white; }
 
+/* storyforms-accordion */
+#accordion {
+  display: block;
+  margin: 0;
+  padding: 10px 0; }
+
+h4.accordion {
+  margin: 16px 0 14px !important;
+  width: 92%;
+  font-family: "Antenna", sans-serif;
+  font-size: .95em;
+  line-height: 1.35;
+  text-transform: uppercase;
+  color: #2c2c2c; }
+
+#accordion .accordion:after {
+  float: right;
+  margin-left: 5px;
+  margin-right: -8%;
+  content: '+';
+  font-family: 'Antenna', sans-serif;
+  font-size: 1.35em;
+  color: #2c2c2c; }
+
+#accordion .active:after {
+  display: inline;
+  margin-right: -8%;
+  content: "-"; }
+
+.panel {
+  max-height: 0;
+  border-bottom: solid 1px #e1e1e1;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out; }
+
+.panel.show {
+  opacity: 1;
+  max-height: 500px; }
+
+.panel p.body {
+  margin: 5px 0 25px 0;
+  padding: 0 0 0 20px;
+  font-size: .975em;
+  line-height: 1.85; }
+
+#accordion-nested {
+  display: block;
+  margin: 0; }
+
+h4.accordion-nested {
+  margin: 16px 0 14px !important;
+  width: 92%;
+  font-family: "Antenna", sans-serif;
+  font-size: .95em;
+  line-height: 1.35;
+  text-transform: uppercase;
+  color: #2c2c2c; }
+
+#accordion-nested .accordion-nested:after {
+  float: right;
+  margin-left: 5px;
+  margin-right: -8%;
+  content: '+';
+  font-family: 'Antenna', sans-serif;
+  font-size: 1.35em;
+  color: #2c2c2c; }
+
+#accordion-nested .active:after {
+  display: inline;
+  margin-right: -8%;
+  content: "-"; }
+
+.panel-nested {
+  max-height: 0;
+  border-bottom: solid 1px #e1e1e1;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out; }
+
+.panel-nested.show {
+  opacity: 1;
+  max-height: 500px; }
+
+.panel-nested p.body {
+  margin: 5px 0 25px 0;
+  padding: 0 0 0 20px;
+  font-size: .975em;
+  line-height: 1.85; }
+
+/* END - CSS */
 /* body */
 body {
   background: #e1e1e1;
@@ -421,8 +521,7 @@ p {
   right: 0;
   top: 0;
   bottom: 0;
-  background: #959595;
-  background: url("/images/bg-water.jpg") no-repeat;
+  background: #ffffff;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -473,7 +572,7 @@ p {
   display: block;
   width: 100%;
   border-radius: 0%;
-  z-index: +2; }
+  z-index: +10; }
   #navbar-header a {
     font-family: 'Antenna', sans-serif; }
 
