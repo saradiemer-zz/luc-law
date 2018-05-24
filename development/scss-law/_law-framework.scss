@@ -98,20 +98,22 @@ p { float: left; }
   float: left;
   display: flex;
   align-items: flex-end;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   width: auto;
   height: auto;
   font-family: 'Arnhem', 'Georgia', serif !important;
-  font-size: 4em;
   line-height: 1;
+  text-align: center;
   color: $gray-extra-light;
   a, a.navbar-brand-mobile {
     display: flex;
     align-items: flex-end;
     margin: 0;
-    padding: 0 0 8px 0;
+    padding: 0 0 12px 0;
+    font-size: 1em;
     color: $gray-extra-light;
+    text-transform: uppercase;
   }
   :hover {
     color: $gray-extra-light;
