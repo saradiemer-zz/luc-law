@@ -2,6 +2,25 @@
 
 body { background: $gray-light; margin: 0; padding: 0; }
 
+#profiles-overview { padding: 40px 40px 0; background: $white; }
+
+#profiles { padding: 0 40px 40px; background: $white; }
+
+#profiles .col-md-4 { padding-top: 40px; border-top: solid 1px $gray-light; }
+
+#profiles .col-md-4 img { margin-top: 0; }
+
+#profiles .card a.btn.btn-primary {
+  font-family: 'Antenna Bold', sans-serif;
+  font-size: .7em;
+  letter-spacing: .015em;
+  color: $white;
+  border: none;
+  text-transform: uppercase;
+}
+
+/* CSS BEGINS */
+
 #wrapper {
   position: absolute;
   left: 0;
@@ -17,9 +36,28 @@ body { background: $gray-light; margin: 0; padding: 0; }
   z-index: -2;
 }
 
-#content-wrapper { position: relative; z-index: -2; }
+#content-wrapper {
+  position: relative;
+  padding-top: 120px;
+  padding-bottom: 60px;
+  z-index: -2;
+}
 
 #story-spacer-top { padding-top: 40px !important; }
+
+/* global-header */
+
+#global-header {
+  padding: 20px 20px;
+  background: $white;
+}
+
+#global-header h1 {
+  margin: 0;
+  font-family: 'Arnhem Bold', 'Georgia', serif !important;
+  font-size: 3.25em;
+  line-height: 1;
+}
 
 /* header */
 

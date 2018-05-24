@@ -58,10 +58,23 @@
 <link rel="stylesheet" href="/css-law/styles-law.css">
 </head>
 <body>
+	<div id="overlay"></div>
+	<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div id="profileContent01">
+  </div>
+</div>
+<!-- Use any element to open the sidenav -->
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+ <!-- slide panel -->
 <section id="wrapper" style="margin-top: 0; margin-bottom: 0;">
 	<!-- HEADER -->
 <nav id="luc-header" class="navbar navbar-default" style="position: fixed;">
-  <a class="navbar-brand navbar-brand-mobile" href="#"><img src="http://placehold.it/200x60"></a>
+  <div id="global-header" class="container-fluid">
+    <h1 class="display"><a class="" href="###">The School of Law</a></h1>
+    <!-- <h1 class="display"><a class="" href="###">Beazley Institute for Health Law and Policy</a></h1> -->
+  </div>
+  <a class="navbar-brand navbar-brand-mobile" href="###"><img src="/images/luc-logo-reverse.svg"></a>
   <div class="container-fluid bg-overlay-dark p-0">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div id="navbar-header">
@@ -132,25 +145,50 @@
 </div>
  <!-- social-law -->
 	<div id="content-wrapper">
+  <div id="overlay"></div>
   <div id="story-spacer-top" class="container-fluid p-t-30 p-b-30"></div>
     <div class="container p-0">
-      <div class="col-md-9" style="padding: 40px; background: white;">
-      	<p class="body">
-  				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis, cursus leo at, auctor diam. Ut ut odio non massa consequat porta eget vel ligula. Cras vitae vulputate justo. In et orci justo. Donec vel nulla eu leo ultricies rhoncus non ultrices ante. Morbi blandit cursus ex, ac gravida purus venenatis et.
-  			</p>
-  			<p class="body">
-  				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis, cursus leo at, auctor diam. Ut ut odio non massa consequat porta eget vel ligula. Cras vitae vulputate justo. In et orci justo. Donec vel nulla eu leo ultricies rhoncus non ultrices ante. Morbi blandit cursus ex, ac gravida purus venenatis et.
-  			</p>
-  			<p class="body">
-  				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis, cursus leo at, auctor diam. Ut ut odio non massa consequat porta eget vel ligula. Cras vitae vulputate justo. In et orci justo. Donec vel nulla eu leo ultricies rhoncus non ultrices ante. Morbi blandit cursus ex, ac gravida purus venenatis et.
-  			</p>
-  			<p class="body">
-  				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis, cursus leo at, auctor diam. Ut ut odio non massa consequat porta eget vel ligula. Cras vitae vulputate justo. In et orci justo. Donec vel nulla eu leo ultricies rhoncus non ultrices ante. Morbi blandit cursus ex, ac gravida purus venenatis et.
-  			</p>
-  			<p class="body">
-  				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis, cursus leo at, auctor diam. Ut ut odio non massa consequat porta eget vel ligula. Cras vitae vulputate justo. In et orci justo. Donec vel nulla eu leo ultricies rhoncus non ultrices ante. Morbi blandit cursus ex, ac gravida purus venenatis et.
-  			</p>
+      <div id="profiles-overview" class="col-md-9">
+  <p class="body">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis, cursus leo at, auctor diam. Ut ut odio non massa consequat porta eget vel ligula. Cras vitae vulputate justo. In et orci justo. Donec vel nulla eu leo ultricies rhoncus non ultrices ante. Morbi blandit cursus ex, ac gravida purus venenatis et.
+  </p>
+  <p class="body">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis, cursus leo at, auctor diam. Ut ut odio non massa consequat porta eget vel ligula. Cras vitae vulputate justo. In et orci justo. Donec vel nulla eu leo ultricies rhoncus non ultrices ante. Morbi blandit cursus ex, ac gravida purus venenatis et.
+  </p>
+</div>
+<div id="profiles" class="col-md-9" style="padding: 40px; background: white;">
+  <div class="col-md-4">
+    <div class="card">
+      <img class="card-img-top" src="http://placehold.it/1000x560" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Donec vel nulla eu leo ultricies rhoncus non ultrices ante.</p>
+        <a href="#" id="profileAction" class="btn btn-primary" onclick="openNav()">Profile</a>
       </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <img class="card-img-top" src="http://placehold.it/1000x560" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Donec vel nulla eu leo ultricies rhoncus non ultrices ante.</p>
+        <a href="#" class="btn btn-primary" onclick="openNav()"&#9776;>Profile</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <img class="card-img-top" src="http://placehold.it/1000x560" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Donec vel nulla eu leo ultricies rhoncus non ultrices ante.</p>
+        <a href="#" class="btn btn-primary" onclick="openNav()"&#9776;>Profile</a>
+      </div>
+    </div>
+  </div>
+</div>
+ <!-- xxx -->
     </div>
   <div id="story-spacer-bottom" class="container-fluid p-t-30 p-b-30"></div>
 </div>
