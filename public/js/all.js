@@ -1221,7 +1221,10 @@ function closeNav() {
     document.getElementById("overlay").style.display = "none";
 }
 
-document.getElementById("overlay").onClick(".mySidenav").css("display:none");
+function closeNavOverlay() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("overlay").style.width = "0";
+}
 
 /**
  * stacktable.js

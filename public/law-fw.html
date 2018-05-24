@@ -58,7 +58,7 @@
 <link rel="stylesheet" href="/css-law/styles-law.css">
 </head>
 <body>
-	<div id="overlay"></div>
+	<div><a href="javascript:void(0)" id="overlay" onclick="closeNavOverlay()"></a></div>
 	<div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div id="profileContent01">
@@ -71,10 +71,12 @@
 	<!-- HEADER -->
 <nav id="luc-header" class="navbar navbar-default" style="position: fixed;">
   <div id="global-header" class="container-fluid">
-    <h1 class="display"><a class="" href="###">The School of Law</a></h1>
+    <a class="navbar-brand" href="###">
+      <img src="/images/luc-logo-color.svg">
+    </a>
     <!-- <h1 class="display"><a class="" href="###">Beazley Institute for Health Law and Policy</a></h1> -->
   </div>
-  <a class="navbar-brand navbar-brand-mobile" href="###"><img src="/images/luc-logo-reverse.svg"></a>
+  <h1><a class="navbar-brand navbar-brand-mobile" href="#">School of Law</a></h1>
   <div class="container-fluid bg-overlay-dark p-0">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div id="navbar-header">
@@ -85,7 +87,7 @@
         <span class="icon-bar"></span>
       </button>
       <nav class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" role="navigation">
-			<a class="navbar-brand" href="#"><img src="/images/luc-logo-reverse.svg"></a>
+			<h1><a class="navbar-brand" href="#">School of Law</a></h1>
 			<ul id="luc-navigation" class="nav navbar-nav">
         <li class="active"><a href="#">Navigation <span class="sr-only">(current)</span></a></li>
         <li><a href="#">Navigation</a></li>
@@ -148,15 +150,17 @@
   <div id="overlay"></div>
   <div id="story-spacer-top" class="container-fluid p-t-30 p-b-30"></div>
     <div class="container p-0">
-      <div id="profiles-overview" class="col-md-9">
-  <p class="body">
+      <div id="profiles-overview" class="col-md-12">
+  <h5 class="label small" style="font-family:'Antenna', sans-serif !important">Label herehere</h6>
+  <h1 class="display">Headgline here here headline herge</h1>
+  <p class="body intro">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis, cursus leo at, auctor diam. Ut ut odio non massa consequat porta eget vel ligula. Cras vitae vulputate justo. In et orci justo. Donec vel nulla eu leo ultricies rhoncus non ultrices ante. Morbi blandit cursus ex, ac gravida purus venenatis et.
   </p>
-  <p class="body">
+  <p class="body intro m-b-0">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis, cursus leo at, auctor diam. Ut ut odio non massa consequat porta eget vel ligula. Cras vitae vulputate justo. In et orci justo. Donec vel nulla eu leo ultricies rhoncus non ultrices ante. Morbi blandit cursus ex, ac gravida purus venenatis et.
   </p>
 </div>
-<div id="profiles" class="col-md-9" style="padding: 40px; background: white;">
+<div id="profiles" class="col-md-12" style="padding: 40px; background: white;">
   <div class="col-md-4">
     <div class="card">
       <img class="card-img-top" src="http://placehold.it/1000x560" alt="Card image cap">

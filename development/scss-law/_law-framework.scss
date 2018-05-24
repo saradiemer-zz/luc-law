@@ -2,6 +2,8 @@
 
 body { background: $gray-light; margin: 0; padding: 0; }
 
+p { float: left; }
+
 #profiles-overview { padding: 40px 40px 0; background: $white; }
 
 #profiles { padding: 0 40px 40px; background: $white; }
@@ -48,15 +50,21 @@ body { background: $gray-light; margin: 0; padding: 0; }
 /* global-header */
 
 #global-header {
-  padding: 20px 20px;
+  padding: 10px 20px;
   background: $white;
 }
 
-#global-header h1 {
+#global-header a.navbar-brand {
   margin: 0;
-  font-family: 'Arnhem Bold', 'Georgia', serif !important;
-  font-size: 3.25em;
-  line-height: 1;
+  padding: 0;
+  width: auto;
+  height: auto;
+  img {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: 50px;
+  }
 }
 
 /* header */
@@ -87,20 +95,38 @@ body { background: $gray-light; margin: 0; padding: 0; }
   }
 }
 
-#luc-header a.navbar-brand {
-  padding: 5px 15px;
+#luc-header h1 {
+  float: left;
+  display: flex;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
   width: auto;
-  img {
+  height: auto;
+  font-family: 'Arnhem', 'Georgia', serif !important;
+  font-size: 4em;
+  line-height: 1;
+  color: $gray-extra-light;
+  a, a.navbar-brand-mobile {
+    display: flex;
+    align-items: flex-end;
     margin: 0;
-    float: left;
-    width: auto;
-    height: 100%;
+    padding: 0 0 8px 0;
+    color: $gray-extra-light;
+  }
+  :hover {
+    color: $gray-extra-light;
   }
 }
 
-#luc-header a.navbar-brand-mobile {
-  display: none;
-  @include media-breakpoint-down(md) { display: block; }
+#luc-header h1 a.navbar-brand-mobile {
+  display: none !important;
+  @include media-breakpoint-down(md) {
+    display: block !important;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 0 20px;
+  }
 }
 
 #navbar-header > button {
