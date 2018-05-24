@@ -1,17 +1,27 @@
-body { background-image: none !important; }
+body { background: $white !important; background-image: none !important; }
 
 a { cursor:pointer; }
 
 h1,
+h1.primary,
+h3.standalone,
 h4.subhead {
   font-family: 'Arnhem Bold', 'Georgia', serif !important;
-  font-size: 4em;
-  line-height: 1.1;
+  text-transform: none;
+}
+
+h1.display {
+font-size: 4em;
+line-height: 1.1;
 }
 
 h1.number {
   font-family: 'Arnhem Bold', 'Georgia', serif !important;
   font-size: 5em;
+  letter-spacing: -0.015em;
+}
+
+.number h1.display {
   letter-spacing: -0.015em;
 }
 
@@ -21,6 +31,10 @@ h2.secondary-explainer {
   font-size: 1.4em;
 }
 
+h3.standalone {
+  font-size: 1.3em;
+}
+
 h4.module { font-size: 1.35em; line-height: 1.35; font-family: 'Arnhem Blond', 'Georgia', serif !important; margin-top:0px; }
 
 h5.subhead { font-size: .95em; font-family: "Antenna Bold", sans-serif; }
@@ -28,6 +42,10 @@ h5.subhead { font-size: .95em; font-family: "Antenna Bold", sans-serif; }
 h5.light {
   font-family: 'Antenna Light', serif !important;
   opacity: 1 !important;
+}
+
+h6.category.light {
+  font-family: 'Antenna Light', serif !important;
 }
 
 h6.faq {
@@ -59,6 +77,14 @@ blockquote.small {
   margin: 0 !important;
 }
 
+blockquote p, blockquote {
+  font-family: 'Arnhem Bold', 'Georgia', serif !important;
+}
+
+blockquote p.light, blockquote {
+  font-family: 'Arnhem', 'Georgia', serif !important;
+}
+
 a.cta {
   background-color: transparent;
   color: $maroon-dark;
@@ -75,8 +101,8 @@ a.cta:hover {
   letter-spacing: 0;
 }
 
-ul li {
- list-style-position: outside;
+ul {
+  margin-bottom: 30px;
 }
 
 li span.antenna {
@@ -85,6 +111,10 @@ li span.antenna {
 }
 
 .footnote { margin-top: 20px; border-top: 1px solid #e1e1e1;}
+
+.alternate {
+  font-family: 'Arnhem', 'Georgia', serif !important;
+}
 
 .section-top {
   padding-top: 35px;
@@ -98,32 +128,7 @@ li span.antenna {
   border-top: 1px solid $white;
 }
 
-#accordion h4.subhead a {
-  font-family: "Antenna Bold", sans-serif;
-}
-
-#accordion.panel-group {
-  width: 100%;
-}
-
-#accordion .panel-heading {padding: 15px 0 13px;}
-
-.nested h4.subhead a {
-  font-family: 'Antenna', sans-serif !important;
-  text-transform: uppercase;
-  font-size: .9em;
-}
-
-.nested .panel-body {
-  padding: 0px 10px 0px 10px !important;
-  margin-top: 0px !important;
-}
-
-.nested .panel-heading {
-  padding: 10px !important;
-}
-
-button.btn {
+button.btn, button.btn.cta {
   border: 1px solid $maroon-dark;
   background-color: white;
   color: $maroon-dark;
@@ -131,14 +136,25 @@ button.btn {
   border-radius: 40px;
   font-family: "Antenna", sans-serif;
   text-transform: uppercase;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
-button.btn:hover {
+button.btn:hover, button.btn.cta:hover {
   background-color: $maroon-extra-dark;
+
 }
 
 .lede-content {
   background-color: #f1f1f1;
+}
+
+td:nth-child(1) {
+  font-family: "Antenna Bold", sans-serif;
+  text-transform: uppercase;
+}
+
+td {
+  font-family: "Myriad", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  font-size: 1em;
 }
