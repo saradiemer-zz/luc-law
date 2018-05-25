@@ -3,7 +3,7 @@
 #social-icon-bar {
   position: fixed;
   top: 40%;
-  right: 0;
+  left: 0;
   z-index: 10;
   -webkit-transform: translateY(-40%);
   -ms-transform: translateY(-40%);
@@ -35,3 +35,5 @@
 .linkedin { background: #007bb5; color: white; }
 
 .youtube { background: #bb0000; color: white; }
+
+.facebook, .twitter, .google, .linkedin, .youtube { background: $gray; border: solid 1px $gray-light; }
