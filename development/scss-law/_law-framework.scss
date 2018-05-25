@@ -54,6 +54,7 @@ p { float: left; }
 }
 
 #global-header a.navbar-brand {
+  float: right;
   margin: 0;
   padding: 0;
   width: auto;
@@ -63,6 +64,41 @@ p { float: left; }
     padding: 0;
     width: auto;
     height: 50px;
+  }
+}
+
+#global-header h1 {
+  float: left;
+  position: relative;
+  bottom: -18px;
+  margin: 0 0 10px;
+  padding: 0;
+  width: auto;
+  height: auto;
+  font-family: 'Antenna Light', sans-serif !important;
+  font-size: 2em;
+  font-weight: 100;
+  line-height: 1;
+  letter-spacing: -.0175em;
+  text-align: left;
+  background: none;
+  a, a.navbar-brand-mobile {
+    margin: 0;
+    padding: 0;
+    color: $gray-extra-dark;
+  }
+  :hover {
+    color: $maroon;
+  }
+}
+
+#global-header h1 a.navbar-brand-mobile {
+  display: none !important;
+  @include media-breakpoint-down(md) {
+    display: block !important;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 0 20px;
   }
 }
 
@@ -94,42 +130,6 @@ p { float: left; }
   }
 }
 
-#luc-header h1 {
-  float: left;
-  display: flex;
-  align-items: flex-end;
-  margin: 0 auto;
-  padding: 0;
-  width: auto;
-  height: auto;
-  font-family: 'Arnhem', 'Georgia', serif !important;
-  line-height: 1;
-  text-align: center;
-  color: $gray-extra-light;
-  a, a.navbar-brand-mobile {
-    display: flex;
-    align-items: flex-end;
-    margin: 0;
-    padding: 0 0 12px 0;
-    font-size: 1em;
-    color: $gray-extra-light;
-    text-transform: uppercase;
-  }
-  :hover {
-    color: $gray-extra-light;
-  }
-}
-
-#luc-header h1 a.navbar-brand-mobile {
-  display: none !important;
-  @include media-breakpoint-down(md) {
-    display: block !important;
-    display: flex;
-    align-items: flex-end;
-    padding: 0 0 0 20px;
-  }
-}
-
 #navbar-header > button {
   background: $bg-overlay-dark;
   border: none;
@@ -156,6 +156,8 @@ p { float: left; }
   font-size: .75em;
   letter-spacing: .025em;
   text-transform: none;
+  border-right: solid 1px $gray-dark;
+  :first-of-type { border-left: solid 1px $gray-dark; }
   a {
     padding: 25px 20px 5px;
     color: $gray-light;
@@ -164,6 +166,7 @@ p { float: left; }
   }
   :hover {
     background-color: darken($bg-overlay, 10%);
+    z-index: 100000;
   }
 }
 
@@ -195,7 +198,7 @@ p { float: left; }
   float: left;
   width: 70px;
   padding: 0%;
-  border-left: solid 1px $white;
+  border-left: solid 1px $gray-dark;
   a {
     box-sizing: border-box;
     padding: 18px 10px 12px;
@@ -253,9 +256,12 @@ p { float: left; }
   -webkit-text-stroke: 2px lighten($bg-overlay, 48%);
   line-height: 0;
   color: $white;
+  border-left: none;
 }
 
 #luc-search > a > span:hover { background: none; }
+
+#luc-search > a > span:first-of-type { border: none !important; }
 
 #luc-search #drop form .form-group:focus,
 #luc-search #drop form .form-group:active,
