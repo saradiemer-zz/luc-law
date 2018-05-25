@@ -2,11 +2,11 @@
 
 #interior-nav { margin: 15px 0 0; }
 
-#interior-nav .panel-heading { padding: 16px 8px 12px; background-color: $maroon-extra-dark; }
+#interior-nav { padding: 16px 8px 12px; background-color: $maroon-extra-dark; }
 
-#interior-nav.panel-group { border: 0 none !important; box-shadow: none; }
+#interior-nav.panel{ border: 0 none !important; box-shadow: none; }
 
-#interior-nav.panel-group .panel {
+#interior-nav.panel {
   float: left;
   margin: 0;
   border: 0;
@@ -17,21 +17,15 @@
   box-shadow: none;
 }
 
-#interior-nav.panel-group .panel-heading+.panel-collapse>.list-group,
-#interior-nav.panel-group .panel-heading+.panel-collapse>.panel-body {
-  border: 0;
-}
+#interior-nav h4.accordion { margin: 0 !important; font-size: .925em; }
 
-#interior-nav h4.subhead { margin: 0 !important; font-size: .925em; }
+#interior-nav h4.accordion { display: block; width: 98%; color: $white; font-family: "Antenna", sans-serif; letter-spacing: 0.025em; font-size: .825em;}
 
-#interior-nav h4.subhead a { display: block; width: 98%; color: $white; font-family: "Antenna", sans-serif; letter-spacing: 0.025em; font-size: .825em;}
-
-#interior-nav .panel-body {
+#interior-nav .panel {
   float: left;
-  padding:10px;
   width: 100%;
   box-shadow: none;
-  background-color: $gray-extra-light;
+  color: $gray-light !important;
 }
 
 #main-content #interior-nav .panel-heading .accordion-toggle span.accordion-icon {
@@ -55,22 +49,20 @@
   transition-duration: .25s;
 }
 
-#main-content #interior-nav .panel-heading .accordion-toggle span.accordion-icon img {
-  margin: 0;
-  padding: 0;
-  width: 12px;
-  height: 16px;
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-  transition-duration: .25s;
+#interior-nav .accordion:after {
+  float: right;
+  margin-left: 5px;
+  content: '+';
+  font-family: 'Antenna', sans-serif;
+  font-size: 1.35em;
+  color: $gray-light;
 }
 
-h6.rule-top {
-  border-top: 1px solid white;
-  padding: 14px 0px 2px;
+#interior-nav .active:after {
+  display: inline;
+  content: "-";
 }
 
-/* END - CSS */
+#interior-nav .panel:nth-last-child(1) {
+  border-bottom: none;
+}
