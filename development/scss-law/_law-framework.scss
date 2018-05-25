@@ -164,6 +164,7 @@ p { float: left; }
   }
   :hover {
     background-color: darken($bg-overlay, 10%);
+    z-index: 100000;
   }
 }
 
