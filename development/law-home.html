@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+@@include('./partials/head.html')<!-- header -->
+<!-- inject:css -->
+<!-- endinject -->
+<style>.subnave{display: none;}.homenav{display: block;}</style>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css-storyform/styles-storyform.css">
+<link rel="stylesheet" href="css-canvas/styles-canvas.css">
+<link rel="stylesheet" href="css-law/styles-law.css">
+</head>
+<body>
+	<div><a href="javascript:void(0)" id="overlay" onclick="closeNavOverlay()"></a></div>
+	@@include('./partials/law-fw/sliding-content-panel.html') <!-- slide panel -->
+<section id="wrapper" style="margin-top: 0; margin-bottom: 0;">
+	@@include('./partials/header-law.html') <!-- header-law -->
+	@@include('./partials/social-law.html') <!-- social-law -->
+	@@include('./partials/main-content-law-home.html') <!-- main-content law -->
+	@@include('./partials/footer-law.html') <!-- footer-law -->
+</section>
+	@@include('./partials/footer-close-fpo.html') <!-- footer-close -->
+	<!-- inject:js -->
+	<!-- endinject -->
+</body>
+</html>
