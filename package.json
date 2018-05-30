@@ -44,7 +44,7 @@
     "jquery": "^3.3.1",
     "lodash": "^4.17.10",
     "ls-stream": "^1.0.0",
-    "npm": "^6.0.1",
+    "npm": "^6.1.0",
     "sudo": "^1.0.3"
   },
   "description": "Bootstrap 3.0 luc.edu/law development repository",
