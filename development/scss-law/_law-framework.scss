@@ -1,5 +1,7 @@
 /* body */
 
+/* REMOVE WHEN APPROVED */
+
 body { background: $gray-light; margin: 0; padding: 0; }
 
 p { float: left; }
@@ -20,6 +22,8 @@ p { float: left; }
   border: none;
   text-transform: uppercase;
 }
+
+/* REMOVE WHEN APPROVED */
 
 /* CSS BEGINS */
 
@@ -88,7 +92,7 @@ p { float: left; }
     color: $gray-extra-light;
     transition: color .2s;
   }
-  :hover {
+  &:hover {
     color: $white;
   }
 }
@@ -158,14 +162,14 @@ p { float: left; }
   letter-spacing: .025em;
   text-transform: none;
   border-right: solid 1px $gray-dark;
-  :first-of-type { border-left: solid 1px $gray-dark; }
+  &:first-of-type { border-left: solid 1px $gray-dark; }
   a {
     padding: 25px 20px 5px;
     color: $gray-light;
     background-color: rgba(0,0,0,0);
     transition: background-color .2s;
   }
-  :hover {
+  &:hover {
     background-color: darken($bg-overlay, 10%);
     z-index: 100000;
   }
@@ -222,7 +226,7 @@ p { float: left; }
   border-radius: 50%;
   text-align: left;
   text-transform: none;
-  :hover {
+  &:hover {
     background: none;
   }
 }
@@ -239,7 +243,7 @@ p { float: left; }
   line-height: 0;
   text-align: center;
   border: none;
-  :hover {
+  &:hover {
     background: none;
   }
 }
