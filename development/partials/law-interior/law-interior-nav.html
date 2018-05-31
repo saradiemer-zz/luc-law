@@ -2,80 +2,20 @@
 </div>
 
 <div class="col-md-3 col-sm-6">
-  <div class="panel-group accord-blk" id="interior-nav">
+  <div id="interior-nav" class="m-t-15 BAL">
+<h4 class="accordion"><a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=109958&amp;chid=8&amp;lang=en">About</a></h4><h4 class="accordion"><a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=109959&amp;chid=8&amp;lang=en">Admission</a>
+<ul class="multilevel-linkul-0">
+<li><a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=110085&amp;chid=8&amp;lang=en">Apply</a></li>
+<li><a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=110086&amp;chid=8&amp;lang=en">Financial Aid</a></li>
+<li><a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=110087&amp;chid=8&amp;lang=en">FAQ</a></li>
+<li><a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=110088&amp;chid=8&amp;lang=en">ABA Required Disclosures</a></li>
+<li><a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=110089&amp;chid=8&amp;lang=en">Let's Get Started (JD Degree Program)</a></li>
+<li><a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=110090&amp;chid=8&amp;lang=en">Let's Get Started (MJ Degree Program)</a></li>
+<li><a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=110091&amp;chid=8&amp;lang=en">Let's get Started (LLM Degree Program)</a></li>
 
-    <div class="panel">
-      <div class="panel-heading">
-        <h4 class="subhead uppercase">
-          <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#nav-1" href="#collapsenav1">
-            Apply
-            <span class="accordion-icon"></span>
-          </a>
-        </h4>
-      </div><!-- panel-heading -->
-    </div><!-- panel -->
-
-    <div class="panel">
-      <div class="panel-heading">
-        <h4 class="subhead uppercase">
-          <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#nav-1" href="#collapsenav2">
-            Request Information
-            <span class="accordion-icon"></span>
-          </a>
-        </h4>
-      </div><!-- panel-heading -->
-    </div><!-- panel -->
-
-
-        <div class="panel">
-          <div class="panel-heading">
-            <h4 class="subhead uppercase">
-              <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#nav-1" href="#collapsenav3">
-                Learn more
-                <span class="accordion-icon"><img src="images/luc-edu-accordion-arrow.png"></span>
-              </a>
-            </h4>
-          </div><!-- panel-heading -->
-          <div id="collapsenav3" class="panel-collapse collapse">
-            <div class="panel-body">
-              <a><h6>Lorem ipsum here</h6></a>
-              <a><h6 class="rule-top">Link here </h6></a>
-              <a><h6 class="rule-top">Link here here</h6></a>
-            </div>
-          </div><!-- panel-collapse -->
-        </div><!-- panel -->
-
-
-  </div>
+</ul>
+</h4><h4 class="accordion"><a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=109960&amp;chid=8&amp;lang=en">Academics</a></h4><h4 class="accordion"><a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=109961&amp;chid=8&amp;lang=en">Faculty</a></h4><h4 class="accordion"><a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=109962&amp;chid=8&amp;lang=en">Student Life</a></h4></div>
 
 
 </div>
 </div>
-
-<script>
-$(function () {
-$('.carousel').carousel({
-interval: false
-});
-});
-
-$(".carousel").swipe({
-swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-if (direction == 'left') $(this).carousel('next');
-if (direction == 'right') $(this).carousel('prev');
-},
-allowPageScroll:"vertical"
-});
-
-$('.carousel-split').each(function() {
-var carouselSelect = $(this);
-var totalItems = carouselSelect.find('.item').length;
-var currentIndex = carouselSelect.find('div.active').index() + 1;
-$('.counter').html(''+currentIndex+'/'+totalItems+'');
-$('.carousel').on('slid.bs.carousel', function () {
-currentIndex = $('div.active').index() + 1;
-$('.counter').html(''+currentIndex+'/'+totalItems+'');
-});
-});
-
-</script>

@@ -50,7 +50,7 @@ p { float: left; }
 
 #global-header {
   padding: 10px 20px;
-  background: $white;
+  background: $maroon-dark;
 }
 
 #global-header a.navbar-brand {
@@ -85,10 +85,11 @@ p { float: left; }
   a, a.navbar-brand-mobile {
     margin: 0;
     padding: 0;
-    color: $gray-extra-dark;
+    color: $gray-extra-light;
+    transition: color .2s;
   }
   :hover {
-    color: $maroon;
+    color: $white;
   }
 }
 
@@ -201,8 +202,10 @@ p { float: left; }
   border-left: solid 1px $gray-dark;
   a {
     box-sizing: border-box;
-    padding: 18px 10px 12px;
+    padding: 16px 10px 14px;
     width: 100%;
+    font-family: 'Antenna Bold', sans-serif;
+    letter-spacing: .025em;
     text-align: center;
     text-transform: uppercase;
   }
@@ -231,9 +234,11 @@ p { float: left; }
   left: 0;
   right: 0;
   height: 20%;
+  font-family: 'Antenna', sans-serif;
   font-size: 1.65em;
   line-height: 0;
   text-align: center;
+  border: none;
   :hover {
     background: none;
   }
@@ -301,13 +306,19 @@ p { float: left; }
   box-shadow: none !important;
 }
 
+#luc-header li#luc-search span.glyphicon.glyphicon-search.search-icon {
+
+}
+
+/* dropdown menu */
+
 .dropdown-menu {
   position: absolute;
   top: 100%;
   left: 0;
   display: none;
   float: left;
-  min-width: 200px;
+  min-width: 250px;
   padding: 0;
   margin: 0;
   font-size: 1em;
@@ -357,6 +368,20 @@ p { float: left; }
   }
 }
 
+#luc-header li#luc-search a {
+  margin: auto auto;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#luc-header li#luc-search a img {
+  margin: 22%;
+  width: 55%;
+  height: 55%;
+  border: 0;
+}
+
 #luc-information > ul.dropdown-menu { left: initial; right: -52px; }
 
 #luc-search > ul.dropdown-menu { left: initial; right: 0; }
@@ -388,6 +413,8 @@ p { float: left; }
   font-size: 1em;
 }
 
+/* form */
+
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: darken($gray, 15%) !important;
     opacity: 1; /* Firefox */
@@ -408,7 +435,7 @@ p { float: left; }
 /* footer */
 
 #luc-footer {
-  position: fixed;
+  position: relative;
   display: block;
   bottom: 0;
   margin: 40px 0 0 0;
