@@ -102,72 +102,71 @@ h4.accordion-nested {
 }
 
 /* storyforms-accordion */
-/* faq */
+/* get started */
 
-#get-started { margin: 15px 0 0; }
-
-#get-started { padding: 16px 8px 12px; background-color: $maroon-extra-dark; }
-
-#get-started.panel{ border: 0 none !important; box-shadow: none; }
 
 #get-started.panel {
   float: left;
-  margin: 0;
-  border: 0;
   width: 100%;
-  border-top: 1px solid $gray-light;
-  border-bottom: 0 none !important;
-  border-radius: 0;
-  box-shadow: none;
 }
+#get-started #accordion h4 {
+    padding: 16px;
+    background-color: $maroon-extra-dark;
+    display: block;
+    width: auto;
+    box-shadow: none;
+    border-radius: 0 30px 30px 0;
+    margin: 0px !important;
+    font-size: 1em;
+  }
 
-#get-started h4.accordion { margin: 0 !important; font-size: .925em; }
+#get-started #accordion h4 span.subhead{
+    margin: 2px 15px 0 10px;
+    font-family: "Arnhem", serif;
+    font-style: italic;
+    font-size: 90%;
+    text-transform: none;
+    @include media-breakpoint-down(md){
+      display: none;
+    }
+  }
 
-#get-started h4.accordion { display: block; width: 98%; color: $white; font-family: "Antenna", sans-serif; letter-spacing: 0.025em; font-size: .825em;}
+#get-started h4.accordion { display: block; width: 98%; color: $white; font-family: "Antenna Bold", sans-serif; letter-spacing: 0.025em; font-size: .825em;}
 
 #get-started .panel {
   float: left;
   width: 100%;
   box-shadow: none;
-  color: $gray-light !important;
-}
-
-#main-content #get-started .panel-heading .accordion-toggle span.accordion-icon {
-  float: right;
-  display: block;
-  width: auto;
-  height: auto;
-  filter:invert(100%);
-}
-
-#main-content #get-started .panel-heading .accordion-toggle.collapsed span.accordion-icon img {
-  margin: 0;
-  padding: 0;
-  width: 12px;
-  height: 16px;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-  transition-duration: .25s;
+  border-radius: 0;
 }
 
 #get-started .accordion:after {
   float: right;
+  margin-top: -.35%;
   margin-left: 5px;
+  margin-right: 0%;
   content: '+';
   font-family: 'Antenna', sans-serif;
   font-size: 1.35em;
   color: $gray-light;
+
+}
+
+#get-started .panel p.body {
+  margin: 0 0 10px !important;
+  font-size: .975em;
+  line-height: 1.85;
+  padding: 0 !important;
 }
 
 #get-started .active:after {
   display: inline;
   content: "-";
+  margin-right: 0%;
+  margin-top: -.35%;
 }
 
-#get-started .panel:nth-last-child(1) {
+#get-started .panel {
   border-bottom: none;
 }
 
