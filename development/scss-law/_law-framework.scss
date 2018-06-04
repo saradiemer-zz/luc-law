@@ -23,6 +23,11 @@ p { float: left; width: 100%; }
 
 /* CSS BEGINS */
 
+#main-content, #main-wrapper {
+  margin-top: 50px !important;
+  margin-bottom: 10px !important;
+}
+
 #wrapper {
   position: absolute;
   left: 0;
