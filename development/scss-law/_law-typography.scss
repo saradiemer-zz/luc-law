@@ -49,6 +49,14 @@ h5#breadcrumbs.label {
   font-size: 80% !important;
 }
 
+h5#breadcrumbs.label a {
+  color: $gray-extra-dark;
+}
+
+h5#breadcrumbs.label a {
+  color: $gray;
+}
+
 h6.category.light {
   font-family: 'Antenna Light', serif !important;
 }
