@@ -1,6 +1,9 @@
 /* faq */
 
-#interior-nav { padding: 2px 8px 2px; background-color: $maroon-extra-dark; }
+
+#interior-nav { padding: 2px 8px 2px; background-color: $maroon-extra-dark; margin: 15px 0 0; }
+
+.SAC, .CHIL {display:none}
 
 #interior-nav a { display: block; width: 98%; color: $gray-extra-light; font-family: "Antenna", sans-serif; letter-spacing: 0.025em; font-size: .825em; }
 
