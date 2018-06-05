@@ -100,4 +100,98 @@ h4.accordion-nested {
   font-size: .975em;
   line-height: 1.85;
 }
+
+/* storyforms-accordion */
+
+/* faq styles */
+
+h4.accordion.faq {
+  font-family:"Myriad", sans-serif;
+  text-transform: none;
+  font-weight: 700;
+}
+
+/* faq styles END */
+
+/* get started */
+
+#get-started.panel {
+  float: left;
+  width: 100%;
+}
+
+#get-started #accordion h4 {
+    padding: 16px;
+    background-color: $maroon-extra-dark;
+    display: block;
+    width: auto;
+    box-shadow: none;
+    border-radius: 0 30px 30px 0;
+    margin: 0px !important;
+    font-size: 1em;
+  }
+
+#get-started #accordion h4 span.subhead {
+    margin: 2px 15px 0 10px;
+    font-family: "Arnhem Blond", serif;
+    font-style: italic;
+    font-size: 95%;
+    text-transform: none;
+    @include media-breakpoint-down(md){
+      display: none;
+    }
+  }
+
+#get-started h4.accordion {
+  display: block; width: 98%;
+  color: $white;
+  font-family: "Antenna Bold", sans-serif;
+  letter-spacing: 0.025em;
+  font-size: .825em;
+}
+
+#get-started .panel {
+  float: left;
+  width: 100%;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+#get-started .panel.show {
+  background-color: $gray-extra-light;
+  border-radius: 0 30px 0 0!important;
+  margin-top: 10px;
+  border-bottom: 20px solid white;
+  max-height: 10000px;
+}
+
+#get-started .accordion:after {
+  float: right;
+  margin-top: -.35%;
+  margin-left: 5px;
+  margin-right: 0%;
+  content: '+';
+  font-family: 'Antenna', sans-serif;
+  font-size: 1.35em;
+  color: $gray-light;
+}
+
+#get-started .panel p.body {
+  margin: 0 0 10px !important;
+  font-size: .975em;
+  line-height: 1.85;
+  padding: 0 !important;
+}
+
+#get-started .active:after {
+  display: inline;
+  content: "-";
+  margin-right: 0%;
+  margin-top: -.35%;
+}
+
+#get-started .panel {
+  border-bottom: none;
+}
+
 /* END - CSS */

@@ -11,7 +11,7 @@ h4.subhead {
 }
 
 h1.display {
-font-size: 4em;
+font-size: 4.5em;
 line-height: 1.1;
 }
 
@@ -25,23 +25,52 @@ h1.number {
   letter-spacing: -0.015em;
 }
 
-h2.secondary-explainer {
-  font-family: 'Antenna Bold', sans-serif !important;
+h2 {
+  font-family: "Antenna Bold", sans-serif;
   text-transform: uppercase;
-  font-size: 1.4em;
+  font-size: 1.5em;
+}
+
+h2.secondary-explainer {
+  font-family: 'Arnhem Blond', serif !important;
+  font-style: italic;
+  font-size: 1.7em;
+  text-transform: none;
 }
 
 h3.standalone {
   font-size: 1.3em;
 }
 
-h4.module { font-size: 1.35em; line-height: 1.35; font-family: 'Arnhem Blond', 'Georgia', serif !important; margin-top:0px; }
+h4.module {
+  font-size: 1.35em;
+  line-height: 1.35;
+  font-family: 'Arnhem Blond', 'Georgia', serif !important;
+  margin-top:0px;
+}
 
-h5.subhead { font-size: .95em; font-family: "Antenna Bold", sans-serif; }
+h5.subhead {
+  font-size: .95em;
+  font-family: "Antenna Bold", sans-serif;
+}
 
 h5.light {
   font-family: 'Antenna Light', serif !important;
   opacity: 1 !important;
+}
+
+h5#breadcrumbs.label {
+  font-family: 'Antenna Light', serif !important;
+  font-size: 80% !important;
+  margin-top: 30px;
+}
+
+h5#breadcrumbs.label a {
+  color: $gray-extra-dark;
+}
+
+h5#breadcrumbs.label a {
+  color: $gray;
 }
 
 h6.category.light {
@@ -69,6 +98,11 @@ p.number{
 p.name {
   font-family: 'Arnhem Bold', 'Georgia', serif !important;
   font-size: 1.1em;
+}
+
+p span.lead-in {
+  font-family: "Antenna Bold", sans-serif;
+  font-size: 90%;
 }
 
 blockquote.small {
@@ -102,7 +136,9 @@ a.cta:hover {
 }
 
 ul {
-  margin-bottom: 30px;
+  width: 100%;
+  margin: 0px 0 20px 30px;
+  float: left;
 }
 
 li span.antenna {
@@ -140,7 +176,6 @@ button.btn, button.btn.cta {
 
 button.btn:hover, button.btn.cta:hover {
   background-color: $maroon-extra-dark;
-
 }
 
 .lede-content {

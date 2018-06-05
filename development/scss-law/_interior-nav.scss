@@ -1,68 +1,48 @@
 /* faq */
 
-#interior-nav { margin: 15px 0 0; }
 
-#interior-nav { padding: 16px 8px 12px; background-color: $maroon-extra-dark; }
+#interior-nav { padding: 2px 8px 2px; background-color: $maroon-extra-dark; margin: 15px 0 0; }
 
-#interior-nav.panel{ border: 0 none !important; box-shadow: none; }
+.SAC, .CHIL {display:none}
 
-#interior-nav.panel {
-  float: left;
-  margin: 0;
-  border: 0;
-  width: 100%;
-  border-top: 1px solid $gray-light;
-  border-bottom: 0 none !important;
-  border-radius: 0;
-  box-shadow: none;
+#interior-nav a { display: block; width: 98%; color: $gray-extra-light; font-family: "Antenna", sans-serif; letter-spacing: 0.025em; font-size: .825em; }
+
+#interior-nav a:hover {
+  color:white;
 }
 
-#interior-nav h4.accordion { margin: 0 !important; font-size: .925em; }
-
-#interior-nav h4.accordion { display: block; width: 98%; color: $white; font-family: "Antenna", sans-serif; letter-spacing: 0.025em; font-size: .825em;}
-
-#interior-nav .panel {
-  float: left;
-  width: 100%;
-  box-shadow: none;
-  color: $gray-light !important;
+#interior-nav .x {
+  border-bottom: 1px $gray-extra-light solid;
 }
 
-#main-content #interior-nav .panel-heading .accordion-toggle span.accordion-icon {
+#interior-nav .x.after .accordion:after {
   float: right;
-  display: block;
-  width: auto;
-  height: auto;
-  filter:invert(100%);
-}
-
-#main-content #interior-nav .panel-heading .accordion-toggle.collapsed span.accordion-icon img {
-  margin: 0;
-  padding: 0;
-  width: 12px;
-  height: 16px;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-  transition-duration: .25s;
-}
-
-#interior-nav .accordion:after {
-  float: right;
-  margin-left: 5px;
+  margin-right: -5%;
   content: '+';
   font-family: 'Antenna', sans-serif;
   font-size: 1.35em;
-  color: $gray-light;
+  color: #e1e1e1;
+  margin-top: -10%;
 }
 
-#interior-nav .active:after {
-  display: inline;
-  content: "-";
-}
-
-#interior-nav .panel:nth-last-child(1) {
+#interior-nav .panel {
   border-bottom: none;
+}
+
+#interior-nav  .x.after .active:after {
+  display: inline;
+  content: "-"; }
+
+#interior-nav .x:nth-last-child(1) {
+  border-bottom: none;
+}
+
+.multilevel-linkdiv-0 {
+  max-height: 0;
+  margin: 0;
+}
+
+#interior-nav .panel.show a {
+  margin-bottom: 10px;
+  margin-left: 10px;
 }
