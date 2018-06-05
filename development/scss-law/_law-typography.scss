@@ -35,6 +35,7 @@ h2.secondary-explainer {
   font-family: 'Arnhem Blond', serif !important;
   font-style: italic;
   font-size: 1.7em;
+  text-transform: none;
 }
 
 h3.standalone {
@@ -124,6 +125,7 @@ a.cta:hover {
 ul {
   width:100%;
   margin: 0px 0 20px 30px;
+  float:left;
 }
 
 li span.antenna {

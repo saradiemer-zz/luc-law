@@ -122,9 +122,9 @@ h4.accordion-nested {
 
 #get-started #accordion h4 span.subhead{
     margin: 2px 15px 0 10px;
-    font-family: "Arnhem", serif;
+    font-family: "Arnhem Blond", serif;
     font-style: italic;
-    font-size: 90%;
+    font-size: 95%;
     text-transform: none;
     @include media-breakpoint-down(md){
       display: none;
@@ -138,6 +138,13 @@ h4.accordion-nested {
   width: 100%;
   box-shadow: none;
   border-radius: 0;
+}
+
+#get-started .panel.show {
+  background-color: $gray-extra-light;
+  border-radius: 0 30px 0 0!important;
+  margin-top: 10px;
+  border-bottom: 20px solid white;
 }
 
 #get-started .accordion:after {
