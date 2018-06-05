@@ -115,7 +115,6 @@ h4.accordion.faq {
 
 /* get started */
 
-
 #get-started.panel {
   float: left;
   width: 100%;
@@ -163,6 +162,7 @@ h4.accordion.faq {
   border-radius: 0 30px 0 0!important;
   margin-top: 10px;
   border-bottom: 20px solid white;
+  max-height: 10000px;
 }
 
 #get-started .accordion:after {
