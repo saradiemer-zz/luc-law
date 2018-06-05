@@ -16,7 +16,7 @@ h4.accordion {
   color: $gray-extra-dark;
 }
 
-#accordion .accordion:after {
+#main-content .accordion:after {
   float: right;
   margin-left: 5px;
   margin-right: -8%;
@@ -26,7 +26,7 @@ h4.accordion {
   color: $gray-extra-dark;
 }
 
-#accordion .active:after {
+#main-content .active:after {
   display: inline;
   margin-right: -8%;
   content: "-";
