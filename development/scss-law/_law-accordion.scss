@@ -111,6 +111,8 @@ h4.accordion.faq {
   font-weight: 700;
 }
 
+/* faq styles END */
+
 /* get started */
 
 
@@ -118,6 +120,7 @@ h4.accordion.faq {
   float: left;
   width: 100%;
 }
+
 #get-started #accordion h4 {
     padding: 16px;
     background-color: $maroon-extra-dark;
@@ -129,7 +132,7 @@ h4.accordion.faq {
     font-size: 1em;
   }
 
-#get-started #accordion h4 span.subhead{
+#get-started #accordion h4 span.subhead {
     margin: 2px 15px 0 10px;
     font-family: "Arnhem Blond", serif;
     font-style: italic;
@@ -140,7 +143,13 @@ h4.accordion.faq {
     }
   }
 
-#get-started h4.accordion { display: block; width: 98%; color: $white; font-family: "Antenna Bold", sans-serif; letter-spacing: 0.025em; font-size: .825em;}
+#get-started h4.accordion {
+  display: block; width: 98%;
+  color: $white;
+  font-family: "Antenna Bold", sans-serif;
+  letter-spacing: 0.025em;
+  font-size: .825em;
+}
 
 #get-started .panel {
   float: left;
@@ -165,7 +174,6 @@ h4.accordion.faq {
   font-family: 'Antenna', sans-serif;
   font-size: 1.35em;
   color: $gray-light;
-
 }
 
 #get-started .panel p.body {
