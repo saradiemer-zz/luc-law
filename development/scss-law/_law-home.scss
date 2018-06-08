@@ -2,14 +2,22 @@
 
 #home-carousel-content-cta {
   position: absolute;
-  bottom: 150px;
+  bottom: 0;
   z-index: +5;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
+  height: 150px;
+  background: linear-gradient(to bottom, rgba(89,89,89,0), rgba(89,89,89,1));
 }
+
+#home-carousel-content-cta.container {
+  width: 100%;
+  max-width: 100%;
+}
+
 
 #story-refer-panel .refer-image {
   width: 75%;
@@ -23,8 +31,12 @@ h1.home-lede {
   letter-spacing: -.015em;
 }
 
+p.body.home-lede {
+  text-align: center;
+  color: $gray-extra-light;
+}
+
 p.body.home-lede a {
-  float: left;
   margin: 12px 0 0;
   color: $maroon-extra-dark;
 }
@@ -33,6 +45,7 @@ h2.home-department {
   font-family: 'Arnhem Bold', 'Georgia', serif !important;
   font-size: 2.25em;
   letter-spacing: -.015em;
+  text-transform: none;
   &:after {
     content:'…';
   }
@@ -72,6 +85,13 @@ h4.module {
   &:hover {
     background-color: lighten($bg-overlay, 65%) !important;
   }
+}
+
+.center {
+margin-left: auto !important;
+margin-right: auto !important;
+text-align: center;
+align-items: center;
 }
 
 /* CSS - END */
