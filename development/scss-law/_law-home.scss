@@ -18,7 +18,6 @@
   max-width: 100%;
 }
 
-
 #story-refer-panel .refer-image {
   width: 75%;
 }
@@ -104,6 +103,7 @@ h4.module {
   width: 100%;
   margin: 0;
   padding: 10px;
+  border-top: 5px darken($gold-dark, 3%) solid;
 }
 
 #help .dropdown-toggle::after {

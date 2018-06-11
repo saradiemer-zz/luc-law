@@ -164,6 +164,10 @@ li span.antenna {
   border-top: 1px solid $white;
 }
 
+.gold-dark {
+  color: $gold-extra-dark !important;
+}
+
 button.btn, button.btn.cta {
   border: 1px solid $maroon-dark;
   background-color: white;
@@ -176,6 +180,11 @@ button.btn, button.btn.cta {
 
 button.btn:hover, button.btn.cta:hover {
   background-color: $maroon-extra-dark;
+}
+
+p a.cta {
+    background: none;
+    color: #981e4d !important;
 }
 
 .lede-content {
