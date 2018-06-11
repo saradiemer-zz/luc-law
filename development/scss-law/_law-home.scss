@@ -88,10 +88,66 @@ h4.module {
 }
 
 .center {
-margin-left: auto !important;
-margin-right: auto !important;
-text-align: center;
-align-items: center;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center;
+  align-items: center;
 }
+
+#help button.btn.btn-secondary {
+  background-color: $gray-extra-light;
+  border: none;
+  border-radius: 0;
+  color: $bg-overlay-extra-dark;
+  font-family: "Antenna Bold", sans-serif;
+  font-size: .8em;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+}
+
+#help .dropdown-toggle::after {
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: .5em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .4em solid;
+    border-right: .4em solid transparent;
+    border-bottom: 0;
+    border-left: .4em solid transparent;
+    bottom: 0;
+}
+
+#help .dropdown-menu {
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    text-align: left;
+    list-style: none;
+    background-color: $gray-extra-light;
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    z-index: 1000;
+}
+
+#help a.dropdown-item {
+  color: $gray-extra-dark;
+  border-top: 1px white solid;
+  width: 100%;
+  display: block;
+  padding: 10px;
+}
+
+
 
 /* CSS - END */
