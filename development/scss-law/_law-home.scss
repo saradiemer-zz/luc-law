@@ -93,6 +93,34 @@ h4.module {
   align-items: center;
 }
 
+h4.rail-module {
+  font-family: 'Arnhem Bold', 'Georgia', serif !important;
+  font-size: 1.5em;
+  letter-spacing: -.015em;
+  margin-bottom: 10px;
+}
+
+h4.media-heading {
+  font-family: 'Antenna', sans-serif !important;
+  font-size: .9em;
+  color: $gray-extra-dark;
+}
+
+h4.story-heading {
+  font-family: "Arnhem Bold", "Georgia", serif;
+  color: $gray-extra-dark;
+  margin-top: 5px;
+}
+
+h4.story-heading:hover {
+  color: $gray-dark;
+}
+
+#rail-modules  {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 #help button.btn.btn-secondary {
   background-color: $gray-extra-light;
   border: none;
@@ -148,6 +176,44 @@ h4.module {
   padding: 10px;
 }
 
+/* calendar */
+
+span.event-day p, div.event-date p {
+    display: block;
+    margin: 0;
+    padding: 8px 2% 6px;
+    width: 96%;
+    min-width: 96%;
+    font-family: 'Antenna Bold' !important;
+    font-weight: normal;
+    font-style: normal;
+    font-size: .75em;
+    line-height: 1;
+    letter-spacing: .015em;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    border-radius: 0;
+    background: $maroon-extra-dark;
+    font-size: 70%;
+}
+
+div.event-date p {
+    font-family: 'Antenna' !important;
+    font-weight: normal;
+    font-style: normal;
+    color: $gray-dark;
+    background: $gray-extra-light;
+    font-size: 70%;
+}
+
+.media-container { color: $gray-dark; }
+
+/* story module */
+
+#story-module .rule-bottom {
+  padding-bottom: 15px;
+}
 
 
 /* CSS - END */
