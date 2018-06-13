@@ -42,9 +42,17 @@ h3.standalone {
   font-size: 1.3em;
 }
 
-h4.module { font-size: 1.35em; line-height: 1.35; font-family: 'Arnhem Blond', 'Georgia', serif !important; margin-top:0px; }
+h4.module {
+  font-size: 1.35em;
+  line-height: 1.35;
+  font-family: 'Arnhem Blond', 'Georgia', serif !important;
+  margin-top:0px;
+}
 
-h5.subhead { font-size: .95em; font-family: "Antenna Bold", sans-serif; }
+h5.subhead {
+  font-size: .95em;
+  font-family: "Antenna Bold", sans-serif;
+}
 
 h5.light {
   font-family: 'Antenna Light', serif !important;
@@ -92,6 +100,11 @@ p.name {
   font-size: 1.1em;
 }
 
+p span.lead-in {
+  font-family: "Antenna Bold", sans-serif;
+  text-transform: uppercase;
+}
+
 blockquote.small {
   font-family: "Myriad Pro", sans-serif;
   font-weight: normal;
@@ -123,9 +136,9 @@ a.cta:hover {
 }
 
 ul {
-  width:100%;
+  width: 100%;
   margin: 0px 0 20px 30px;
-  float:left;
+  float: left;
 }
 
 li span.antenna {
@@ -151,6 +164,10 @@ li span.antenna {
   border-top: 1px solid $white;
 }
 
+.gold-dark {
+  color: $gold-extra-dark !important;
+}
+
 button.btn, button.btn.cta {
   border: 1px solid $maroon-dark;
   background-color: white;
@@ -159,11 +176,16 @@ button.btn, button.btn.cta {
   border-radius: 40px;
   font-family: "Antenna", sans-serif;
   text-transform: uppercase;
+  font-size: .8em;
 }
 
 button.btn:hover, button.btn.cta:hover {
   background-color: $maroon-extra-dark;
+}
 
+p a.cta {
+    background: none;
+    color: #981e4d !important;
 }
 
 .lede-content {
