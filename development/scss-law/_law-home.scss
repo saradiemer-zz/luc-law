@@ -220,4 +220,39 @@ div.event-date p {
 #story-module .rule-bottom {
   padding-bottom: 15px;
 }
+
+#luc-get-started {
+  background-color: $maroon-extra-dark;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+}
+
+#luc-get-started.nav a:visited, #luc-get-started.nav a:hover, #luc-get-started.nav a:focus {
+  background-color: transparent !important;
+  color: $gray-extra-light;
+}
+
+#luc-get-started  li a {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Antenna Bold";
+  text-transform: uppercase;
+  font-size: .8em;
+  letter-spacing: 0.05em;
+}
+
+#luc-get-started {
+    width: 100%;
+    text-align: center;
+    > li {
+      float: none;
+      display: inline-block;
+    }
+}
+
+#luc-get-started .navbar .navbar-nav {
+  text-align: center;
+}
+
 /* CSS - END */
