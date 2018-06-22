@@ -222,15 +222,20 @@ div.event-date p {
 }
 
 #luc-get-started {
-  background-color: $maroon-extra-dark;
   margin-left: auto;
   margin-right: auto;
   float: none;
+  border-bottom: 2px $gray-light solid;
 }
 
-#luc-get-started.nav a:visited, #luc-get-started.nav a:hover, #luc-get-started.nav a:focus {
+#luc-get-started.nav a:visited,  #luc-get-started.nav a:focus {
   background-color: transparent !important;
-  color: $gray-extra-light;
+  color: $gray-extra-dark;
+}
+
+#luc-get-started.nav a:hover {
+  color: $gray-dark;
+  background-color: transparent !important;
 }
 
 #luc-get-started  li a {
@@ -240,6 +245,7 @@ div.event-date p {
   text-transform: uppercase;
   font-size: .8em;
   letter-spacing: 0.05em;
+  color: $gray-extra-dark;
 }
 
 #luc-get-started {
