@@ -1,5 +1,4 @@
 /* body */
-
 #home-carousel-content-cta {
   position: absolute;
   bottom: 0;
@@ -49,8 +48,9 @@ h2.home-department {
   font-size: 2.25em;
   letter-spacing: -.015em;
   text-transform: none;
+
   &:after {
-    content:'…';
+    content: '…';
   }
 }
 
@@ -73,18 +73,20 @@ h4.module {
   font-size: 1.5em;
   letter-spacing: -.015em;
 }
+
 #content-wrapper button.btn.module,
 #content-wrapper button.btn.module.cta {
-  margin: 5px 0 0 0;
+  margin: 5px 0 0;
   padding: 7px 12px 5px;
   font-family: "Antenna", sans-serif;
-  font-size: .65em;
+  font-size: 0.65em;
   color: #981e4d;
   text-transform: uppercase;
   border: 1px solid #981e4d;
   border-radius: 40px;
   background-color: lighten($bg-overlay, 80%) !important;
-  transition: background-color .2s;
+  transition: background-color 0.2s;
+
   &:hover {
     background-color: lighten($bg-overlay, 65%) !important;
   }
@@ -106,7 +108,7 @@ h4.rail-module {
 
 h4.media-heading {
   font-family: 'Antenna', sans-serif !important;
-  font-size: .9em;
+  font-size: 0.9em;
   color: $gray-extra-dark;
 }
 
@@ -120,7 +122,7 @@ h4.story-heading:hover {
   color: $gray-dark;
 }
 
-#rail-modules  {
+#rail-modules {
   display: flex;
   flex-wrap: wrap;
 }
@@ -131,7 +133,7 @@ h4.story-heading:hover {
   border-radius: 0;
   color: $bg-overlay-extra-dark;
   font-family: "Antenna Bold", sans-serif;
-  font-size: .8em;
+  font-size: 0.8em;
   width: 100%;
   margin: 0;
   padding: 10px;
@@ -139,37 +141,37 @@ h4.story-heading:hover {
 }
 
 #help .dropdown-toggle::after {
-    display: block;
-    width: 0;
-    height: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: .5em;
-    vertical-align: .255em;
-    content: "";
-    border-top: .4em solid;
-    border-right: .4em solid transparent;
-    border-bottom: 0;
-    border-left: .4em solid transparent;
-    bottom: 0;
+  display: block;
+  width: 0;
+  height: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.4em solid;
+  border-right: 0.4em solid transparent;
+  border-bottom: 0;
+  border-left: 0.4em solid transparent;
+  bottom: 0;
 }
 
 #help .dropdown-menu {
-    top: 100%;
-    left: 0;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    font-size: 1em;
-    text-align: left;
-    list-style: none;
-    background-color: $gray-extra-light;
-    border: none;
-    border-radius: 0px;
-    box-shadow: none;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    z-index: 1000;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
+  text-align: left;
+  list-style: none;
+  background-color: $gray-extra-light;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  z-index: 1000;
 }
 
 #help a.dropdown-item {
@@ -181,43 +183,41 @@ h4.story-heading:hover {
 }
 
 /* calendar */
-
-span.event-day p, div.event-date p {
-    display: block;
-    margin: 0;
-    padding: 8px 2% 6px;
-    width: 96%;
-    min-width: 96%;
-    font-family: 'Antenna Bold' !important;
-    font-weight: normal;
-    font-style: normal;
-    font-size: .75em;
-    line-height: 1;
-    letter-spacing: .015em;
-    text-transform: uppercase;
-    text-align: center;
-    color: white;
-    border-radius: 0;
-    background: $maroon-extra-dark;
-    font-size: 70%;
+div.event-date p,
+span.event-day p {
+  display: block;
+  margin: 0;
+  padding: 8px 2% 6px;
+  width: 96%;
+  min-width: 96%;
+  font-family: 'Antenna Bold' !important;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 0.75em;
+  line-height: 1;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  border-radius: 0;
+  background: $maroon-extra-dark;
+  font-size: 70%;
 }
 
 div.event-date p {
-    font-family: 'Antenna' !important;
-    font-weight: normal;
-    font-style: normal;
-    color: $gray-dark;
-    background: $gray-extra-light;
-    font-size: 70%;
+  font-family: 'Antenna' !important;
+  font-weight: normal;
+  font-style: normal;
+  color: $gray-dark;
+  background: $gray-extra-light;
+  font-size: 70%;
 }
 
-.media-container { color: $gray-dark; }
-
+.media-container {
+  color: $gray-dark;
+}
 /* story module */
-
 #story-module .rule-bottom {
   padding-bottom: 15px;
 }
-
-
 /* CSS - END */
