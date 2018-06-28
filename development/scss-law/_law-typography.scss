@@ -110,6 +110,16 @@ p span.lead-in {
   text-transform: uppercase;
 }
 
+blockquote.outcomes {
+  font-size: 1.65em;
+}
+
+cite.outcomes {
+  font-family: "Antenna Light", sans-serif;
+  text-transform: uppercase;
+  font-size: 90%;
+}
+
 blockquote.small {
   font-family: "Myriad Pro", sans-serif;
   font-weight: normal;
@@ -219,4 +229,11 @@ td {
 .story-content-padding {
   padding-left: 0 !important;
   padding-right: 0 !important;
+}
+
+.large-quote {
+  font-size: 10em;
+  font-family: "Arnhem Black", "Georgia", serif;
+  margin-bottom: -18%;
+  margin-top: -5%;
 }
