@@ -19,10 +19,15 @@
   padding: 10px 14px;
   font-size: 20px;
   color: white;
+  border: none;
+  border-top: solid 1px $gray-extra-light;
   transition: all 0.3s ease;
+  &:first-of-type {
+    border-top: none;
+  }
 }
 
-#social-icon-bar a:hover { background-color: $maroon-dark; }
+#social-icon-bar a:hover { background-color: darken($maroon-dark,5%); }
 
 /* social icons - color */
 

@@ -201,7 +201,12 @@ p { float: left; width: 100%; }
 
 /* header navigation - first-level - cta */
 
-#luc-cta { float: right; }
+#luc-cta {
+  float: right;
+  ul {
+    margin: 0;
+  }
+}
 
 #luc-cta li {
   float: left;
@@ -226,8 +231,6 @@ p { float: left; width: 100%; }
   padding: 0;
   width: 50%;
   height: 50%;
-  border: solid 1.5px white;
-  border-radius: 50%;
   text-align: left;
   text-transform: none;
   &:hover {
@@ -235,15 +238,22 @@ p { float: left; width: 100%; }
   }
 }
 
-#luc-header li span.information-ellipse {
+#luc-cta li#luc-information a,
+#luc-header li span.information-icon {
+  border: none;
+  border-radius: 50%;
+  background: lighten($gray-extra-dark, 20%);
+}
+
+#luc-header li span.information-icon {
   position: absolute;
-  top: 25%;
+  top: 60%;
   bottom: 25%;
   left: 0;
   right: 0;
   height: 20%;
-  font-family: 'Antenna', sans-serif;
-  font-size: 1.65em;
+  font-family: 'Arnhem Blond Italic', 'Georgia', serif !important;
+  font-size: 1.25em;
   line-height: 0;
   text-align: center;
   border: none;
@@ -255,6 +265,7 @@ p { float: left; width: 100%; }
 /* header navigation - first-level - cta > search */
 
 #luc-search.dropdown.open ul#drop {
+  margin-bottom: 0;
   height: 100vh;
   background: darken($bg-overlay-extra-dark, 10%);
   z-index: 10000;
@@ -262,10 +273,10 @@ p { float: left; width: 100%; }
 
 #luc-cta li#luc-search a {
   margin: 0;
-  padding: 12px 0 0 0;
+  padding: 0 0 0 0;
   width: 100%;
   height: 100%;
-  font-size: 2em;
+  font-size: 1em;
   -webkit-text-stroke: 2px lighten($bg-overlay, 48%);
   line-height: 0;
   color: $white;
