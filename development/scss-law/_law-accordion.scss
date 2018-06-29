@@ -41,7 +41,7 @@ h4.accordion {
 
 .panel.show {
    opacity: 1;
-   max-height: 500px;
+   max-height: 100000px;
 }
 
 .panel p.body {
@@ -91,7 +91,6 @@ h4.accordion-nested {
 
 .panel-nested.show {
    opacity: 1;
-   max-height: 500px;
 }
 
 .panel-nested p.body {
@@ -194,4 +193,64 @@ h4.accordion.faq {
   border-bottom: none;
 }
 
+/* module */
+
+#rail h4 {
+  color: $gray-extra-light;
+}
+
+#rail {
+  padding: 2px 16px 4px;
+  background-color: $maroon-extra-dark;
+}
+
+#rail a {
+  display: block;
+  width: 98%;
+  color: $gray-extra-light;
+  font-family: "Antenna", sans-serif;
+  letter-spacing: 0.025em;
+  font-size: .825em;
+}
+
+#rail a:hover {
+  color:$gray-extra-light;
+}
+
+#rail .x {
+  border-bottom: 1px $gray-extra-light solid;
+}
+
+#rail .x.after .accordion:after {
+  float: right;
+  margin-right: -5%;
+  content: '+';
+  font-family: 'Antenna', sans-serif;
+  font-size: 1.35em;
+  color: $gray-extra-light;
+  margin-top: -7%;
+}
+
+#rail .panel {
+  border-bottom: none;
+  background-color: $maroon-extra-dark;
+}
+
+#rail .x.after .active:after {
+  display: inline;
+  content: "-"; }
+
+#rail .x:nth-last-child(1) {
+  border-bottom: none;
+}
+
+.multilevel-linkdiv-0 {
+  max-height: 0;
+  margin: 0;
+}
+
+#rail .panel.show a {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
 /* END - CSS */
