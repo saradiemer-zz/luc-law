@@ -222,8 +222,12 @@ p { float: left; width: 100%; }
 }
 
 #navbar-header > button {
-  background: $bg-overlay-dark;
+  background: lighten($gray-extra-dark, 20%);
   border: none;
+  transition: background-color .2s;
+  &:hover {
+    background: lighten($gray-extra-dark, 15%);
+  }
 }
 
 #luc-header .nav.navbar-nav {
