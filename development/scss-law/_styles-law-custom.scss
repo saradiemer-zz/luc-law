@@ -1,1 +1,53 @@
-h1 { color: red; }
+/* law typography adjustments */
+
+.spacer-section hr {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+}
+
+h5#breadcrumbs.label {
+	margin: 0 0 20px 0;;
+	width: 100%;
+  font-size: .65em;
+	font-family: 'Antenna Light', serif !important;
+  letter-spacing: .0175em;
+	color: $maroon;
+}
+
+h5#breadcrumbs.label a { color: $gray; }
+
+/* GENERAL adjustments */
+
+p { float: none; }
+
+h1, h2, h3, h4, h5, h6 { width: 100%; }
+
+h1.display, h1.primary-alternate {
+  letter-spacing: -.015em;
+  font-family: 'Arnhem Blond', serif !important;
+  font-size: 2em;
+  text-transform: none;
+}
+
+h2.secondary, h2.secondary-alternate {
+  letter-spacing: -.015em;
+  font-family: 'Arnhem Blond', serif !important;
+  font-size: 2em;
+  text-transform: none;
+}
+
+/* !!! #law-interior h2.label-chapter-secondary.black will change to h3.standalone */
+
+h3.standalone, h3.standalone-alternate {
+  letter-spacing: -.015em;
+  font-family: 'Arnhem Blond', serif !important;
+  font-style: italic;
+  font-size: 2em;
+  text-transform: none;
+}
+
+h4.subhead {
+
+}
