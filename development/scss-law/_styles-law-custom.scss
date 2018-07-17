@@ -49,6 +49,8 @@ h3.standalone, h3.standalone-alternate {
   font-family: 'Arnhem Blond', serif !important;
   font-style: italic;
   font-size: 2em;
+  letter-spacing: -.015em;
+  word-spacing: .1em;
   text-transform: none;
 }
 
@@ -157,10 +159,23 @@ p.caption { font-size: 1em; }
   text-align: left;
 }
 
+.body-group p.body.bold {
+  margin: 0 0 10px;
+  font-size: 1.15em;
+}
+
+.body-group p.body.alternate {
+  margin: 0 0 35px;
+}
+
 /* blockquote and cite */
 
-blockquote {
+blockquote, blockquote p {
+  font-size: 1.3em;
+  font-family: 'Arnhem Black', 'Georgia', serif !important;
   font-style: italic;
+  letter-spacing: -.015em;
+  word-spacing: .125em;
 }
 
 /* buttons */
@@ -168,6 +183,57 @@ blockquote {
 button.btn, button.btn.cta, .btn.cta {
   border-radius: 4px;
   background: lighten($maroon, 80%);
+}
+
+/* rightColumn */
+
+#rightColumn .rule-top {
+  margin-top: 20px !important;
+  padding-top: 20px !important;
+}
+
+#rightColumn h5.label {
+  font-size: .825em;
+  line-height: 1.5;
+}
+
+#rightColumn p.body {
+  font-size: .925em;
+  line-height: 1.5;
+}
+
+#rightColumn p.body.explainer {
+  margin: 0 0 5px 0;
+  font-size: .925em;
+  line-height: 1.5;
+}
+
+#rightColumn blockquote, #rightColumn blockquote p {
+  margin: 0 !important;
+  font-family: 'Arnhem Bold', 'Georgia', serif !important;
+  font-size: 1.125em;
+  font-style: italic;
+  line-height: 1.5;
+  letter-spacing: -.015em;
+  word-spacing: .05em;
+}
+
+#rightColumn blockquote cite {
+  font-size: .65em;
+  line-height: 1.25;
+}
+
+#rightColumn .number {
+  margin: 0 0 5px;
+  font-size: 3.75em;
+}
+
+#rightColumn .leadin {
+  font-size: 80%;
+}
+
+#rightColumn p.caption {
+  font-size: .925em;
 }
 
 /* END CSS */
