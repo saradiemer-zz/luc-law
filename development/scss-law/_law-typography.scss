@@ -1,6 +1,11 @@
-body { background: $white !important; background-image: none !important; }
+body {
+  background: $white !important;
+  background-image: none !important;
+}
 
-a { cursor:pointer; }
+a {
+  cursor: pointer;
+}
 
 h1,
 h1.primary,
@@ -11,8 +16,8 @@ h4.subhead {
 }
 
 h1.display {
-font-size: 4.5em;
-line-height: 1.1;
+  font-size: 4.5em;
+  line-height: 1.1;
 }
 
 h1.number {
@@ -46,11 +51,11 @@ h4.module {
   font-size: 1.35em;
   line-height: 1.35;
   font-family: 'Arnhem Blond', 'Georgia', serif !important;
-  margin-top:0px;
+  margin-top: 0;
 }
 
 h5.subhead {
-  font-size: .95em;
+  font-size: 0.95em;
   font-family: "Antenna Bold", sans-serif;
 }
 
@@ -83,15 +88,15 @@ h6.faq {
   font-size: 100%;
 }
 
-p.faq a  {
-  color:#272727 !important;
+p.faq a {
+  color: #272727 !important;
 }
 
-p.faq  {
+p.faq {
   margin: 0 !important;
 }
 
-p.number{
+p.number {
   font-family: "Antenna Light", sans-serif;
 }
 
@@ -105,17 +110,29 @@ p span.lead-in {
   text-transform: uppercase;
 }
 
+blockquote.outcomes {
+  font-size: 1.65em;
+}
+
+cite.outcomes {
+  font-family: "Antenna Light", sans-serif;
+  text-transform: uppercase;
+  font-size: 90%;
+}
+
 blockquote.small {
   font-family: "Myriad Pro", sans-serif;
   font-weight: normal;
   margin: 0 !important;
 }
 
-blockquote p, blockquote {
+blockquote,
+blockquote p {
   font-family: 'Arnhem Bold', 'Georgia', serif !important;
 }
 
-blockquote p.light, blockquote {
+blockquote,
+blockquote p.light {
   font-family: 'Arnhem', 'Georgia', serif !important;
 }
 
@@ -126,7 +143,7 @@ a.cta {
 }
 
 a.cta.small {
-  font-size: .725em !important;
+  font-size: 0.725em !important;
 }
 
 a.cta:hover {
@@ -137,7 +154,7 @@ a.cta:hover {
 
 ul {
   width: 100%;
-  margin: 0px 0 20px 30px;
+  margin: 0 0 20px 30px;
   float: left;
 }
 
@@ -146,7 +163,10 @@ li span.antenna {
   text-transform: uppercase;
 }
 
-.footnote { margin-top: 20px; border-top: 1px solid #e1e1e1;}
+.footnote {
+  margin-top: 20px;
+  border-top: 1px solid #e1e1e1;
+}
 
 .alternate {
   font-family: 'Arnhem', 'Georgia', serif !important;
@@ -168,7 +188,8 @@ li span.antenna {
   color: $gold-extra-dark !important;
 }
 
-button.btn, button.btn.cta {
+button.btn,
+button.btn.cta {
   border: 1px solid $maroon-dark;
   background-color: white;
   color: $maroon-dark;
@@ -176,16 +197,17 @@ button.btn, button.btn.cta {
   border-radius: 40px;
   font-family: "Antenna", sans-serif;
   text-transform: uppercase;
-  font-size: .8em;
+  font-size: 0.8em;
 }
 
-button.btn:hover, button.btn.cta:hover {
+button.btn.cta:hover,
+button.btn:hover {
   background-color: $maroon-extra-dark;
 }
 
 p a.cta {
-    background: none;
-    color: #981e4d !important;
+  background: none;
+  color: #981e4d !important;
 }
 
 .lede-content {
@@ -207,4 +229,11 @@ td {
 .story-content-padding {
   padding-left: 0 !important;
   padding-right: 0 !important;
+}
+
+.large-quote {
+  font-size: 10em;
+  font-family: "Arnhem Black", "Georgia", serif;
+  margin-bottom: -18%;
+  margin-top: -5%;
 }

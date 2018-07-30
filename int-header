@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="Copyright" content="Copyright (c) Loyola University Chicago">
+<meta name="Template" content="Primary Interior">
+<meta name="PageID" content="<t4 type="navigation" id="462"/>" />
+<title><t4 type="navigation" id="630"/><t4 type="title" append-content="true" append-element="Title" separator=": " />: <t4 type="navigation" id="77"/>: Loyola University Chicago</title>
+<meta name="description" content="<t4 type="navigation" id="167"/><t4 type="navigation" id="626"/>" />
+<meta property="og:title" content="<t4 type="navigation" id="630"/><t4 type="title" append-content="true" append-element="Title" separator=": " />: <t4 type="navigation" id="77"/>: Loyola University Chicago" />
+<meta property="og:description" content="<t4 type="navigation" id="626"/>" />
+<meta property="og:type" content="website" />
+<meta name="keywords" content="<t4 type="navigation" id="330"/><t4 type="navigation" id="629"/>" />
+<meta name="audience" content="<t4 type="navigation" id="633"/>" />
+<meta name="robots" content="<t4 type="navigation" id="637"/>" />
+<meta property="og:url" content="http://www.luc.edu<t4 type="navigation" id="21"/>" />
+<link rel="canonical" href="http://www.luc.edu<t4 type="navigation" id="21"/>">
+<!-- build:customcss -->
+<!-- endbuild -->
+<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<!-- Custom styles for this template -->
+	<link href="https://getbootstrap.com/examples/starter-template/starter-template.css" rel="stylesheet">
+	<!-- Load font awesome icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+	<script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="http://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<!--Javascript file jquery-1.11.1.min.js --><script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<!--Javascript file d3.min.js --><script src="js/d3.min.js"></script>
+<!--Javascript file c3.min.js --><script src="js/c3.min.js"></script>
+<!-- header -->
+<!-- inject:css -->
+<link rel="stylesheet" href="css/styles.css">
+<!-- endinject -->
+<style>.subnave{display: none;}.homenav{display: block;}</style>
+<link rel="stylesheet" href="<t4 type="media" id="512407" formatter="path/*"/>">
+<link rel="stylesheet" href="<t4 type="media" id="512498" formatter="path/*"/>">
+<link rel="stylesheet" href="/css-canvas/styles-canvas.css">
+<link rel="stylesheet" href="<t4 type="media" id="511529" formatter="path/*"/>">
+</head>
+<body>
+	<div><a href="javascript:void(0)" id="overlay" onclick="closeNavOverlay()"></a></div>
+	<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div id="profileContent01">
+  </div>
+</div>
+<!-- Use any element to open the sidenav -->
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+ <!-- slide panel -->
+<section id="wrapper" style="margin-top: 0; margin-bottom: 0;">
+	<!-- HEADER -->
+<nav id="luc-header" class="navbar navbar-default" style="position: fixed;">
+  <!-- AUDIENCE - DIRECTORY - HEADER -->
+<div id="audience-directory-header">
+<div-class="container-fluid">
+  <ul id="audience-nav" class="col-md-6 pull-left">
+    <li class="category small"><a href="#">Prospective students</a></li>
+    <li class="category small"><a href="#">Current students</a></li>
+    <li class="category small"><a href="#">Alumni</a></li>
+  </ul>
+  <ul id="directory-nav" class="col-md-5 pull-right">
+    <li class="category small"><a href="#">Support LUC</a></li>
+    <li class="category small"><a href="#">Locus</a></li>
+    <li class="category small"><a href="#">Directory</a></li>
+    <li class="category small"><a href="#">Contact</a></li>
+    <li class="category small"><a href="#">A-Z</a></li>
+  </ul>
+</div>
+</div>
+
+  <div id="global-header" class="container-fluid">
+    <a class="navbar-brand" href="###">
+      <img src="<t4 type="media" id="512410" formatter="path/*"/>">
+    </a>
+    <h1 class="display"><a href="#">School of Law</a></h1>
+    <!-- <h1 class="display"><a class="" href="###">Beazley Institute for Health Law and Policy</a></h1> -->
+  </div>
+  <div id="mobile-navbar-header" class="container-fluid p-0">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div id="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <nav class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" role="navigation">
+			<ul id="luc-navigation" class="nav navbar-nav">
+         <t4 type="navigation" id="780" />
+      </ul>
+			<ul id="luc-cta" class="nav navbar-nav">
+        <li class="active"><a href="#">Apply</a></li>
+        <li><a href="#">Visit</a></li>
+				<li><a href="#">Give</a></li>
+        <li id="luc-information" class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="information-ellipse">…</span></a>
+         <ul class="dropdown-menu">
+            <li><a href="#">Career Services</a></li>
+            <li><a href="#">Registrar</a></li>
+            <li><a href="#">Library</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Events</a></li>
+
+            <li><a href="#">Announcement</a></li>
+          </ul>
+        </li>
+        <li id="luc-search" class="dropdown">
+          <a href="#" class="dropdown-toggle search-icon" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="images/search-icon.svg"></a>
+          <ul id="drop" class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+            <form class="form-inline">
+              <div class="form-group">
+                <input type="search" class="form-control" id="searchLaw" placeholder="Search Law School">
+                <button type="submit" class="btn btn-default">Search</button>
+              </div>
+            </form>
+          </ul>
+        </li>
+  </nav>
+  </div>
+  </div>
+</nav>
+ <!-- header-law -->
+	<!-- social media icon - share bar -->
+<div id="social-icon-bar">
+  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+<!--  <a href="#" class="google"><i class="fa fa-google"></i></a> -->
+  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+</div>
+ <!-- social-law -->
+<!-- main-content -->
+	<div id="main-content" class="container ">
+		<div id="story-wrapper" class="col-md-12 p-r-0 p-l-0 bg-white container-fluid">
+			<div id="law-interior" class="container-fluid bg-white story-content-padding">
+
+ <!-- xxx -->
+              <div class="col-md-12 spacer-top">
+  <h5 class="label" id="breadcrumbs"> <t4 type="navigation" id="777" /></h5>
+  <h1 class="display m-b-20 m-t-0"><t4 type="title" /></h1>
+</div>
+<div class="col-md-9 rule-left-spacing" id="main-content">
+  <div class="col-md-12 row">
+    

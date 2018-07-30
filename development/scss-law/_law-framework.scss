@@ -54,11 +54,60 @@ p { float: left; width: 100%; }
 
 #story-spacer-top { padding-top: 40px !important; }
 
+/* header */
+
+#luc-header {
+  position: fixed;
+}
+
+/* audience - directory header */
+
+#audience-directory-header {
+  position: fixed;
+  padding: 8px 0;
+  width: 100%;
+  height: 35px;
+  max-height: 35px;
+  background: $maroon-extra-dark;
+  ul {
+    margin: 0;
+  }
+  ul li {
+    display: inline;
+    float: left;
+    padding: 0;
+    text-transform: uppercase;
+    border: none;
+    &:first-child {
+      border: none;
+    }
+    &:hover {
+      background: none;
+    }
+    a {
+      font-size: .75em !important;
+      color: $gray-light;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}
+
+#audience-directory-header ul#directory-nav li {
+  float: right;
+}
+
+#luc-header #audience-directory-header li a {
+  padding: 0 5px;
+}
+
 /* global-header */
 
 #global-header {
-  padding: 10px 20px;
-  background: $maroon-extra-dark;
+  margin-top: 35px;
+  padding: 30px 20px 15px;
+  background: $bg-overlay-extra-dark;
 }
 
 #global-header a.navbar-brand {
@@ -71,28 +120,30 @@ p { float: left; width: 100%; }
     margin: 0;
     padding: 0;
     width: auto;
-    height: 50px;
+    height: 45px;
+    opacity: .8;
   }
 }
 
 #global-header h1 {
-  float: left;
   position: relative;
-  bottom: -18px;
-  margin: 0 0 10px;
+  bottom: -5px;
+  margin: 0 auto;
   padding: 0;
   width: auto;
   height: auto;
-  font-family: 'Antenna Light', sans-serif !important;
-  font-size: 2em;
+  font-family: 'Antenna Light', 'Georgia', sans-serif !important;
+  font-size: 2.5em;
   font-weight: 100;
   line-height: 1;
-  letter-spacing: -.0175em;
+  letter-spacing: 0;
   text-align: left;
+  text-transform: none;
   background: none;
   a, a.navbar-brand-mobile {
     margin: 0;
     padding: 0;
+    font-family: 'Antenna Light', 'Georgia', serif !important;
     color: $gray-extra-light;
     transition: color .2s;
   }
@@ -116,7 +167,6 @@ p { float: left; width: 100%; }
 #luc-header .navbar-default .navbar-nav>.active>a,
 #luc-header .navbar-default .navbar-nav>.active>a:focus,
 #luc-header .navbar-default .navbar-nav>.active>a:hover {
-  background-color: lighten($bg-overlay, 20%);
   color: $gray;
 }
 
@@ -126,22 +176,58 @@ p { float: left; width: 100%; }
   width: 100%;
   border: 0 none;
   border-radius: 0;
-  background: $bg-overlay;
   z-index: 10;
+}
+
+#luc-header .navbar-collapse,
+#luc-header #mobile-navbar-header,
+#luc-cta li#luc-information ul li a,
+#luc-header .navbar-default .navbar-nav>.active>a,
+#luc-header .navbar-default .navbar-nav>.active>a:focus,
+#luc-header .navbar-default .navbar-nav>.active>a:hover,
+.dropdown-menu,
+#luc-header ul#luc-navigation .dropdown-menu,
+#luc-header li#luc-information .dropdown-menu,
+#luc-header li#luc-search .dropdown-menu {
+  background-color: lighten($gray-dark, 20%);
+  a {
+    &:hover {
+      background-color: lighten($gray-dark, 10%);
+    }
+  }
+}
+
+#luc-header li#luc-information,
+#luc-header li#luc-search a,
+#luc-header li#luc-search {
+  transition: background-color .2s;
+  &:hover {
+    background-color: lighten($gray-dark, 15%) !important;
+  }
+}
+
+#luc-search.dropdown.open ul#drop {
+  background: $bg-overlay-extra-dark;
 }
 
 #navbar-header {
   display: block;
   width: 100%;
+  border-top: solid 1px $gray-dark;
   border-radius: 0%;
   a {
     font-family: 'Antenna', sans-serif;
+    text-transform: uppercase;
   }
 }
 
 #navbar-header > button {
-  background: $bg-overlay-dark;
+  background: lighten($gray-extra-dark, 20%);
   border: none;
+  transition: background-color .2s;
+  &:hover {
+    background: lighten($gray-extra-dark, 15%);
+  }
 }
 
 #luc-header .nav.navbar-nav {
@@ -150,7 +236,7 @@ p { float: left; width: 100%; }
 }
 
 #luc-header .navbar-collapse {
-  padding: 0 0 0 15px;
+  padding: 0;
 }
 
 /* header navigation - first-level - general */
@@ -168,13 +254,12 @@ p { float: left; width: 100%; }
   border-right: solid 1px $gray-dark;
   &:first-of-type { border-left: solid 1px $gray-dark; }
   a {
-    padding: 25px 20px 5px;
+    padding: 22px 20px 8px;
     color: $gray-light;
     background-color: rgba(0,0,0,0);
     transition: background-color .2s;
   }
   &:hover {
-    background-color: darken($bg-overlay, 10%);
     z-index: 100000;
   }
 }
@@ -201,18 +286,24 @@ p { float: left; width: 100%; }
 
 /* header navigation - first-level - cta */
 
-#luc-cta { float: right; }
+#luc-cta {
+  float: right;
+  ul {
+    margin: 0;
+  }
+}
 
 #luc-cta li {
   float: left;
   width: 70px;
   padding: 0%;
   border-left: solid 1px $gray-dark;
+  border-right: none;
   a {
     box-sizing: border-box;
-    padding: 16px 10px 14px;
+    padding: 22px 10px 8px;
     width: 100%;
-    font-family: 'Antenna Bold', sans-serif;
+    font-family: 'Antenna', sans-serif;
     letter-spacing: .025em;
     text-align: center;
     text-transform: uppercase;
@@ -226,46 +317,40 @@ p { float: left; width: 100%; }
   padding: 0;
   width: 50%;
   height: 50%;
-  border: solid 1.5px white;
+  border: none;
   border-radius: 50%;
   text-align: left;
   text-transform: none;
-  &:hover {
-    background: none;
-  }
 }
 
-#luc-header li span.information-ellipse {
+#luc-header li span.information-icon {
   position: absolute;
-  top: 25%;
+  top: 60%;
   bottom: 25%;
   left: 0;
   right: 0;
   height: 20%;
-  font-family: 'Antenna', sans-serif;
-  font-size: 1.65em;
+  font-family: 'Arnhem Blond Italic', 'Georgia', serif !important;
+  font-size: 1.25em;
   line-height: 0;
   text-align: center;
   border: none;
-  &:hover {
-    background: none;
-  }
 }
 
 /* header navigation - first-level - cta > search */
 
 #luc-search.dropdown.open ul#drop {
+  margin-bottom: 0;
   height: 100vh;
-  background: darken($bg-overlay-extra-dark, 10%);
   z-index: 10000;
 }
 
 #luc-cta li#luc-search a {
   margin: 0;
-  padding: 12px 0 0 0;
+  padding: 0 0 0 0;
   width: 100%;
   height: 100%;
-  font-size: 2em;
+  font-size: 1em;
   -webkit-text-stroke: 2px lighten($bg-overlay, 48%);
   line-height: 0;
   color: $white;
@@ -290,21 +375,20 @@ p { float: left; width: 100%; }
 
 #luc-search #drop form .form-group,
 #luc-search #drop form .form-group:hover {
-  background: $white;
+  background-color: lighten($gray, 20%);
   box-shadow: 0px 3px 3px rgba(0,0,0,.5);
 }
 
 #luc-header li#luc-search button.btn {
-  color: $maroon-dark;
-  border-color: $maroon-dark;
-  background: lighten($bg-overlay, 90%);
+  color: $gray-light;
+  border-color: $maroon-extra-dark;
+  background-color: $maroon-extra-dark;
   transition: background .2s;
-}
-
-#luc-header li#luc-search button.btn:hover {
-  color: $maroon-dark;
-  border-color: $maroon-dark;
-  background-color: lighten($bg-overlay, 70%);
+    &:hover {
+      color: darken($gray-light, 10%);
+      border-color: darken($maroon-extra-dark, 10%);
+      background-color: darken($maroon-extra-dark, 10%);
+    }
 }
 
 .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
@@ -312,10 +396,6 @@ p { float: left; width: 100%; }
   outline: none !important;
   outline-color: none !important;
   box-shadow: none !important;
-}
-
-#luc-header li#luc-search span.glyphicon.glyphicon-search.search-icon {
-
 }
 
 /* dropdown menu */
@@ -332,7 +412,6 @@ p { float: left; width: 100%; }
   font-size: 1em;
   text-align: left;
   list-style: none;
-  background-color: $bg-overlay-extra-dark;
   border: none;
   border-radius: 0px;
   -webkit-box-shadow: 0 0 6px rgba(0,0,0,.15);
@@ -370,6 +449,7 @@ p { float: left; width: 100%; }
     width: 100%;
     height: auto;
     line-height: none;
+    text-transform: none;
     border: 0 none;
     border-radius: 0;
     :first-child { border-top: 0 none; }
@@ -384,10 +464,18 @@ p { float: left; width: 100%; }
 }
 
 #luc-header li#luc-search a img {
-  margin: 22%;
-  width: 55%;
-  height: 55%;
+  margin: 23%;
+  padding:10%;
+  width: 50%;
+  height: 50%;
   border: 0;
+  border: none;
+  border-radius: 50%;
+}
+
+#luc-cta li#luc-information a,
+#luc-header li#luc-search a img {
+  background: lighten($gray-extra-dark, 20%);
 }
 
 #luc-information > ul.dropdown-menu { left: initial; right: -52px; }
@@ -399,13 +487,12 @@ p { float: left; width: 100%; }
   min-width: 100vw;
   width: 100vw;
   color: $gray;
-  background-color: $white;
 }
 
 #luc-search > ul.dropdown-menu .form-group, { width: 100vw; height: 100px; }
 
 #luc-search > ul.dropdown-menu input {
-  padding: 30px 5vw;
+  padding: 30px 40px;
   width: 80vw;
   height: 100px;
   font-size: 2em;
@@ -420,6 +507,7 @@ p { float: left; width: 100%; }
   height: 30px;
   font-size: 1em;
 }
+
 
 /* form */
 
@@ -450,7 +538,6 @@ p { float: left; width: 100%; }
   padding: 15px 0;
   width: 100%;
   height: auto;
-  background: $bg-overlay;
   color: $gray-extra-light;
 }
 
