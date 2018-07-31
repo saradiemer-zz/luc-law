@@ -1,0 +1,239 @@
+/* law typography adjustments */
+
+/* spacer and breadcrumbs */
+
+.spacer-section hr {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+}
+
+h5#breadcrumbs.label {
+	margin: 0 0 20px 0;;
+	width: 100%;
+  font-size: .825em !important;
+	font-family: 'Antenna Light', serif !important;
+  letter-spacing: .0175em;
+	color: $maroon;
+}
+
+h5#breadcrumbs.label a { color: $gray; }
+
+/* GENERAL adjustments */
+
+.image.standalone img { margin: 10px 0 30px 0; }
+
+/* headlines and labels */
+
+h1, h2, h3, h4, h5, h6 { width: 100%; }
+
+h1.display, h1.primary-alternate {
+  letter-spacing: -.015em;
+  font-family: 'Arnhem Bold', serif !important;
+  font-size: 4.35em;
+  text-transform: none;
+}
+
+h2.secondary, h2.secondary-alternate {
+  letter-spacing: -.015em;
+  font-family: 'Arnhem Bold', serif !important;
+  font-size: 3.35em;
+  text-transform: none;
+}
+
+/* !!! #law-interior h2.label-chapter-secondary.black will change to h3.standalone */
+
+h3.standalone, h3.standalone-alternate {
+  letter-spacing: -.015em;
+  font-family: 'Arnhem Blond', serif !important;
+  font-style: italic;
+  font-size: 2em;
+  letter-spacing: -.015em;
+  word-spacing: .1em;
+  text-transform: none;
+}
+
+h4.subhead { font-size: 1.6em; }
+
+h5.label,
+h5.label.bold,
+h5.label.light { font-size: 1em; }
+
+h6.category,
+h6.category.bold,
+h6.category.light { font-size: .8125em; }
+
+/* paragraphs */
+
+p,
+p.alternate,
+p.body,
+p.body.alternate,
+p.body.explainer,
+p.body.alternate.explainer,
+p.body.endnote,
+p.body.alternate.endnote,
+p.caption,
+.image p.credit { width: 100%; }
+
+
+p { float: none; display: block; }
+
+p.intro, p.body { display: block; }
+
+p,
+p.alternate,
+p.body,
+p.body.alternate,
+p.body.explainer,
+p.body.alternate.explainer,
+p.body.endnote,
+p.body.alternate.endnote {
+  margin: 0 0 15px;
+  padding: 0;
+  font-family: 'arial', sans-serif;
+}
+
+p,
+p.alternate,
+p.body,
+p.body.alternate,
+p.body.explainer,
+p.body.alternate.explainer {
+  font-size: 1.05em;
+}
+
+p,
+p.body,
+p.body.explainer,
+p.body.intro {
+  margin: 0 0 20px;
+  line-height: 1.8;
+}
+
+p,
+p.alternate,
+p.body.alternate,
+p.body.alternate.explainer  {
+  line-height: 1.65;
+}
+
+p.body.alternate.explainer {
+  font-size: 1.1em;
+}
+
+p.body.endnote,
+p.body.alternate.endnote {
+  margin: 15px 0 0 0;
+  padding: 15px 0 0 0;
+  font-size: .925em;
+  line-height: 1.5;
+  font-style: italic;
+  border-top: solid 1px #e1e1e1;
+}
+
+p.body.alternate.endnote {
+  font-size: 1em !important;
+}
+
+p.alternate,
+p.body.alternate,
+p.body.alternate.expainer,
+p.body.alternate.endnote {
+  font-family: 'Arnhem', serif !important;
+  font-size: 1.1em;
+}
+
+p.body.intro { font-size: 1.175em; }
+
+p.body.alternate.intro { font-size: 1.25em; }
+
+p span.lead-in { font-size: 80% !important; }
+
+p.caption { font-size: 1em; }
+
+.image p.credit {
+  margin: 15px 0 0 0;
+  font-size: .735em;
+  text-align: left;
+}
+
+.body-group p.body.bold {
+  margin: 0 0 10px;
+  font-size: 1.15em;
+}
+
+.body-group p.body.alternate {
+  margin: 0 0 35px;
+}
+
+/* blockquote and cite */
+
+blockquote, blockquote p {
+  font-size: 1.3em;
+  font-family: 'Arnhem Black', 'Georgia', serif !important;
+  font-style: italic;
+  letter-spacing: -.015em;
+  word-spacing: .125em;
+}
+
+/* buttons */
+
+button.btn, button.btn.cta, .btn.cta {
+  border-radius: 4px;
+  background: lighten($maroon, 80%);
+}
+
+/* rightColumn */
+
+#rightColumn .rule-top {
+  margin-top: 20px !important;
+  padding-top: 20px !important;
+}
+
+#rightColumn h5.label {
+  font-size: .825em;
+  line-height: 1.5;
+}
+
+#rightColumn p.body {
+  font-size: .925em;
+  line-height: 1.5;
+}
+
+#rightColumn p.body.explainer {
+  margin: 0 0 5px 0;
+  font-size: .925em;
+  line-height: 1.5;
+}
+
+#rightColumn blockquote, #rightColumn blockquote p {
+  margin: 0 !important;
+  font-family: 'Arnhem Bold', 'Georgia', serif !important;
+  font-size: 1.125em;
+  font-style: italic;
+  line-height: 1.5;
+  letter-spacing: -.015em;
+  word-spacing: .05em;
+}
+
+#rightColumn blockquote cite {
+  font-size: .65em;
+  line-height: 1.25;
+}
+
+#rightColumn .number {
+  margin: 0 0 5px;
+  font-size: 3.75em;
+}
+
+#rightColumn .leadin {
+  font-size: 80%;
+}
+
+#rightColumn p.caption {
+  font-size: .925em;
+}
+
+/* END CSS */
